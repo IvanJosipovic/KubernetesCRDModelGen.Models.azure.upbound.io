@@ -222,6 +222,10 @@ spec:
                     description: One or more frontend_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -388,6 +392,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -404,6 +411,10 @@ spec:
                     description: One or more gateway_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -485,6 +496,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     items:
@@ -1385,6 +1399,10 @@ spec:
                     description: One or more frontend_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -1551,6 +1569,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -1567,6 +1588,10 @@ spec:
                     description: One or more gateway_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -1648,6 +1673,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     items:
@@ -2571,6 +2599,10 @@ spec:
                         id:
                           description: The ID of the Frontend IP Configuration.
                           type: string
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -2594,6 +2626,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -2616,6 +2651,10 @@ spec:
                         id:
                           description: The ID of the Gateway IP Configuration.
                           type: string
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -2624,6 +2663,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     items:
@@ -3541,6 +3583,10 @@ spec:
                     description: One or more frontend_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -3707,6 +3753,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -3723,6 +3772,10 @@ spec:
                     description: One or more gateway_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -3804,6 +3857,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     properties:
@@ -4701,6 +4757,10 @@ spec:
                     description: One or more frontend_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -4867,6 +4927,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -4883,6 +4946,10 @@ spec:
                     description: One or more gateway_ip_configuration blocks as defined below.
                     items:
                       properties:
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -4964,6 +5031,9 @@ spec:
                           type: object
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     properties:
@@ -5886,6 +5956,10 @@ spec:
                         id:
                           description: The ID of the Frontend IP Configuration.
                           type: string
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The name of the Frontend IP Configuration.
                           type: string
@@ -5909,6 +5983,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   frontendPort:
                     description: One or more frontend_port blocks as defined below.
                     items:
@@ -5931,6 +6008,10 @@ spec:
                         id:
                           description: The ID of the Gateway IP Configuration.
                           type: string
+                        index:
+                          default: default
+                          description: This is an injected field with a default value for being able to merge items of the parent object list.
+                          type: string
                         name:
                           description: The Name of this Gateway IP Configuration.
                           type: string
@@ -5939,6 +6020,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                    x-kubernetes-list-map-keys:
+                    - index
+                    x-kubernetes-list-type: map
                   global:
                     description: A global block as defined below.
                     properties:
