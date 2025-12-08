@@ -72,7 +72,7 @@ spec:
               forProvider:
                 properties:
                   portRanges:
-                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) ,  a port range  (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
+                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) , a port range (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
                     type: string
                   protocol:
                     description: Specifies the network protocol. Possible values are *, TCP, UDP and ICMP
@@ -171,7 +171,7 @@ spec:
                   autoscaler.
                 properties:
                   portRanges:
-                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) ,  a port range  (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
+                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) , a port range (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
                     type: string
                   protocol:
                     description: Specifies the network protocol. Possible values are *, TCP, UDP and ICMP
@@ -282,7 +282,7 @@ spec:
                     description: The ID of the Machine Learning Workspace Network Outbound Rule Service Tag .
                     type: string
                   portRanges:
-                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) ,  a port range  (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
+                    description: Specifies which ports traffic will be allowed by this rule. You can specify a single port (e.g.  80) , a port range (e.g. 1024-655535) or a comma-separated list of single ports and/or port ranges(e.g. 80,1024-655535). * can be used to allow traffic on any port.
                     type: string
                   protocol:
                     description: Specifies the network protocol. Possible values are *, TCP, UDP and ICMP

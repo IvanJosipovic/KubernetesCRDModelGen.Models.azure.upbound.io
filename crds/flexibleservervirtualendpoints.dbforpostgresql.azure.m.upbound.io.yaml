@@ -59,7 +59,7 @@ spec:
                 properties:
                   name:
                     description: |-
-                      The name of the Virtual Endpoint
+                      The name of the Virtual Endpoint. Changing this forces a new resource to be created.
                       The name of the Virtual Endpoint
                     type: string
                   replicaServerId:
@@ -148,7 +148,7 @@ spec:
                     type: object
                   sourceServerId:
                     description: |-
-                      The Resource ID of the Source Postgres Flexible Server this should be associated with.
+                      The Resource ID of the Source Postgres Flexible Server this should be associated with. Changing this forces a new resource to be created.
                       The Resource ID of the *Source* Postgres Flexible Server this should be associated with
                     type: string
                   sourceServerIdRef:
@@ -232,7 +232,7 @@ spec:
                     type: object
                   type:
                     description: |-
-                      The type of Virtual Endpoint. Currently only ReadWrite is supported.
+                      The type of Virtual Endpoint. Currently only ReadWrite is supported. Changing this forces a new resource to be created.
                       The type of Virtual Endpoint
                     type: string
                 type: object
@@ -251,7 +251,7 @@ spec:
                 properties:
                   name:
                     description: |-
-                      The name of the Virtual Endpoint
+                      The name of the Virtual Endpoint. Changing this forces a new resource to be created.
                       The name of the Virtual Endpoint
                     type: string
                   replicaServerId:
@@ -340,7 +340,7 @@ spec:
                     type: object
                   sourceServerId:
                     description: |-
-                      The Resource ID of the Source Postgres Flexible Server this should be associated with.
+                      The Resource ID of the Source Postgres Flexible Server this should be associated with. Changing this forces a new resource to be created.
                       The Resource ID of the *Source* Postgres Flexible Server this should be associated with
                     type: string
                   sourceServerIdRef:
@@ -424,7 +424,7 @@ spec:
                     type: object
                   type:
                     description: |-
-                      The type of Virtual Endpoint. Currently only ReadWrite is supported.
+                      The type of Virtual Endpoint. Currently only ReadWrite is supported. Changing this forces a new resource to be created.
                       The type of Virtual Endpoint
                     type: string
                 type: object
@@ -501,7 +501,7 @@ spec:
                     type: string
                   name:
                     description: |-
-                      The name of the Virtual Endpoint
+                      The name of the Virtual Endpoint. Changing this forces a new resource to be created.
                       The name of the Virtual Endpoint
                     type: string
                   replicaServerId:
@@ -511,12 +511,12 @@ spec:
                     type: string
                   sourceServerId:
                     description: |-
-                      The Resource ID of the Source Postgres Flexible Server this should be associated with.
+                      The Resource ID of the Source Postgres Flexible Server this should be associated with. Changing this forces a new resource to be created.
                       The Resource ID of the *Source* Postgres Flexible Server this should be associated with
                     type: string
                   type:
                     description: |-
-                      The type of Virtual Endpoint. Currently only ReadWrite is supported.
+                      The type of Virtual Endpoint. Currently only ReadWrite is supported. Changing this forces a new resource to be created.
                       The type of Virtual Endpoint
                     type: string
                 type: object

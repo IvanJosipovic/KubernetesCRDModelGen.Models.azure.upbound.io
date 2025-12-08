@@ -571,6 +571,7 @@ spec:
                       type: string
                     type: array
                   id:
+                    description: The ID of the Application Insights Web Test.
                     type: string
                   kind:
                     description: The kind of web test that this web test watches. Choices are ping and multistep. Changing this forces a new resource to be created.
@@ -588,6 +589,7 @@ spec:
                     description: Allow for retries should this WebTest fail.
                     type: boolean
                   syntheticMonitorId:
+                    description: The ID of the Application Insights Web Test.
                     type: string
                   tags:
                     additionalProperties:

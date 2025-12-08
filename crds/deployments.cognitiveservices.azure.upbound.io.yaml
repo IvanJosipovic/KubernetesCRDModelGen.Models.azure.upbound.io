@@ -596,7 +596,7 @@ spec:
                     description: A model block as defined below. Changing this forces a new resource to be created.
                     properties:
                       format:
-                        description: The format of the Cognitive Services Account Deployment model. Possible values are OpenAI and Cohere. Changing this forces a new resource to be created.
+                        description: The format of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
                         type: string
                       name:
                         description: The name of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
@@ -618,7 +618,7 @@ spec:
                         description: If the service has different generations of hardware, for the same SKU, then that can be captured here. Changing this forces a new resource to be created.
                         type: string
                       name:
-                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged.
+                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged. Changing this forces a new resource to be created.
                         type: string
                       size:
                         description: The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code. Changing this forces a new resource to be created.
@@ -651,7 +651,7 @@ spec:
                     description: A model block as defined below. Changing this forces a new resource to be created.
                     properties:
                       format:
-                        description: The format of the Cognitive Services Account Deployment model. Possible values are OpenAI and Cohere. Changing this forces a new resource to be created.
+                        description: The format of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
                         type: string
                       name:
                         description: The name of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
@@ -673,7 +673,7 @@ spec:
                         description: If the service has different generations of hardware, for the same SKU, then that can be captured here. Changing this forces a new resource to be created.
                         type: string
                       name:
-                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged.
+                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged. Changing this forces a new resource to be created.
                         type: string
                       size:
                         description: The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code. Changing this forces a new resource to be created.
@@ -795,7 +795,7 @@ spec:
                     description: A model block as defined below. Changing this forces a new resource to be created.
                     properties:
                       format:
-                        description: The format of the Cognitive Services Account Deployment model. Possible values are OpenAI and Cohere. Changing this forces a new resource to be created.
+                        description: The format of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
                         type: string
                       name:
                         description: The name of the Cognitive Services Account Deployment model. Changing this forces a new resource to be created.
@@ -817,7 +817,7 @@ spec:
                         description: If the service has different generations of hardware, for the same SKU, then that can be captured here. Changing this forces a new resource to be created.
                         type: string
                       name:
-                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged.
+                        description: The name of the SKU. Possible values include Standard, DataZoneBatch, DataZoneStandard, DataZoneProvisionedManaged, GlobalBatch, GlobalProvisionedManaged, GlobalStandard, and ProvisionedManaged. Changing this forces a new resource to be created.
                         type: string
                       size:
                         description: The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code. Changing this forces a new resource to be created.

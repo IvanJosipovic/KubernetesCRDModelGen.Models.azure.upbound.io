@@ -388,7 +388,7 @@ spec:
                         type: object
                     type: object
                   retentionPolicyInDays:
-                    description: The number of days to retain and untagged manifest after which it gets purged. Defaults to 7.
+                    description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
@@ -668,7 +668,7 @@ spec:
                     description: Boolean value that indicates whether quarantine policy is enabled.
                     type: boolean
                   retentionPolicyInDays:
-                    description: The number of days to retain and untagged manifest after which it gets purged. Defaults to 7.
+                    description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
@@ -766,6 +766,12 @@ spec:
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
                     type: boolean
+                  dataEndpointHostNames:
+                    description: A set of data endpoint hostnames associated with the container registry if data endpoints are enabled.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   encryption:
                     description: An encryption block as documented below.
                     properties:
@@ -860,7 +866,7 @@ spec:
                     description: The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created.
                     type: string
                   retentionPolicyInDays:
-                    description: The number of days to retain and untagged manifest after which it gets purged. Defaults to 7.
+                    description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.

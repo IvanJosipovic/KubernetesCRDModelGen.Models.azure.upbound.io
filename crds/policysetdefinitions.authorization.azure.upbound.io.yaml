@@ -157,7 +157,7 @@ spec:
                     description: The metadata for the Policy Set Definition in JSON format.
                     type: string
                   parameters:
-                    description: The parameters for the Policy Set Definition in JSON format.
+                    description: The parameters for the Policy Set Definition in JSON format. Reducing the number of parameters forces a new resource to be created.
                     type: string
                   policyDefinitionGroup:
                     description: One or more policy_definition_group blocks as defined below.
@@ -307,7 +307,7 @@ spec:
                     description: The metadata for the Policy Set Definition in JSON format.
                     type: string
                   parameters:
-                    description: The parameters for the Policy Set Definition in JSON format.
+                    description: The parameters for the Policy Set Definition in JSON format. Reducing the number of parameters forces a new resource to be created.
                     type: string
                   policyDefinitionGroup:
                     description: One or more policy_definition_group blocks as defined below.
@@ -472,7 +472,7 @@ spec:
                     description: The metadata for the Policy Set Definition in JSON format.
                     type: string
                   parameters:
-                    description: The parameters for the Policy Set Definition in JSON format.
+                    description: The parameters for the Policy Set Definition in JSON format. Reducing the number of parameters forces a new resource to be created.
                     type: string
                   policyDefinitionGroup:
                     description: One or more policy_definition_group blocks as defined below.

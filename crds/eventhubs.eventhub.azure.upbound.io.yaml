@@ -114,7 +114,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceIdRef:
                     description: Reference to a EventHubNamespace in eventhub to populate namespaceId.
@@ -344,6 +344,21 @@ spec:
                             type: string
                         type: object
                     type: object
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    items:
+                      properties:
+                        cleanupPolicy:
+                          description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                          type: string
+                        retentionTimeInHours:
+                          description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                          type: number
+                        tombstoneRetentionTimeInHours:
+                          description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                          type: number
+                      type: object
+                    type: array
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string
@@ -404,7 +419,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceIdRef:
                     description: Reference to a EventHubNamespace in eventhub to populate namespaceId.
@@ -482,6 +497,21 @@ spec:
                   partitionCount:
                     description: Specifies the current number of shards on the Event Hub.
                     type: number
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    items:
+                      properties:
+                        cleanupPolicy:
+                          description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                          type: string
+                        retentionTimeInHours:
+                          description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                          type: number
+                        tombstoneRetentionTimeInHours:
+                          description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                          type: number
+                      type: object
+                    type: array
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string
@@ -573,8 +603,6 @@ spec:
             - forProvider
             type: object
             x-kubernetes-validations:
-            - message: spec.forProvider.messageRetention is a required parameter
-              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.messageRetention) || (has(self.initProvider) && has(self.initProvider.messageRetention))"
             - message: spec.forProvider.partitionCount is a required parameter
               rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.partitionCount) || (has(self.initProvider) && has(self.initProvider.partitionCount))"
           status:
@@ -628,7 +656,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceName:
                     description: Specifies the name of the EventHub resource. Changing this forces a new resource to be created.
@@ -645,6 +673,21 @@ spec:
                   resourceGroupName:
                     description: Specifies the name of the EventHub resource. Changing this forces a new resource to be created.
                     type: string
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    items:
+                      properties:
+                        cleanupPolicy:
+                          description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                          type: string
+                        retentionTimeInHours:
+                          description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                          type: number
+                        tombstoneRetentionTimeInHours:
+                          description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                          type: number
+                      type: object
+                    type: array
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string
@@ -801,7 +844,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceIdRef:
                     description: Reference to a EventHubNamespace in eventhub to populate namespaceId.
@@ -1031,6 +1074,19 @@ spec:
                             type: string
                         type: object
                     type: object
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    properties:
+                      cleanupPolicy:
+                        description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                        type: string
+                      retentionTimeInHours:
+                        description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                        type: number
+                      tombstoneRetentionTimeInHours:
+                        description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                        type: number
+                    type: object
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string
@@ -1087,7 +1143,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceIdRef:
                     description: Reference to a EventHubNamespace in eventhub to populate namespaceId.
@@ -1165,6 +1221,19 @@ spec:
                   partitionCount:
                     description: Specifies the current number of shards on the Event Hub.
                     type: number
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    properties:
+                      cleanupPolicy:
+                        description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                        type: string
+                      retentionTimeInHours:
+                        description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                        type: number
+                      tombstoneRetentionTimeInHours:
+                        description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                        type: number
+                    type: object
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string
@@ -1256,8 +1325,6 @@ spec:
             - forProvider
             type: object
             x-kubernetes-validations:
-            - message: spec.forProvider.messageRetention is a required parameter
-              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.messageRetention) || (has(self.initProvider) && has(self.initProvider.messageRetention))"
             - message: spec.forProvider.partitionCount is a required parameter
               rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.partitionCount) || (has(self.initProvider) && has(self.initProvider.partitionCount))"
           status:
@@ -1307,7 +1374,7 @@ spec:
                     description: Specifies the number of days to retain the events for this Event Hub.
                     type: number
                   namespaceId:
-                    description: Specifies the ID of the EventHub Namespace. Changing this forces a new resource to be created.
+                    description: Specifies the ID of the EventHub Namespace.
                     type: string
                   namespaceName:
                     description: Specifies the name of the EventHub resource. Changing this forces a new resource to be created.
@@ -1324,6 +1391,19 @@ spec:
                   resourceGroupName:
                     description: Specifies the name of the EventHub resource. Changing this forces a new resource to be created.
                     type: string
+                  retentionDescription:
+                    description: A retention_description block as defined below.
+                    properties:
+                      cleanupPolicy:
+                        description: Specifies the Cleanup Policy for the EventHub. Possible values are Delete and Compact. Changing this forces a new resource to be created.
+                        type: string
+                      retentionTimeInHours:
+                        description: Specifies the number of hours to retain the events for this Event Hub. The value is only used when cleanup_policy is Delete.
+                        type: number
+                      tombstoneRetentionTimeInHours:
+                        description: Specifies the number of hours to retain the tombstones markers of a compacted Event Hub. The value is only used when cleanup_policy is Compact.
+                        type: number
+                    type: object
                   status:
                     description: Specifies the status of the Event Hub resource. Possible values are Active, Disabled and SendDisabled. Defaults to Active.
                     type: string

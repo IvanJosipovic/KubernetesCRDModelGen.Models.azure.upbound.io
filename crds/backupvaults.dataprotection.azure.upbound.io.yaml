@@ -81,13 +81,19 @@ spec:
                     description: An identity block as defined below.
                     items:
                       properties:
+                        identityIds:
+                          description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                          items:
+                            type: string
+                          type: array
+                          x-kubernetes-list-type: set
                         type:
-                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                           type: string
                       type: object
                     type: array
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.
@@ -207,13 +213,19 @@ spec:
                     description: An identity block as defined below.
                     items:
                       properties:
+                        identityIds:
+                          description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                          items:
+                            type: string
+                          type: array
+                          x-kubernetes-list-type: set
                         type:
-                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                           type: string
                       type: object
                     type: array
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.
@@ -345,6 +357,12 @@ spec:
                     description: An identity block as defined below.
                     items:
                       properties:
+                        identityIds:
+                          description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                          items:
+                            type: string
+                          type: array
+                          x-kubernetes-list-type: set
                         principalId:
                           description: The Principal ID for the Service Principal associated with the Identity of this Backup Vault.
                           type: string
@@ -352,12 +370,12 @@ spec:
                           description: The Tenant ID for the Service Principal associated with the Identity of this Backup Vault.
                           type: string
                         type:
-                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                          description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                           type: string
                       type: object
                     type: array
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.
@@ -503,12 +521,18 @@ spec:
                   identity:
                     description: An identity block as defined below.
                     properties:
+                      identityIds:
+                        description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                       type:
-                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                         type: string
                     type: object
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.
@@ -627,12 +651,18 @@ spec:
                   identity:
                     description: An identity block as defined below.
                     properties:
+                      identityIds:
+                        description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                       type:
-                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                         type: string
                     type: object
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.
@@ -763,6 +793,12 @@ spec:
                   identity:
                     description: An identity block as defined below.
                     properties:
+                      identityIds:
+                        description: Specifies a list of User Assigned Managed Identity IDs to be assigned to this Backup Vault.
+                        items:
+                          type: string
+                        type: array
+                        x-kubernetes-list-type: set
                       principalId:
                         description: The Principal ID for the Service Principal associated with the Identity of this Backup Vault.
                         type: string
@@ -770,11 +806,11 @@ spec:
                         description: The Tenant ID for the Service Principal associated with the Identity of this Backup Vault.
                         type: string
                       type:
-                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. The only possible value is SystemAssigned.
+                        description: Specifies the type of Managed Service Identity that should be configured on this Backup Vault. Possible values are SystemAssigned, UserAssigned and SystemAssigned, UserAssigned.
                         type: string
                     type: object
                   immutability:
-                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled. Changing this from Locked to anything else forces a new Backup Vault to be created.
+                    description: The state of immutability for this Backup Vault. Possible values are Disabled, Locked, and Unlocked. Defaults to Disabled.
                     type: string
                   location:
                     description: The Azure Region where the Backup Vault should exist. Changing this forces a new Backup Vault to be created.

@@ -76,7 +76,7 @@ spec:
                     items:
                       properties:
                         instanceCount:
-                          description: The instance count of the always_ready of the  Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
+                          description: The instance count of the always_ready of the Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
                           type: number
                         name:
                           description: The name of the always_ready of the Function App.
@@ -812,6 +812,9 @@ spec:
                       Is the Function App enabled? Defaults to true.
                       Is the Function App enabled.
                     type: boolean
+                  httpConcurrency:
+                    description: The Http concurrency of the instances on which your app runs. The supported value are from 1 to 1000.
+                    type: number
                   httpsOnly:
                     description: |-
                       Is Https Connection enforced to the function app. Defaults to false
@@ -907,7 +910,7 @@ spec:
                         type: string
                     type: object
                   instanceMemoryInMb:
-                    description: The memory size of the instances on which your app runs. The currently supported values are 2048 or 4096.
+                    description: The memory size of the instances on which your app runs. Reference the Microsoft Documentation for the currently supported values. Defaults to 2048.
                     type: number
                   location:
                     description: The Azure Region where the Function App should exist. Changing this forces a new Function App to be created.
@@ -1670,7 +1673,7 @@ spec:
                         type: boolean
                       use32BitWorker:
                         description: |-
-                          Should the Linux Web App  Linux Function App use a 32-bit worker. Defaults to false.
+                          Should the Linux Web App Linux Function App use a 32-bit worker. Defaults to false.
                           Should the Linux Function App use a 32-bit worker.
                         type: boolean
                       vnetRouteAllEnabled:
@@ -2050,7 +2053,7 @@ spec:
                     items:
                       properties:
                         instanceCount:
-                          description: The instance count of the always_ready of the  Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
+                          description: The instance count of the always_ready of the Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
                           type: number
                         name:
                           description: The name of the always_ready of the Function App.
@@ -2788,6 +2791,9 @@ spec:
                       Is the Function App enabled? Defaults to true.
                       Is the Function App enabled.
                     type: boolean
+                  httpConcurrency:
+                    description: The Http concurrency of the instances on which your app runs. The supported value are from 1 to 1000.
+                    type: number
                   httpsOnly:
                     description: |-
                       Is Https Connection enforced to the function app. Defaults to false
@@ -2883,7 +2889,7 @@ spec:
                         type: string
                     type: object
                   instanceMemoryInMb:
-                    description: The memory size of the instances on which your app runs. The currently supported values are 2048 or 4096.
+                    description: The memory size of the instances on which your app runs. Reference the Microsoft Documentation for the currently supported values. Defaults to 2048.
                     type: number
                   location:
                     description: The Azure Region where the Function App should exist. Changing this forces a new Function App to be created.
@@ -3570,7 +3576,7 @@ spec:
                         type: boolean
                       use32BitWorker:
                         description: |-
-                          Should the Linux Web App  Linux Function App use a 32-bit worker. Defaults to false.
+                          Should the Linux Web App Linux Function App use a 32-bit worker. Defaults to false.
                           Should the Linux Function App use a 32-bit worker.
                         type: boolean
                       vnetRouteAllEnabled:
@@ -4041,7 +4047,7 @@ spec:
                     items:
                       properties:
                         instanceCount:
-                          description: The instance count of the always_ready of the  Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
+                          description: The instance count of the always_ready of the Function App. The minimum number is 0. The total number of instance_count should not exceed the maximum_instance_count.
                           type: number
                         name:
                           description: The name of the always_ready of the Function App.
@@ -4685,6 +4691,9 @@ spec:
                   hostingEnvironmentId:
                     description: The ID of the App Service Environment used by Function App.
                     type: string
+                  httpConcurrency:
+                    description: The Http concurrency of the instances on which your app runs. The supported value are from 1 to 1000.
+                    type: number
                   httpsOnly:
                     description: |-
                       Is Https Connection enforced to the function app. Defaults to false
@@ -4713,7 +4722,7 @@ spec:
                         type: string
                     type: object
                   instanceMemoryInMb:
-                    description: The memory size of the instances on which your app runs. The currently supported values are 2048 or 4096.
+                    description: The memory size of the instances on which your app runs. Reference the Microsoft Documentation for the currently supported values. Defaults to 2048.
                     type: number
                   kind:
                     description: The Kind value for this Linux Function App.
@@ -5027,7 +5036,7 @@ spec:
                         type: boolean
                       use32BitWorker:
                         description: |-
-                          Should the Linux Web App  Linux Function App use a 32-bit worker. Defaults to false.
+                          Should the Linux Web App Linux Function App use a 32-bit worker. Defaults to false.
                           Should the Linux Function App use a 32-bit worker.
                         type: boolean
                       vnetRouteAllEnabled:

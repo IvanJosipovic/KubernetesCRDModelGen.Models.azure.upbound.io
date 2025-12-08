@@ -131,6 +131,9 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              kind:
+                                description: Specifies which characteristic will narrow down the set of evaluated resources. Possible values are resourceLocation, resourceType and resourceWithoutLocation.
+                                type: string
                               notIn:
                                 description: The list of not-allowed values for the specified kind. Cannot be used with in. Can contain up to 50 values.
                                 items:
@@ -327,6 +330,9 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              kind:
+                                description: Specifies which characteristic will narrow down the set of evaluated resources. Possible values are resourceLocation, resourceType and resourceWithoutLocation.
+                                type: string
                               notIn:
                                 description: The list of not-allowed values for the specified kind. Cannot be used with in. Can contain up to 50 values.
                                 items:
@@ -837,6 +843,9 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              kind:
+                                description: Specifies which characteristic will narrow down the set of evaluated resources. Possible values are resourceLocation, resourceType and resourceWithoutLocation.
+                                type: string
                               notIn:
                                 description: The list of not-allowed values for the specified kind. Cannot be used with in. Can contain up to 50 values.
                                 items:
@@ -1031,6 +1040,9 @@ spec:
                                 items:
                                   type: string
                                 type: array
+                              kind:
+                                description: Specifies which characteristic will narrow down the set of evaluated resources. Possible values are resourceLocation, resourceType and resourceWithoutLocation.
+                                type: string
                               notIn:
                                 description: The list of not-allowed values for the specified kind. Cannot be used with in. Can contain up to 50 values.
                                 items:

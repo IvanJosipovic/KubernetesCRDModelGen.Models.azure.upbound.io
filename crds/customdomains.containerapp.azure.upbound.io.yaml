@@ -73,7 +73,7 @@ spec:
                 properties:
                   certificateBindingType:
                     description: |-
-                      The Certificate Binding type. Possible values include Disabled and SniEnabled.  Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+                      The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
                       The Binding type. Possible values include `Disabled` and `SniEnabled`.
                     type: string
                   containerAppEnvironmentCertificateId:
@@ -244,7 +244,7 @@ spec:
                 properties:
                   certificateBindingType:
                     description: |-
-                      The Certificate Binding type. Possible values include Disabled and SniEnabled.  Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+                      The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
                       The Binding type. Possible values include `Disabled` and `SniEnabled`.
                     type: string
                   containerAppEnvironmentCertificateId:
@@ -417,7 +417,7 @@ spec:
                 properties:
                   certificateBindingType:
                     description: |-
-                      The Certificate Binding type. Possible values include Disabled and SniEnabled.  Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+                      The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
                       The Binding type. Possible values include `Disabled` and `SniEnabled`.
                     type: string
                   containerAppEnvironmentCertificateId:

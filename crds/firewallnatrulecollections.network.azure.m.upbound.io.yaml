@@ -575,6 +575,7 @@ spec:
                     description: Specifies the name of the Firewall in which the NAT Rule Collection should be created. Changing this forces a new resource to be created.
                     type: string
                   id:
+                    description: The ID of the Firewall NAT Rule Collection.
                     type: string
                   priority:
                     description: Specifies the priority of the rule collection. Possible values are between 100 - 65000.

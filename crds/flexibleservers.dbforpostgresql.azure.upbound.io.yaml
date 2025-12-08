@@ -1335,7 +1335,7 @@ spec:
                     description: A customer_managed_key block as defined below. Changing this forces a new resource to be created.
                     properties:
                       geoBackupKeyVaultKeyId:
-                        description: The versioned ID of the geo backup Key Vault Key.
+                        description: The versioned/versionless ID of the geo backup Key Vault Key.
                         type: string
                       geoBackupUserAssignedIdentityId:
                         description: The geo backup user managed identity id for a Customer Managed Key. Must be added to identity.identity_ids.
@@ -1718,7 +1718,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   version:
-                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15 and 16. Required when create_mode is Default.
+                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.
                     type: string
                   zone:
                     description: Specifies the Availability Zone in which the PostgreSQL Flexible Server should be located.
@@ -1791,7 +1791,7 @@ spec:
                     description: A customer_managed_key block as defined below. Changing this forces a new resource to be created.
                     properties:
                       geoBackupKeyVaultKeyId:
-                        description: The versioned ID of the geo backup Key Vault Key.
+                        description: The versioned/versionless ID of the geo backup Key Vault Key.
                         type: string
                       geoBackupUserAssignedIdentityId:
                         description: The geo backup user managed identity id for a Customer Managed Key. Must be added to identity.identity_ids.
@@ -2098,7 +2098,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   version:
-                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15 and 16. Required when create_mode is Default.
+                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.
                     type: string
                   zone:
                     description: Specifies the Availability Zone in which the PostgreSQL Flexible Server should be located.
@@ -2233,7 +2233,7 @@ spec:
                     description: A customer_managed_key block as defined below. Changing this forces a new resource to be created.
                     properties:
                       geoBackupKeyVaultKeyId:
-                        description: The versioned ID of the geo backup Key Vault Key.
+                        description: The versioned/versionless ID of the geo backup Key Vault Key.
                         type: string
                       geoBackupUserAssignedIdentityId:
                         description: The geo backup user managed identity id for a Customer Managed Key. Must be added to identity.identity_ids.
@@ -2336,7 +2336,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   version:
-                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15 and 16. Required when create_mode is Default.
+                    description: The version of PostgreSQL Flexible Server to use. Possible values are 11,12, 13, 14, 15, 16 and 17. Required when create_mode is Default.
                     type: string
                   zone:
                     description: Specifies the Availability Zone in which the PostgreSQL Flexible Server should be located.
