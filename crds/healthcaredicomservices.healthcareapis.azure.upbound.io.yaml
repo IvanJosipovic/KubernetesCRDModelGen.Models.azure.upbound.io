@@ -679,7 +679,7 @@ spec:
                     description: Whether to enabled public networks when data plane traffic coming from public networks while private endpoint is enabled. Defaults to true.
                     type: boolean
                   storage:
-                    description: A storage block as defined below.
+                    description: A storage block as defined below. Changing this forces a new resource to be created.
                     properties:
                       fileSystemName:
                         description: The filesystem name of connected storage account. Changing this forces a new Healthcare DICOM Service to be created.
@@ -835,7 +835,7 @@ spec:
                     description: Whether to enabled public networks when data plane traffic coming from public networks while private endpoint is enabled. Defaults to true.
                     type: boolean
                   storage:
-                    description: A storage block as defined below.
+                    description: A storage block as defined below. Changing this forces a new resource to be created.
                     properties:
                       fileSystemName:
                         description: The filesystem name of connected storage account. Changing this forces a new Healthcare DICOM Service to be created.
@@ -1035,7 +1035,7 @@ spec:
                     description: The url of the Healthcare DICOM Services.
                     type: string
                   storage:
-                    description: A storage block as defined below.
+                    description: A storage block as defined below. Changing this forces a new resource to be created.
                     properties:
                       fileSystemName:
                         description: The filesystem name of connected storage account. Changing this forces a new Healthcare DICOM Service to be created.

@@ -254,6 +254,7 @@ spec:
                         description: The ID of the private link service group.
                         type: string
                       ipConfiguration:
+                        description: An ip_configuration block as defined below.
                         properties:
                           name:
                             description: The name of the script action.
@@ -265,7 +266,7 @@ spec:
                             description: The private IP address of the IP configuration.
                             type: string
                           privateIpAllocationMethod:
-                            description: The private IP allocation method. The only possible value now is Dynamic.
+                            description: The private IP allocation method. Possible values are Dynamic and Static.
                             type: string
                           subnetId:
                             description: The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
@@ -1252,6 +1253,7 @@ spec:
                         description: The ID of the private link service group.
                         type: string
                       ipConfiguration:
+                        description: An ip_configuration block as defined below.
                         properties:
                           name:
                             description: The name of the script action.
@@ -1263,7 +1265,7 @@ spec:
                             description: The private IP address of the IP configuration.
                             type: string
                           privateIpAllocationMethod:
-                            description: The private IP allocation method. The only possible value now is Dynamic.
+                            description: The private IP allocation method. Possible values are Dynamic and Static.
                             type: string
                           subnetId:
                             description: The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
@@ -2157,6 +2159,7 @@ spec:
                         description: The ID of the private link service group.
                         type: string
                       ipConfiguration:
+                        description: An ip_configuration block as defined below.
                         properties:
                           name:
                             description: The name of the script action.
@@ -2168,7 +2171,7 @@ spec:
                             description: The private IP address of the IP configuration.
                             type: string
                           privateIpAllocationMethod:
-                            description: The private IP allocation method. The only possible value now is Dynamic.
+                            description: The private IP allocation method. Possible values are Dynamic and Static.
                             type: string
                           subnetId:
                             description: The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.

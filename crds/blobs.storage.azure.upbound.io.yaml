@@ -84,7 +84,7 @@ spec:
                     description: The content type of the storage blob. Cannot be defined if source_uri is defined. Defaults to application/octet-stream.
                     type: string
                   encryptionScope:
-                    description: The encryption scope to use for this blob.
+                    description: The encryption scope to use for this blob. Changing this forces a new resource to be created.
                     type: string
                   metadata:
                     additionalProperties:
@@ -289,7 +289,7 @@ spec:
                     description: The content type of the storage blob. Cannot be defined if source_uri is defined. Defaults to application/octet-stream.
                     type: string
                   encryptionScope:
-                    description: The encryption scope to use for this blob.
+                    description: The encryption scope to use for this blob. Changing this forces a new resource to be created.
                     type: string
                   metadata:
                     additionalProperties:
@@ -423,7 +423,7 @@ spec:
                     description: The content type of the storage blob. Cannot be defined if source_uri is defined. Defaults to application/octet-stream.
                     type: string
                   encryptionScope:
-                    description: The encryption scope to use for this blob.
+                    description: The encryption scope to use for this blob. Changing this forces a new resource to be created.
                     type: string
                   id:
                     description: The ID of the Storage Blob.

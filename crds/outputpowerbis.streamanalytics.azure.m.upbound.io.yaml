@@ -354,6 +354,7 @@ spec:
                     description: The name of the Power BI group. Use this property to help remember which specific Power BI group id was used.
                     type: string
                   id:
+                    description: The ID of the Stream Analytics Output to Power BI resource.
                     type: string
                   streamAnalyticsJobId:
                     description: The ID of the Stream Analytics Job. Changing this forces a new resource to be created.

@@ -100,6 +100,21 @@ spec:
                           type: string
                       type: object
                     type: array
+                  actionIncidentTask:
+                    description: One or more action_incident_task blocks as defined below.
+                    items:
+                      properties:
+                        description:
+                          description: The description of the incident task.
+                          type: string
+                        order:
+                          description: The execution order of this action.
+                          type: number
+                        title:
+                          description: The title of the incident task.
+                          type: string
+                      type: object
+                    type: array
                   actionPlaybook:
                     description: One or more action_playbook blocks as defined below.
                     items:
@@ -255,6 +270,21 @@ spec:
                           type: string
                         status:
                           description: 'The status to set to the incident. Possible values are: Active, Closed, New.'
+                          type: string
+                      type: object
+                    type: array
+                  actionIncidentTask:
+                    description: One or more action_incident_task blocks as defined below.
+                    items:
+                      properties:
+                        description:
+                          description: The description of the incident task.
+                          type: string
+                        order:
+                          description: The execution order of this action.
+                          type: number
+                        title:
+                          description: The title of the incident task.
                           type: string
                       type: object
                     type: array
@@ -498,6 +528,21 @@ spec:
                           type: string
                         status:
                           description: 'The status to set to the incident. Possible values are: Active, Closed, New.'
+                          type: string
+                      type: object
+                    type: array
+                  actionIncidentTask:
+                    description: One or more action_incident_task blocks as defined below.
+                    items:
+                      properties:
+                        description:
+                          description: The description of the incident task.
+                          type: string
+                        order:
+                          description: The execution order of this action.
+                          type: number
+                        title:
+                          description: The title of the incident task.
                           type: string
                       type: object
                     type: array

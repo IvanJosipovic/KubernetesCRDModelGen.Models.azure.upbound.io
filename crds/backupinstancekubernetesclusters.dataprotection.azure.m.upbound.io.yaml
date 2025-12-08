@@ -58,7 +58,7 @@ spec:
               forProvider:
                 properties:
                   backupDatasourceParameters:
-                    description: A backup_datasource_parameters block as defined below.
+                    description: A backup_datasource_parameters block as defined below. Changing this forces a new resource to be created.
                     properties:
                       clusterScopedResourcesEnabled:
                         description: Whether to include cluster scope resources during backup. Default to false. Changing this forces a new resource to be created.
@@ -438,7 +438,7 @@ spec:
                   autoscaler.
                 properties:
                   backupDatasourceParameters:
-                    description: A backup_datasource_parameters block as defined below.
+                    description: A backup_datasource_parameters block as defined below. Changing this forces a new resource to be created.
                     properties:
                       clusterScopedResourcesEnabled:
                         description: Whether to include cluster scope resources during backup. Default to false. Changing this forces a new resource to be created.
@@ -789,7 +789,7 @@ spec:
               atProvider:
                 properties:
                   backupDatasourceParameters:
-                    description: A backup_datasource_parameters block as defined below.
+                    description: A backup_datasource_parameters block as defined below. Changing this forces a new resource to be created.
                     properties:
                       clusterScopedResourcesEnabled:
                         description: Whether to include cluster scope resources during backup. Default to false. Changing this forces a new resource to be created.
@@ -834,6 +834,9 @@ spec:
                     type: string
                   location:
                     description: The location of the Backup Instance Kubernetes Cluster. Changing this forces a new resource to be created.
+                    type: string
+                  protectionState:
+                    description: The protection state of the Backup Instance Kubernetes Cluster.
                     type: string
                   snapshotResourceGroupName:
                     description: The name of the Resource Group where snapshots are stored. Changing this forces a new resource to be created.

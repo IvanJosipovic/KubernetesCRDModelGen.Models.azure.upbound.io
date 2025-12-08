@@ -71,6 +71,9 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  captchaCookieExpirationInMinutes:
+                    description: Specifies the Captcha cookie lifetime in minutes. Possible values are between 5 and 1440. Defaults to30 minutes.
+                    type: number
                   customBlockResponseBody:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
@@ -82,7 +85,7 @@ spec:
                     items:
                       properties:
                         action:
-                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, or JSChallenge.
+                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, JSChallenge, or CAPTCHA.
                           type: string
                         enabled:
                           description: Is the rule is enabled or disabled? Defaults to true.
@@ -209,7 +212,7 @@ spec:
                                 items:
                                   properties:
                                     action:
-                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values for DefaultRuleSet 1.1 and below are Allow, Log, Block, or Redirect. Possible values for DefaultRuleSet 2.0 and above are Log or AnomalyScoring. Possible values for Microsoft_BotManagerRuleSet are Allow, Log, Block, Redirect, or JSChallenge.
+                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values are Allow, CAPTCHA, Log, Block, Redirect, AnomalyScoring and JSChallenge.
                                       type: string
                                     enabled:
                                       description: Is this scrubbing_rule enabled? Defaults to true.
@@ -428,6 +431,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  captchaCookieExpirationInMinutes:
+                    description: Specifies the Captcha cookie lifetime in minutes. Possible values are between 5 and 1440. Defaults to30 minutes.
+                    type: number
                   customBlockResponseBody:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
@@ -439,7 +445,7 @@ spec:
                     items:
                       properties:
                         action:
-                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, or JSChallenge.
+                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, JSChallenge, or CAPTCHA.
                           type: string
                         enabled:
                           description: Is the rule is enabled or disabled? Defaults to true.
@@ -566,7 +572,7 @@ spec:
                                 items:
                                   properties:
                                     action:
-                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values for DefaultRuleSet 1.1 and below are Allow, Log, Block, or Redirect. Possible values for DefaultRuleSet 2.0 and above are Log or AnomalyScoring. Possible values for Microsoft_BotManagerRuleSet are Allow, Log, Block, Redirect, or JSChallenge.
+                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values are Allow, CAPTCHA, Log, Block, Redirect, AnomalyScoring and JSChallenge.
                                       type: string
                                     enabled:
                                       description: Is this scrubbing_rule enabled? Defaults to true.
@@ -790,6 +796,9 @@ spec:
             properties:
               atProvider:
                 properties:
+                  captchaCookieExpirationInMinutes:
+                    description: Specifies the Captcha cookie lifetime in minutes. Possible values are between 5 and 1440. Defaults to30 minutes.
+                    type: number
                   customBlockResponseBody:
                     description: If a custom_rule block's action type is block, this is the response body. The body must be specified in base64 encoding.
                     type: string
@@ -801,7 +810,7 @@ spec:
                     items:
                       properties:
                         action:
-                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, or JSChallenge.
+                          description: The action to perform when the rule is matched. Possible values are Allow, Block, Log, Redirect, JSChallenge, or CAPTCHA.
                           type: string
                         enabled:
                           description: Is the rule is enabled or disabled? Defaults to true.
@@ -936,7 +945,7 @@ spec:
                                 items:
                                   properties:
                                     action:
-                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values for DefaultRuleSet 1.1 and below are Allow, Log, Block, or Redirect. Possible values for DefaultRuleSet 2.0 and above are Log or AnomalyScoring. Possible values for Microsoft_BotManagerRuleSet are Allow, Log, Block, Redirect, or JSChallenge.
+                                      description: The action to be applied when the managed rule matches or when the anomaly score is 5 or greater. Possible values are Allow, CAPTCHA, Log, Block, Redirect, AnomalyScoring and JSChallenge.
                                       type: string
                                     enabled:
                                       description: Is this scrubbing_rule enabled? Defaults to true.

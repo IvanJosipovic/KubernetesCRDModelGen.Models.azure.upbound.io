@@ -147,6 +147,53 @@ spec:
                             type: string
                         type: object
                     type: object
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    items:
+                      properties:
+                        acceptRetryAfterEnabled:
+                          description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                          type: boolean
+                        failureCondition:
+                          description: A failure_condition block as defined below.
+                          items:
+                            properties:
+                              count:
+                                description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                                type: number
+                              errorReasons:
+                                description: Specifies a list of error reasons to consider as failures.
+                                items:
+                                  type: string
+                                type: array
+                              intervalDuration:
+                                description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                                type: string
+                              percentage:
+                                description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                                type: number
+                              statusCodeRange:
+                                description: One or more status_code_range blocks as defined below.
+                                items:
+                                  properties:
+                                    max:
+                                      description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                    min:
+                                      description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        name:
+                          description: The name of the circuit breaker rule.
+                          type: string
+                        tripDuration:
+                          description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                          type: string
+                      type: object
+                    type: array
                   credentials:
                     description: A credentials block as documented below.
                     items:
@@ -351,7 +398,7 @@ spec:
                       type: object
                     type: array
                   url:
-                    description: The URL of the backend host.
+                    description: The backend host URL should be specified in the format "https://backend.com/api", avoiding trailing slashes (/) to minimize misconfiguration risks. Azure API Management instance will append the backend resource name to this URL. This URL typically serves as the base-url in the set-backend-service policy, enabling seamless transitions from frontend to backend.
                     type: string
                 type: object
               initProvider:
@@ -367,6 +414,53 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    items:
+                      properties:
+                        acceptRetryAfterEnabled:
+                          description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                          type: boolean
+                        failureCondition:
+                          description: A failure_condition block as defined below.
+                          items:
+                            properties:
+                              count:
+                                description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                                type: number
+                              errorReasons:
+                                description: Specifies a list of error reasons to consider as failures.
+                                items:
+                                  type: string
+                                type: array
+                              intervalDuration:
+                                description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                                type: string
+                              percentage:
+                                description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                                type: number
+                              statusCodeRange:
+                                description: One or more status_code_range blocks as defined below.
+                                items:
+                                  properties:
+                                    max:
+                                      description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                    min:
+                                      description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        name:
+                          description: The name of the circuit breaker rule.
+                          type: string
+                        tripDuration:
+                          description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                          type: string
+                      type: object
+                    type: array
                   credentials:
                     description: A credentials block as documented below.
                     items:
@@ -412,6 +506,23 @@ spec:
                     description: A proxy block as documented below.
                     items:
                       properties:
+                        passwordSecretRef:
+                          description: The password to connect to the proxy server.
+                          properties:
+                            key:
+                              description: The key to select.
+                              type: string
+                            name:
+                              description: Name of the secret.
+                              type: string
+                            namespace:
+                              description: Namespace of the secret.
+                              type: string
+                          required:
+                          - key
+                          - name
+                          - namespace
+                          type: object
                         url:
                           description: The URL of the proxy server.
                           type: string
@@ -478,7 +589,7 @@ spec:
                       type: object
                     type: array
                   url:
-                    description: The URL of the backend host.
+                    description: The backend host URL should be specified in the format "https://backend.com/api", avoiding trailing slashes (/) to minimize misconfiguration risks. Azure API Management instance will append the backend resource name to this URL. This URL typically serves as the base-url in the set-backend-service policy, enabling seamless transitions from frontend to backend.
                     type: string
                 type: object
               managementPolicies:
@@ -580,6 +691,53 @@ spec:
                   apiManagementName:
                     description: The Name of the API Management Service where this backend should be created. Changing this forces a new resource to be created.
                     type: string
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    items:
+                      properties:
+                        acceptRetryAfterEnabled:
+                          description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                          type: boolean
+                        failureCondition:
+                          description: A failure_condition block as defined below.
+                          items:
+                            properties:
+                              count:
+                                description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                                type: number
+                              errorReasons:
+                                description: Specifies a list of error reasons to consider as failures.
+                                items:
+                                  type: string
+                                type: array
+                              intervalDuration:
+                                description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                                type: string
+                              percentage:
+                                description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                                type: number
+                              statusCodeRange:
+                                description: One or more status_code_range blocks as defined below.
+                                items:
+                                  properties:
+                                    max:
+                                      description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                    min:
+                                      description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                      type: number
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        name:
+                          description: The name of the circuit breaker rule.
+                          type: string
+                        tripDuration:
+                          description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                          type: string
+                      type: object
+                    type: array
                   credentials:
                     description: A credentials block as documented below.
                     items:
@@ -697,7 +855,7 @@ spec:
                       type: object
                     type: array
                   url:
-                    description: The URL of the backend host.
+                    description: The backend host URL should be specified in the format "https://backend.com/api", avoiding trailing slashes (/) to minimize misconfiguration risks. Azure API Management instance will append the backend resource name to this URL. This URL typically serves as the base-url in the set-backend-service policy, enabling seamless transitions from frontend to backend.
                     type: string
                 type: object
               conditions:
@@ -888,6 +1046,49 @@ spec:
                             - IfNotPresent
                             type: string
                         type: object
+                    type: object
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    properties:
+                      acceptRetryAfterEnabled:
+                        description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                        type: boolean
+                      failureCondition:
+                        description: A failure_condition block as defined below.
+                        properties:
+                          count:
+                            description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                            type: number
+                          errorReasons:
+                            description: Specifies a list of error reasons to consider as failures.
+                            items:
+                              type: string
+                            type: array
+                          intervalDuration:
+                            description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                            type: string
+                          percentage:
+                            description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                            type: number
+                          statusCodeRange:
+                            description: One or more status_code_range blocks as defined below.
+                            items:
+                              properties:
+                                max:
+                                  description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                                min:
+                                  description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                              type: object
+                            type: array
+                        type: object
+                      name:
+                        description: The name of the circuit breaker rule.
+                        type: string
+                      tripDuration:
+                        description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                        type: string
                     type: object
                   credentials:
                     description: A credentials block as documented below.
@@ -1099,6 +1300,49 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    properties:
+                      acceptRetryAfterEnabled:
+                        description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                        type: boolean
+                      failureCondition:
+                        description: A failure_condition block as defined below.
+                        properties:
+                          count:
+                            description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                            type: number
+                          errorReasons:
+                            description: Specifies a list of error reasons to consider as failures.
+                            items:
+                              type: string
+                            type: array
+                          intervalDuration:
+                            description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                            type: string
+                          percentage:
+                            description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                            type: number
+                          statusCodeRange:
+                            description: One or more status_code_range blocks as defined below.
+                            items:
+                              properties:
+                                max:
+                                  description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                                min:
+                                  description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                              type: object
+                            type: array
+                        type: object
+                      name:
+                        description: The name of the circuit breaker rule.
+                        type: string
+                      tripDuration:
+                        description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                        type: string
+                    type: object
                   credentials:
                     description: A credentials block as documented below.
                     properties:
@@ -1319,6 +1563,49 @@ spec:
                   apiManagementName:
                     description: The Name of the API Management Service where this backend should be created. Changing this forces a new resource to be created.
                     type: string
+                  circuitBreakerRule:
+                    description: A circuit_breaker_rule block as documented below.
+                    properties:
+                      acceptRetryAfterEnabled:
+                        description: Specifies whether the circuit breaker should honor Retry-After requests. Defaults to false.
+                        type: boolean
+                      failureCondition:
+                        description: A failure_condition block as defined below.
+                        properties:
+                          count:
+                            description: Specifies the number of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 10000.
+                            type: number
+                          errorReasons:
+                            description: Specifies a list of error reasons to consider as failures.
+                            items:
+                              type: string
+                            type: array
+                          intervalDuration:
+                            description: Specifies the time window over which failures are counted, in ISO 8601 format.
+                            type: string
+                          percentage:
+                            description: Specifies the percentage of failures within the specified interval that will trigger the circuit breaker. Possible values are between 1 and 100.
+                            type: number
+                          statusCodeRange:
+                            description: One or more status_code_range blocks as defined below.
+                            items:
+                              properties:
+                                max:
+                                  description: Specifies the maximum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                                min:
+                                  description: Specifies the minimum HTTP status code to consider as a failure. Possible values are between 200 and 599.
+                                  type: number
+                              type: object
+                            type: array
+                        type: object
+                      name:
+                        description: The name of the circuit breaker rule.
+                        type: string
+                      tripDuration:
+                        description: Specifies the duration for which the circuit remains open before retrying, in ISO 8601 format.
+                        type: string
+                    type: object
                   credentials:
                     description: A credentials block as documented below.
                     properties:

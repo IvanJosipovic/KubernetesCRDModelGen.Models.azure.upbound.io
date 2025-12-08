@@ -1056,7 +1056,7 @@ spec:
                           description: Describes if the policy is in enabled state or disabled state. Defaults to true.
                           type: boolean
                         groupRateLimitBy:
-                          description: Specifies what grouping the rate limit will count requests by. Possible values are GeoLocation, ClientAddr and None.
+                          description: Specifies what grouping the rate limit will count requests by. Possible values are ClientAddr, ClientAddrXFFHeader, GeoLocation, GeoLocationXFFHeader and None.
                           type: string
                         matchConditions:
                           description: One or more match_conditions blocks as defined below.
@@ -1357,7 +1357,7 @@ spec:
                           description: Describes if the policy is in enabled state or disabled state. Defaults to true.
                           type: boolean
                         groupRateLimitBy:
-                          description: Specifies what grouping the rate limit will count requests by. Possible values are GeoLocation, ClientAddr and None.
+                          description: Specifies what grouping the rate limit will count requests by. Possible values are ClientAddr, ClientAddrXFFHeader, GeoLocation, GeoLocationXFFHeader and None.
                           type: string
                         matchConditions:
                           description: One or more match_conditions blocks as defined below.
@@ -1665,7 +1665,7 @@ spec:
                           description: Describes if the policy is in enabled state or disabled state. Defaults to true.
                           type: boolean
                         groupRateLimitBy:
-                          description: Specifies what grouping the rate limit will count requests by. Possible values are GeoLocation, ClientAddr and None.
+                          description: Specifies what grouping the rate limit will count requests by. Possible values are ClientAddr, ClientAddrXFFHeader, GeoLocation, GeoLocationXFFHeader and None.
                           type: string
                         matchConditions:
                           description: One or more match_conditions blocks as defined below.

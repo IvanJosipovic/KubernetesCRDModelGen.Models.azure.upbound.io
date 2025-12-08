@@ -72,13 +72,16 @@ spec:
               forProvider:
                 properties:
                   enabled:
-                    description: Is this Notification Hub Namespace enabled? Defaults to true.
+                    description: Is this Notification Hub Namespace enabled? Defaults to true. Changing this forces a new resource to be created.
                     type: boolean
                   location:
                     description: The Azure Region in which this Notification Hub Namespace should be created. Changing this forces a new resource to be created.
                     type: string
                   namespaceType:
-                    description: The Type of Namespace - possible values are Messaging or NotificationHub.
+                    description: The Type of Namespace - possible values are Messaging or NotificationHub. Changing this forces a new resource to be created.
+                    type: string
+                  replicationRegion:
+                    description: The allowed Replication Region for the Notification Hub Namespace. Possible values are Default, None, AustraliaEast, BrazilSouth, NorthEurope, SouthAfricaNorth, SouthEastAsia, WestUs2. Changing this forces a new resource to be created. Defaults to Default.
                     type: string
                   resourceGroupName:
                     description: The name of the Resource Group in which the Notification Hub Namespace should exist. Changing this forces a new resource to be created.
@@ -165,6 +168,9 @@ spec:
                     description: A mapping of tags to assign to the resource.
                     type: object
                     x-kubernetes-map-type: granular
+                  zoneRedundancyEnabled:
+                    description: Is Zone Redundancy Enabled for the Notification Hub Namespace. Defaults to false. Changing this forces a new resource to be created.
+                    type: boolean
                 type: object
               initProvider:
                 description: |-
@@ -180,13 +186,16 @@ spec:
                   autoscaler.
                 properties:
                   enabled:
-                    description: Is this Notification Hub Namespace enabled? Defaults to true.
+                    description: Is this Notification Hub Namespace enabled? Defaults to true. Changing this forces a new resource to be created.
                     type: boolean
                   location:
                     description: The Azure Region in which this Notification Hub Namespace should be created. Changing this forces a new resource to be created.
                     type: string
                   namespaceType:
-                    description: The Type of Namespace - possible values are Messaging or NotificationHub.
+                    description: The Type of Namespace - possible values are Messaging or NotificationHub. Changing this forces a new resource to be created.
+                    type: string
+                  replicationRegion:
+                    description: The allowed Replication Region for the Notification Hub Namespace. Possible values are Default, None, AustraliaEast, BrazilSouth, NorthEurope, SouthAfricaNorth, SouthEastAsia, WestUs2. Changing this forces a new resource to be created. Defaults to Default.
                     type: string
                   skuName:
                     description: The name of the SKU to use for this Notification Hub Namespace. Possible values are Free, Basic or Standard.
@@ -197,6 +206,9 @@ spec:
                     description: A mapping of tags to assign to the resource.
                     type: object
                     x-kubernetes-map-type: granular
+                  zoneRedundancyEnabled:
+                    description: Is Zone Redundancy Enabled for the Notification Hub Namespace. Defaults to false. Changing this forces a new resource to be created.
+                    type: boolean
                 type: object
               managementPolicies:
                 default:
@@ -297,7 +309,7 @@ spec:
               atProvider:
                 properties:
                   enabled:
-                    description: Is this Notification Hub Namespace enabled? Defaults to true.
+                    description: Is this Notification Hub Namespace enabled? Defaults to true. Changing this forces a new resource to be created.
                     type: boolean
                   id:
                     description: The ID of the Notification Hub Namespace.
@@ -306,7 +318,10 @@ spec:
                     description: The Azure Region in which this Notification Hub Namespace should be created. Changing this forces a new resource to be created.
                     type: string
                   namespaceType:
-                    description: The Type of Namespace - possible values are Messaging or NotificationHub.
+                    description: The Type of Namespace - possible values are Messaging or NotificationHub. Changing this forces a new resource to be created.
+                    type: string
+                  replicationRegion:
+                    description: The allowed Replication Region for the Notification Hub Namespace. Possible values are Default, None, AustraliaEast, BrazilSouth, NorthEurope, SouthAfricaNorth, SouthEastAsia, WestUs2. Changing this forces a new resource to be created. Defaults to Default.
                     type: string
                   resourceGroupName:
                     description: The name of the Resource Group in which the Notification Hub Namespace should exist. Changing this forces a new resource to be created.
@@ -323,6 +338,9 @@ spec:
                     description: A mapping of tags to assign to the resource.
                     type: object
                     x-kubernetes-map-type: granular
+                  zoneRedundancyEnabled:
+                    description: Is Zone Redundancy Enabled for the Notification Hub Namespace. Defaults to false. Changing this forces a new resource to be created.
+                    type: boolean
                 type: object
               conditions:
                 description: Conditions of the resource.

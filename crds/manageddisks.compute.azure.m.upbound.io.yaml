@@ -127,7 +127,7 @@ spec:
                     description: The maximum number of VMs that can attach to the disk at the same time. Value greater than one indicates a disk that can be mounted on multiple VMs at the same time.
                     type: number
                   networkAccessPolicy:
-                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll.
+                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll. Defaults to AllowAll.
                     type: string
                   onDemandBurstingEnabled:
                     description: Specifies if On-Demand Bursting is enabled for the Managed Disk.
@@ -425,7 +425,7 @@ spec:
                     description: The maximum number of VMs that can attach to the disk at the same time. Value greater than one indicates a disk that can be mounted on multiple VMs at the same time.
                     type: number
                   networkAccessPolicy:
-                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll.
+                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll. Defaults to AllowAll.
                     type: string
                   onDemandBurstingEnabled:
                     description: Specifies if On-Demand Bursting is enabled for the Managed Disk.
@@ -701,7 +701,7 @@ spec:
                     description: The maximum number of VMs that can attach to the disk at the same time. Value greater than one indicates a disk that can be mounted on multiple VMs at the same time.
                     type: number
                   networkAccessPolicy:
-                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll.
+                    description: Policy for accessing the disk via network. Allowed values are AllowAll, AllowPrivate, and DenyAll. Defaults to AllowAll.
                     type: string
                   onDemandBurstingEnabled:
                     description: Specifies if On-Demand Bursting is enabled for the Managed Disk.

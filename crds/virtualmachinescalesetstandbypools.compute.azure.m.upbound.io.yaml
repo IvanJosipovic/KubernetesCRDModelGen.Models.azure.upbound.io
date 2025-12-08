@@ -241,7 +241,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   virtualMachineState:
-                    description: Specifies the desired state of virtual machines in the pool. Possible values are Running and Deallocated.
+                    description: Specifies the desired state of virtual machines in the pool. Possible values are Deallocated, Hibernated and Running.
                     type: string
                 type: object
               initProvider:
@@ -359,7 +359,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   virtualMachineState:
-                    description: Specifies the desired state of virtual machines in the pool. Possible values are Running and Deallocated.
+                    description: Specifies the desired state of virtual machines in the pool. Possible values are Deallocated, Hibernated and Running.
                     type: string
                 type: object
               managementPolicies:
@@ -461,7 +461,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   virtualMachineState:
-                    description: Specifies the desired state of virtual machines in the pool. Possible values are Running and Deallocated.
+                    description: Specifies the desired state of virtual machines in the pool. Possible values are Deallocated, Hibernated and Running.
                     type: string
                 type: object
               conditions:

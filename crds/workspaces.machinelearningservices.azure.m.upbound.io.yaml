@@ -604,8 +604,11 @@ spec:
                     description: A managed_network block as defined below.
                     properties:
                       isolationMode:
-                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound
+                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.
                         type: string
+                      provisionOnCreationEnabled:
+                        description: Set to trigger the provisioning of the managed VNet with the default options when creating a Machine Learning Workspace with the managed VNet enabled. Defaults to false. Changing this forces a new resource to be created.
+                        type: boolean
                     type: object
                   primaryUserAssignedIdentity:
                     description: The user assigned identity id that represents the workspace identity.
@@ -863,6 +866,9 @@ spec:
                             type: object
                         type: object
                     type: object
+                  serviceSideEncryptionEnabled:
+                    description: Whether to enable service-side encryption with customer-managed keys (CMK). Default to false. Changing this forces a new resource to be created.
+                    type: boolean
                   skuName:
                     description: SKU/edition of the Machine Learning Workspace, possible values are Free, Basic, Standard and Premium. Defaults to Basic.
                     type: string
@@ -1518,8 +1524,11 @@ spec:
                     description: A managed_network block as defined below.
                     properties:
                       isolationMode:
-                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound
+                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.
                         type: string
+                      provisionOnCreationEnabled:
+                        description: Set to trigger the provisioning of the managed VNet with the default options when creating a Machine Learning Workspace with the managed VNet enabled. Defaults to false. Changing this forces a new resource to be created.
+                        type: boolean
                     type: object
                   primaryUserAssignedIdentity:
                     description: The user assigned identity id that represents the workspace identity.
@@ -1695,6 +1704,9 @@ spec:
                             type: object
                         type: object
                     type: object
+                  serviceSideEncryptionEnabled:
+                    description: Whether to enable service-side encryption with customer-managed keys (CMK). Default to false. Changing this forces a new resource to be created.
+                    type: boolean
                   skuName:
                     description: SKU/edition of the Machine Learning Workspace, possible values are Free, Basic, Standard and Premium. Defaults to Basic.
                     type: string
@@ -1940,8 +1952,11 @@ spec:
                     description: A managed_network block as defined below.
                     properties:
                       isolationMode:
-                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound
+                        description: The isolation mode of the Machine Learning Workspace. Possible values are Disabled, AllowOnlyApprovedOutbound, and AllowInternetOutbound.
                         type: string
+                      provisionOnCreationEnabled:
+                        description: Set to trigger the provisioning of the managed VNet with the default options when creating a Machine Learning Workspace with the managed VNet enabled. Defaults to false. Changing this forces a new resource to be created.
+                        type: boolean
                     type: object
                   primaryUserAssignedIdentity:
                     description: The user assigned identity id that represents the workspace identity.
@@ -1962,6 +1977,9 @@ spec:
                         description: The ID of an existing Virtual Network Subnet in which the serverless compute nodes should be deployed to.
                         type: string
                     type: object
+                  serviceSideEncryptionEnabled:
+                    description: Whether to enable service-side encryption with customer-managed keys (CMK). Default to false. Changing this forces a new resource to be created.
+                    type: boolean
                   skuName:
                     description: SKU/edition of the Machine Learning Workspace, possible values are Free, Basic, Standard and Premium. Defaults to Basic.
                     type: string
