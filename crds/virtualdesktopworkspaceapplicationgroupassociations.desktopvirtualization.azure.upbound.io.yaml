@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.18.0
-  name: virtualdesktopworkspaceappplicationgroupassociations.desktopvirtualization.azure.upbound.io
+  name: virtualdesktopworkspaceapplicationgroupassociations.desktopvirtualization.azure.upbound.io
 spec:
   group: desktopvirtualization.azure.upbound.io
   names:
@@ -11,10 +11,10 @@ spec:
     - crossplane
     - managed
     - azure
-    kind: VirtualDesktopWorkspaceAppplicationGroupAssociation
-    listKind: VirtualDesktopWorkspaceAppplicationGroupAssociationList
-    plural: virtualdesktopworkspaceappplicationgroupassociations
-    singular: virtualdesktopworkspaceappplicationgroupassociation
+    kind: VirtualDesktopWorkspaceApplicationGroupAssociation
+    listKind: VirtualDesktopWorkspaceApplicationGroupAssociationList
+    plural: virtualdesktopworkspaceapplicationgroupassociations
+    singular: virtualdesktopworkspaceapplicationgroupassociation
   scope: Cluster
   versions:
   - additionalPrinterColumns:
@@ -33,7 +33,7 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: VirtualDesktopWorkspaceAppplicationGroupAssociation is the Schema for the VirtualDesktopWorkspaceAppplicationGroupAssociations API. Manages a Virtual Desktop Workspace Application Group Association.
+        description: VirtualDesktopWorkspaceApplicationGroupAssociation is the Schema for the VirtualDesktopWorkspaceApplicationGroupAssociations API. Manages a Virtual Desktop Workspace Application Group Association.
         properties:
           apiVersion:
             description: |-
@@ -53,7 +53,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: VirtualDesktopWorkspaceAppplicationGroupAssociationSpec defines the desired state of VirtualDesktopWorkspaceAppplicationGroupAssociation
+            description: VirtualDesktopWorkspaceApplicationGroupAssociationSpec defines the desired state of VirtualDesktopWorkspaceApplicationGroupAssociation
             properties:
               deletionPolicy:
                 default: Delete
@@ -477,7 +477,7 @@ spec:
             - forProvider
             type: object
           status:
-            description: VirtualDesktopWorkspaceAppplicationGroupAssociationStatus defines the observed state of VirtualDesktopWorkspaceAppplicationGroupAssociation.
+            description: VirtualDesktopWorkspaceApplicationGroupAssociationStatus defines the observed state of VirtualDesktopWorkspaceApplicationGroupAssociation.
             properties:
               atProvider:
                 properties:
