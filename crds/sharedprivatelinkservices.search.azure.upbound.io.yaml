@@ -7,11 +7,11 @@ metadata:
 spec:
   group: search.azure.upbound.io
   names:
+    kind: SharedPrivateLinkService
     categories:
     - crossplane
     - managed
     - azure
-    kind: SharedPrivateLinkService
     listKind: SharedPrivateLinkServiceList
     plural: sharedprivatelinkservices
     singular: sharedprivatelinkservice

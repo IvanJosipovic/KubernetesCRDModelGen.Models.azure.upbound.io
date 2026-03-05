@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: PublicIPPrefix
     categories:
     - crossplane
     - managed
     - azure
-    kind: PublicIPPrefix
     listKind: PublicIPPrefixList
     plural: publicipprefixes
     singular: publicipprefix

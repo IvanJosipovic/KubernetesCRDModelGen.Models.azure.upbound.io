@@ -7,11 +7,11 @@ metadata:
 spec:
   group: maps.azure.m.upbound.io
   names:
+    kind: Creator
     categories:
     - crossplane
     - managed
     - azure
-    kind: Creator
     listKind: CreatorList
     plural: creators
     singular: creator

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.upbound.io
   names:
+    kind: MSSQLJobAgent
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLJobAgent
     listKind: MSSQLJobAgentList
     plural: mssqljobagents
     singular: mssqljobagent

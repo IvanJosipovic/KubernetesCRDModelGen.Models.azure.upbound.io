@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VirtualNetworkGateway
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetworkGateway
     listKind: VirtualNetworkGatewayList
     plural: virtualnetworkgateways
     singular: virtualnetworkgateway

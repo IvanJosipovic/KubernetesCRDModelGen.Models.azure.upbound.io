@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: TriggerCustomEvent
     categories:
     - crossplane
     - managed
     - azure
-    kind: TriggerCustomEvent
     listKind: TriggerCustomEventList
     plural: triggercustomevents
     singular: triggercustomevent

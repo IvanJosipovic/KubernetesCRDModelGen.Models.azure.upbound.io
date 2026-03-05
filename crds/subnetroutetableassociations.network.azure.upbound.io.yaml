@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: SubnetRouteTableAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubnetRouteTableAssociation
     listKind: SubnetRouteTableAssociationList
     plural: subnetroutetableassociations
     singular: subnetroutetableassociation

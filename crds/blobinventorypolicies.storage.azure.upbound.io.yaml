@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.upbound.io
   names:
+    kind: BlobInventoryPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: BlobInventoryPolicy
     listKind: BlobInventoryPolicyList
     plural: blobinventorypolicies
     singular: blobinventorypolicy

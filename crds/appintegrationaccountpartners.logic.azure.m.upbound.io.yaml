@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logic.azure.m.upbound.io
   names:
+    kind: AppIntegrationAccountPartner
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppIntegrationAccountPartner
     listKind: AppIntegrationAccountPartnerList
     plural: appintegrationaccountpartners
     singular: appintegrationaccountpartner

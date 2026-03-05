@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.m.upbound.io
   names:
+    kind: SecurityCenterWorkspace
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterWorkspace
     listKind: SecurityCenterWorkspaceList
     plural: securitycenterworkspaces
     singular: securitycenterworkspace

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: APIRelease
     categories:
     - crossplane
     - managed
     - azure
-    kind: APIRelease
     listKind: APIReleaseList
     plural: apireleases
     singular: apirelease

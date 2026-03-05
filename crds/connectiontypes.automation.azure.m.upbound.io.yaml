@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.m.upbound.io
   names:
+    kind: ConnectionType
     categories:
     - crossplane
     - managed
     - azure
-    kind: ConnectionType
     listKind: ConnectionTypeList
     plural: connectiontypes
     singular: connectiontype

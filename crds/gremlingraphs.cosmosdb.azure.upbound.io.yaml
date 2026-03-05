@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.upbound.io
   names:
+    kind: GremlinGraph
     categories:
     - crossplane
     - managed
     - azure
-    kind: GremlinGraph
     listKind: GremlinGraphList
     plural: gremlingraphs
     singular: gremlingraph

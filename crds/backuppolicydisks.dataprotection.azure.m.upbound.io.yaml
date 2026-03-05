@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.m.upbound.io
   names:
+    kind: BackupPolicyDisk
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyDisk
     listKind: BackupPolicyDiskList
     plural: backuppolicydisks
     singular: backuppolicydisk

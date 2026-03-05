@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: VirtualMachineExtension
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualMachineExtension
     listKind: VirtualMachineExtensionList
     plural: virtualmachineextensions
     singular: virtualmachineextension

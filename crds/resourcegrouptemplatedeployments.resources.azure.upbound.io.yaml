@@ -7,11 +7,11 @@ metadata:
 spec:
   group: resources.azure.upbound.io
   names:
+    kind: ResourceGroupTemplateDeployment
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceGroupTemplateDeployment
     listKind: ResourceGroupTemplateDeploymentList
     plural: resourcegrouptemplatedeployments
     singular: resourcegrouptemplatedeployment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: WindowsFunctionApp
     categories:
     - crossplane
     - managed
     - azure
-    kind: WindowsFunctionApp
     listKind: WindowsFunctionAppList
     plural: windowsfunctionapps
     singular: windowsfunctionapp

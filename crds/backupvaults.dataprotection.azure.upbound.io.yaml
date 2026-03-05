@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.upbound.io
   names:
+    kind: BackupVault
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupVault
     listKind: BackupVaultList
     plural: backupvaults
     singular: backupvault

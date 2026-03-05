@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: AppActiveSlot
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppActiveSlot
     listKind: AppActiveSlotList
     plural: appactiveslots
     singular: appactiveslot

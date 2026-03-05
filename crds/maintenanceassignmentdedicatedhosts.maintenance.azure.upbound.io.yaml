@@ -7,11 +7,11 @@ metadata:
 spec:
   group: maintenance.azure.upbound.io
   names:
+    kind: MaintenanceAssignmentDedicatedHost
     categories:
     - crossplane
     - managed
     - azure
-    kind: MaintenanceAssignmentDedicatedHost
     listKind: MaintenanceAssignmentDedicatedHostList
     plural: maintenanceassignmentdedicatedhosts
     singular: maintenanceassignmentdedicatedhost

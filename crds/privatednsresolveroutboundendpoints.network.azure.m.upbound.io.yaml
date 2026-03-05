@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateDNSResolverOutboundEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateDNSResolverOutboundEndpoint
     listKind: PrivateDNSResolverOutboundEndpointList
     plural: privatednsresolveroutboundendpoints
     singular: privatednsresolveroutboundendpoint

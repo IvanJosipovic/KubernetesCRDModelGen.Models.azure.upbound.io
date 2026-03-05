@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devtestlab.azure.upbound.io
   names:
+    kind: GlobalVMShutdownSchedule
     categories:
     - crossplane
     - managed
     - azure
-    kind: GlobalVMShutdownSchedule
     listKind: GlobalVMShutdownScheduleList
     plural: globalvmshutdownschedules
     singular: globalvmshutdownschedule

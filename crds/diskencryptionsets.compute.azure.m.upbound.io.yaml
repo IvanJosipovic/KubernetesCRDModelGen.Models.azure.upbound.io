@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: DiskEncryptionSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: DiskEncryptionSet
     listKind: DiskEncryptionSetList
     plural: diskencryptionsets
     singular: diskencryptionset

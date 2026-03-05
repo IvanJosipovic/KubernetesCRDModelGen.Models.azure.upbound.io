@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: PolicyDefinition
     categories:
     - crossplane
     - managed
     - azure
-    kind: PolicyDefinition
     listKind: PolicyDefinitionList
     plural: policydefinitions
     singular: policydefinition

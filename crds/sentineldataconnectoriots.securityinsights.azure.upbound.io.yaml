@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.upbound.io
   names:
+    kind: SentinelDataConnectorIOT
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelDataConnectorIOT
     listKind: SentinelDataConnectorIOTList
     plural: sentineldataconnectoriots
     singular: sentineldataconnectoriot

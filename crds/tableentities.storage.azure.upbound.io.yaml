@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.upbound.io
   names:
+    kind: TableEntity
     categories:
     - crossplane
     - managed
     - azure
-    kind: TableEntity
     listKind: TableEntityList
     plural: tableentities
     singular: tableentity

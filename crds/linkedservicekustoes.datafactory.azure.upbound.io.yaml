@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceKusto
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceKusto
     listKind: LinkedServiceKustoList
     plural: linkedservicekustoes
     singular: linkedservicekusto

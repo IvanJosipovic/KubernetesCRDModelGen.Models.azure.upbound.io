@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.upbound.io
   names:
+    kind: IOTSecuritySolution
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTSecuritySolution
     listKind: IOTSecuritySolutionList
     plural: iotsecuritysolutions
     singular: iotsecuritysolution

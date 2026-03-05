@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudActiveDeployment
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudActiveDeployment
     listKind: SpringCloudActiveDeploymentList
     plural: springcloudactivedeployments
     singular: springcloudactivedeployment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceSFTP
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceSFTP
     listKind: LinkedServiceSFTPList
     plural: linkedservicesftps
     singular: linkedservicesftp

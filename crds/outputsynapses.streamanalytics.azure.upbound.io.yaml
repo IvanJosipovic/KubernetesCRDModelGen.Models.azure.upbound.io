@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputSynapse
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputSynapse
     listKind: OutputSynapseList
     plural: outputsynapses
     singular: outputsynapse

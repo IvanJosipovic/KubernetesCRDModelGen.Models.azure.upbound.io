@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kusto.azure.m.upbound.io
   names:
+    kind: IOTHubDataConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubDataConnection
     listKind: IOTHubDataConnectionList
     plural: iothubdataconnections
     singular: iothubdataconnection

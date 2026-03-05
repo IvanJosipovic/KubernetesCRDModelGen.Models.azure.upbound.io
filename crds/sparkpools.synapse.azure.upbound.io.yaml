@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.upbound.io
   names:
+    kind: SparkPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: SparkPool
     listKind: SparkPoolList
     plural: sparkpools
     singular: sparkpool

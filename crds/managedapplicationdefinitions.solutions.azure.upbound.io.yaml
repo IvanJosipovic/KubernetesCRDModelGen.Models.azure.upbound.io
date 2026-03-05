@@ -7,11 +7,11 @@ metadata:
 spec:
   group: solutions.azure.upbound.io
   names:
+    kind: ManagedApplicationDefinition
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedApplicationDefinition
     listKind: ManagedApplicationDefinitionList
     plural: managedapplicationdefinitions
     singular: managedapplicationdefinition

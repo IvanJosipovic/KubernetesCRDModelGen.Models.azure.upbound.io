@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.upbound.io
   names:
+    kind: AccountNetworkRules
     categories:
     - crossplane
     - managed
     - azure
-    kind: AccountNetworkRules
     listKind: AccountNetworkRulesList
     plural: accountnetworkrules
     singular: accountnetworkrules

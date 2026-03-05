@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: LinkedServiceKeyVault
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceKeyVault
     listKind: LinkedServiceKeyVaultList
     plural: linkedservicekeyvaults
     singular: linkedservicekeyvault

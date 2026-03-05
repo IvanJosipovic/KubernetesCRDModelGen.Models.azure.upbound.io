@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dashboard.azure.upbound.io
   names:
+    kind: GrafanaManagedPrivateEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: GrafanaManagedPrivateEndpoint
     listKind: GrafanaManagedPrivateEndpointList
     plural: grafanamanagedprivateendpoints
     singular: grafanamanagedprivateendpoint

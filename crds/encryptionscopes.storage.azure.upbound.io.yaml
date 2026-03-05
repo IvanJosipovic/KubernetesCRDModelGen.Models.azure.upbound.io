@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.upbound.io
   names:
+    kind: EncryptionScope
     categories:
     - crossplane
     - managed
     - azure
-    kind: EncryptionScope
     listKind: EncryptionScopeList
     plural: encryptionscopes
     singular: encryptionscope

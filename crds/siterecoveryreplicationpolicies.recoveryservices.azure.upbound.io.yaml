@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.upbound.io
   names:
+    kind: SiteRecoveryReplicationPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: SiteRecoveryReplicationPolicy
     listKind: SiteRecoveryReplicationPolicyList
     plural: siterecoveryreplicationpolicies
     singular: siterecoveryreplicationpolicy

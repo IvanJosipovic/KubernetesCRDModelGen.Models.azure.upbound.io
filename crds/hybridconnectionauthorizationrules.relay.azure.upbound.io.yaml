@@ -7,11 +7,11 @@ metadata:
 spec:
   group: relay.azure.upbound.io
   names:
+    kind: HybridConnectionAuthorizationRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: HybridConnectionAuthorizationRule
     listKind: HybridConnectionAuthorizationRuleList
     plural: hybridconnectionauthorizationrules
     singular: hybridconnectionauthorizationrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventgrid.azure.m.upbound.io
   names:
+    kind: EventSubscription
     categories:
     - crossplane
     - managed
     - azure
-    kind: EventSubscription
     listKind: EventSubscriptionList
     plural: eventsubscriptions
     singular: eventsubscription

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: hdinsight.azure.upbound.io
   names:
+    kind: KafkaCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: KafkaCluster
     listKind: KafkaClusterList
     plural: kafkaclusters
     singular: kafkacluster

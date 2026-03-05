@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.m.upbound.io
   names:
+    kind: SQLRoleAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLRoleAssignment
     listKind: SQLRoleAssignmentList
     plural: sqlroleassignments
     singular: sqlroleassignment

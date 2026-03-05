@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: IntegrationRuntimeAzureSSIS
     categories:
     - crossplane
     - managed
     - azure
-    kind: IntegrationRuntimeAzureSSIS
     listKind: IntegrationRuntimeAzureSSISList
     plural: integrationruntimeazuressis
     singular: integrationruntimeazuressis

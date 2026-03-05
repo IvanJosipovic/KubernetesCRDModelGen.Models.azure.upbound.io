@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datashare.azure.upbound.io
   names:
+    kind: DataSetBlobStorage
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetBlobStorage
     listKind: DataSetBlobStorageList
     plural: datasetblobstorages
     singular: datasetblobstorage

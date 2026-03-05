@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: FrontdoorFirewallPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorFirewallPolicy
     listKind: FrontdoorFirewallPolicyList
     plural: frontdoorfirewallpolicies
     singular: frontdoorfirewallpolicy

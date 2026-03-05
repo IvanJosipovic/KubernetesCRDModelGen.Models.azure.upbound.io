@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: LoadBalancerRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadBalancerRule
     listKind: LoadBalancerRuleList
     plural: loadbalancerrules
     singular: loadbalancerrule

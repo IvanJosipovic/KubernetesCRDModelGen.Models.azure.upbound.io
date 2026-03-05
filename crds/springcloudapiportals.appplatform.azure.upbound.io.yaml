@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudAPIPortal
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudAPIPortal
     listKind: SpringCloudAPIPortalList
     plural: springcloudapiportals
     singular: springcloudapiportal

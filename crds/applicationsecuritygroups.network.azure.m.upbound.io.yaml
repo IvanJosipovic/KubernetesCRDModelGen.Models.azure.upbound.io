@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: ApplicationSecurityGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationSecurityGroup
     listKind: ApplicationSecurityGroupList
     plural: applicationsecuritygroups
     singular: applicationsecuritygroup

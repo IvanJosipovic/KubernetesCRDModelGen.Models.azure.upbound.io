@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceWeb
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceWeb
     listKind: LinkedServiceWebList
     plural: linkedservicewebs
     singular: linkedserviceweb

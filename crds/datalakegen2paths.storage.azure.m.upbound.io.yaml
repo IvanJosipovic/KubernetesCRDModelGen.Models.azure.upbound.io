@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.m.upbound.io
   names:
+    kind: DataLakeGen2Path
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataLakeGen2Path
     listKind: DataLakeGen2PathList
     plural: datalakegen2paths
     singular: datalakegen2path

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServicePostgreSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServicePostgreSQL
     listKind: LinkedServicePostgreSQLList
     plural: linkedservicepostgresqls
     singular: linkedservicepostgresql

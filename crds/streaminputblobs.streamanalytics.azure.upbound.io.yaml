@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: StreamInputBlob
     categories:
     - crossplane
     - managed
     - azure
-    kind: StreamInputBlob
     listKind: StreamInputBlobList
     plural: streaminputblobs
     singular: streaminputblob

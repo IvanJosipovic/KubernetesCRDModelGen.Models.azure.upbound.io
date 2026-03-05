@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.upbound.io
   names:
+    kind: PimEligibleRoleAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: PimEligibleRoleAssignment
     listKind: PimEligibleRoleAssignmentList
     plural: pimeligibleroleassignments
     singular: pimeligibleroleassignment

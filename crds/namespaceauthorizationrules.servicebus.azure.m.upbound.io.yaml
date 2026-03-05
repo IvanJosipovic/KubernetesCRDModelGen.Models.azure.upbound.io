@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicebus.azure.m.upbound.io
   names:
+    kind: NamespaceAuthorizationRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: NamespaceAuthorizationRule
     listKind: NamespaceAuthorizationRuleList
     plural: namespaceauthorizationrules
     singular: namespaceauthorizationrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: ExpressRouteCircuitPeering
     categories:
     - crossplane
     - managed
     - azure
-    kind: ExpressRouteCircuitPeering
     listKind: ExpressRouteCircuitPeeringList
     plural: expressroutecircuitpeerings
     singular: expressroutecircuitpeering

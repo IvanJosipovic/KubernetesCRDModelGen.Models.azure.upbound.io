@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerregistry.azure.m.upbound.io
   names:
+    kind: ScopeMap
     categories:
     - crossplane
     - managed
     - azure
-    kind: ScopeMap
     listKind: ScopeMapList
     plural: scopemaps
     singular: scopemap

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: keyvault.azure.m.upbound.io
   names:
+    kind: Certificate
     categories:
     - crossplane
     - managed
     - azure
-    kind: Certificate
     listKind: CertificateList
     plural: certificates
     singular: certificate

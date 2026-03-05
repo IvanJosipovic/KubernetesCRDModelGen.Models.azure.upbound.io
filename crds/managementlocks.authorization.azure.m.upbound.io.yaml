@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: ManagementLock
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagementLock
     listKind: ManagementLockList
     plural: managementlocks
     singular: managementlock

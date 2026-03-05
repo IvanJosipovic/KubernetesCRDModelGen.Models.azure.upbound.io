@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationalinsights.azure.m.upbound.io
   names:
+    kind: LogAnalyticsDataSourceWindowsPerformanceCounter
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsDataSourceWindowsPerformanceCounter
     listKind: LogAnalyticsDataSourceWindowsPerformanceCounterList
     plural: loganalyticsdatasourcewindowsperformancecounters
     singular: loganalyticsdatasourcewindowsperformancecounter

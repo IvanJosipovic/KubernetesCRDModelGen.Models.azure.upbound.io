@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: AppServicePlan
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppServicePlan
     listKind: AppServicePlanList
     plural: appserviceplans
     singular: appserviceplan

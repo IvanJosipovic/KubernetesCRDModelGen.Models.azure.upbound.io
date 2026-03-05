@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: FunctionJavascriptUda
     categories:
     - crossplane
     - managed
     - azure
-    kind: FunctionJavascriptUda
     listKind: FunctionJavascriptUdaList
     plural: functionjavascriptudas
     singular: functionjavascriptuda

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iotcentral.azure.m.upbound.io
   names:
+    kind: Application
     categories:
     - crossplane
     - managed
     - azure
-    kind: Application
     listKind: ApplicationList
     plural: applications
     singular: application

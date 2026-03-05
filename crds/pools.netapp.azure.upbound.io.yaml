@@ -7,11 +7,11 @@ metadata:
 spec:
   group: netapp.azure.upbound.io
   names:
+    kind: Pool
     categories:
     - crossplane
     - managed
     - azure
-    kind: Pool
     listKind: PoolList
     plural: pools
     singular: pool

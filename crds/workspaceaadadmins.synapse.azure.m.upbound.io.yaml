@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: WorkspaceAADAdmin
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceAADAdmin
     listKind: WorkspaceAADAdminList
     plural: workspaceaadadmins
     singular: workspaceaadadmin

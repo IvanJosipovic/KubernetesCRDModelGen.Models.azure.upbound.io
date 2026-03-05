@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetPostgreSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetPostgreSQL
     listKind: DataSetPostgreSQLList
     plural: datasetpostgresqls
     singular: datasetpostgresql

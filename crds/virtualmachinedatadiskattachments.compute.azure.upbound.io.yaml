@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: VirtualMachineDataDiskAttachment
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualMachineDataDiskAttachment
     listKind: VirtualMachineDataDiskAttachmentList
     plural: virtualmachinedatadiskattachments
     singular: virtualmachinedatadiskattachment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerregistry.azure.upbound.io
   names:
+    kind: AgentPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: AgentPool
     listKind: AgentPoolList
     plural: agentpools
     singular: agentpool

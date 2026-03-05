@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VPNSite
     categories:
     - crossplane
     - managed
     - azure
-    kind: VPNSite
     listKind: VPNSiteList
     plural: vpnsites
     singular: vpnsite

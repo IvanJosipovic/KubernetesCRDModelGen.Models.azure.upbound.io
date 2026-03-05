@@ -7,11 +7,11 @@ metadata:
 spec:
   group: marketplaceordering.azure.upbound.io
   names:
+    kind: MarketplaceAgreement
     categories:
     - crossplane
     - managed
     - azure
-    kind: MarketplaceAgreement
     listKind: MarketplaceAgreementList
     plural: marketplaceagreements
     singular: marketplaceagreement

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: DataSetCosmosDBSQLAPI
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetCosmosDBSQLAPI
     listKind: DataSetCosmosDBSQLAPIList
     plural: datasetcosmosdbsqlapis
     singular: datasetcosmosdbsqlapi

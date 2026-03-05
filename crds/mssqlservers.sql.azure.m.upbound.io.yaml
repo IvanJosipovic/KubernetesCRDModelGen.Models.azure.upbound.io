@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.m.upbound.io
   names:
+    kind: MSSQLServer
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLServer
     listKind: MSSQLServerList
     plural: mssqlservers
     singular: mssqlserver

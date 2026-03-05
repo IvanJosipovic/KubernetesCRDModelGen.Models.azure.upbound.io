@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.m.upbound.io
   names:
+    kind: SQLDedicatedGateway
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLDedicatedGateway
     listKind: SQLDedicatedGatewayList
     plural: sqldedicatedgateways
     singular: sqldedicatedgateway

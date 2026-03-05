@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerregistry.azure.upbound.io
   names:
+    kind: ContainerConnectedRegistry
     categories:
     - crossplane
     - managed
     - azure
-    kind: ContainerConnectedRegistry
     listKind: ContainerConnectedRegistryList
     plural: containerconnectedregistries
     singular: containerconnectedregistry

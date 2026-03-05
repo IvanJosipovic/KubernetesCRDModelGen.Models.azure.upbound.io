@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: CustomDataSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: CustomDataSet
     listKind: CustomDataSetList
     plural: customdatasets
     singular: customdataset

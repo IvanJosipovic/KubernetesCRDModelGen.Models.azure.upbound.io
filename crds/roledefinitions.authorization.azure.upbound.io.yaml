@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.upbound.io
   names:
+    kind: RoleDefinition
     categories:
     - crossplane
     - managed
     - azure
-    kind: RoleDefinition
     listKind: RoleDefinitionList
     plural: roledefinitions
     singular: roledefinition

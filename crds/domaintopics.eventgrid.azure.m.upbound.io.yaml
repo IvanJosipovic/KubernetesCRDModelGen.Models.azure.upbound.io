@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventgrid.azure.m.upbound.io
   names:
+    kind: DomainTopic
     categories:
     - crossplane
     - managed
     - azure
-    kind: DomainTopic
     listKind: DomainTopicList
     plural: domaintopics
     singular: domaintopic

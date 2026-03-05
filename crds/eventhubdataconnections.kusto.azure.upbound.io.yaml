@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kusto.azure.upbound.io
   names:
+    kind: EventHubDataConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: EventHubDataConnection
     listKind: EventHubDataConnectionList
     plural: eventhubdataconnections
     singular: eventhubdataconnection

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: policyinsights.azure.m.upbound.io
   names:
+    kind: ResourcePolicyRemediation
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourcePolicyRemediation
     listKind: ResourcePolicyRemediationList
     plural: resourcepolicyremediations
     singular: resourcepolicyremediation

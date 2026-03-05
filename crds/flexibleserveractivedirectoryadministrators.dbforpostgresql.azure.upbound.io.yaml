@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.upbound.io
   names:
+    kind: FlexibleServerActiveDirectoryAdministrator
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerActiveDirectoryAdministrator
     listKind: FlexibleServerActiveDirectoryAdministratorList
     plural: flexibleserveractivedirectoryadministrators
     singular: flexibleserveractivedirectoryadministrator

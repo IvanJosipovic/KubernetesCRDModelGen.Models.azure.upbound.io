@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputPowerBI
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputPowerBI
     listKind: OutputPowerBIList
     plural: outputpowerbis
     singular: outputpowerbi

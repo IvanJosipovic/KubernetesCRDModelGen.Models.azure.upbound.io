@@ -7,11 +7,11 @@ metadata:
 spec:
   group: healthcareapis.azure.upbound.io
   names:
+    kind: HealthcareFHIRService
     categories:
     - crossplane
     - managed
     - azure
-    kind: HealthcareFHIRService
     listKind: HealthcareFHIRServiceList
     plural: healthcarefhirservices
     singular: healthcarefhirservice

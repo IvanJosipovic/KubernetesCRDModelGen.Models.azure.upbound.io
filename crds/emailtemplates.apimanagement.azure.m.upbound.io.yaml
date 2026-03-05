@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: EmailTemplate
     categories:
     - crossplane
     - managed
     - azure
-    kind: EmailTemplate
     listKind: EmailTemplateList
     plural: emailtemplates
     singular: emailtemplate

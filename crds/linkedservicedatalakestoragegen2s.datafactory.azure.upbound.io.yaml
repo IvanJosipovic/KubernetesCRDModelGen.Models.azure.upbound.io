@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceDataLakeStorageGen2
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceDataLakeStorageGen2
     listKind: LinkedServiceDataLakeStorageGen2List
     plural: linkedservicedatalakestoragegen2s
     singular: linkedservicedatalakestoragegen2

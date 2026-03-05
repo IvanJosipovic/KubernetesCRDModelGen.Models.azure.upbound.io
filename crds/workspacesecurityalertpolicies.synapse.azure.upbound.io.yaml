@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.upbound.io
   names:
+    kind: WorkspaceSecurityAlertPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceSecurityAlertPolicy
     listKind: WorkspaceSecurityAlertPolicyList
     plural: workspacesecurityalertpolicies
     singular: workspacesecurityalertpolicy

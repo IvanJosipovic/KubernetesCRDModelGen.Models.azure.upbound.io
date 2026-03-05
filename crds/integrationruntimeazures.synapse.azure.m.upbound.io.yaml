@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: IntegrationRuntimeAzure
     categories:
     - crossplane
     - managed
     - azure
-    kind: IntegrationRuntimeAzure
     listKind: IntegrationRuntimeAzureList
     plural: integrationruntimeazures
     singular: integrationruntimeazure

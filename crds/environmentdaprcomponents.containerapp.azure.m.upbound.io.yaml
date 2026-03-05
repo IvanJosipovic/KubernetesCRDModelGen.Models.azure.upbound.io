@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerapp.azure.m.upbound.io
   names:
+    kind: EnvironmentDaprComponent
     categories:
     - crossplane
     - managed
     - azure
-    kind: EnvironmentDaprComponent
     listKind: EnvironmentDaprComponentList
     plural: environmentdaprcomponents
     singular: environmentdaprcomponent

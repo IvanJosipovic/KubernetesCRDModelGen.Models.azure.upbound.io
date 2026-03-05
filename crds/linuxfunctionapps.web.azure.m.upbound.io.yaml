@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: LinuxFunctionApp
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinuxFunctionApp
     listKind: LinuxFunctionAppList
     plural: linuxfunctionapps
     singular: linuxfunctionapp

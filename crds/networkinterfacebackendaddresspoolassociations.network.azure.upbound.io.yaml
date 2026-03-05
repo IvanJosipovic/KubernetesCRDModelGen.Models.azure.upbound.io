@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: NetworkInterfaceBackendAddressPoolAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: NetworkInterfaceBackendAddressPoolAssociation
     listKind: NetworkInterfaceBackendAddressPoolAssociationList
     plural: networkinterfacebackendaddresspoolassociations
     singular: networkinterfacebackendaddresspoolassociation

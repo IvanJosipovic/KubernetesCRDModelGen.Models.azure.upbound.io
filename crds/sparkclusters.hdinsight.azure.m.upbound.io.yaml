@@ -7,11 +7,11 @@ metadata:
 spec:
   group: hdinsight.azure.m.upbound.io
   names:
+    kind: SparkCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: SparkCluster
     listKind: SparkClusterList
     plural: sparkclusters
     singular: sparkcluster

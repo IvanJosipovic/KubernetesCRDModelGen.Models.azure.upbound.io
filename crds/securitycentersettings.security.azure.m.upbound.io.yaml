@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.m.upbound.io
   names:
+    kind: SecurityCenterSetting
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterSetting
     listKind: SecurityCenterSettingList
     plural: securitycentersettings
     singular: securitycentersetting

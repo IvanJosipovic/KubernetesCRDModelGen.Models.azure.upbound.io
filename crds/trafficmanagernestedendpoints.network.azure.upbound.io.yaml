@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: TrafficManagerNestedEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: TrafficManagerNestedEndpoint
     listKind: TrafficManagerNestedEndpointList
     plural: trafficmanagernestedendpoints
     singular: trafficmanagernestedendpoint

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: VirtualMachineScaleSetStandbyPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualMachineScaleSetStandbyPool
     listKind: VirtualMachineScaleSetStandbyPoolList
     plural: virtualmachinescalesetstandbypools
     singular: virtualmachinescalesetstandbypool

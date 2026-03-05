@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datashare.azure.m.upbound.io
   names:
+    kind: DataSetKustoCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetKustoCluster
     listKind: DataSetKustoClusterList
     plural: datasetkustoclusters
     singular: datasetkustocluster

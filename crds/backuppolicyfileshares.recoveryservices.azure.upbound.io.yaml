@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.upbound.io
   names:
+    kind: BackupPolicyFileShare
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyFileShare
     listKind: BackupPolicyFileShareList
     plural: backuppolicyfileshares
     singular: backuppolicyfileshare

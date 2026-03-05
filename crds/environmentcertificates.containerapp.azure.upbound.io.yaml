@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerapp.azure.upbound.io
   names:
+    kind: EnvironmentCertificate
     categories:
     - crossplane
     - managed
     - azure
-    kind: EnvironmentCertificate
     listKind: EnvironmentCertificateList
     plural: environmentcertificates
     singular: environmentcertificate

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: MonitorActionGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorActionGroup
     listKind: MonitorActionGroupList
     plural: monitoractiongroups
     singular: monitoractiongroup

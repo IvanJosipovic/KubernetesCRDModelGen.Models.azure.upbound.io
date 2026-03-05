@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.m.upbound.io
   names:
+    kind: BackupPolicyBlobStorage
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyBlobStorage
     listKind: BackupPolicyBlobStorageList
     plural: backuppolicyblobstorages
     singular: backuppolicyblobstorage

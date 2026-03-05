@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: APIVersionSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: APIVersionSet
     listKind: APIVersionSetList
     plural: apiversionsets
     singular: apiversionset

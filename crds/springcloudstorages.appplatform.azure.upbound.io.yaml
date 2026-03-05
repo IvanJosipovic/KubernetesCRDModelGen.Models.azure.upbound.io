@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudStorage
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudStorage
     listKind: SpringCloudStorageList
     plural: springcloudstorages
     singular: springcloudstorage

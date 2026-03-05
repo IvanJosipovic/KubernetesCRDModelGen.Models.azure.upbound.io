@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitiveservices.azure.m.upbound.io
   names:
+    kind: AccountRaiBlocklist
     categories:
     - crossplane
     - managed
     - azure
-    kind: AccountRaiBlocklist
     listKind: AccountRaiBlocklistList
     plural: accountraiblocklists
     singular: accountraiblocklist

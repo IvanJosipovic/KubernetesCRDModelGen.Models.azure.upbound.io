@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicenetworking.azure.upbound.io
   names:
+    kind: ApplicationLoadBalancerSubnetAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationLoadBalancerSubnetAssociation
     listKind: ApplicationLoadBalancerSubnetAssociationList
     plural: applicationloadbalancersubnetassociations
     singular: applicationloadbalancersubnetassociation

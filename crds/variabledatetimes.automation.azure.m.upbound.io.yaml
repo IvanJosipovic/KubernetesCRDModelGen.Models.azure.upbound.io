@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.m.upbound.io
   names:
+    kind: VariableDateTime
     categories:
     - crossplane
     - managed
     - azure
-    kind: VariableDateTime
     listKind: VariableDateTimeList
     plural: variabledatetimes
     singular: variabledatetime

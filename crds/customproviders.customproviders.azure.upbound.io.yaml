@@ -7,11 +7,11 @@ metadata:
 spec:
   group: customproviders.azure.upbound.io
   names:
+    kind: CustomProvider
     categories:
     - crossplane
     - managed
     - azure
-    kind: CustomProvider
     listKind: CustomProviderList
     plural: customproviders
     singular: customprovider

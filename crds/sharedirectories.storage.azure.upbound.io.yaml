@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.upbound.io
   names:
+    kind: ShareDirectory
     categories:
     - crossplane
     - managed
     - azure
-    kind: ShareDirectory
     listKind: ShareDirectoryList
     plural: sharedirectories
     singular: sharedirectory

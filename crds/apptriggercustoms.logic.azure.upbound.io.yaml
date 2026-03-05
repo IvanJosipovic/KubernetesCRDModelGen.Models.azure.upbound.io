@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logic.azure.upbound.io
   names:
+    kind: AppTriggerCustom
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppTriggerCustom
     listKind: AppTriggerCustomList
     plural: apptriggercustoms
     singular: apptriggercustom

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.upbound.io
   names:
+    kind: SentinelAlertRuleMachineLearningBehaviorAnalytics
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelAlertRuleMachineLearningBehaviorAnalytics
     listKind: SentinelAlertRuleMachineLearningBehaviorAnalyticsList
     plural: sentinelalertrulemachinelearningbehavioranalytics
     singular: sentinelalertrulemachinelearningbehavioranalytics

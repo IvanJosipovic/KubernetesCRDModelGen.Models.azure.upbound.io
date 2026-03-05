@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: MonitorDataCollectionRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorDataCollectionRule
     listKind: MonitorDataCollectionRuleList
     plural: monitordatacollectionrules
     singular: monitordatacollectionrule

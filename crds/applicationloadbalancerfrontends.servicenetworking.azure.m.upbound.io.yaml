@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicenetworking.azure.m.upbound.io
   names:
+    kind: ApplicationLoadBalancerFrontend
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationLoadBalancerFrontend
     listKind: ApplicationLoadBalancerFrontendList
     plural: applicationloadbalancerfrontends
     singular: applicationloadbalancerfrontend

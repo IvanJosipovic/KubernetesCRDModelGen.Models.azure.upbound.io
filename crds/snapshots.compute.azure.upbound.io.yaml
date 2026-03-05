@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: Snapshot
     categories:
     - crossplane
     - managed
     - azure
-    kind: Snapshot
     listKind: SnapshotList
     plural: snapshots
     singular: snapshot

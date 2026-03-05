@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagesync.azure.m.upbound.io
   names:
+    kind: StorageSync
     categories:
     - crossplane
     - managed
     - azure
-    kind: StorageSync
     listKind: StorageSyncList
     plural: storagesyncs
     singular: storagesync

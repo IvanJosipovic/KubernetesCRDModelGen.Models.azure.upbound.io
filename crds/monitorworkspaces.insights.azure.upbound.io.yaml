@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: MonitorWorkspace
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorWorkspace
     listKind: MonitorWorkspaceList
     plural: monitorworkspaces
     singular: monitorworkspace

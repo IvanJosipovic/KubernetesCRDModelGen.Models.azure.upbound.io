@@ -7,11 +7,11 @@ metadata:
 spec:
   group: costmanagement.azure.m.upbound.io
   names:
+    kind: CostAnomalyAlert
     categories:
     - crossplane
     - managed
     - azure
-    kind: CostAnomalyAlert
     listKind: CostAnomalyAlertList
     plural: costanomalyalerts
     singular: costanomalyalert

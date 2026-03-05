@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: WindowsVirtualMachineScaleSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: WindowsVirtualMachineScaleSet
     listKind: WindowsVirtualMachineScaleSetList
     plural: windowsvirtualmachinescalesets
     singular: windowsvirtualmachinescaleset

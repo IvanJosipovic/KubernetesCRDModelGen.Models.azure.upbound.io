@@ -7,11 +7,11 @@ metadata:
 spec:
   group: alertsmanagement.azure.upbound.io
   names:
+    kind: MonitorAlertProcessingRuleActionGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorAlertProcessingRuleActionGroup
     listKind: MonitorAlertProcessingRuleActionGroupList
     plural: monitoralertprocessingruleactiongroups
     singular: monitoralertprocessingruleactiongroup

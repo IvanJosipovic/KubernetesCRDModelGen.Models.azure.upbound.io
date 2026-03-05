@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: DNSZone
     categories:
     - crossplane
     - managed
     - azure
-    kind: DNSZone
     listKind: DNSZoneList
     plural: dnszones
     singular: dnszone

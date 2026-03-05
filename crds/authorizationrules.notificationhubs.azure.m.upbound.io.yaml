@@ -7,11 +7,11 @@ metadata:
 spec:
   group: notificationhubs.azure.m.upbound.io
   names:
+    kind: AuthorizationRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: AuthorizationRule
     listKind: AuthorizationRuleList
     plural: authorizationrules
     singular: authorizationrule

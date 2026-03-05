@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: SQLPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLPool
     listKind: SQLPoolList
     plural: sqlpools
     singular: sqlpool

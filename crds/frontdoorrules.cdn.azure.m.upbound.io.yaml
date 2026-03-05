@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cdn.azure.m.upbound.io
   names:
+    kind: FrontdoorRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorRule
     listKind: FrontdoorRuleList
     plural: frontdoorrules
     singular: frontdoorrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: databoxedge.azure.upbound.io
   names:
+    kind: Device
     categories:
     - crossplane
     - managed
     - azure
-    kind: Device
     listKind: DeviceList
     plural: devices
     singular: device

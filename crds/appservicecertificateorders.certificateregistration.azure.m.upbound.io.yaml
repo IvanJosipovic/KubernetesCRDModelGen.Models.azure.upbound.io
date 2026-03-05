@@ -7,11 +7,11 @@ metadata:
 spec:
   group: certificateregistration.azure.m.upbound.io
   names:
+    kind: AppServiceCertificateOrder
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppServiceCertificateOrder
     listKind: AppServiceCertificateOrderList
     plural: appservicecertificateorders
     singular: appservicecertificateorder

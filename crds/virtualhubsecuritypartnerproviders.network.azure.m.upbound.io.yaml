@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VirtualHubSecurityPartnerProvider
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualHubSecurityPartnerProvider
     listKind: VirtualHubSecurityPartnerProviderList
     plural: virtualhubsecuritypartnerproviders
     singular: virtualhubsecuritypartnerprovider

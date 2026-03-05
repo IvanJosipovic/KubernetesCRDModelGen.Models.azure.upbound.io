@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VirtualHubRouteTable
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualHubRouteTable
     listKind: VirtualHubRouteTableList
     plural: virtualhubroutetables
     singular: virtualhubroutetable

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cache.azure.upbound.io
   names:
+    kind: ManagedRedis
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedRedis
     listKind: ManagedRedisList
     plural: managedredis
     singular: managedredis

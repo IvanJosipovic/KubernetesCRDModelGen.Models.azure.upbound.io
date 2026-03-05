@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.m.upbound.io
   names:
+    kind: SpringCloudCustomizedAccelerator
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudCustomizedAccelerator
     listKind: SpringCloudCustomizedAcceleratorList
     plural: springcloudcustomizedaccelerators
     singular: springcloudcustomizedaccelerator

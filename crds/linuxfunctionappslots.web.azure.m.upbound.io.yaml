@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: LinuxFunctionAppSlot
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinuxFunctionAppSlot
     listKind: LinuxFunctionAppSlotList
     plural: linuxfunctionappslots
     singular: linuxfunctionappslot

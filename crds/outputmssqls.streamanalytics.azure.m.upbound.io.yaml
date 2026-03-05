@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.m.upbound.io
   names:
+    kind: OutputMSSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputMSSQL
     listKind: OutputMSSQLList
     plural: outputmssqls
     singular: outputmssql

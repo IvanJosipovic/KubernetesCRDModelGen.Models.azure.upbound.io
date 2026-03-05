@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.m.upbound.io
   names:
+    kind: FlexibleServerBackup
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerBackup
     listKind: FlexibleServerBackupList
     plural: flexibleserverbackups
     singular: flexibleserverbackup

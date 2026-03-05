@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: WatcherFlowLog
     categories:
     - crossplane
     - managed
     - azure
-    kind: WatcherFlowLog
     listKind: WatcherFlowLogList
     plural: watcherflowlogs
     singular: watcherflowlog

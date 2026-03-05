@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.upbound.io
   names:
+    kind: ComputeCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: ComputeCluster
     listKind: ComputeClusterList
     plural: computeclusters
     singular: computecluster

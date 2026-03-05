@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: APISchema
     categories:
     - crossplane
     - managed
     - azure
-    kind: APISchema
     listKind: APISchemaList
     plural: apischemas
     singular: apischema

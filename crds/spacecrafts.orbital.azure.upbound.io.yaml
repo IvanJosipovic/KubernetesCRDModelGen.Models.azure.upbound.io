@@ -7,11 +7,11 @@ metadata:
 spec:
   group: orbital.azure.upbound.io
   names:
+    kind: Spacecraft
     categories:
     - crossplane
     - managed
     - azure
-    kind: Spacecraft
     listKind: SpacecraftList
     plural: spacecrafts
     singular: spacecraft

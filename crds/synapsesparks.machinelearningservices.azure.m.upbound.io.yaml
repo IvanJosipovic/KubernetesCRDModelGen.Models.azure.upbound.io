@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.m.upbound.io
   names:
+    kind: SynapseSpark
     categories:
     - crossplane
     - managed
     - azure
-    kind: SynapseSpark
     listKind: SynapseSparkList
     plural: synapsesparks
     singular: synapsespark

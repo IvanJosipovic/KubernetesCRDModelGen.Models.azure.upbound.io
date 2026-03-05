@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.upbound.io
   names:
+    kind: SQLStoredProcedure
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLStoredProcedure
     listKind: SQLStoredProcedureList
     plural: sqlstoredprocedures
     singular: sqlstoredprocedure

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: guestconfiguration.azure.m.upbound.io
   names:
+    kind: PolicyVirtualMachineConfigurationAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: PolicyVirtualMachineConfigurationAssignment
     listKind: PolicyVirtualMachineConfigurationAssignmentList
     plural: policyvirtualmachineconfigurationassignments
     singular: policyvirtualmachineconfigurationassignment

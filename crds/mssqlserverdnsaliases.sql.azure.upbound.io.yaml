@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.upbound.io
   names:
+    kind: MSSQLServerDNSAlias
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLServerDNSAlias
     listKind: MSSQLServerDNSAliasList
     plural: mssqlserverdnsaliases
     singular: mssqlserverdnsalias

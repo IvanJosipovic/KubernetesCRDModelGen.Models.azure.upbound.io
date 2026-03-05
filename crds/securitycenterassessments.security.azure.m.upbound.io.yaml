@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.m.upbound.io
   names:
+    kind: SecurityCenterAssessment
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterAssessment
     listKind: SecurityCenterAssessmentList
     plural: securitycenterassessments
     singular: securitycenterassessment

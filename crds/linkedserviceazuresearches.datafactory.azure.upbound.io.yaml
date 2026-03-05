@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceAzureSearch
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceAzureSearch
     listKind: LinkedServiceAzureSearchList
     plural: linkedserviceazuresearches
     singular: linkedserviceazuresearch

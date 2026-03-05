@@ -7,11 +7,11 @@ metadata:
 spec:
   group: relay.azure.m.upbound.io
   names:
+    kind: EventRelayNamespace
     categories:
     - crossplane
     - managed
     - azure
-    kind: EventRelayNamespace
     listKind: EventRelayNamespaceList
     plural: eventrelaynamespaces
     singular: eventrelaynamespace

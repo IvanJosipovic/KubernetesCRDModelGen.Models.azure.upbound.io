@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: SQLPoolWorkloadClassifier
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLPoolWorkloadClassifier
     listKind: SQLPoolWorkloadClassifierList
     plural: sqlpoolworkloadclassifiers
     singular: sqlpoolworkloadclassifier

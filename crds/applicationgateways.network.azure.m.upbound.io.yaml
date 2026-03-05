@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: ApplicationGateway
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationGateway
     listKind: ApplicationGatewayList
     plural: applicationgateways
     singular: applicationgateway

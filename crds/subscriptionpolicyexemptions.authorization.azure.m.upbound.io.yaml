@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: SubscriptionPolicyExemption
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubscriptionPolicyExemption
     listKind: SubscriptionPolicyExemptionList
     plural: subscriptionpolicyexemptions
     singular: subscriptionpolicyexemption

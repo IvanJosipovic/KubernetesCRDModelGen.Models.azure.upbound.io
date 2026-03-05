@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.upbound.io
   names:
+    kind: SourceControlToken
     categories:
     - crossplane
     - managed
     - azure
-    kind: SourceControlToken
     listKind: SourceControlTokenList
     plural: sourcecontroltokens
     singular: sourcecontroltoken

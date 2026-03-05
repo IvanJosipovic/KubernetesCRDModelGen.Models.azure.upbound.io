@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cdn.azure.upbound.io
   names:
+    kind: FrontdoorEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorEndpoint
     listKind: FrontdoorEndpointList
     plural: frontdoorendpoints
     singular: frontdoorendpoint

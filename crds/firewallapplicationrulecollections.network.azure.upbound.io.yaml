@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: FirewallApplicationRuleCollection
     categories:
     - crossplane
     - managed
     - azure
-    kind: FirewallApplicationRuleCollection
     listKind: FirewallApplicationRuleCollectionList
     plural: firewallapplicationrulecollections
     singular: firewallapplicationrulecollection

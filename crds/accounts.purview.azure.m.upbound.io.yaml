@@ -7,11 +7,11 @@ metadata:
 spec:
   group: purview.azure.m.upbound.io
   names:
+    kind: Account
     categories:
     - crossplane
     - managed
     - azure
-    kind: Account
     listKind: AccountList
     plural: accounts
     singular: account

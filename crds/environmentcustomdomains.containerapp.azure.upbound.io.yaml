@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerapp.azure.upbound.io
   names:
+    kind: EnvironmentCustomDomain
     categories:
     - crossplane
     - managed
     - azure
-    kind: EnvironmentCustomDomain
     listKind: EnvironmentCustomDomainList
     plural: environmentcustomdomains
     singular: environmentcustomdomain

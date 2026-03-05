@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: GalleryApplication
     categories:
     - crossplane
     - managed
     - azure
-    kind: GalleryApplication
     listKind: GalleryApplicationList
     plural: galleryapplications
     singular: galleryapplication

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.m.upbound.io
   names:
+    kind: Server
     categories:
     - crossplane
     - managed
     - azure
-    kind: Server
     listKind: ServerList
     plural: servers
     singular: server

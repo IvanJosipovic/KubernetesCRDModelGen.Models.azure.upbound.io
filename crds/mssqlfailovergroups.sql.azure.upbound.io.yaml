@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.upbound.io
   names:
+    kind: MSSQLFailoverGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLFailoverGroup
     listKind: MSSQLFailoverGroupList
     plural: mssqlfailovergroups
     singular: mssqlfailovergroup

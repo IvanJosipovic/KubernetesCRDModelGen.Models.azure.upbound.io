@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: ReferenceInputMSSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: ReferenceInputMSSQL
     listKind: ReferenceInputMSSQLList
     plural: referenceinputmssqls
     singular: referenceinputmssql

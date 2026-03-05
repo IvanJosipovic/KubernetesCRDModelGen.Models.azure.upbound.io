@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: NetworkInterface
     categories:
     - crossplane
     - managed
     - azure
-    kind: NetworkInterface
     listKind: NetworkInterfaceList
     plural: networkinterfaces
     singular: networkinterface

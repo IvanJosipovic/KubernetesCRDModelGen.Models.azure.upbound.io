@@ -7,11 +7,11 @@ metadata:
 spec:
   group: healthcareapis.azure.upbound.io
   names:
+    kind: HealthcareDICOMService
     categories:
     - crossplane
     - managed
     - azure
-    kind: HealthcareDICOMService
     listKind: HealthcareDICOMServiceList
     plural: healthcaredicomservices
     singular: healthcaredicomservice

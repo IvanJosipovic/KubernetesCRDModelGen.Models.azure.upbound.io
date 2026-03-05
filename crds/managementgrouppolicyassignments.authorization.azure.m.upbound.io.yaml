@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: ManagementGroupPolicyAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagementGroupPolicyAssignment
     listKind: ManagementGroupPolicyAssignmentList
     plural: managementgrouppolicyassignments
     singular: managementgrouppolicyassignment

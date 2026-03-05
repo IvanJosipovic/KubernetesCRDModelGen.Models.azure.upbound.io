@@ -7,11 +7,11 @@ metadata:
 spec:
   group: maintenance.azure.m.upbound.io
   names:
+    kind: MaintenanceConfiguration
     categories:
     - crossplane
     - managed
     - azure
-    kind: MaintenanceConfiguration
     listKind: MaintenanceConfigurationList
     plural: maintenanceconfigurations
     singular: maintenanceconfiguration

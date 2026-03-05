@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: DataSetParquet
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetParquet
     listKind: DataSetParquetList
     plural: datasetparquets
     singular: datasetparquet

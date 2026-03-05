@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: DiskAccess
     categories:
     - crossplane
     - managed
     - azure
-    kind: DiskAccess
     listKind: DiskAccessList
     plural: diskaccesses
     singular: diskaccess

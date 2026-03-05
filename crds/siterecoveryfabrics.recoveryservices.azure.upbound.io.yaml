@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.upbound.io
   names:
+    kind: SiteRecoveryFabric
     categories:
     - crossplane
     - managed
     - azure
-    kind: SiteRecoveryFabric
     listKind: SiteRecoveryFabricList
     plural: siterecoveryfabrics
     singular: siterecoveryfabric

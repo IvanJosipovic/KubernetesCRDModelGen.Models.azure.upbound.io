@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: CapacityReservation
     categories:
     - crossplane
     - managed
     - azure
-    kind: CapacityReservation
     listKind: CapacityReservationList
     plural: capacityreservations
     singular: capacityreservation

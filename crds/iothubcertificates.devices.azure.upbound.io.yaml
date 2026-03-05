@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.upbound.io
   names:
+    kind: IOTHubCertificate
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubCertificate
     listKind: IOTHubCertificateList
     plural: iothubcertificates
     singular: iothubcertificate

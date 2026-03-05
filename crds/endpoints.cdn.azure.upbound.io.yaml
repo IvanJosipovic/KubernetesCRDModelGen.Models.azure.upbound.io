@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cdn.azure.upbound.io
   names:
+    kind: Endpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: Endpoint
     listKind: EndpointList
     plural: endpoints
     singular: endpoint

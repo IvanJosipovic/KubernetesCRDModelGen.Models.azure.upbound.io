@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: VirtualNetworkDNSServers
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetworkDNSServers
     listKind: VirtualNetworkDNSServersList
     plural: virtualnetworkdnsservers
     singular: virtualnetworkdnsservers

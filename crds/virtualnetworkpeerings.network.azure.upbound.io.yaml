@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: VirtualNetworkPeering
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetworkPeering
     listKind: VirtualNetworkPeeringList
     plural: virtualnetworkpeerings
     singular: virtualnetworkpeering

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.m.upbound.io
   names:
+    kind: SpringCloudAppCosmosDBAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudAppCosmosDBAssociation
     listKind: SpringCloudAppCosmosDBAssociationList
     plural: springcloudappcosmosdbassociations
     singular: springcloudappcosmosdbassociation

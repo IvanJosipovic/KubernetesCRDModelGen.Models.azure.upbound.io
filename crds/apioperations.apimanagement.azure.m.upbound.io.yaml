@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: APIOperation
     categories:
     - crossplane
     - managed
     - azure
-    kind: APIOperation
     listKind: APIOperationList
     plural: apioperations
     singular: apioperation

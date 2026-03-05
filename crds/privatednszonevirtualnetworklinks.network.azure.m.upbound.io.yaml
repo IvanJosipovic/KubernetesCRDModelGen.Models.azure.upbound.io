@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateDNSZoneVirtualNetworkLink
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateDNSZoneVirtualNetworkLink
     listKind: PrivateDNSZoneVirtualNetworkLinkList
     plural: privatednszonevirtualnetworklinks
     singular: privatednszonevirtualnetworklink

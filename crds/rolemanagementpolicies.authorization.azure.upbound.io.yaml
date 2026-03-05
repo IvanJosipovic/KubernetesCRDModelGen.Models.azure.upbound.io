@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.upbound.io
   names:
+    kind: RoleManagementPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: RoleManagementPolicy
     listKind: RoleManagementPolicyList
     plural: rolemanagementpolicies
     singular: rolemanagementpolicy

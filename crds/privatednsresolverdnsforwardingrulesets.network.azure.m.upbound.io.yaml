@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateDNSResolverDNSForwardingRuleset
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateDNSResolverDNSForwardingRuleset
     listKind: PrivateDNSResolverDNSForwardingRulesetList
     plural: privatednsresolverdnsforwardingrulesets
     singular: privatednsresolverdnsforwardingruleset

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationalinsights.azure.m.upbound.io
   names:
+    kind: LogAnalyticsDataSourceWindowsEvent
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsDataSourceWindowsEvent
     listKind: LogAnalyticsDataSourceWindowsEventList
     plural: loganalyticsdatasourcewindowsevents
     singular: loganalyticsdatasourcewindowsevent

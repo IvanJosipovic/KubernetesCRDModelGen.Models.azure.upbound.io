@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.m.upbound.io
   names:
+    kind: AccountLocalUser
     categories:
     - crossplane
     - managed
     - azure
-    kind: AccountLocalUser
     listKind: AccountLocalUserList
     plural: accountlocalusers
     singular: accountlocaluser

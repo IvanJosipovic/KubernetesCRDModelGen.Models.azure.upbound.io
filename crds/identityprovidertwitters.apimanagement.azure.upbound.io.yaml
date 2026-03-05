@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: IdentityProviderTwitter
     categories:
     - crossplane
     - managed
     - azure
-    kind: IdentityProviderTwitter
     listKind: IdentityProviderTwitterList
     plural: identityprovidertwitters
     singular: identityprovidertwitter

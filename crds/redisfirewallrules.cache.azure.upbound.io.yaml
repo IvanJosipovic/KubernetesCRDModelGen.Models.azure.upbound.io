@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cache.azure.upbound.io
   names:
+    kind: RedisFirewallRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: RedisFirewallRule
     listKind: RedisFirewallRuleList
     plural: redisfirewallrules
     singular: redisfirewallrule

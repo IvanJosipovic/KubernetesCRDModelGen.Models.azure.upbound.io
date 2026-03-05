@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceSynapse
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceSynapse
     listKind: LinkedServiceSynapseList
     plural: linkedservicesynapses
     singular: linkedservicesynapse

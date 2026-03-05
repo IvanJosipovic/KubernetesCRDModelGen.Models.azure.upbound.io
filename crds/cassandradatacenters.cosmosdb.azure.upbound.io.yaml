@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.upbound.io
   names:
+    kind: CassandraDatacenter
     categories:
     - crossplane
     - managed
     - azure
-    kind: CassandraDatacenter
     listKind: CassandraDatacenterList
     plural: cassandradatacenters
     singular: cassandradatacenter

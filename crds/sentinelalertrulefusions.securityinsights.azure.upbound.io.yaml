@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.upbound.io
   names:
+    kind: SentinelAlertRuleFusion
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelAlertRuleFusion
     listKind: SentinelAlertRuleFusionList
     plural: sentinelalertrulefusions
     singular: sentinelalertrulefusion

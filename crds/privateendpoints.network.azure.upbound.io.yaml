@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: PrivateEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateEndpoint
     listKind: PrivateEndpointList
     plural: privateendpoints
     singular: privateendpoint

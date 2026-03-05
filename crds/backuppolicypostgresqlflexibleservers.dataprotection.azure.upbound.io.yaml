@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.upbound.io
   names:
+    kind: BackupPolicyPostgreSQLFlexibleServer
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyPostgreSQLFlexibleServer
     listKind: BackupPolicyPostgreSQLFlexibleServerList
     plural: backuppolicypostgresqlflexibleservers
     singular: backuppolicypostgresqlflexibleserver

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: ManagedDiskSASToken
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedDiskSASToken
     listKind: ManagedDiskSASTokenList
     plural: manageddisksastokens
     singular: manageddisksastoken

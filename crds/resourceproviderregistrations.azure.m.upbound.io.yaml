@@ -7,11 +7,11 @@ metadata:
 spec:
   group: azure.m.upbound.io
   names:
+    kind: ResourceProviderRegistration
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceProviderRegistration
     listKind: ResourceProviderRegistrationList
     plural: resourceproviderregistrations
     singular: resourceproviderregistration

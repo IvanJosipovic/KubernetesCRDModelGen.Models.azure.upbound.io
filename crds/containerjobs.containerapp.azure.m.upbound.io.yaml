@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerapp.azure.m.upbound.io
   names:
+    kind: ContainerJob
     categories:
     - crossplane
     - managed
     - azure
-    kind: ContainerJob
     listKind: ContainerJobList
     plural: containerjobs
     singular: containerjob

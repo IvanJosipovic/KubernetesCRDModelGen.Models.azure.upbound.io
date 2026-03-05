@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: SubnetNetworkSecurityGroupAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubnetNetworkSecurityGroupAssociation
     listKind: SubnetNetworkSecurityGroupAssociationList
     plural: subnetnetworksecuritygroupassociations
     singular: subnetnetworksecuritygroupassociation

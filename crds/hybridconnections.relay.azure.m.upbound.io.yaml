@@ -7,11 +7,11 @@ metadata:
 spec:
   group: relay.azure.m.upbound.io
   names:
+    kind: HybridConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: HybridConnection
     listKind: HybridConnectionList
     plural: hybridconnections
     singular: hybridconnection

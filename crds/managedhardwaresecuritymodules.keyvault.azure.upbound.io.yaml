@@ -7,11 +7,11 @@ metadata:
 spec:
   group: keyvault.azure.upbound.io
   names:
+    kind: ManagedHardwareSecurityModule
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedHardwareSecurityModule
     listKind: ManagedHardwareSecurityModuleList
     plural: managedhardwaresecuritymodules
     singular: managedhardwaresecuritymodule

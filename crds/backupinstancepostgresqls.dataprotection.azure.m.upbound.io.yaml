@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.m.upbound.io
   names:
+    kind: BackupInstancePostgreSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupInstancePostgreSQL
     listKind: BackupInstancePostgreSQLList
     plural: backupinstancepostgresqls
     singular: backupinstancepostgresql

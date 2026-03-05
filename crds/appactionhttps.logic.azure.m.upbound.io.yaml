@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logic.azure.m.upbound.io
   names:
+    kind: AppActionHTTP
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppActionHTTP
     listKind: AppActionHTTPList
     plural: appactionhttps
     singular: appactionhttp

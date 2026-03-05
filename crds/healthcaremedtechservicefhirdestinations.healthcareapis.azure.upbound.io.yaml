@@ -7,11 +7,11 @@ metadata:
 spec:
   group: healthcareapis.azure.upbound.io
   names:
+    kind: HealthcareMedtechServiceFHIRDestination
     categories:
     - crossplane
     - managed
     - azure
-    kind: HealthcareMedtechServiceFHIRDestination
     listKind: HealthcareMedtechServiceFHIRDestinationList
     plural: healthcaremedtechservicefhirdestinations
     singular: healthcaremedtechservicefhirdestination

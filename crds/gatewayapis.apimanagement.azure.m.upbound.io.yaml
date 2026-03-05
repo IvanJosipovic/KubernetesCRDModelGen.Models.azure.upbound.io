@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: GatewayAPI
     categories:
     - crossplane
     - managed
     - azure
-    kind: GatewayAPI
     listKind: GatewayAPIList
     plural: gatewayapis
     singular: gatewayapi

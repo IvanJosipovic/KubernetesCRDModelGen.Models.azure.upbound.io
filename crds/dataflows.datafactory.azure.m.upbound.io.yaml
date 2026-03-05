@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataFlow
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataFlow
     listKind: DataFlowList
     plural: dataflows
     singular: dataflow

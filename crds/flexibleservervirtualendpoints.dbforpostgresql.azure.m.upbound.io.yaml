@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.m.upbound.io
   names:
+    kind: FlexibleServerVirtualEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerVirtualEndpoint
     listKind: FlexibleServerVirtualEndpointList
     plural: flexibleservervirtualendpoints
     singular: flexibleservervirtualendpoint

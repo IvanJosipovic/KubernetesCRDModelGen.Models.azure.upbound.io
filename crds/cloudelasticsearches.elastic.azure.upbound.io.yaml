@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elastic.azure.upbound.io
   names:
+    kind: CloudElasticsearch
     categories:
     - crossplane
     - managed
     - azure
-    kind: CloudElasticsearch
     listKind: CloudElasticsearchList
     plural: cloudelasticsearches
     singular: cloudelasticsearch

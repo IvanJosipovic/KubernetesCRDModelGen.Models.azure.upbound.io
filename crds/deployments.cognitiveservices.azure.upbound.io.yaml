@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitiveservices.azure.upbound.io
   names:
+    kind: Deployment
     categories:
     - crossplane
     - managed
     - azure
-    kind: Deployment
     listKind: DeploymentList
     plural: deployments
     singular: deployment

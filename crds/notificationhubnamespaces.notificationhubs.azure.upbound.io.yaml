@@ -7,11 +7,11 @@ metadata:
 spec:
   group: notificationhubs.azure.upbound.io
   names:
+    kind: NotificationHubNamespace
     categories:
     - crossplane
     - managed
     - azure
-    kind: NotificationHubNamespace
     listKind: NotificationHubNamespaceList
     plural: notificationhubnamespaces
     singular: notificationhubnamespace

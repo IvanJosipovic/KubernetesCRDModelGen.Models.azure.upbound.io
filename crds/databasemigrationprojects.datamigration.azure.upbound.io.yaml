@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datamigration.azure.upbound.io
   names:
+    kind: DatabaseMigrationProject
     categories:
     - crossplane
     - managed
     - azure
-    kind: DatabaseMigrationProject
     listKind: DatabaseMigrationProjectList
     plural: databasemigrationprojects
     singular: databasemigrationproject

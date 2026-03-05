@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: MonitorPrivateLinkScope
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorPrivateLinkScope
     listKind: MonitorPrivateLinkScopeList
     plural: monitorprivatelinkscopes
     singular: monitorprivatelinkscope

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateLinkService
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateLinkService
     listKind: PrivateLinkServiceList
     plural: privatelinkservices
     singular: privatelinkservice

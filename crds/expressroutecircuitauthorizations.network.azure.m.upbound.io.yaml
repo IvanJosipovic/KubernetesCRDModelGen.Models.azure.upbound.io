@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: ExpressRouteCircuitAuthorization
     categories:
     - crossplane
     - managed
     - azure
-    kind: ExpressRouteCircuitAuthorization
     listKind: ExpressRouteCircuitAuthorizationList
     plural: expressroutecircuitauthorizations
     singular: expressroutecircuitauthorization

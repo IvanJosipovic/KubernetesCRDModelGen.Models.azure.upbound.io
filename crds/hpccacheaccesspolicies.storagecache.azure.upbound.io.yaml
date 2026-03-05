@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagecache.azure.upbound.io
   names:
+    kind: HPCCacheAccessPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: HPCCacheAccessPolicy
     listKind: HPCCacheAccessPolicyList
     plural: hpccacheaccesspolicies
     singular: hpccacheaccesspolicy

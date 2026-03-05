@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.m.upbound.io
   names:
+    kind: AIFoundryProject
     categories:
     - crossplane
     - managed
     - azure
-    kind: AIFoundryProject
     listKind: AIFoundryProjectList
     plural: aifoundryprojects
     singular: aifoundryproject

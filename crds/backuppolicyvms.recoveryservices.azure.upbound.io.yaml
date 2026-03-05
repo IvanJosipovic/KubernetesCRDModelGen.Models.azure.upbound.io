@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.upbound.io
   names:
+    kind: BackupPolicyVM
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyVM
     listKind: BackupPolicyVMList
     plural: backuppolicyvms
     singular: backuppolicyvm

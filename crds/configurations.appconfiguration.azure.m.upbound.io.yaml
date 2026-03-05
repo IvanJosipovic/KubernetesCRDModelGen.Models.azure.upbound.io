@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appconfiguration.azure.m.upbound.io
   names:
+    kind: Configuration
     categories:
     - crossplane
     - managed
     - azure
-    kind: Configuration
     listKind: ConfigurationList
     plural: configurations
     singular: configuration

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.m.upbound.io
   names:
+    kind: SQLTrigger
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLTrigger
     listKind: SQLTriggerList
     plural: sqltriggers
     singular: sqltrigger
