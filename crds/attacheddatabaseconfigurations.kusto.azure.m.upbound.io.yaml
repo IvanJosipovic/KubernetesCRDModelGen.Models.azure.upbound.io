@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kusto.azure.m.upbound.io
   names:
+    kind: AttachedDatabaseConfiguration
     categories:
     - crossplane
     - managed
     - azure
-    kind: AttachedDatabaseConfiguration
     listKind: AttachedDatabaseConfigurationList
     plural: attacheddatabaseconfigurations
     singular: attacheddatabaseconfiguration

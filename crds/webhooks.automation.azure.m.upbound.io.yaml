@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.m.upbound.io
   names:
+    kind: Webhook
     categories:
     - crossplane
     - managed
     - azure
-    kind: Webhook
     listKind: WebhookList
     plural: webhooks
     singular: webhook

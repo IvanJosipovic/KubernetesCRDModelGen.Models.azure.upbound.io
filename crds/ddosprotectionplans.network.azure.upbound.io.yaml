@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: DDoSProtectionPlan
     categories:
     - crossplane
     - managed
     - azure
-    kind: DDoSProtectionPlan
     listKind: DDoSProtectionPlanList
     plural: ddosprotectionplans
     singular: ddosprotectionplan

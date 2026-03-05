@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: User
     categories:
     - crossplane
     - managed
     - azure
-    kind: User
     listKind: UserList
     plural: users
     singular: user

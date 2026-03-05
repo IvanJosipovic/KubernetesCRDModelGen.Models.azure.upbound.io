@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.m.upbound.io
   names:
+    kind: ConnectionClassicCertificate
     categories:
     - crossplane
     - managed
     - azure
-    kind: ConnectionClassicCertificate
     listKind: ConnectionClassicCertificateList
     plural: connectionclassiccertificates
     singular: connectionclassiccertificate

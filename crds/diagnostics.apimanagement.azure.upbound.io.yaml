@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: Diagnostic
     categories:
     - crossplane
     - managed
     - azure
-    kind: Diagnostic
     listKind: DiagnosticList
     plural: diagnostics
     singular: diagnostic

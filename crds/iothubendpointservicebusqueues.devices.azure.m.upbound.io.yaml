@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.m.upbound.io
   names:
+    kind: IOTHubEndpointServiceBusQueue
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubEndpointServiceBusQueue
     listKind: IOTHubEndpointServiceBusQueueList
     plural: iothubendpointservicebusqueues
     singular: iothubendpointservicebusqueue

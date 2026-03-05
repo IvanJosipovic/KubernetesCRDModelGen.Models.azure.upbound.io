@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetSQLServerTable
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetSQLServerTable
     listKind: DataSetSQLServerTableList
     plural: datasetsqlservertables
     singular: datasetsqlservertable

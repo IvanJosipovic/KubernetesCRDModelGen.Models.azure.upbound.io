@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: SubnetServiceEndpointStoragePolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubnetServiceEndpointStoragePolicy
     listKind: SubnetServiceEndpointStoragePolicyList
     plural: subnetserviceendpointstoragepolicies
     singular: subnetserviceendpointstoragepolicy

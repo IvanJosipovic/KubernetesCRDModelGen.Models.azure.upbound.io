@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.upbound.io
   names:
+    kind: IOTHubFallbackRoute
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubFallbackRoute
     listKind: IOTHubFallbackRouteList
     plural: iothubfallbackroutes
     singular: iothubfallbackroute

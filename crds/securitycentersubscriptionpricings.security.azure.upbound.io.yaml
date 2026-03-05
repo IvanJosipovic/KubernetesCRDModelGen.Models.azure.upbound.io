@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.upbound.io
   names:
+    kind: SecurityCenterSubscriptionPricing
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterSubscriptionPricing
     listKind: SecurityCenterSubscriptionPricingList
     plural: securitycentersubscriptionpricings
     singular: securitycentersubscriptionpricing

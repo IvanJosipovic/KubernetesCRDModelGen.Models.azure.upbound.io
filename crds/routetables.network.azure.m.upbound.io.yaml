@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: RouteTable
     categories:
     - crossplane
     - managed
     - azure
-    kind: RouteTable
     listKind: RouteTableList
     plural: routetables
     singular: routetable

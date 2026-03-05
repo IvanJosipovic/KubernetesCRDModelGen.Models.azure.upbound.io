@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventgrid.azure.upbound.io
   names:
+    kind: EventGridNamespace
     categories:
     - crossplane
     - managed
     - azure
-    kind: EventGridNamespace
     listKind: EventGridNamespaceList
     plural: eventgridnamespaces
     singular: eventgridnamespace

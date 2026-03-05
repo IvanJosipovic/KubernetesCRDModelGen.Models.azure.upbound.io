@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicebus.azure.m.upbound.io
   names:
+    kind: ServiceBusNamespace
     categories:
     - crossplane
     - managed
     - azure
-    kind: ServiceBusNamespace
     listKind: ServiceBusNamespaceList
     plural: servicebusnamespaces
     singular: servicebusnamespace

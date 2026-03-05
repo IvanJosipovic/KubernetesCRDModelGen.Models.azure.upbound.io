@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.m.upbound.io
   names:
+    kind: ReferenceInputBlob
     categories:
     - crossplane
     - managed
     - azure
-    kind: ReferenceInputBlob
     listKind: ReferenceInputBlobList
     plural: referenceinputblobs
     singular: referenceinputblob

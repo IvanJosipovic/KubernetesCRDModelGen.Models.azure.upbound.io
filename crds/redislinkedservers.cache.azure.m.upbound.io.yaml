@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cache.azure.m.upbound.io
   names:
+    kind: RedisLinkedServer
     categories:
     - crossplane
     - managed
     - azure
-    kind: RedisLinkedServer
     listKind: RedisLinkedServerList
     plural: redislinkedservers
     singular: redislinkedserver

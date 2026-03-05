@@ -7,11 +7,11 @@ metadata:
 spec:
   group: costmanagement.azure.upbound.io
   names:
+    kind: SubscriptionCostManagementExport
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubscriptionCostManagementExport
     listKind: SubscriptionCostManagementExportList
     plural: subscriptioncostmanagementexports
     singular: subscriptioncostmanagementexport

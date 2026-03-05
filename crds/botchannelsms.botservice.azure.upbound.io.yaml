@@ -7,11 +7,11 @@ metadata:
 spec:
   group: botservice.azure.upbound.io
   names:
+    kind: BotChannelSMS
     categories:
     - crossplane
     - managed
     - azure
-    kind: BotChannelSMS
     listKind: BotChannelSMSList
     plural: botchannelsms
     singular: botchannelsms

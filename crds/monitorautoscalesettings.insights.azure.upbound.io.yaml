@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: MonitorAutoscaleSetting
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorAutoscaleSetting
     listKind: MonitorAutoscaleSettingList
     plural: monitorautoscalesettings
     singular: monitorautoscalesetting

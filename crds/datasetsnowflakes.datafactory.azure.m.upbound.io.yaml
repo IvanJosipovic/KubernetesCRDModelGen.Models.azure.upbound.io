@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetSnowflake
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetSnowflake
     listKind: DataSetSnowflakeList
     plural: datasetsnowflakes
     singular: datasetsnowflake

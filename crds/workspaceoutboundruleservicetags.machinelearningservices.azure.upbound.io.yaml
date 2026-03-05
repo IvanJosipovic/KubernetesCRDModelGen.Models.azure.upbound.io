@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.upbound.io
   names:
+    kind: WorkspaceOutboundRuleServiceTag
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceOutboundRuleServiceTag
     listKind: WorkspaceOutboundRuleServiceTagList
     plural: workspaceoutboundruleservicetags
     singular: workspaceoutboundruleservicetag

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iotcentral.azure.upbound.io
   names:
+    kind: ApplicationNetworkRuleSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationNetworkRuleSet
     listKind: ApplicationNetworkRuleSetList
     plural: applicationnetworkrulesets
     singular: applicationnetworkruleset

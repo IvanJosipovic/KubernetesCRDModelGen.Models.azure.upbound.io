@@ -7,11 +7,11 @@ metadata:
 spec:
   group: botservice.azure.upbound.io
   names:
+    kind: BotChannelDirectLine
     categories:
     - crossplane
     - managed
     - azure
-    kind: BotChannelDirectLine
     listKind: BotChannelDirectLineList
     plural: botchanneldirectlines
     singular: botchanneldirectline

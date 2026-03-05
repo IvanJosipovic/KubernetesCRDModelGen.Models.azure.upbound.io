@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerapp.azure.m.upbound.io
   names:
+    kind: ContainerApp
     categories:
     - crossplane
     - managed
     - azure
-    kind: ContainerApp
     listKind: ContainerAppList
     plural: containerapps
     singular: containerapp

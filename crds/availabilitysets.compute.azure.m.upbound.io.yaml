@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: AvailabilitySet
     categories:
     - crossplane
     - managed
     - azure
-    kind: AvailabilitySet
     listKind: AvailabilitySetList
     plural: availabilitysets
     singular: availabilityset

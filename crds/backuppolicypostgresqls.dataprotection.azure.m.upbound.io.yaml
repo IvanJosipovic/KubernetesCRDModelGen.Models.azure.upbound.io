@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.m.upbound.io
   names:
+    kind: BackupPolicyPostgreSQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupPolicyPostgreSQL
     listKind: BackupPolicyPostgreSQLList
     plural: backuppolicypostgresqls
     singular: backuppolicypostgresql

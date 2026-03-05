@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: ProximityPlacementGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: ProximityPlacementGroup
     listKind: ProximityPlacementGroupList
     plural: proximityplacementgroups
     singular: proximityplacementgroup

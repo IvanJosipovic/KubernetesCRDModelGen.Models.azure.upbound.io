@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.upbound.io
   names:
+    kind: SentinelWatchlist
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelWatchlist
     listKind: SentinelWatchlistList
     plural: sentinelwatchlists
     singular: sentinelwatchlist

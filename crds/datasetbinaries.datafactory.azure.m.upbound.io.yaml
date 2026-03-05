@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetBinary
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetBinary
     listKind: DataSetBinaryList
     plural: datasetbinaries
     singular: datasetbinary

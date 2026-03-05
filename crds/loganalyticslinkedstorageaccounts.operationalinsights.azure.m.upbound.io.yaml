@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationalinsights.azure.m.upbound.io
   names:
+    kind: LogAnalyticsLinkedStorageAccount
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsLinkedStorageAccount
     listKind: LogAnalyticsLinkedStorageAccountList
     plural: loganalyticslinkedstorageaccounts
     singular: loganalyticslinkedstorageaccount

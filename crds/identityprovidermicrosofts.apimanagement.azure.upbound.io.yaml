@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: IdentityProviderMicrosoft
     categories:
     - crossplane
     - managed
     - azure
-    kind: IdentityProviderMicrosoft
     listKind: IdentityProviderMicrosoftList
     plural: identityprovidermicrosofts
     singular: identityprovidermicrosoft

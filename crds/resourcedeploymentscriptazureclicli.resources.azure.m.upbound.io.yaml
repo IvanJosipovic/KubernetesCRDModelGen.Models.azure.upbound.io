@@ -7,11 +7,11 @@ metadata:
 spec:
   group: resources.azure.m.upbound.io
   names:
+    kind: ResourceDeploymentScriptAzureCli
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceDeploymentScriptAzureCli
     listKind: ResourceDeploymentScriptAzureCliList
     plural: resourcedeploymentscriptazureclicli
     singular: resourcedeploymentscriptazurecli

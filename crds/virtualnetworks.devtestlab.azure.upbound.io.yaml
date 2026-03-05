@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devtestlab.azure.upbound.io
   names:
+    kind: VirtualNetwork
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetwork
     listKind: VirtualNetworkList
     plural: virtualnetworks
     singular: virtualnetwork

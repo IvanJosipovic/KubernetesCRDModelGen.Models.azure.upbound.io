@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.upbound.io
   names:
+    kind: IntegrationRuntimeSelfHosted
     categories:
     - crossplane
     - managed
     - azure
-    kind: IntegrationRuntimeSelfHosted
     listKind: IntegrationRuntimeSelfHostedList
     plural: integrationruntimeselfhosteds
     singular: integrationruntimeselfhosted

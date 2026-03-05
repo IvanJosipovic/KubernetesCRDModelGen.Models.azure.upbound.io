@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devtestlab.azure.m.upbound.io
   names:
+    kind: WindowsVirtualMachine
     categories:
     - crossplane
     - managed
     - azure
-    kind: WindowsVirtualMachine
     listKind: WindowsVirtualMachineList
     plural: windowsvirtualmachines
     singular: windowsvirtualmachine

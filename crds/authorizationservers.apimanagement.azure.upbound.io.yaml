@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: AuthorizationServer
     categories:
     - crossplane
     - managed
     - azure
-    kind: AuthorizationServer
     listKind: AuthorizationServerList
     plural: authorizationservers
     singular: authorizationserver

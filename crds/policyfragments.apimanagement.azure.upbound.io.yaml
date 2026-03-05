@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: PolicyFragment
     categories:
     - crossplane
     - managed
     - azure
-    kind: PolicyFragment
     listKind: PolicyFragmentList
     plural: policyfragments
     singular: policyfragment

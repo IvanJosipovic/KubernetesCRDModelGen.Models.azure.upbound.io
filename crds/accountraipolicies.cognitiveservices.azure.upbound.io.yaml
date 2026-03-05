@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitiveservices.azure.upbound.io
   names:
+    kind: AccountRaiPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: AccountRaiPolicy
     listKind: AccountRaiPolicyList
     plural: accountraipolicies
     singular: accountraipolicy

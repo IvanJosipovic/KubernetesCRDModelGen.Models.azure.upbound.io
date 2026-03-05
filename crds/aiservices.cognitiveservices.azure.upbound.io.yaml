@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitiveservices.azure.upbound.io
   names:
+    kind: AIServices
     categories:
     - crossplane
     - managed
     - azure
-    kind: AIServices
     listKind: AIServicesList
     plural: aiservices
     singular: aiservices

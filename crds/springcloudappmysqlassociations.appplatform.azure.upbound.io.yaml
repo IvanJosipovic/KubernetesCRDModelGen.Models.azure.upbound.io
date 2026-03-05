@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudAppMySQLAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudAppMySQLAssociation
     listKind: SpringCloudAppMySQLAssociationList
     plural: springcloudappmysqlassociations
     singular: springcloudappmysqlassociation

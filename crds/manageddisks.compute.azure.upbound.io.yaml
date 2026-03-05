@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: ManagedDisk
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedDisk
     listKind: ManagedDiskList
     plural: manageddisks
     singular: manageddisk

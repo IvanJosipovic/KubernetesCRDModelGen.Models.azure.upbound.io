@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: ManagerIpamPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagerIpamPool
     listKind: ManagerIpamPoolList
     plural: manageripampools
     singular: manageripampool

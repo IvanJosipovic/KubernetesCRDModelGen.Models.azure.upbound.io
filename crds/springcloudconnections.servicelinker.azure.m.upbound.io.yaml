@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicelinker.azure.m.upbound.io
   names:
+    kind: SpringCloudConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudConnection
     listKind: SpringCloudConnectionList
     plural: springcloudconnections
     singular: springcloudconnection

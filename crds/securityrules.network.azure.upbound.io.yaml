@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: SecurityRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityRule
     listKind: SecurityRuleList
     plural: securityrules
     singular: securityrule

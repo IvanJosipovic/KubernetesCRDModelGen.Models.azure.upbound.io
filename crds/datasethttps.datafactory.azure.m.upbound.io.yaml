@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetHTTP
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetHTTP
     listKind: DataSetHTTPList
     plural: datasethttps
     singular: datasethttp

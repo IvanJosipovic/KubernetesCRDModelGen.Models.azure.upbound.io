@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: Pipeline
     categories:
     - crossplane
     - managed
     - azure
-    kind: Pipeline
     listKind: PipelineList
     plural: pipelines
     singular: pipeline

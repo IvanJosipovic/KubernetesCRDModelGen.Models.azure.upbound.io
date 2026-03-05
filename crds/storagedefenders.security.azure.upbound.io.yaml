@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.upbound.io
   names:
+    kind: StorageDefender
     categories:
     - crossplane
     - managed
     - azure
-    kind: StorageDefender
     listKind: StorageDefenderList
     plural: storagedefenders
     singular: storagedefender

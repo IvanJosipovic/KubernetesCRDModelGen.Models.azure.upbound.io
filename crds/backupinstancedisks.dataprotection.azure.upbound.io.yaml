@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.upbound.io
   names:
+    kind: BackupInstanceDisk
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupInstanceDisk
     listKind: BackupInstanceDiskList
     plural: backupinstancedisks
     singular: backupinstancedisk

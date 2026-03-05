@@ -7,11 +7,11 @@ metadata:
 spec:
   group: loadtestservice.azure.m.upbound.io
   names:
+    kind: LoadTest
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadTest
     listKind: LoadTestList
     plural: loadtests
     singular: loadtest

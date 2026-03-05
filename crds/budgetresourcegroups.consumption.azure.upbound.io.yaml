@@ -7,11 +7,11 @@ metadata:
 spec:
   group: consumption.azure.upbound.io
   names:
+    kind: BudgetResourceGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: BudgetResourceGroup
     listKind: BudgetResourceGroupList
     plural: budgetresourcegroups
     singular: budgetresourcegroup

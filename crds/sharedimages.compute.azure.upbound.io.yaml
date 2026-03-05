@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: SharedImage
     categories:
     - crossplane
     - managed
     - azure
-    kind: SharedImage
     listKind: SharedImageList
     plural: sharedimages
     singular: sharedimage

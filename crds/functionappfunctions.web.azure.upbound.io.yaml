@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.upbound.io
   names:
+    kind: FunctionAppFunction
     categories:
     - crossplane
     - managed
     - azure
-    kind: FunctionAppFunction
     listKind: FunctionAppFunctionList
     plural: functionappfunctions
     singular: functionappfunction

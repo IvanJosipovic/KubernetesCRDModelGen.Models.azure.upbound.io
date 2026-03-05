@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationalinsights.azure.m.upbound.io
   names:
+    kind: LogAnalyticsDataExportRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsDataExportRule
     listKind: LogAnalyticsDataExportRuleList
     plural: loganalyticsdataexportrules
     singular: loganalyticsdataexportrule

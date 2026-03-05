@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputTable
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputTable
     listKind: OutputTableList
     plural: outputtables
     singular: outputtable

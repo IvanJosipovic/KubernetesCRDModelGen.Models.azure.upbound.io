@@ -7,11 +7,11 @@ metadata:
 spec:
   group: deviceupdate.azure.m.upbound.io
   names:
+    kind: IOTHubDeviceUpdateInstance
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubDeviceUpdateInstance
     listKind: IOTHubDeviceUpdateInstanceList
     plural: iothubdeviceupdateinstances
     singular: iothubdeviceupdateinstance

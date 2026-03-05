@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.m.upbound.io
   names:
+    kind: Share
     categories:
     - crossplane
     - managed
     - azure
-    kind: Share
     listKind: ShareList
     plural: shares
     singular: share

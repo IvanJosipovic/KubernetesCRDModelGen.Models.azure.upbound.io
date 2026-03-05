@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.m.upbound.io
   names:
+    kind: LinuxVirtualMachine
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinuxVirtualMachine
     listKind: LinuxVirtualMachineList
     plural: linuxvirtualmachines
     singular: linuxvirtualmachine

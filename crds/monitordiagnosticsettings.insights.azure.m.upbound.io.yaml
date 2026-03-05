@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.m.upbound.io
   names:
+    kind: MonitorDiagnosticSetting
     categories:
     - crossplane
     - managed
     - azure
-    kind: MonitorDiagnosticSetting
     listKind: MonitorDiagnosticSettingList
     plural: monitordiagnosticsettings
     singular: monitordiagnosticsetting

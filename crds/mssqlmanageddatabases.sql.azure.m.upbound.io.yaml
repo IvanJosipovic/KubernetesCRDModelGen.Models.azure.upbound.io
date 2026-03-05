@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.m.upbound.io
   names:
+    kind: MSSQLManagedDatabase
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLManagedDatabase
     listKind: MSSQLManagedDatabaseList
     plural: mssqlmanageddatabases
     singular: mssqlmanageddatabase

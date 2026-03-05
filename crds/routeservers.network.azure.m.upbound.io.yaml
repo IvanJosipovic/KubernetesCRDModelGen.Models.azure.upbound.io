@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: RouteServer
     categories:
     - crossplane
     - managed
     - azure
-    kind: RouteServer
     listKind: RouteServerList
     plural: routeservers
     singular: routeserver

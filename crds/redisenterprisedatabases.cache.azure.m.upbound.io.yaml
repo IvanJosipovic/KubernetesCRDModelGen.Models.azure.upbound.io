@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cache.azure.m.upbound.io
   names:
+    kind: RedisEnterpriseDatabase
     categories:
     - crossplane
     - managed
     - azure
-    kind: RedisEnterpriseDatabase
     listKind: RedisEnterpriseDatabaseList
     plural: redisenterprisedatabases
     singular: redisenterprisedatabase

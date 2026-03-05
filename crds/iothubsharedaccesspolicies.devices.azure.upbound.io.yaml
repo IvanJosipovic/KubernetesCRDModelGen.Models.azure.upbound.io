@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.upbound.io
   names:
+    kind: IOTHubSharedAccessPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubSharedAccessPolicy
     listKind: IOTHubSharedAccessPolicyList
     plural: iothubsharedaccesspolicies
     singular: iothubsharedaccesspolicy

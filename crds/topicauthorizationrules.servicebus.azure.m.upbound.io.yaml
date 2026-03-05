@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicebus.azure.m.upbound.io
   names:
+    kind: TopicAuthorizationRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: TopicAuthorizationRule
     listKind: TopicAuthorizationRuleList
     plural: topicauthorizationrules
     singular: topicauthorizationrule

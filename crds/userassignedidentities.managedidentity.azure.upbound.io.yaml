@@ -7,11 +7,11 @@ metadata:
 spec:
   group: managedidentity.azure.upbound.io
   names:
+    kind: UserAssignedIdentity
     categories:
     - crossplane
     - managed
     - azure
-    kind: UserAssignedIdentity
     listKind: UserAssignedIdentityList
     plural: userassignedidentities
     singular: userassignedidentity

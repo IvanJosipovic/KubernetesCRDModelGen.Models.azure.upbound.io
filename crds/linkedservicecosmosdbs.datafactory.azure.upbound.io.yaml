@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceCosmosDB
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceCosmosDB
     listKind: LinkedServiceCosmosDBList
     plural: linkedservicecosmosdbs
     singular: linkedservicecosmosdb

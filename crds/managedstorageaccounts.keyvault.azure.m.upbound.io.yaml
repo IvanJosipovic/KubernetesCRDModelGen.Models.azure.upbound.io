@@ -7,11 +7,11 @@ metadata:
 spec:
   group: keyvault.azure.m.upbound.io
   names:
+    kind: ManagedStorageAccount
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedStorageAccount
     listKind: ManagedStorageAccountList
     plural: managedstorageaccounts
     singular: managedstorageaccount

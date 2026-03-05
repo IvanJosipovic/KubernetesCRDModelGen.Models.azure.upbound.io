@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerservice.azure.upbound.io
   names:
+    kind: KubernetesCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: KubernetesCluster
     listKind: KubernetesClusterList
     plural: kubernetesclusters
     singular: kubernetescluster

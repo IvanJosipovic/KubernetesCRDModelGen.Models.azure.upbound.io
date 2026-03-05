@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: RouteServerBGPConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: RouteServerBGPConnection
     listKind: RouteServerBGPConnectionList
     plural: routeserverbgpconnections
     singular: routeserverbgpconnection

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: hdinsight.azure.upbound.io
   names:
+    kind: InteractiveQueryCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: InteractiveQueryCluster
     listKind: InteractiveQueryClusterList
     plural: interactivequeryclusters
     singular: interactivequerycluster

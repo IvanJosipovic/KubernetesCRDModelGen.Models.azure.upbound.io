@@ -7,11 +7,11 @@ metadata:
 spec:
   group: confidentialledger.azure.m.upbound.io
   names:
+    kind: Ledger
     categories:
     - crossplane
     - managed
     - azure
-    kind: Ledger
     listKind: LedgerList
     plural: ledgers
     singular: ledger

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: ApplicationInsightsSmartDetectionRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationInsightsSmartDetectionRule
     listKind: ApplicationInsightsSmartDetectionRuleList
     plural: applicationinsightssmartdetectionrules
     singular: applicationinsightssmartdetectionrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.m.upbound.io
   names:
+    kind: SiteRecoveryNetworkMapping
     categories:
     - crossplane
     - managed
     - azure
-    kind: SiteRecoveryNetworkMapping
     listKind: SiteRecoveryNetworkMappingList
     plural: siterecoverynetworkmappings
     singular: siterecoverynetworkmapping

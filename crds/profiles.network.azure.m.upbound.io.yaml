@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: Profile
     categories:
     - crossplane
     - managed
     - azure
-    kind: Profile
     listKind: ProfileList
     plural: profiles
     singular: profile

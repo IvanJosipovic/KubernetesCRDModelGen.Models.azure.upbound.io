@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbformysql.azure.upbound.io
   names:
+    kind: FlexibleServerFirewallRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerFirewallRule
     listKind: FlexibleServerFirewallRuleList
     plural: flexibleserverfirewallrules
     singular: flexibleserverfirewallrule

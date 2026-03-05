@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.m.upbound.io
   names:
+    kind: SentinelAlertRuleMSSecurityIncident
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelAlertRuleMSSecurityIncident
     listKind: SentinelAlertRuleMSSecurityIncidentList
     plural: sentinelalertrulemssecurityincidents
     singular: sentinelalertrulemssecurityincident

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationsmanagement.azure.m.upbound.io
   names:
+    kind: LogAnalyticsSolution
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsSolution
     listKind: LogAnalyticsSolutionList
     plural: loganalyticssolutions
     singular: loganalyticssolution

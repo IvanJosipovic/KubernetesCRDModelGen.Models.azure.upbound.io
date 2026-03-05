@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: SubnetNATGatewayAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SubnetNATGatewayAssociation
     listKind: SubnetNATGatewayAssociationList
     plural: subnetnatgatewayassociations
     singular: subnetnatgatewayassociation

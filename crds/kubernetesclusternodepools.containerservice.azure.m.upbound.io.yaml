@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerservice.azure.m.upbound.io
   names:
+    kind: KubernetesClusterNodePool
     categories:
     - crossplane
     - managed
     - azure
-    kind: KubernetesClusterNodePool
     listKind: KubernetesClusterNodePoolList
     plural: kubernetesclusternodepools
     singular: kubernetesclusternodepool

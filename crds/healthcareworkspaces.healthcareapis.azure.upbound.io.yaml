@@ -7,11 +7,11 @@ metadata:
 spec:
   group: healthcareapis.azure.upbound.io
   names:
+    kind: HealthcareWorkspace
     categories:
     - crossplane
     - managed
     - azure
-    kind: HealthcareWorkspace
     listKind: HealthcareWorkspaceList
     plural: healthcareworkspaces
     singular: healthcareworkspace

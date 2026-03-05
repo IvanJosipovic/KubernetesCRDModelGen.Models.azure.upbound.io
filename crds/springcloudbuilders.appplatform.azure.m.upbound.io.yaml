@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.m.upbound.io
   names:
+    kind: SpringCloudBuilder
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudBuilder
     listKind: SpringCloudBuilderList
     plural: springcloudbuilders
     singular: springcloudbuilder

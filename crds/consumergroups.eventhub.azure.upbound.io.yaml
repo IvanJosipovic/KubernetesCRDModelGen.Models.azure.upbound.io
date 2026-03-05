@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventhub.azure.upbound.io
   names:
+    kind: ConsumerGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: ConsumerGroup
     listKind: ConsumerGroupList
     plural: consumergroups
     singular: consumergroup

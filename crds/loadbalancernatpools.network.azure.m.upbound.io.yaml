@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: LoadBalancerNatPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadBalancerNatPool
     listKind: LoadBalancerNatPoolList
     plural: loadbalancernatpools
     singular: loadbalancernatpool

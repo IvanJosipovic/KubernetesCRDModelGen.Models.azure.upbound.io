@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.upbound.io
   names:
+    kind: FlexibleServerDatabase
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerDatabase
     listKind: FlexibleServerDatabaseList
     plural: flexibleserverdatabases
     singular: flexibleserverdatabase

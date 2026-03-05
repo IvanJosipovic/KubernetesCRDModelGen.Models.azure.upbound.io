@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.m.upbound.io
   names:
+    kind: SecurityCenterAutoProvisioning
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterAutoProvisioning
     listKind: SecurityCenterAutoProvisioningList
     plural: securitycenterautoprovisionings
     singular: securitycenterautoprovisioning

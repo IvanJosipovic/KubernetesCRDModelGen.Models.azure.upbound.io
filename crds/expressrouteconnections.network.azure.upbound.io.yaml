@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: ExpressRouteConnection
     categories:
     - crossplane
     - managed
     - azure
-    kind: ExpressRouteConnection
     listKind: ExpressRouteConnectionList
     plural: expressrouteconnections
     singular: expressrouteconnection

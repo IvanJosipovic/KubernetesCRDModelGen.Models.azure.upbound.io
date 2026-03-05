@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.m.upbound.io
   names:
+    kind: ApplicationInsights
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationInsights
     listKind: ApplicationInsightsList
     plural: applicationinsights
     singular: applicationinsights

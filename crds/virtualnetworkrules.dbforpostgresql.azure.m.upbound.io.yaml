@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.m.upbound.io
   names:
+    kind: VirtualNetworkRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetworkRule
     listKind: VirtualNetworkRuleList
     plural: virtualnetworkrules
     singular: virtualnetworkrule

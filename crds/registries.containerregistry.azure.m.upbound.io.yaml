@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerregistry.azure.m.upbound.io
   names:
+    kind: Registry
     categories:
     - crossplane
     - managed
     - azure
-    kind: Registry
     listKind: RegistryList
     plural: registries
     singular: registry

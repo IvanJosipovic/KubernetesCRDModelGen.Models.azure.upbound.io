@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.m.upbound.io
   names:
+    kind: WorkspaceOutboundRulePrivateEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceOutboundRulePrivateEndpoint
     listKind: WorkspaceOutboundRulePrivateEndpointList
     plural: workspaceoutboundruleprivateendpoints
     singular: workspaceoutboundruleprivateendpoint

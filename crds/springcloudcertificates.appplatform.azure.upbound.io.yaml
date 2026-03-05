@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudCertificate
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudCertificate
     listKind: SpringCloudCertificateList
     plural: springcloudcertificates
     singular: springcloudcertificate

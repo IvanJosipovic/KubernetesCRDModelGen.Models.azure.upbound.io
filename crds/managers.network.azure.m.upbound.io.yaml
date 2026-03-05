@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: Manager
     categories:
     - crossplane
     - managed
     - azure
-    kind: Manager
     listKind: ManagerList
     plural: managers
     singular: manager

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: DataSetMySQL
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetMySQL
     listKind: DataSetMySQLList
     plural: datasetmysqls
     singular: datasetmysql

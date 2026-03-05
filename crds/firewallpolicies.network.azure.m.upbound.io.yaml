@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: FirewallPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: FirewallPolicy
     listKind: FirewallPolicyList
     plural: firewallpolicies
     singular: firewallpolicy

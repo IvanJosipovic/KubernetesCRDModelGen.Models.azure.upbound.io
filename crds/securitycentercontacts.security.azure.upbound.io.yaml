@@ -7,11 +7,11 @@ metadata:
 spec:
   group: security.azure.upbound.io
   names:
+    kind: SecurityCenterContact
     categories:
     - crossplane
     - managed
     - azure
-    kind: SecurityCenterContact
     listKind: SecurityCenterContactList
     plural: securitycentercontacts
     singular: securitycentercontact

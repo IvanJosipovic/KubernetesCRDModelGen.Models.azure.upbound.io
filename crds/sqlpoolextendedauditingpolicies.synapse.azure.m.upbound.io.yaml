@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: SQLPoolExtendedAuditingPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLPoolExtendedAuditingPolicy
     listKind: SQLPoolExtendedAuditingPolicyList
     plural: sqlpoolextendedauditingpolicies
     singular: sqlpoolextendedauditingpolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicebus.azure.upbound.io
   names:
+    kind: Queue
     categories:
     - crossplane
     - managed
     - azure
-    kind: Queue
     listKind: QueueList
     plural: queues
     singular: queue

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: databricks.azure.m.upbound.io
   names:
+    kind: AccessConnector
     categories:
     - crossplane
     - managed
     - azure
-    kind: AccessConnector
     listKind: AccessConnectorList
     plural: accessconnectors
     singular: accessconnector

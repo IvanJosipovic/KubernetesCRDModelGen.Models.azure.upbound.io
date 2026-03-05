@@ -7,11 +7,11 @@ metadata:
 spec:
   group: azure.upbound.io
   names:
+    kind: ResourceGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceGroup
     listKind: ResourceGroupList
     plural: resourcegroups
     singular: resourcegroup

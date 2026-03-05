@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: TrustedAccessRoleBinding
     categories:
     - crossplane
     - managed
     - azure
-    kind: TrustedAccessRoleBinding
     listKind: TrustedAccessRoleBindingList
     plural: trustedaccessrolebindings
     singular: trustedaccessrolebinding

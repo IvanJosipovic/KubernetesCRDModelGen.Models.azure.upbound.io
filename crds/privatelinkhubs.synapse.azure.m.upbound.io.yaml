@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: PrivateLinkHub
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateLinkHub
     listKind: PrivateLinkHubList
     plural: privatelinkhubs
     singular: privatelinkhub

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: portal.azure.upbound.io
   names:
+    kind: Dashboard
     categories:
     - crossplane
     - managed
     - azure
-    kind: Dashboard
     listKind: DashboardList
     plural: dashboards
     singular: dashboard

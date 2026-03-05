@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: NotificationRecipientUser
     categories:
     - crossplane
     - managed
     - azure
-    kind: NotificationRecipientUser
     listKind: NotificationRecipientUserList
     plural: notificationrecipientusers
     singular: notificationrecipientuser

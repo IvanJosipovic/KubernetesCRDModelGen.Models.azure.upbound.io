@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.upbound.io
   names:
+    kind: VariableInt
     categories:
     - crossplane
     - managed
     - azure
-    kind: VariableInt
     listKind: VariableIntList
     plural: variableints
     singular: variableint

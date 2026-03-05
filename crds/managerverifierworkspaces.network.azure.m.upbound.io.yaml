@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: ManagerVerifierWorkspace
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagerVerifierWorkspace
     listKind: ManagerVerifierWorkspaceList
     plural: managerverifierworkspaces
     singular: managerverifierworkspace

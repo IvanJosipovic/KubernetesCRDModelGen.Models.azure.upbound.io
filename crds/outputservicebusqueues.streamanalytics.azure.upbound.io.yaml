@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputServiceBusQueue
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputServiceBusQueue
     listKind: OutputServiceBusQueueList
     plural: outputservicebusqueues
     singular: outputservicebusqueue

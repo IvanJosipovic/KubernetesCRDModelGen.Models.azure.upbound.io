@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbformysql.azure.upbound.io
   names:
+    kind: FlexibleServerConfiguration
     categories:
     - crossplane
     - managed
     - azure
-    kind: FlexibleServerConfiguration
     listKind: FlexibleServerConfigurationList
     plural: flexibleserverconfigurations
     singular: flexibleserverconfiguration

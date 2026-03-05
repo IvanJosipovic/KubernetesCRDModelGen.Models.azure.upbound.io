@@ -7,11 +7,11 @@ metadata:
 spec:
   group: hdinsight.azure.upbound.io
   names:
+    kind: HBaseCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: HBaseCluster
     listKind: HBaseClusterList
     plural: hbaseclusters
     singular: hbasecluster

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: Subnet
     categories:
     - crossplane
     - managed
     - azure
-    kind: Subnet
     listKind: SubnetList
     plural: subnets
     singular: subnet

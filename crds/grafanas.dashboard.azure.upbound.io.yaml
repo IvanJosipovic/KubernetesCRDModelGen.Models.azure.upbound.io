@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dashboard.azure.upbound.io
   names:
+    kind: Grafana
     categories:
     - crossplane
     - managed
     - azure
-    kind: Grafana
     listKind: GrafanaList
     plural: grafanas
     singular: grafana

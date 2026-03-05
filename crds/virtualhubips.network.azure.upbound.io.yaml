@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: VirtualHubIP
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualHubIP
     listKind: VirtualHubIPList
     plural: virtualhubips
     singular: virtualhubip

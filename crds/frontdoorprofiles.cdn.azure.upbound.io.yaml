@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cdn.azure.upbound.io
   names:
+    kind: FrontdoorProfile
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorProfile
     listKind: FrontdoorProfileList
     plural: frontdoorprofiles
     singular: frontdoorprofile

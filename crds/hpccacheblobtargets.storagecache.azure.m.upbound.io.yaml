@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagecache.azure.m.upbound.io
   names:
+    kind: HPCCacheBlobTarget
     categories:
     - crossplane
     - managed
     - azure
-    kind: HPCCacheBlobTarget
     listKind: HPCCacheBlobTargetList
     plural: hpccacheblobtargets
     singular: hpccacheblobtarget

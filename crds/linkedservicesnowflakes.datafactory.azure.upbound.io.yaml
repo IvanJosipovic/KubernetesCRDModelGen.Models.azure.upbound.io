@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceSnowflake
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceSnowflake
     listKind: LinkedServiceSnowflakeList
     plural: linkedservicesnowflakes
     singular: linkedservicesnowflake

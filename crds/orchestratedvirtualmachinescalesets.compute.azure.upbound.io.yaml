@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.azure.upbound.io
   names:
+    kind: OrchestratedVirtualMachineScaleSet
     categories:
     - crossplane
     - managed
     - azure
-    kind: OrchestratedVirtualMachineScaleSet
     listKind: OrchestratedVirtualMachineScaleSetList
     plural: orchestratedvirtualmachinescalesets
     singular: orchestratedvirtualmachinescaleset

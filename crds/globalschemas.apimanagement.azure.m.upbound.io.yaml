@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: GlobalSchema
     categories:
     - crossplane
     - managed
     - azure
-    kind: GlobalSchema
     listKind: GlobalSchemaList
     plural: globalschemas
     singular: globalschema

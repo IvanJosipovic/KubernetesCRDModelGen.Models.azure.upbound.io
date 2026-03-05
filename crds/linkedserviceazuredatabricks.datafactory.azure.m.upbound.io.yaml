@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.m.upbound.io
   names:
+    kind: LinkedServiceAzureDatabricks
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceAzureDatabricks
     listKind: LinkedServiceAzureDatabricksList
     plural: linkedserviceazuredatabricks
     singular: linkedserviceazuredatabricks

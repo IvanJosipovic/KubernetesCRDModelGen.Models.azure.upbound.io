@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudAppRedisAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudAppRedisAssociation
     listKind: SpringCloudAppRedisAssociationList
     plural: springcloudappredisassociations
     singular: springcloudappredisassociation

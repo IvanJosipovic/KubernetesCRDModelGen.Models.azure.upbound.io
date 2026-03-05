@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devtestlab.azure.upbound.io
   names:
+    kind: Lab
     categories:
     - crossplane
     - managed
     - azure
-    kind: Lab
     listKind: LabList
     plural: labs
     singular: lab

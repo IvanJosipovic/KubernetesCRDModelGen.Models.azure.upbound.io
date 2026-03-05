@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datashare.azure.m.upbound.io
   names:
+    kind: DataShare
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataShare
     listKind: DataShareList
     plural: datashares
     singular: datashare

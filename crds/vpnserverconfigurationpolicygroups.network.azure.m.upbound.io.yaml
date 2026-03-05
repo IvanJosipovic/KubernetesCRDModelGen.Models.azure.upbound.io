@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VPNServerConfigurationPolicyGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: VPNServerConfigurationPolicyGroup
     listKind: VPNServerConfigurationPolicyGroupList
     plural: vpnserverconfigurationpolicygroups
     singular: vpnserverconfigurationpolicygroup

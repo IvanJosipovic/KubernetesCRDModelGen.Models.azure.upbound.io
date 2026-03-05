@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateDNSZone
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateDNSZone
     listKind: PrivateDNSZoneList
     plural: privatednszones
     singular: privatednszone

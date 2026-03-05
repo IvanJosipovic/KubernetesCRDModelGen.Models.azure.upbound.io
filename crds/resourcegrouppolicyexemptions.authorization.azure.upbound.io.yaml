@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.upbound.io
   names:
+    kind: ResourceGroupPolicyExemption
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceGroupPolicyExemption
     listKind: ResourceGroupPolicyExemptionList
     plural: resourcegrouppolicyexemptions
     singular: resourcegrouppolicyexemption

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: operationalinsights.azure.upbound.io
   names:
+    kind: LogAnalyticsQueryPack
     categories:
     - crossplane
     - managed
     - azure
-    kind: LogAnalyticsQueryPack
     listKind: LogAnalyticsQueryPackList
     plural: loganalyticsquerypacks
     singular: loganalyticsquerypack

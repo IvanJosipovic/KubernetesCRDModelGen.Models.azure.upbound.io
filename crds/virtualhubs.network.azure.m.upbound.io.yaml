@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VirtualHub
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualHub
     listKind: VirtualHubList
     plural: virtualhubs
     singular: virtualhub

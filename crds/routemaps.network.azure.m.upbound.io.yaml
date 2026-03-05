@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: RouteMap
     categories:
     - crossplane
     - managed
     - azure
-    kind: RouteMap
     listKind: RouteMapList
     plural: routemaps
     singular: routemap

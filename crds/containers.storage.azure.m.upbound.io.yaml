@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.azure.m.upbound.io
   names:
+    kind: Container
     categories:
     - crossplane
     - managed
     - azure
-    kind: Container
     listKind: ContainerList
     plural: containers
     singular: container

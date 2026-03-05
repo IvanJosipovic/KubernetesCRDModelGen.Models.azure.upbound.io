@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicefabric.azure.upbound.io
   names:
+    kind: ManagedCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: ManagedCluster
     listKind: ManagedClusterList
     plural: managedclusters
     singular: managedcluster

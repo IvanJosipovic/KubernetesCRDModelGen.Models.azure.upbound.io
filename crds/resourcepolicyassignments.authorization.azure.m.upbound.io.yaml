@@ -7,11 +7,11 @@ metadata:
 spec:
   group: authorization.azure.m.upbound.io
   names:
+    kind: ResourcePolicyAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourcePolicyAssignment
     listKind: ResourcePolicyAssignmentList
     plural: resourcepolicyassignments
     singular: resourcepolicyassignment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: healthbot.azure.upbound.io
   names:
+    kind: HealthBot
     categories:
     - crossplane
     - managed
     - azure
-    kind: HealthBot
     listKind: HealthBotList
     plural: healthbots
     singular: healthbot

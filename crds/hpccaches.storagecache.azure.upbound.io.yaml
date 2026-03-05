@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagecache.azure.upbound.io
   names:
+    kind: HPCCache
     categories:
     - crossplane
     - managed
     - azure
-    kind: HPCCache
     listKind: HPCCacheList
     plural: hpccaches
     singular: hpccache

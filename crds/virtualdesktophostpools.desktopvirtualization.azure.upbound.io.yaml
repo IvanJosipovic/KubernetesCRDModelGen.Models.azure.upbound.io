@@ -7,11 +7,11 @@ metadata:
 spec:
   group: desktopvirtualization.azure.upbound.io
   names:
+    kind: VirtualDesktopHostPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualDesktopHostPool
     listKind: VirtualDesktopHostPoolList
     plural: virtualdesktophostpools
     singular: virtualdesktophostpool

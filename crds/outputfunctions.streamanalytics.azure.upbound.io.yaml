@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputFunction
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputFunction
     listKind: OutputFunctionList
     plural: outputfunctions
     singular: outputfunction

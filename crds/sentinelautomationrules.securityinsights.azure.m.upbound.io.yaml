@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.m.upbound.io
   names:
+    kind: SentinelAutomationRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelAutomationRule
     listKind: SentinelAutomationRuleList
     plural: sentinelautomationrules
     singular: sentinelautomationrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: maintenance.azure.upbound.io
   names:
+    kind: MaintenanceAssignmentVirtualMachine
     categories:
     - crossplane
     - managed
     - azure
-    kind: MaintenanceAssignmentVirtualMachine
     listKind: MaintenanceAssignmentVirtualMachineList
     plural: maintenanceassignmentvirtualmachines
     singular: maintenanceassignmentvirtualmachine

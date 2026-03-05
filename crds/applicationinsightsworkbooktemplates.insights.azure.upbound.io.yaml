@@ -7,11 +7,11 @@ metadata:
 spec:
   group: insights.azure.upbound.io
   names:
+    kind: ApplicationInsightsWorkbookTemplate
     categories:
     - crossplane
     - managed
     - azure
-    kind: ApplicationInsightsWorkbookTemplate
     listKind: ApplicationInsightsWorkbookTemplateList
     plural: applicationinsightsworkbooktemplates
     singular: applicationinsightsworkbooktemplate

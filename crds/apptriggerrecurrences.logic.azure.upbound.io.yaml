@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logic.azure.upbound.io
   names:
+    kind: AppTriggerRecurrence
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppTriggerRecurrence
     listKind: AppTriggerRecurrenceList
     plural: apptriggerrecurrences
     singular: apptriggerrecurrence

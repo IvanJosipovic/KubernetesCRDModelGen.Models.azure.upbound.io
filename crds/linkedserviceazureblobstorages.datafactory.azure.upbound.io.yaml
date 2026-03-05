@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: LinkedServiceAzureBlobStorage
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedServiceAzureBlobStorage
     listKind: LinkedServiceAzureBlobStorageList
     plural: linkedserviceazureblobstorages
     singular: linkedserviceazureblobstorage

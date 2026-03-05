@@ -7,11 +7,11 @@ metadata:
 spec:
   group: streamanalytics.azure.upbound.io
   names:
+    kind: OutputEventHub
     categories:
     - crossplane
     - managed
     - azure
-    kind: OutputEventHub
     listKind: OutputEventHubList
     plural: outputeventhubs
     singular: outputeventhub

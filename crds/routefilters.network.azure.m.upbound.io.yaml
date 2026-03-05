@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: RouteFilter
     categories:
     - crossplane
     - managed
     - azure
-    kind: RouteFilter
     listKind: RouteFilterList
     plural: routefilters
     singular: routefilter

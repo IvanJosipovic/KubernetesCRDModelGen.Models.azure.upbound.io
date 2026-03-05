@@ -7,11 +7,11 @@ metadata:
 spec:
   group: orbital.azure.m.upbound.io
   names:
+    kind: ContactProfile
     categories:
     - crossplane
     - managed
     - azure
-    kind: ContactProfile
     listKind: ContactProfileList
     plural: contactprofiles
     singular: contactprofile

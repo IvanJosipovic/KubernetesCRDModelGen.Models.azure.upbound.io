@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PacketCapture
     categories:
     - crossplane
     - managed
     - azure
-    kind: PacketCapture
     listKind: PacketCaptureList
     plural: packetcaptures
     singular: packetcapture

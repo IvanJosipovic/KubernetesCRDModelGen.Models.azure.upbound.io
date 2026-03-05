@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: LoadBalancerProbe
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadBalancerProbe
     listKind: LoadBalancerProbeList
     plural: loadbalancerprobes
     singular: loadbalancerprobe

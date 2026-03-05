@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: FrontDoor
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontDoor
     listKind: FrontDoorList
     plural: frontdoors
     singular: frontdoor

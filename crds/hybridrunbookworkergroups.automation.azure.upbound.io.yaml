@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.upbound.io
   names:
+    kind: HybridRunBookWorkerGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: HybridRunBookWorkerGroup
     listKind: HybridRunBookWorkerGroupList
     plural: hybridrunbookworkergroups
     singular: hybridrunbookworkergroup

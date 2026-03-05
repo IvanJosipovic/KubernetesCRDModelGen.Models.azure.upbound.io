@@ -7,11 +7,11 @@ metadata:
 spec:
   group: signalrservice.azure.upbound.io
   names:
+    kind: SignalrSharedPrivateLinkResource
     categories:
     - crossplane
     - managed
     - azure
-    kind: SignalrSharedPrivateLinkResource
     listKind: SignalrSharedPrivateLinkResourceList
     plural: signalrsharedprivatelinkresources
     singular: signalrsharedprivatelinkresource

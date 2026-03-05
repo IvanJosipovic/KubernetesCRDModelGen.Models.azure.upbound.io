@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: LoadBalancerBackendAddressPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadBalancerBackendAddressPool
     listKind: LoadBalancerBackendAddressPoolList
     plural: loadbalancerbackendaddresspools
     singular: loadbalancerbackendaddresspool

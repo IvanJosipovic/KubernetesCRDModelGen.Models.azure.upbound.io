@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerservice.azure.upbound.io
   names:
+    kind: KubernetesFleetManager
     categories:
     - crossplane
     - managed
     - azure
-    kind: KubernetesFleetManager
     listKind: KubernetesFleetManagerList
     plural: kubernetesfleetmanagers
     singular: kubernetesfleetmanager

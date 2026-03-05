@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.m.upbound.io
   names:
+    kind: MSSQLVirtualNetworkRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLVirtualNetworkRule
     listKind: MSSQLVirtualNetworkRuleList
     plural: mssqlvirtualnetworkrules
     singular: mssqlvirtualnetworkrule

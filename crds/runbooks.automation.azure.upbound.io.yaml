@@ -7,11 +7,11 @@ metadata:
 spec:
   group: automation.azure.upbound.io
   names:
+    kind: RunBook
     categories:
     - crossplane
     - managed
     - azure
-    kind: RunBook
     listKind: RunBookList
     plural: runbooks
     singular: runbook

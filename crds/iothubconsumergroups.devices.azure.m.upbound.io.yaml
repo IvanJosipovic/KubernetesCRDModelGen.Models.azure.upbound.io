@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.m.upbound.io
   names:
+    kind: IOTHubConsumerGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubConsumerGroup
     listKind: IOTHubConsumerGroupList
     plural: iothubconsumergroups
     singular: iothubconsumergroup

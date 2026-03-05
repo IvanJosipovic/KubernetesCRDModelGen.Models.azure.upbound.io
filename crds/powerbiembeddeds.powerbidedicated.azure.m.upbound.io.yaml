@@ -7,11 +7,11 @@ metadata:
 spec:
   group: powerbidedicated.azure.m.upbound.io
   names:
+    kind: PowerBIEmbedded
     categories:
     - crossplane
     - managed
     - azure
-    kind: PowerBIEmbedded
     listKind: PowerBIEmbeddedList
     plural: powerbiembeddeds
     singular: powerbiembedded

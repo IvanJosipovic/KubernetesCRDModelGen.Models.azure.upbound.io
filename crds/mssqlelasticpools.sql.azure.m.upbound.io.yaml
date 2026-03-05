@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.azure.m.upbound.io
   names:
+    kind: MSSQLElasticPool
     categories:
     - crossplane
     - managed
     - azure
-    kind: MSSQLElasticPool
     listKind: MSSQLElasticPoolList
     plural: mssqlelasticpools
     singular: mssqlelasticpool

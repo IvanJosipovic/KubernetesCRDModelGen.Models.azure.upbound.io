@@ -7,11 +7,11 @@ metadata:
 spec:
   group: web.azure.m.upbound.io
   names:
+    kind: WindowsWebAppSlot
     categories:
     - crossplane
     - managed
     - azure
-    kind: WindowsWebAppSlot
     listKind: WindowsWebAppSlotList
     plural: windowswebappslots
     singular: windowswebappslot

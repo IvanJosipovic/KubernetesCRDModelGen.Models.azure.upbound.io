@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.m.upbound.io
   names:
+    kind: LinkedService
     categories:
     - crossplane
     - managed
     - azure
-    kind: LinkedService
     listKind: LinkedServiceList
     plural: linkedservices
     singular: linkedservice

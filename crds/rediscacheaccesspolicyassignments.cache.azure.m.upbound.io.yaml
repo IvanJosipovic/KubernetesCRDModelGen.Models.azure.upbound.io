@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cache.azure.m.upbound.io
   names:
+    kind: RedisCacheAccessPolicyAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: RedisCacheAccessPolicyAssignment
     listKind: RedisCacheAccessPolicyAssignmentList
     plural: rediscacheaccesspolicyassignments
     singular: rediscacheaccesspolicyassignment

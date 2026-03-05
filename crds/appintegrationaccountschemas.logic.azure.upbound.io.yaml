@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logic.azure.upbound.io
   names:
+    kind: AppIntegrationAccountSchema
     categories:
     - crossplane
     - managed
     - azure
-    kind: AppIntegrationAccountSchema
     listKind: AppIntegrationAccountSchemaList
     plural: appintegrationaccountschemas
     singular: appintegrationaccountschema

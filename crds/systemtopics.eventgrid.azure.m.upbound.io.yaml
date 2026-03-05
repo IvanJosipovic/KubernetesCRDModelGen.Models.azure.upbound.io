@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventgrid.azure.m.upbound.io
   names:
+    kind: SystemTopic
     categories:
     - crossplane
     - managed
     - azure
-    kind: SystemTopic
     listKind: SystemTopicList
     plural: systemtopics
     singular: systemtopic

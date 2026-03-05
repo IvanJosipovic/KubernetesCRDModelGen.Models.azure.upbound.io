@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: PrivateDNSAAAARecord
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateDNSAAAARecord
     listKind: PrivateDNSAAAARecordList
     plural: privatednsaaaarecords
     singular: privatednsaaaarecord

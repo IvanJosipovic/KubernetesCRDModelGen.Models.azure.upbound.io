@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.upbound.io
   names:
+    kind: MongoUserDefinition
     categories:
     - crossplane
     - managed
     - azure
-    kind: MongoUserDefinition
     listKind: MongoUserDefinitionList
     plural: mongouserdefinitions
     singular: mongouserdefinition

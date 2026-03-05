@@ -7,11 +7,11 @@ metadata:
 spec:
   group: resources.azure.upbound.io
   names:
+    kind: ResourceDeploymentScriptAzurePowerShell
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceDeploymentScriptAzurePowerShell
     listKind: ResourceDeploymentScriptAzurePowerShellList
     plural: resourcedeploymentscriptazurepowershells
     singular: resourcedeploymentscriptazurepowershell

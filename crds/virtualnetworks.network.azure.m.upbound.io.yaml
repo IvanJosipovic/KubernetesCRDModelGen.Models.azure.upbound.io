@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: VirtualNetwork
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualNetwork
     listKind: VirtualNetworkList
     plural: virtualnetworks
     singular: virtualnetwork

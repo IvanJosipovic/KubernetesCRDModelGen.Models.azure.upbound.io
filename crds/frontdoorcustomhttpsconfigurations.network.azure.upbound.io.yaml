@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: FrontdoorCustomHTTPSConfiguration
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorCustomHTTPSConfiguration
     listKind: FrontdoorCustomHTTPSConfigurationList
     plural: frontdoorcustomhttpsconfigurations
     singular: frontdoorcustomhttpsconfiguration

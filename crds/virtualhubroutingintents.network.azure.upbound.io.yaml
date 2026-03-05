@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: VirtualHubRoutingIntent
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualHubRoutingIntent
     listKind: VirtualHubRoutingIntentList
     plural: virtualhubroutingintents
     singular: virtualhubroutingintent

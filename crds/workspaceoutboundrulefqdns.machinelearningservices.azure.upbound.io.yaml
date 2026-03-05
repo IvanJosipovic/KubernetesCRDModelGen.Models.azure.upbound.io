@@ -7,11 +7,11 @@ metadata:
 spec:
   group: machinelearningservices.azure.upbound.io
   names:
+    kind: WorkspaceOutboundRuleFqdn
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceOutboundRuleFqdn
     listKind: WorkspaceOutboundRuleFqdnList
     plural: workspaceoutboundrulefqdns
     singular: workspaceoutboundrulefqdn

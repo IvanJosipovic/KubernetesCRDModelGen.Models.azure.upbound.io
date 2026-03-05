@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.m.upbound.io
   names:
+    kind: NamedValue
     categories:
     - crossplane
     - managed
     - azure
-    kind: NamedValue
     listKind: NamedValueList
     plural: namedvalues
     singular: namedvalue

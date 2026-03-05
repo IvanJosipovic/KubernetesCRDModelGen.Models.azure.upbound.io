@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudConfigurationService
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudConfigurationService
     listKind: SpringCloudConfigurationServiceList
     plural: springcloudconfigurationservices
     singular: springcloudconfigurationservice

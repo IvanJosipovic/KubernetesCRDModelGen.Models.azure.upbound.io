@@ -7,11 +7,11 @@ metadata:
 spec:
   group: desktopvirtualization.azure.m.upbound.io
   names:
+    kind: VirtualDesktopHostPoolRegistrationInfo
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualDesktopHostPoolRegistrationInfo
     listKind: VirtualDesktopHostPoolRegistrationInfoList
     plural: virtualdesktophostpoolregistrationinfoes
     singular: virtualdesktophostpoolregistrationinfo

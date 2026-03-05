@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: ConnectionMonitor
     categories:
     - crossplane
     - managed
     - azure
-    kind: ConnectionMonitor
     listKind: ConnectionMonitorList
     plural: connectionmonitors
     singular: connectionmonitor

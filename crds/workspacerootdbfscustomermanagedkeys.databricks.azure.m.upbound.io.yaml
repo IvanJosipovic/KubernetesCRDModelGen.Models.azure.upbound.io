@@ -7,11 +7,11 @@ metadata:
 spec:
   group: databricks.azure.m.upbound.io
   names:
+    kind: WorkspaceRootDbfsCustomerManagedKey
     categories:
     - crossplane
     - managed
     - azure
-    kind: WorkspaceRootDbfsCustomerManagedKey
     listKind: WorkspaceRootDbfsCustomerManagedKeyList
     plural: workspacerootdbfscustomermanagedkeys
     singular: workspacerootdbfscustomermanagedkey

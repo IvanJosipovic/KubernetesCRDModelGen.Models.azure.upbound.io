@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synapse.azure.upbound.io
   names:
+    kind: FirewallRule
     categories:
     - crossplane
     - managed
     - azure
-    kind: FirewallRule
     listKind: FirewallRuleList
     plural: firewallrules
     singular: firewallrule

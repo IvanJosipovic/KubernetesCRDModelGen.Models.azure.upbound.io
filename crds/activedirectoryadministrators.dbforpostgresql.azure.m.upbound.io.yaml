@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dbforpostgresql.azure.m.upbound.io
   names:
+    kind: ActiveDirectoryAdministrator
     categories:
     - crossplane
     - managed
     - azure
-    kind: ActiveDirectoryAdministrator
     listKind: ActiveDirectoryAdministratorList
     plural: activedirectoryadministrators
     singular: activedirectoryadministrator

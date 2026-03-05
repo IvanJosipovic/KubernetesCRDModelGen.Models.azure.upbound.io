@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: LoadBalancer
     categories:
     - crossplane
     - managed
     - azure
-    kind: LoadBalancer
     listKind: LoadBalancerList
     plural: loadbalancers
     singular: loadbalancer

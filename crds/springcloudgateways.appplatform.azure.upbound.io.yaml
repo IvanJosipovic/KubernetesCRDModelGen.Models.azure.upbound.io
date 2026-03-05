@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudGateway
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudGateway
     listKind: SpringCloudGatewayList
     plural: springcloudgateways
     singular: springcloudgateway

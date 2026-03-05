@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kusto.azure.m.upbound.io
   names:
+    kind: ClusterManagedPrivateEndpoint
     categories:
     - crossplane
     - managed
     - azure
-    kind: ClusterManagedPrivateEndpoint
     listKind: ClusterManagedPrivateEndpointList
     plural: clustermanagedprivateendpoints
     singular: clustermanagedprivateendpoint

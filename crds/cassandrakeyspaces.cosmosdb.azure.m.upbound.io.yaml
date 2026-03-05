@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.m.upbound.io
   names:
+    kind: CassandraKeySpace
     categories:
     - crossplane
     - managed
     - azure
-    kind: CassandraKeySpace
     listKind: CassandraKeySpaceList
     plural: cassandrakeyspaces
     singular: cassandrakeyspace

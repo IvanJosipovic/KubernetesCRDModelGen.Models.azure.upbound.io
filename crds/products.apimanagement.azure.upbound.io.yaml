@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apimanagement.azure.upbound.io
   names:
+    kind: Product
     categories:
     - crossplane
     - managed
     - azure
-    kind: Product
     listKind: ProductList
     plural: products
     singular: product

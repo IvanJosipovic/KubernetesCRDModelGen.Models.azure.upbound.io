@@ -7,11 +7,11 @@ metadata:
 spec:
   group: desktopvirtualization.azure.m.upbound.io
   names:
+    kind: VirtualDesktopWorkspaceApplicationGroupAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: VirtualDesktopWorkspaceApplicationGroupAssociation
     listKind: VirtualDesktopWorkspaceApplicationGroupAssociationList
     plural: virtualdesktopworkspaceapplicationgroupassociations
     singular: virtualdesktopworkspaceapplicationgroupassociation

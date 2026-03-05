@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.upbound.io
   names:
+    kind: BackupInstanceKubernetesCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupInstanceKubernetesCluster
     listKind: BackupInstanceKubernetesClusterList
     plural: backupinstancekubernetesclusters
     singular: backupinstancekubernetescluster

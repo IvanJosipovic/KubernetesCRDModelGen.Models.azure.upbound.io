@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.m.upbound.io
   names:
+    kind: IOTHubDPS
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubDPS
     listKind: IOTHubDPSList
     plural: iothubdps
     singular: iothubdps

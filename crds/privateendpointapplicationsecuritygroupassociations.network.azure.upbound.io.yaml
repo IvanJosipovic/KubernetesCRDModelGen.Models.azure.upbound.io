@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.upbound.io
   names:
+    kind: PrivateEndpointApplicationSecurityGroupAssociation
     categories:
     - crossplane
     - managed
     - azure
-    kind: PrivateEndpointApplicationSecurityGroupAssociation
     listKind: PrivateEndpointApplicationSecurityGroupAssociationList
     plural: privateendpointapplicationsecuritygroupassociations
     singular: privateendpointapplicationsecuritygroupassociation

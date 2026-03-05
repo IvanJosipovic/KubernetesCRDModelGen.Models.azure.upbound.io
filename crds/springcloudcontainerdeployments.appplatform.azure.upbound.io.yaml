@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appplatform.azure.upbound.io
   names:
+    kind: SpringCloudContainerDeployment
     categories:
     - crossplane
     - managed
     - azure
-    kind: SpringCloudContainerDeployment
     listKind: SpringCloudContainerDeploymentList
     plural: springcloudcontainerdeployments
     singular: springcloudcontainerdeployment

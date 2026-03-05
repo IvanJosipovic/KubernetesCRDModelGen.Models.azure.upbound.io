@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.m.upbound.io
   names:
+    kind: MongoCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: MongoCluster
     listKind: MongoClusterList
     plural: mongoclusters
     singular: mongocluster

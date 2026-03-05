@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.m.upbound.io
   names:
+    kind: BackupContainerStorageAccount
     categories:
     - crossplane
     - managed
     - azure
-    kind: BackupContainerStorageAccount
     listKind: BackupContainerStorageAccountList
     plural: backupcontainerstorageaccounts
     singular: backupcontainerstorageaccount

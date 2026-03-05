@@ -7,11 +7,11 @@ metadata:
 spec:
   group: recoveryservices.azure.upbound.io
   names:
+    kind: Vault
     categories:
     - crossplane
     - managed
     - azure
-    kind: Vault
     listKind: VaultList
     plural: vaults
     singular: vault

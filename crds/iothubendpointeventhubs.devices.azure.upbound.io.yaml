@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devices.azure.upbound.io
   names:
+    kind: IOTHubEndpointEventHub
     categories:
     - crossplane
     - managed
     - azure
-    kind: IOTHubEndpointEventHub
     listKind: IOTHubEndpointEventHubList
     plural: iothubendpointeventhubs
     singular: iothubendpointeventhub

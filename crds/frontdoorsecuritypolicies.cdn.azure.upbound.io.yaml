@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cdn.azure.upbound.io
   names:
+    kind: FrontdoorSecurityPolicy
     categories:
     - crossplane
     - managed
     - azure
-    kind: FrontdoorSecurityPolicy
     listKind: FrontdoorSecurityPolicyList
     plural: frontdoorsecuritypolicies
     singular: frontdoorsecuritypolicy

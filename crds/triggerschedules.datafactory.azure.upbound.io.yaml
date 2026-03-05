@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datafactory.azure.upbound.io
   names:
+    kind: TriggerSchedule
     categories:
     - crossplane
     - managed
     - azure
-    kind: TriggerSchedule
     listKind: TriggerScheduleList
     plural: triggerschedules
     singular: triggerschedule

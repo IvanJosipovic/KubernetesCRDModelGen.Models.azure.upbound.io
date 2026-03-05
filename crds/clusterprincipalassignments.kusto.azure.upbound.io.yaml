@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kusto.azure.upbound.io
   names:
+    kind: ClusterPrincipalAssignment
     categories:
     - crossplane
     - managed
     - azure
-    kind: ClusterPrincipalAssignment
     listKind: ClusterPrincipalAssignmentList
     plural: clusterprincipalassignments
     singular: clusterprincipalassignment

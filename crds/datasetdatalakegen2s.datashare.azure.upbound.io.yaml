@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datashare.azure.upbound.io
   names:
+    kind: DataSetDataLakeGen2
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetDataLakeGen2
     listKind: DataSetDataLakeGen2List
     plural: datasetdatalakegen2s
     singular: datasetdatalakegen2

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataprotection.azure.m.upbound.io
   names:
+    kind: ResourceGuard
     categories:
     - crossplane
     - managed
     - azure
-    kind: ResourceGuard
     listKind: ResourceGuardList
     plural: resourceguards
     singular: resourceguard

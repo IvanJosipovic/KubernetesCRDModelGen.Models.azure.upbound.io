@@ -7,11 +7,11 @@ metadata:
 spec:
   group: keyvault.azure.upbound.io
   names:
+    kind: Key
     categories:
     - crossplane
     - managed
     - azure
-    kind: Key
     listKind: KeyList
     plural: keys
     singular: key

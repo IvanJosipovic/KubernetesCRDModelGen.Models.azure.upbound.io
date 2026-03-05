@@ -7,11 +7,11 @@ metadata:
 spec:
   group: spring.azure.upbound.io
   names:
+    kind: CloudApplicationLiveView
     categories:
     - crossplane
     - managed
     - azure
-    kind: CloudApplicationLiveView
     listKind: CloudApplicationLiveViewList
     plural: cloudapplicationliveviews
     singular: cloudapplicationliveview

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityinsights.azure.m.upbound.io
   names:
+    kind: SentinelLogAnalyticsWorkspaceOnboarding
     categories:
     - crossplane
     - managed
     - azure
-    kind: SentinelLogAnalyticsWorkspaceOnboarding
     listKind: SentinelLogAnalyticsWorkspaceOnboardingList
     plural: sentinelloganalyticsworkspaceonboardings
     singular: sentinelloganalyticsworkspaceonboarding

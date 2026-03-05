@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cosmosdb.azure.upbound.io
   names:
+    kind: SQLDatabase
     categories:
     - crossplane
     - managed
     - azure
-    kind: SQLDatabase
     listKind: SQLDatabaseList
     plural: sqldatabases
     singular: sqldatabase

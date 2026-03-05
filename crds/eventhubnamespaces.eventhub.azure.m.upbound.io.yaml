@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventhub.azure.m.upbound.io
   names:
+    kind: EventHubNamespace
     categories:
     - crossplane
     - managed
     - azure
-    kind: EventHubNamespace
     listKind: EventHubNamespaceList
     plural: eventhubnamespaces
     singular: eventhubnamespace

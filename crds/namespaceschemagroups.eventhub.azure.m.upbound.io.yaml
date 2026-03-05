@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventhub.azure.m.upbound.io
   names:
+    kind: NamespaceSchemaGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: NamespaceSchemaGroup
     listKind: NamespaceSchemaGroupList
     plural: namespaceschemagroups
     singular: namespaceschemagroup

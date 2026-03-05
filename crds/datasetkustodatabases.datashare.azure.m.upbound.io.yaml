@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datashare.azure.m.upbound.io
   names:
+    kind: DataSetKustoDatabase
     categories:
     - crossplane
     - managed
     - azure
-    kind: DataSetKustoDatabase
     listKind: DataSetKustoDatabaseList
     plural: datasetkustodatabases
     singular: datasetkustodatabase

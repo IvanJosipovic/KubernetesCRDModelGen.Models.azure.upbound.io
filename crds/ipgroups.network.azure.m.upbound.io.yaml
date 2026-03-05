@@ -7,11 +7,11 @@ metadata:
 spec:
   group: network.azure.m.upbound.io
   names:
+    kind: IPGroup
     categories:
     - crossplane
     - managed
     - azure
-    kind: IPGroup
     listKind: IPGroupList
     plural: ipgroups
     singular: ipgroup

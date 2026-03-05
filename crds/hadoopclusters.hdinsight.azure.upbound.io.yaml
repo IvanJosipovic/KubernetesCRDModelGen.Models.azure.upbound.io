@@ -7,11 +7,11 @@ metadata:
 spec:
   group: hdinsight.azure.upbound.io
   names:
+    kind: HadoopCluster
     categories:
     - crossplane
     - managed
     - azure
-    kind: HadoopCluster
     listKind: HadoopClusterList
     plural: hadoopclusters
     singular: hadoopcluster
