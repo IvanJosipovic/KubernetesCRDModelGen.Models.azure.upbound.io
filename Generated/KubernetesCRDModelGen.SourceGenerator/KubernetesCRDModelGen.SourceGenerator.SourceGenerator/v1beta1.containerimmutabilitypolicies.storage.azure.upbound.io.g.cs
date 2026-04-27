@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
 /// <summary>ContainerImmutabilityPolicy is the Schema for the ContainerImmutabilityPolicys API. Manages an Immutability Policy for a Container within an Azure Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ContainerImmutabilityPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ContainerImmutabilityPolicy>
@@ -33,7 +33,7 @@ public partial class V1beta1ContainerImmutabilityPolicyList : IKubernetesObject<
 
     /// <summary>List of V1beta1ContainerImmutabilityPolicy objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ContainerImmutabilityPolicy>? Items { get; set; }
+    public required IList<V1beta1ContainerImmutabilityPolicy> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1ContainerImmutabilityPolicyList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecDeletionPolicyEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRefPolicyResolutionEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRefPolicyResolveEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageCon
 }
 
 /// <summary>Reference to a Container in storage to populate storageContainerResourceManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageCon
 }
 
 /// <summary>Selector for a Container in storage to populate storageContainerResourceManagerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecForProviderStorageCon
     public V1beta1ContainerImmutabilityPolicySpecForProviderStorageContainerResourceManagerIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecForProvider
 {
@@ -247,7 +247,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecInitProvider
 {
@@ -272,7 +272,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecManagementPoliciesEnum
 {
@@ -296,7 +296,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPolicy
 {
@@ -351,7 +351,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecProviderConfigRef
 {
@@ -370,7 +370,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpecWriteConnectionSecretToRef
 {
@@ -384,7 +384,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpecWriteConnectionSecret
 }
 
 /// <summary>ContainerImmutabilityPolicySpec defines the desired state of ContainerImmutabilityPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicySpec
 {
@@ -451,7 +451,7 @@ public partial class V1beta1ContainerImmutabilityPolicySpec
     public V1beta1ContainerImmutabilityPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicyStatusAtProvider
 {
@@ -480,7 +480,7 @@ public partial class V1beta1ContainerImmutabilityPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicyStatusConditions
 {
@@ -523,7 +523,7 @@ public partial class V1beta1ContainerImmutabilityPolicyStatusConditions
 }
 
 /// <summary>ContainerImmutabilityPolicyStatus defines the observed state of ContainerImmutabilityPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContainerImmutabilityPolicyStatus
 {
@@ -544,7 +544,7 @@ public partial class V1beta1ContainerImmutabilityPolicyStatus
 }
 
 /// <summary>ContainerImmutabilityPolicy is the Schema for the ContainerImmutabilityPolicys API. Manages an Immutability Policy for a Container within an Azure Storage Account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ContainerImmutabilityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ContainerImmutabilityPolicySpec>, IStatus<V1beta1ContainerImmutabilityPolicyStatus?>

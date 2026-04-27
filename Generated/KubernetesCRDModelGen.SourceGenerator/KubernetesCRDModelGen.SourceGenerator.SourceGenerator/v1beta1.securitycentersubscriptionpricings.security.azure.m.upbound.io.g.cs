@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.security.azure.m.upbound.io;
 /// <summary>SecurityCenterSubscriptionPricing is the Schema for the SecurityCenterSubscriptionPricings API. Manages the Pricing Tier for Azure Security Center in the current subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityCenterSubscriptionPricingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityCenterSubscriptionPricing>
@@ -33,10 +33,10 @@ public partial class V1beta1SecurityCenterSubscriptionPricingList : IKubernetesO
 
     /// <summary>List of V1beta1SecurityCenterSubscriptionPricing objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1SecurityCenterSubscriptionPricing>? Items { get; set; }
+    public required IList<V1beta1SecurityCenterSubscriptionPricing> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecForProviderExtension
 {
@@ -49,7 +49,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecForProviderExte
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecForProvider
 {
@@ -70,7 +70,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecForProvider
     public string? Tier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecInitProviderExtension
 {
@@ -95,7 +95,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecInitProviderExt
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecInitProvider
 {
@@ -120,7 +120,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityCenterSubscriptionPricingSpecManagementPoliciesEnum>))]
 public enum V1beta1SecurityCenterSubscriptionPricingSpecManagementPoliciesEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1SecurityCenterSubscriptionPricingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecProviderConfigRef
 {
@@ -162,7 +162,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpecWriteConnectionSecretToRef
 {
@@ -172,7 +172,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpecWriteConnection
 }
 
 /// <summary>SecurityCenterSubscriptionPricingSpec defines the desired state of SecurityCenterSubscriptionPricing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingSpec
 {
@@ -223,7 +223,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingSpec
     public V1beta1SecurityCenterSubscriptionPricingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingStatusAtProviderExtension
 {
@@ -236,7 +236,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingStatusAtProviderExt
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingStatusAtProvider
 {
@@ -262,7 +262,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingStatusConditions
 {
@@ -305,7 +305,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingStatusConditions
 }
 
 /// <summary>SecurityCenterSubscriptionPricingStatus defines the observed state of SecurityCenterSubscriptionPricing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityCenterSubscriptionPricingStatus
 {
@@ -326,7 +326,7 @@ public partial class V1beta1SecurityCenterSubscriptionPricingStatus
 }
 
 /// <summary>SecurityCenterSubscriptionPricing is the Schema for the SecurityCenterSubscriptionPricings API. Manages the Pricing Tier for Azure Security Center in the current subscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityCenterSubscriptionPricing : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityCenterSubscriptionPricingSpec>, IStatus<V1beta1SecurityCenterSubscriptionPricingStatus?>
