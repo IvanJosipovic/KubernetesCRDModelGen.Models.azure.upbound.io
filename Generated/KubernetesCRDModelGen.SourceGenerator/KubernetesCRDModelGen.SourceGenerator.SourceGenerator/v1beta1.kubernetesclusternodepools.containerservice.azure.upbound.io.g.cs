@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.containerservice.azure.upbound.io;
 /// <summary>KubernetesClusterNodePool is the Schema for the KubernetesClusterNodePools API. Manages a Node Pool within a Kubernetes Cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KubernetesClusterNodePoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KubernetesClusterNodePool>
@@ -45,7 +45,7 @@ public partial class V1beta1KubernetesClusterNodePoolList : IKubernetesObject<V1
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecDeletionPolicyEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubeletConfig
 {
@@ -106,7 +106,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubeletConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRefPolicyResolutionEnum
 {
@@ -122,7 +122,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRefPolicyResolveEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRefPolicy
 {
@@ -157,7 +157,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesCl
 }
 
 /// <summary>Reference to a KubernetesCluster in containerservice to populate kubernetesClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdRef
 {
@@ -176,7 +176,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesCl
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicyResolutionEnum
 {
@@ -192,7 +192,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicyResolveEnum
 {
@@ -203,7 +203,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicy
 {
@@ -227,7 +227,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesCl
 }
 
 /// <summary>Selector for a KubernetesCluster in containerservice to populate kubernetesClusterId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelector
 {
@@ -247,7 +247,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesCl
     public V1beta1KubernetesClusterNodePoolSpecForProviderKubernetesClusterIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderLinuxOsConfigSysctlConfig
 {
@@ -368,7 +368,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderLinuxOsConfi
     public double? VmVfsCachePressure { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderLinuxOsConfig
 {
@@ -392,7 +392,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderLinuxOsConfi
     public string? TransparentHugePageEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderNodeNetworkProfileAllowedHostPorts
 {
@@ -409,7 +409,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderNodeNetworkP
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderNodeNetworkProfile
 {
@@ -432,7 +432,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderNodeNetworkP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyResolutionEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyResolveEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRefPolicy
 {
@@ -483,7 +483,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdR
 }
 
 /// <summary>Reference to a Subnet in network to populate podSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdRef
 {
@@ -502,7 +502,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicyResolutionEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicyResolveEnum
 {
@@ -529,7 +529,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicy
 {
@@ -553,7 +553,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdS
 }
 
 /// <summary>Selector for a Subnet in network to populate podSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelector
 {
@@ -573,7 +573,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdS
     public V1beta1KubernetesClusterNodePoolSpecForProviderPodSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderUpgradeSettings
 {
@@ -604,7 +604,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderUpgradeSetti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicyResolutionEnum
 {
@@ -620,7 +620,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicyResolveEnum
 {
@@ -631,7 +631,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRefPolicy
 {
@@ -655,7 +655,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetId
 }
 
 /// <summary>Reference to a Subnet in network to populate vnetSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdRef
 {
@@ -674,7 +674,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicyResolutionEnum
 {
@@ -690,7 +690,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicyResolveEnum
 {
@@ -701,7 +701,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicy
 {
@@ -725,7 +725,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetId
 }
 
 /// <summary>Selector for a Subnet in network to populate vnetSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelector
 {
@@ -745,7 +745,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetId
     public V1beta1KubernetesClusterNodePoolSpecForProviderVnetSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProviderWindowsProfile
 {
@@ -754,7 +754,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProviderWindowsProfi
     public bool? OutboundNatEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecForProvider
 {
@@ -951,7 +951,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecForProvider
     public IList<string>? Zones { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderKubeletConfig
 {
@@ -996,7 +996,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderKubeletConf
     public string? TopologyManagerPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderLinuxOsConfigSysctlConfig
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderLinuxOsConf
     public double? VmVfsCachePressure { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderLinuxOsConfig
 {
@@ -1141,7 +1141,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderLinuxOsConf
     public string? TransparentHugePageEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderNodeNetworkProfileAllowedHostPorts
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderNodeNetwork
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderNodeNetworkProfile
 {
@@ -1181,7 +1181,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderNodeNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicyResolutionEnum
 {
@@ -1197,7 +1197,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicyResolveEnum
 {
@@ -1208,7 +1208,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRefPolicy
 {
@@ -1232,7 +1232,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetId
 }
 
 /// <summary>Reference to a Subnet in network to populate podSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdRef
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1267,7 +1267,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicyResolveEnum
 {
@@ -1278,7 +1278,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicy
 {
@@ -1302,7 +1302,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetId
 }
 
 /// <summary>Selector for a Subnet in network to populate podSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelector
 {
@@ -1322,7 +1322,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetId
     public V1beta1KubernetesClusterNodePoolSpecInitProviderPodSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderUpgradeSettings
 {
@@ -1353,7 +1353,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderUpgradeSett
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolicyResolutionEnum
 {
@@ -1369,7 +1369,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolicyResolveEnum
 {
@@ -1380,7 +1380,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRefPolicy
 {
@@ -1404,7 +1404,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetI
 }
 
 /// <summary>Reference to a Subnet in network to populate vnetSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdRef
 {
@@ -1423,7 +1423,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1439,7 +1439,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicyResolveEnum
 {
@@ -1450,7 +1450,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicy
 {
@@ -1474,7 +1474,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetI
 }
 
 /// <summary>Selector for a Subnet in network to populate vnetSubnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelector
 {
@@ -1494,7 +1494,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetI
     public V1beta1KubernetesClusterNodePoolSpecInitProviderVnetSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderWindowsProfile
 {
@@ -1515,7 +1515,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProviderWindowsProf
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecInitProvider
 {
@@ -1704,7 +1704,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecManagementPoliciesEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecManagementPoliciesEnum
 {
@@ -1728,7 +1728,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1744,7 +1744,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1755,7 +1755,7 @@ public enum V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicy
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecProviderConfigRef
 {
@@ -1802,7 +1802,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpecWriteConnectionSecretToRef
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpecWriteConnectionSecretTo
 }
 
 /// <summary>KubernetesClusterNodePoolSpec defines the desired state of KubernetesClusterNodePool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolSpec
 {
@@ -1883,7 +1883,7 @@ public partial class V1beta1KubernetesClusterNodePoolSpec
     public V1beta1KubernetesClusterNodePoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderKubeletConfig
 {
@@ -1928,7 +1928,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderKubeletConf
     public string? TopologyManagerPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderLinuxOsConfigSysctlConfig
 {
@@ -2049,7 +2049,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderLinuxOsConf
     public double? VmVfsCachePressure { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderLinuxOsConfig
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderLinuxOsConf
     public string? TransparentHugePageEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderNodeNetworkProfileAllowedHostPorts
 {
@@ -2090,7 +2090,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderNodeNetwork
     public string? Protocol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderNodeNetworkProfile
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderNodeNetwork
     public IDictionary<string, string>? NodePublicIpTags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderUpgradeSettings
 {
@@ -2132,7 +2132,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderUpgradeSett
     public string? UndrainableNodeBehavior { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderWindowsProfile
 {
@@ -2141,7 +2141,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProviderWindowsProf
     public bool? OutboundNatEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusAtProvider
 {
@@ -2319,7 +2319,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatusConditions
 {
@@ -2362,7 +2362,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatusConditions
 }
 
 /// <summary>KubernetesClusterNodePoolStatus defines the observed state of KubernetesClusterNodePool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KubernetesClusterNodePoolStatus
 {
@@ -2383,7 +2383,7 @@ public partial class V1beta1KubernetesClusterNodePoolStatus
 }
 
 /// <summary>KubernetesClusterNodePool is the Schema for the KubernetesClusterNodePools API. Manages a Node Pool within a Kubernetes Cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KubernetesClusterNodePool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KubernetesClusterNodePoolSpec>, IStatus<V1beta1KubernetesClusterNodePoolStatus?>
