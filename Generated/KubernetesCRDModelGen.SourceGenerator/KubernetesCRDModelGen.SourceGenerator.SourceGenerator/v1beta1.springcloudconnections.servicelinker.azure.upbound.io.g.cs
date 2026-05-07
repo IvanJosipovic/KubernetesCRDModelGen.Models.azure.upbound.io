@@ -476,10 +476,50 @@ public partial class V1beta1SpringCloudConnectionSpecForProvider
     public string? VnetSolution { get; set; }
 }
 
+/// <summary>Service principal certificate for servicePrincipal auth. Should be specified when type is set to servicePrincipalCertificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudConnectionSpecInitProviderAuthenticationCertificateSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Password or account key for secret auth. secret and name should be either both specified or both not specified when type is set to secret.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudConnectionSpecInitProviderAuthenticationSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudConnectionSpecInitProviderAuthentication
 {
+    /// <summary>Service principal certificate for servicePrincipal auth. Should be specified when type is set to servicePrincipalCertificate.</summary>
+    [JsonPropertyName("certificateSecretRef")]
+    public V1beta1SpringCloudConnectionSpecInitProviderAuthenticationCertificateSecretRef? CertificateSecretRef { get; set; }
+
     /// <summary>Client ID for userAssignedIdentity or servicePrincipal auth. Should be specified when type is set to servicePrincipalSecret or servicePrincipalCertificate. When type is set to userAssignedIdentity, client_id and subscription_id should be either both specified or both not specified.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
@@ -491,6 +531,10 @@ public partial class V1beta1SpringCloudConnectionSpecInitProviderAuthentication
     /// <summary>Principal ID for servicePrincipal auth. Should be specified when type is set to servicePrincipalSecret or servicePrincipalCertificate.</summary>
     [JsonPropertyName("principalId")]
     public string? PrincipalId { get; set; }
+
+    /// <summary>Password or account key for secret auth. secret and name should be either both specified or both not specified when type is set to secret.</summary>
+    [JsonPropertyName("secretSecretRef")]
+    public V1beta1SpringCloudConnectionSpecInitProviderAuthenticationSecretSecretRef? SecretSecretRef { get; set; }
 
     /// <summary>Subscription ID for userAssignedIdentity. subscription_id and client_id should be either both specified or both not specified.</summary>
     [JsonPropertyName("subscriptionId")]

@@ -1344,6 +1344,24 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public double? SaLifetimeInSeconds { get; set; }
 }
 
+/// <summary>The secret that is used to communicate with the Radius Server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServer
@@ -1355,6 +1373,10 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     /// <summary>The score of the Radius Server determines the priority of the server. Possible values are between 1 and 30.</summary>
     [JsonPropertyName("score")]
     public double? Score { get; set; }
+
+    /// <summary>The secret that is used to communicate with the Radius Server.</summary>
+    [JsonPropertyName("secretSecretRef")]
+    public required V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef SecretSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

@@ -973,10 +973,53 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProvider
     public V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelector? VirtualMachineIdSelector { get; set; }
 }
 
+/// <summary>The client ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The object ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityObjectIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentity
 {
+    /// <summary>The client ID of the managed identity.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityClientIdSecretRef? ClientIdSecretRef { get; set; }
+
+    /// <summary>The object ID of the managed identity.</summary>
+    [JsonPropertyName("objectIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityObjectIdSecretRef? ObjectIdSecretRef { get; set; }
 }
 
 /// <summary>
@@ -1126,10 +1169,53 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUri
     public V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The client ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The object ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityObjectIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentity
 {
+    /// <summary>The client ID of the managed identity.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityClientIdSecretRef? ClientIdSecretRef { get; set; }
+
+    /// <summary>The object ID of the managed identity.</summary>
+    [JsonPropertyName("objectIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityObjectIdSecretRef? ObjectIdSecretRef { get; set; }
 }
 
 /// <summary>
@@ -1292,16 +1378,120 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderParameter
     public string? Value { get; set; }
 }
 
+/// <summary>The run parameter name.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterNameSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The run parameter value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameter
 {
+    /// <summary>The run parameter name.</summary>
+    [JsonPropertyName("nameSecretRef")]
+    public required V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterNameSecretRef NameSecretRef { get; set; }
+
+    /// <summary>The run parameter value.</summary>
+    [JsonPropertyName("valueSecretRef")]
+    public required V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterValueSecretRef ValueSecretRef { get; set; }
+}
+
+/// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderRunAsPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The client ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityClientIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The object ID of the managed identity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityObjectIdSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentity
 {
+    /// <summary>The client ID of the managed identity.</summary>
+    [JsonPropertyName("clientIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityClientIdSecretRef? ClientIdSecretRef { get; set; }
+
+    /// <summary>The object ID of the managed identity.</summary>
+    [JsonPropertyName("objectIdSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityObjectIdSecretRef? ObjectIdSecretRef { get; set; }
 }
 
 /// <summary>
@@ -1536,6 +1726,10 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProvider
     /// <summary>A list of protected_parameter blocks as defined below. The protected parameters used by the script.</summary>
     [JsonPropertyName("protectedParameter")]
     public IList<V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameter>? ProtectedParameter { get; set; }
+
+    /// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
+    [JsonPropertyName("runAsPasswordSecretRef")]
+    public V1beta1VirtualMachineRunCommandSpecInitProviderRunAsPasswordSecretRef? RunAsPasswordSecretRef { get; set; }
 
     /// <summary>Specifies the user account on the VM when executing the Virtual Machine Run Command.</summary>
     [JsonPropertyName("runAsUser")]

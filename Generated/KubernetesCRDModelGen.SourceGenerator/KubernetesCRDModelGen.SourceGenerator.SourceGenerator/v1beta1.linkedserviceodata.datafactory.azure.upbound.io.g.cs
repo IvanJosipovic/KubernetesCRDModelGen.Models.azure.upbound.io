@@ -278,10 +278,32 @@ public partial class V1beta1LinkedServiceODataSpecForProvider
     public string? Url { get; set; }
 }
 
+/// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthenticationPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthentication
 {
+    /// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1LinkedServiceODataSpecInitProviderBasicAuthenticationPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The username which can be used to authenticate to the OData endpoint.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }

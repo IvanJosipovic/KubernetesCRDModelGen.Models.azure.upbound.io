@@ -1812,6 +1812,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderDiskEncryption
     public string? KeyVaultManagedIdentityId { get; set; }
 }
 
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderExtensionPrimaryKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HBaseClusterSpecInitProviderExtension
@@ -1819,15 +1837,59 @@ public partial class V1beta1HBaseClusterSpecInitProviderExtension
     /// <summary>The workspace ID of the log analytics extension.</summary>
     [JsonPropertyName("logAnalyticsWorkspaceId")]
     public string? LogAnalyticsWorkspaceId { get; set; }
+
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("primaryKeySecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderExtensionPrimaryKeySecretRef PrimaryKeySecretRef { get; set; }
+}
+
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderGatewayPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HBaseClusterSpecInitProviderGateway
 {
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderGatewayPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The username used for the Ambari Portal. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
+}
+
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderMetastoresAmbariPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1838,6 +1900,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastoresAmbari
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderMetastoresAmbariPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The fully-qualified domain name (FQDN) of the SQL server to use for the external Oozie metastore. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("server")]
     public string? Server { get; set; }
@@ -1845,6 +1911,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastoresAmbari
     /// <summary>The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
+}
+
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderMetastoresHivePasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1855,6 +1939,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastoresHive
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderMetastoresHivePasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The fully-qualified domain name (FQDN) of the SQL server to use for the external Oozie metastore. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("server")]
     public string? Server { get; set; }
@@ -1864,6 +1952,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastoresHive
     public string? Username { get; set; }
 }
 
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderMetastoresOoziePasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HBaseClusterSpecInitProviderMetastoresOozie
@@ -1871,6 +1977,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastoresOozie
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
+
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderMetastoresOoziePasswordSecretRef PasswordSecretRef { get; set; }
 
     /// <summary>The fully-qualified domain name (FQDN) of the SQL server to use for the external Oozie metastore. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("server")]
@@ -1898,6 +2008,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderMetastores
     public IList<V1beta1HBaseClusterSpecInitProviderMetastoresOozie>? Oozie { get; set; }
 }
 
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderMonitorPrimaryKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HBaseClusterSpecInitProviderMonitor
@@ -1905,6 +2033,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderMonitor
     /// <summary>The Operations Management Suite (OMS) workspace ID.</summary>
     [JsonPropertyName("logAnalyticsWorkspaceId")]
     public string? LogAnalyticsWorkspaceId { get; set; }
+
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("primaryKeySecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderMonitorPrimaryKeySecretRef PrimaryKeySecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -2849,6 +2981,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderRoles
     public IList<V1beta1HBaseClusterSpecInitProviderRolesZookeeperNode>? ZookeeperNode { get; set; }
 }
 
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderSecurityProfileDomainUserPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HBaseClusterSpecInitProviderSecurityProfile
@@ -2865,6 +3015,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderSecurityProfile
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("domainUserPasswordSecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderSecurityProfileDomainUserPasswordSecretRef DomainUserPasswordSecretRef { get; set; }
+
     /// <summary>The username of the Azure Active Directory Domain. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("domainUsername")]
     public string? DomainUsername { get; set; }
@@ -2876,6 +3030,24 @@ public partial class V1beta1HBaseClusterSpecInitProviderSecurityProfile
     /// <summary>The User Assigned Identity for the HDInsight Cluster. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("msiResourceId")]
     public string? MsiResourceId { get; set; }
+}
+
+/// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HBaseClusterSpecInitProviderStorageAccountStorageAccountKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -3032,6 +3204,10 @@ public partial class V1beta1HBaseClusterSpecInitProviderStorageAccount
     /// <summary>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("isDefault")]
     public bool? IsDefault { get; set; }
+
+    /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
+    [JsonPropertyName("storageAccountKeySecretRef")]
+    public required V1beta1HBaseClusterSpecInitProviderStorageAccountStorageAccountKeySecretRef StorageAccountKeySecretRef { get; set; }
 
     /// <summary>The ID of the Storage Container. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageContainerId")]

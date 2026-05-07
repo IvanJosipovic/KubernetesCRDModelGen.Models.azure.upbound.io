@@ -1717,6 +1717,24 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAppServicePlanIdSelec
     public V1beta1FunctionAppSlotSpecInitProviderAppServicePlanIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsActiveDirectory
@@ -1728,6 +1746,28 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsActiveDir
     /// <summary>The OAuth 2.0 client ID that was created for the app used for authentication.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
+
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public V1beta1FunctionAppSlotSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef? ClientSecretSecretRef { get; set; }
+}
+
+/// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsFacebookAppSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1738,9 +1778,31 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsFacebook
     [JsonPropertyName("appId")]
     public string? AppId { get; set; }
 
+    /// <summary>The App Secret of the Facebook app used for Facebook login.</summary>
+    [JsonPropertyName("appSecretSecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderAuthSettingsFacebookAppSecretSecretRef AppSecretSecretRef { get; set; }
+
     /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsGoogleClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1751,9 +1813,31 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsGoogle
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderAuthSettingsGoogleClientSecretSecretRef ClientSecretSecretRef { get; set; }
+
     /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1764,9 +1848,31 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsMicrosoft
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
+    /// <summary>The OAuth 2.0 client secret that was created for the app used for authentication.</summary>
+    [JsonPropertyName("clientSecretSecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef ClientSecretSecretRef { get; set; }
+
     /// <summary>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx</summary>
     [JsonPropertyName("oauthScopes")]
     public IList<string>? OauthScopes { get; set; }
+}
+
+/// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1776,6 +1882,10 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettingsTwitter
     /// <summary>The OAuth 1.0a consumer key of the Twitter application used for sign-in.</summary>
     [JsonPropertyName("consumerKey")]
     public string? ConsumerKey { get; set; }
+
+    /// <summary>The OAuth 1.0a consumer secret of the Twitter application used for sign-in.</summary>
+    [JsonPropertyName("consumerSecretSecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef ConsumerSecretSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1839,6 +1949,24 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderAuthSettings
     public string? UnauthenticatedClientAction { get; set; }
 }
 
+/// <summary>The value for the Connection String.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderConnectionStringValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionAppSlotSpecInitProviderConnectionString
@@ -1850,6 +1978,10 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderConnectionString
     /// <summary>The type of the Connection String. Possible values are APIHub, Custom, DocDb, EventHub, MySQL, NotificationHub, PostgreSQL, RedisCache, ServiceBus, SQLAzure and SQLServer.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+
+    /// <summary>The value for the Connection String.</summary>
+    [JsonPropertyName("valueSecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderConnectionStringValueSecretRef ValueSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -2385,6 +2517,24 @@ public partial class V1beta1FunctionAppSlotSpecInitProviderSiteConfig
     public bool? WebsocketsEnabled { get; set; }
 }
 
+/// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FunctionAppSlotSpecInitProviderStorageAccountAccessKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -2603,6 +2753,10 @@ public partial class V1beta1FunctionAppSlotSpecInitProvider
     /// <summary>A site_config object as defined below.</summary>
     [JsonPropertyName("siteConfig")]
     public IList<V1beta1FunctionAppSlotSpecInitProviderSiteConfig>? SiteConfig { get; set; }
+
+    /// <summary>The access key which will be used to access the backend storage account for the Function App.</summary>
+    [JsonPropertyName("storageAccountAccessKeySecretRef")]
+    public required V1beta1FunctionAppSlotSpecInitProviderStorageAccountAccessKeySecretRef StorageAccountAccessKeySecretRef { get; set; }
 
     /// <summary>The backend storage account name which will be used by the Function App (such as the dashboard, logs). Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("storageAccountName")]

@@ -55,7 +55,6 @@ public enum V1beta1LoadTestSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>An identity block as defined below. Changing this forces a new Load Test to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadTestSpecForProviderEncryptionIdentity
@@ -69,14 +68,13 @@ public partial class V1beta1LoadTestSpecForProviderEncryptionIdentity
     public string? Type { get; set; }
 }
 
-/// <summary>An encryption block as defined below. Changing this forces a new Load Test to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadTestSpecForProviderEncryption
 {
     /// <summary>An identity block as defined below. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("identity")]
-    public V1beta1LoadTestSpecForProviderEncryptionIdentity? Identity { get; set; }
+    public IList<V1beta1LoadTestSpecForProviderEncryptionIdentity>? Identity { get; set; }
 
     /// <summary>The URI specifying the Key vault and key to be used to encrypt data in this resource. The URI should include the key version. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("keyUrl")]
@@ -253,7 +251,7 @@ public partial class V1beta1LoadTestSpecForProvider
 
     /// <summary>An encryption block as defined below. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("encryption")]
-    public V1beta1LoadTestSpecForProviderEncryption? Encryption { get; set; }
+    public IList<V1beta1LoadTestSpecForProviderEncryption>? Encryption { get; set; }
 
     /// <summary>An identity block as defined below. Specifies the Managed Identity which should be assigned to this Load Test.</summary>
     [JsonPropertyName("identity")]
@@ -539,7 +537,6 @@ public partial class V1beta1LoadTestSpec
     public V1beta1LoadTestSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>An identity block as defined below. Changing this forces a new Load Test to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadTestStatusAtProviderEncryptionIdentity
@@ -553,14 +550,13 @@ public partial class V1beta1LoadTestStatusAtProviderEncryptionIdentity
     public string? Type { get; set; }
 }
 
-/// <summary>An encryption block as defined below. Changing this forces a new Load Test to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LoadTestStatusAtProviderEncryption
 {
     /// <summary>An identity block as defined below. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("identity")]
-    public V1beta1LoadTestStatusAtProviderEncryptionIdentity? Identity { get; set; }
+    public IList<V1beta1LoadTestStatusAtProviderEncryptionIdentity>? Identity { get; set; }
 
     /// <summary>The URI specifying the Key vault and key to be used to encrypt data in this resource. The URI should include the key version. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("keyUrl")]
@@ -602,7 +598,7 @@ public partial class V1beta1LoadTestStatusAtProvider
 
     /// <summary>An encryption block as defined below. Changing this forces a new Load Test to be created.</summary>
     [JsonPropertyName("encryption")]
-    public V1beta1LoadTestStatusAtProviderEncryption? Encryption { get; set; }
+    public IList<V1beta1LoadTestStatusAtProviderEncryption>? Encryption { get; set; }
 
     /// <summary>The ID of the Load Test.</summary>
     [JsonPropertyName("id")]

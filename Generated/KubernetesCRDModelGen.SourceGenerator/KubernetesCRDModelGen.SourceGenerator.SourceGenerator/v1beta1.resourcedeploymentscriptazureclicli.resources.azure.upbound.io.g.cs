@@ -535,6 +535,24 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderCont
     public string? ContainerGroupName { get; set; }
 }
 
+/// <summary>Specifies the secure value of the environment variable.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariableSecureValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariable
@@ -542,6 +560,10 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvi
     /// <summary>Specifies the name of the environment variable.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Specifies the secure value of the environment variable.</summary>
+    [JsonPropertyName("secureValueSecretRef")]
+    public V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariableSecureValueSecretRef? SecureValueSecretRef { get; set; }
 
     /// <summary>Specifies the value of the environment variable.</summary>
     [JsonPropertyName("value")]
@@ -863,10 +885,32 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderReso
     public V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Specifies the storage account access key.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccountKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccount
 {
+    /// <summary>Specifies the storage account access key.</summary>
+    [JsonPropertyName("keySecretRef")]
+    public required V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccountKeySecretRef KeySecretRef { get; set; }
+
     /// <summary>Specifies the storage account name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }

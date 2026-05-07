@@ -1463,6 +1463,24 @@ public partial class V1beta1EventSubscriptionSpecInitProviderDeliveryIdentity
     public string? UserAssignedIdentity { get; set; }
 }
 
+/// <summary>If the type is Static, then provide the static value for the header.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EventSubscriptionSpecInitProviderDeliveryPropertyValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionSpecInitProviderDeliveryProperty
@@ -1482,6 +1500,10 @@ public partial class V1beta1EventSubscriptionSpecInitProviderDeliveryProperty
     /// <summary>Either Static or Dynamic</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+
+    /// <summary>If the type is Static, then provide the static value for the header.</summary>
+    [JsonPropertyName("valueSecretRef")]
+    public V1beta1EventSubscriptionSpecInitProviderDeliveryPropertyValueSecretRef? ValueSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

@@ -1117,6 +1117,24 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCopyCompu
     public double? TimeToLive { get; set; }
 }
 
+/// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScriptSasTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScript
@@ -1124,6 +1142,10 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSet
     /// <summary>The blob endpoint for the container which contains a custom setup script that will be run on every node on startup. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
     [JsonPropertyName("blobContainerUri")]
     public string? BlobContainerUri { get; set; }
+
+    /// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
+    [JsonPropertyName("sasTokenSecretRef")]
+    public required V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScriptSasTokenSecretRef SasTokenSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

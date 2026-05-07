@@ -307,6 +307,24 @@ public partial class V1beta1VirtualMachineExtensionSpecInitProviderProtectedSett
     public string? SourceVaultId { get; set; }
 }
 
+/// <summary>The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1VirtualMachineExtensionSpecInitProviderProtectedSettingsSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -338,6 +356,10 @@ public partial class V1beta1VirtualMachineExtensionSpecInitProvider
     /// <summary>A protected_settings_from_key_vault block as defined below.</summary>
     [JsonPropertyName("protectedSettingsFromKeyVault")]
     public IList<V1beta1VirtualMachineExtensionSpecInitProviderProtectedSettingsFromKeyVault>? ProtectedSettingsFromKeyVault { get; set; }
+
+    /// <summary>The protected_settings passed to the extension, like settings, these are specified as a JSON object in a string.</summary>
+    [JsonPropertyName("protectedSettingsSecretRef")]
+    public V1beta1VirtualMachineExtensionSpecInitProviderProtectedSettingsSecretRef? ProtectedSettingsSecretRef { get; set; }
 
     /// <summary>Specifies the collection of extension names after which this extension needs to be provisioned.</summary>
     [JsonPropertyName("provisionAfterExtensions")]

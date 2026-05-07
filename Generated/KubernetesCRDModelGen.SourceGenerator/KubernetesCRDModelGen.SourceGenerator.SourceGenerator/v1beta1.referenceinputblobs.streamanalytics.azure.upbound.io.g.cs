@@ -923,6 +923,24 @@ public partial class V1beta1ReferenceInputBlobSpecInitProviderSerialization
     public string? Type { get; set; }
 }
 
+/// <summary>The Access Key which should be used to connect to this Storage Account. Required if authentication_mode is ConnectionString.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReferenceInputBlobSpecInitProviderStorageAccountKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1411,6 +1429,10 @@ public partial class V1beta1ReferenceInputBlobSpecInitProvider
     /// <summary>A serialization block as defined below.</summary>
     [JsonPropertyName("serialization")]
     public IList<V1beta1ReferenceInputBlobSpecInitProviderSerialization>? Serialization { get; set; }
+
+    /// <summary>The Access Key which should be used to connect to this Storage Account. Required if authentication_mode is ConnectionString.</summary>
+    [JsonPropertyName("storageAccountKeySecretRef")]
+    public V1beta1ReferenceInputBlobSpecInitProviderStorageAccountKeySecretRef? StorageAccountKeySecretRef { get; set; }
 
     /// <summary>The name of the Storage Account that has the blob container with reference data.</summary>
     [JsonPropertyName("storageAccountName")]

@@ -1275,6 +1275,24 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
     public V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinuxVirtualMachineSpecInitProviderPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1501,6 +1519,10 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProvider
     /// <summary>Any notes about the Virtual Machine.</summary>
     [JsonPropertyName("notes")]
     public string? Notes { get; set; }
+
+    /// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta1LinuxVirtualMachineSpecInitProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 
     /// <summary>The name of the resource group in which the Dev Test Lab resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("resourceGroupName")]

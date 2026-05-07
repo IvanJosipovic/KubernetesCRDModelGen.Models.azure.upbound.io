@@ -676,6 +676,24 @@ public partial class V1beta1HPCCacheSpecInitProviderDefaultAccessPolicy
     public IList<V1beta1HPCCacheSpecInitProviderDefaultAccessPolicyAccessRule>? AccessRule { get; set; }
 }
 
+/// <summary>The password of the Active Directory domain administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HPCCacheSpecInitProviderDirectoryActiveDirectoryPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheSpecInitProviderDirectoryActiveDirectory
@@ -700,6 +718,10 @@ public partial class V1beta1HPCCacheSpecInitProviderDirectoryActiveDirectory
     [JsonPropertyName("domainNetbiosName")]
     public string? DomainNetbiosName { get; set; }
 
+    /// <summary>The password of the Active Directory domain administrator.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HPCCacheSpecInitProviderDirectoryActiveDirectoryPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The username of the Active Directory domain administrator.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
@@ -718,6 +740,24 @@ public partial class V1beta1HPCCacheSpecInitProviderDirectoryFlatFile
     public string? PasswordFileUri { get; set; }
 }
 
+/// <summary>The password of the Active Directory domain administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HPCCacheSpecInitProviderDirectoryLdapBindPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HPCCacheSpecInitProviderDirectoryLdapBind
@@ -725,6 +765,10 @@ public partial class V1beta1HPCCacheSpecInitProviderDirectoryLdapBind
     /// <summary>The Bind Distinguished Name (DN) identity to be used in the secure LDAP connection.</summary>
     [JsonPropertyName("dn")]
     public string? Dn { get; set; }
+
+    /// <summary>The password of the Active Directory domain administrator.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1HPCCacheSpecInitProviderDirectoryLdapBindPasswordSecretRef PasswordSecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

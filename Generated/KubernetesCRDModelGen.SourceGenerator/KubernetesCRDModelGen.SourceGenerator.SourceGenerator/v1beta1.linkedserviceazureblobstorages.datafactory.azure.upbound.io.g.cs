@@ -673,6 +673,24 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProvider
     public bool? UseManagedIdentity { get; set; }
 }
 
+/// <summary>The connection string. Conflicts with connection_string_insecure, sas_uri and service_endpoint.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderConnectionStringSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -839,6 +857,42 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
     /// <summary>Specifies the secret name in Azure Key Vault that stores the SAS token.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
+}
+
+/// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderSasuriSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The Service Endpoint. Conflicts with connection_string, connection_string_insecure and sas_uri.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServiceEndpointSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -1037,6 +1091,10 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProvider
     [JsonPropertyName("connectionStringInsecure")]
     public string? ConnectionStringInsecure { get; set; }
 
+    /// <summary>The connection string. Conflicts with connection_string_insecure, sas_uri and service_endpoint.</summary>
+    [JsonPropertyName("connectionStringSecretRef")]
+    public V1beta1LinkedServiceAzureBlobStorageSpecInitProviderConnectionStringSecretRef? ConnectionStringSecretRef { get; set; }
+
     /// <summary>The description for the Data Factory Linked Service.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -1052,6 +1110,14 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProvider
     /// <summary>A map of parameters to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
+
+    /// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
+    [JsonPropertyName("sasuriSecretRef")]
+    public V1beta1LinkedServiceAzureBlobStorageSpecInitProviderSasuriSecretRef? SasuriSecretRef { get; set; }
+
+    /// <summary>The Service Endpoint. Conflicts with connection_string, connection_string_insecure and sas_uri.</summary>
+    [JsonPropertyName("serviceEndpointSecretRef")]
+    public V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServiceEndpointSecretRef? ServiceEndpointSecretRef { get; set; }
 
     /// <summary>The service principal id in which to authenticate against the Azure Blob Storage account.</summary>
     [JsonPropertyName("servicePrincipalId")]

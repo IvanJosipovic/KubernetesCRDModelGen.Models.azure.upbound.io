@@ -1093,22 +1093,102 @@ public partial class V1beta1SpringCloudServiceSpecForProvider
     public bool? ZoneRedundant { get; set; }
 }
 
+/// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingHttpBasicAuthPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingHttpBasicAuth
 {
+    /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingHttpBasicAuthPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The username that&apos;s used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
+}
+
+/// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositoryHttpBasicAuthPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositoryHttpBasicAuth
 {
+    /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositoryHttpBasicAuthPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The username that&apos;s used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
+}
+
+/// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthHostKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthPrivateKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1118,6 +1198,14 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
     [JsonPropertyName("hostKeyAlgorithm")]
     public string? HostKeyAlgorithm { get; set; }
+
+    /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
+    [JsonPropertyName("hostKeySecretRef")]
+    public V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthHostKeySecretRef? HostKeySecretRef { get; set; }
+
+    /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
+    [JsonPropertyName("privateKeySecretRef")]
+    public required V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthPrivateKeySecretRef PrivateKeySecretRef { get; set; }
 
     /// <summary>Indicates whether the Config Server instance will fail to start if the host_key does not match. Defaults to true.</summary>
     [JsonPropertyName("strictHostKeyCheckingEnabled")]
@@ -1157,6 +1245,42 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
     public string? Uri { get; set; }
 }
 
+/// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthHostKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthPrivateKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuth
@@ -1164,6 +1288,14 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
     [JsonPropertyName("hostKeyAlgorithm")]
     public string? HostKeyAlgorithm { get; set; }
+
+    /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
+    [JsonPropertyName("hostKeySecretRef")]
+    public V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthHostKeySecretRef? HostKeySecretRef { get; set; }
+
+    /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
+    [JsonPropertyName("privateKeySecretRef")]
+    public required V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthPrivateKeySecretRef PrivateKeySecretRef { get; set; }
 
     /// <summary>Indicates whether the Config Server instance will fail to start if the host_key does not match. Defaults to true.</summary>
     [JsonPropertyName("strictHostKeyCheckingEnabled")]
@@ -1199,6 +1331,24 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
     public string? Uri { get; set; }
 }
 
+/// <summary>Specifies the password of the container registry.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistryPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistry
@@ -1206,6 +1356,10 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistry
     /// <summary>Specifies the name of the container registry.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Specifies the password of the container registry.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1SpringCloudServiceSpecInitProviderContainerRegistryPasswordSecretRef PasswordSecretRef { get; set; }
 
     /// <summary>Specifies the login server of the container registry.</summary>
     [JsonPropertyName("server")]
