@@ -1302,6 +1302,42 @@ public partial class V1beta1MSSQLDatabaseSpecInitProviderIdentity
     public string? Type { get; set; }
 }
 
+/// <summary>Specifies the password of the SQL administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MSSQLDatabaseSpecInitProviderImportAdministratorLoginPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Specifies the access key for the storage account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MSSQLDatabaseSpecInitProviderImportStorageKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLDatabaseSpecInitProviderImport
@@ -1310,6 +1346,10 @@ public partial class V1beta1MSSQLDatabaseSpecInitProviderImport
     [JsonPropertyName("administratorLogin")]
     public string? AdministratorLogin { get; set; }
 
+    /// <summary>Specifies the password of the SQL administrator.</summary>
+    [JsonPropertyName("administratorLoginPasswordSecretRef")]
+    public required V1beta1MSSQLDatabaseSpecInitProviderImportAdministratorLoginPasswordSecretRef AdministratorLoginPasswordSecretRef { get; set; }
+
     /// <summary>Specifies the type of authentication used to access the server. Valid values are SQL or ADPassword.</summary>
     [JsonPropertyName("authenticationType")]
     public string? AuthenticationType { get; set; }
@@ -1317,6 +1357,10 @@ public partial class V1beta1MSSQLDatabaseSpecInitProviderImport
     /// <summary>The resource id for the storage account used to store BACPAC file. If set, private endpoint connection will be created for the storage account. Must match storage account used for storage_uri parameter.</summary>
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
+
+    /// <summary>Specifies the access key for the storage account.</summary>
+    [JsonPropertyName("storageKeySecretRef")]
+    public required V1beta1MSSQLDatabaseSpecInitProviderImportStorageKeySecretRef StorageKeySecretRef { get; set; }
 
     /// <summary>Specifies the type of access key for the storage account. Valid values are StorageAccessKey or SharedAccessKey.</summary>
     [JsonPropertyName("storageKeyType")]

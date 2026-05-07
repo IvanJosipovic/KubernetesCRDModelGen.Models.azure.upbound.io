@@ -919,6 +919,24 @@ public partial class V1beta1OutputEventHubSpecInitProviderServicebusNamespaceSel
     public V1beta1OutputEventHubSpecInitProviderServicebusNamespaceSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The shared access policy key for the specified shared access policy. Required when authentication_mode is set to ConnectionString.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1OutputEventHubSpecInitProviderSharedAccessPolicyKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -974,6 +992,10 @@ public partial class V1beta1OutputEventHubSpecInitProvider
     /// <summary>Selector for a EventHubNamespace in eventhub to populate servicebusNamespace.</summary>
     [JsonPropertyName("servicebusNamespaceSelector")]
     public V1beta1OutputEventHubSpecInitProviderServicebusNamespaceSelector? ServicebusNamespaceSelector { get; set; }
+
+    /// <summary>The shared access policy key for the specified shared access policy. Required when authentication_mode is set to ConnectionString.</summary>
+    [JsonPropertyName("sharedAccessPolicyKeySecretRef")]
+    public V1beta1OutputEventHubSpecInitProviderSharedAccessPolicyKeySecretRef? SharedAccessPolicyKeySecretRef { get; set; }
 
     /// <summary>The shared access policy name for the Event Hub, Service Bus Queue, Service Bus Topic, etc. Required when authentication_mode is set to ConnectionString.</summary>
     [JsonPropertyName("sharedAccessPolicyName")]

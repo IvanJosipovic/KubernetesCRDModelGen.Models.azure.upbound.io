@@ -566,6 +566,24 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderMicrosoftP
     public string? RoutingRegistryName { get; set; }
 }
 
+/// <summary>The shared key. Can be a maximum of 25 characters.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderSharedKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -609,6 +627,10 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProvider
     /// <summary>A /30 subnet for the secondary link. Required when config for IPv4.</summary>
     [JsonPropertyName("secondaryPeerAddressPrefix")]
     public string? SecondaryPeerAddressPrefix { get; set; }
+
+    /// <summary>The shared key. Can be a maximum of 25 characters.</summary>
+    [JsonPropertyName("sharedKeySecretRef")]
+    public V1beta1ExpressRouteCircuitPeeringSpecInitProviderSharedKeySecretRef? SharedKeySecretRef { get; set; }
 
     /// <summary>A valid VLAN ID to establish this peering on.</summary>
     [JsonPropertyName("vlanId")]

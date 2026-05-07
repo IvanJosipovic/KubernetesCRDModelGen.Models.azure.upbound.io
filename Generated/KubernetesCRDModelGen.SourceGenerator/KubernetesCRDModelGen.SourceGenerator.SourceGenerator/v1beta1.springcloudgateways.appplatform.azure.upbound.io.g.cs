@@ -615,6 +615,9 @@ public partial class V1beta1SpringCloudGatewaySpecInitProvider
     [JsonPropertyName("quota")]
     public IList<V1beta1SpringCloudGatewaySpecInitProviderQuota>? Quota { get; set; }
 
+    [JsonPropertyName("sensitiveEnvironmentVariablesSecretRef")]
+    public IDictionary<string, string>? SensitiveEnvironmentVariablesSecretRef { get; set; }
+
     /// <summary>A sso block as defined below.</summary>
     [JsonPropertyName("sso")]
     public IList<V1beta1SpringCloudGatewaySpecInitProviderSso>? Sso { get; set; }

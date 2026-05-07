@@ -449,6 +449,24 @@ public partial class V1beta1CassandraClusterSpecForProvider
     public string? Version { get; set; }
 }
 
+/// <summary>The initial admin password for this Cassandra Cluster. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CassandraClusterSpecInitProviderDefaultAdminPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -628,6 +646,10 @@ public partial class V1beta1CassandraClusterSpecInitProvider
     /// <summary>A list of TLS certificates that is used to authorize client connecting to the Cassandra Cluster.</summary>
     [JsonPropertyName("clientCertificatePems")]
     public IList<string>? ClientCertificatePems { get; set; }
+
+    /// <summary>The initial admin password for this Cassandra Cluster. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("defaultAdminPasswordSecretRef")]
+    public required V1beta1CassandraClusterSpecInitProviderDefaultAdminPasswordSecretRef DefaultAdminPasswordSecretRef { get; set; }
 
     /// <summary>The ID of the delegated management subnet for this Cassandra Cluster. Changing this forces a new Cassandra Cluster to be created.</summary>
     [JsonPropertyName("delegatedManagementSubnetId")]

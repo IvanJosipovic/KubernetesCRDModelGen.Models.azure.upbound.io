@@ -312,6 +312,24 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProvider
     public string? UserId { get; set; }
 }
 
+/// <summary>The connection string.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnectionStringSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaultPassword
@@ -323,6 +341,24 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaul
     /// <summary>Specifies the secret name in Azure Key Vault that stores Azure File Storage password.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
+}
+
+/// <summary>The password to log in the server.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 /// <summary>
@@ -349,6 +385,10 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
     [JsonPropertyName("annotations")]
     public IList<string>? Annotations { get; set; }
 
+    /// <summary>The connection string.</summary>
+    [JsonPropertyName("connectionStringSecretRef")]
+    public required V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnectionStringSecretRef ConnectionStringSecretRef { get; set; }
+
     /// <summary>The description for the Data Factory Linked Service.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
@@ -372,6 +412,10 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
     /// <summary>A map of parameters to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
+
+    /// <summary>The password to log in the server.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswordSecretRef? PasswordSecretRef { get; set; }
 
     /// <summary>The user ID to log in the server.</summary>
     [JsonPropertyName("userId")]

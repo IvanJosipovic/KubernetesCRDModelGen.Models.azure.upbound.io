@@ -282,6 +282,24 @@ public partial class V1beta1LinkedServiceAzureFunctionSpecForProvider
     public string? Url { get; set; }
 }
 
+/// <summary>The system key of the Azure Function. Exactly one of either key or key_vault_key is required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureFunctionSpecInitProviderKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureFunctionSpecInitProviderKeyVaultKey
@@ -326,6 +344,10 @@ public partial class V1beta1LinkedServiceAzureFunctionSpecInitProvider
     /// <summary>The integration runtime reference to associate with the Data Factory Linked Service.</summary>
     [JsonPropertyName("integrationRuntimeName")]
     public string? IntegrationRuntimeName { get; set; }
+
+    /// <summary>The system key of the Azure Function. Exactly one of either key or key_vault_key is required.</summary>
+    [JsonPropertyName("keySecretRef")]
+    public V1beta1LinkedServiceAzureFunctionSpecInitProviderKeySecretRef? KeySecretRef { get; set; }
 
     /// <summary>A key_vault_key block as defined below. Use this Argument to store the system key of the Azure Function in an existing Key Vault. It needs an existing Key Vault Data Factory Linked Service. Exactly one of either key or key_vault_key is required.</summary>
     [JsonPropertyName("keyVaultKey")]

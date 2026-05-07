@@ -519,6 +519,24 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecForProvider
     public IDictionary<string, string>? Parameters { get; set; }
 }
 
+/// <summary>Authenticate to ADB via an access token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderAccessTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderInstancePool
@@ -761,6 +779,10 @@ public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProviderNewClust
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LinkedServiceAzureDatabricksSpecInitProvider
 {
+    /// <summary>Authenticate to ADB via an access token.</summary>
+    [JsonPropertyName("accessTokenSecretRef")]
+    public V1beta1LinkedServiceAzureDatabricksSpecInitProviderAccessTokenSecretRef? AccessTokenSecretRef { get; set; }
+
     /// <summary>The domain URL of the databricks instance.</summary>
     [JsonPropertyName("adbDomain")]
     public string? AdbDomain { get; set; }

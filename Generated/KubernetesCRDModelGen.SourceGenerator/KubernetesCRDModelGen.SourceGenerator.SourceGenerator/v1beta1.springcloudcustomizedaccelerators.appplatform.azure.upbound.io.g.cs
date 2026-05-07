@@ -368,13 +368,71 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecForProvider
     public V1beta1SpringCloudCustomizedAcceleratorSpecForProviderSpringCloudAcceleratorIdSelector? SpringCloudAcceleratorIdSelector { get; set; }
 }
 
+/// <summary>Specifies the password of git repository basic auth.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositoryBasicAuthPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositoryBasicAuth
 {
+    /// <summary>Specifies the password of git repository basic auth.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositoryBasicAuthPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>Specifies the username of git repository basic auth.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
+}
+
+/// <summary>Specifies the Public SSH Key of git repository basic auth.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthHostKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Specifies the Private SSH Key of git repository basic auth.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthPrivateKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -384,6 +442,14 @@ public partial class V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitR
     /// <summary>Specifies the SSH Key algorithm of git repository basic auth.</summary>
     [JsonPropertyName("hostKeyAlgorithm")]
     public string? HostKeyAlgorithm { get; set; }
+
+    /// <summary>Specifies the Public SSH Key of git repository basic auth.</summary>
+    [JsonPropertyName("hostKeySecretRef")]
+    public V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthHostKeySecretRef? HostKeySecretRef { get; set; }
+
+    /// <summary>Specifies the Private SSH Key of git repository basic auth.</summary>
+    [JsonPropertyName("privateKeySecretRef")]
+    public required V1beta1SpringCloudCustomizedAcceleratorSpecInitProviderGitRepositorySshAuthPrivateKeySecretRef PrivateKeySecretRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

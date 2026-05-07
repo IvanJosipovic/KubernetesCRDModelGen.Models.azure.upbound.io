@@ -576,6 +576,24 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
+/// <summary>Connection String of the Diagnostic Storage Account.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountConnectionStringSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -727,6 +745,10 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccount
 {
+    /// <summary>Connection String of the Diagnostic Storage Account.</summary>
+    [JsonPropertyName("connectionStringSecretRef")]
+    public required V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountConnectionStringSecretRef ConnectionStringSecretRef { get; set; }
+
     /// <summary>Resource ID of the Diagnostic Storage Account.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }

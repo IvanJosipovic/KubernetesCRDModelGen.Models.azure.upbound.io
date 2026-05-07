@@ -1209,6 +1209,24 @@ public partial class V1beta1StreamInputIOTHubSpecInitProviderSerialization
     public string? Type { get; set; }
 }
 
+/// <summary>The shared access policy key for the specified shared access policy. Changing this forces a new resource to be created.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StreamInputIOTHubSpecInitProviderSharedAccessPolicyKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1419,6 +1437,10 @@ public partial class V1beta1StreamInputIOTHubSpecInitProvider
     /// <summary>A serialization block as defined below.</summary>
     [JsonPropertyName("serialization")]
     public IList<V1beta1StreamInputIOTHubSpecInitProviderSerialization>? Serialization { get; set; }
+
+    /// <summary>The shared access policy key for the specified shared access policy. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("sharedAccessPolicyKeySecretRef")]
+    public required V1beta1StreamInputIOTHubSpecInitProviderSharedAccessPolicyKeySecretRef SharedAccessPolicyKeySecretRef { get; set; }
 
     /// <summary>The shared access policy name for the Event Hub, Service Bus Queue, Service Bus Topic, etc.</summary>
     [JsonPropertyName("sharedAccessPolicyName")]

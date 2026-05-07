@@ -345,6 +345,24 @@ public partial class V1beta1IOTHubDPSSpecInitProviderIpFilterRule
     public string? Target { get; set; }
 }
 
+/// <summary>The connection string to connect to the IoT Hub.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1IOTHubDPSSpecInitProviderLinkedHubConnectionStringSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubDPSSpecInitProviderLinkedHub
@@ -356,6 +374,10 @@ public partial class V1beta1IOTHubDPSSpecInitProviderLinkedHub
     /// <summary>Determines whether to apply allocation policies to the IoT Hub. Defaults to true.</summary>
     [JsonPropertyName("applyAllocationPolicy")]
     public bool? ApplyAllocationPolicy { get; set; }
+
+    /// <summary>The connection string to connect to the IoT Hub.</summary>
+    [JsonPropertyName("connectionStringSecretRef")]
+    public required V1beta1IOTHubDPSSpecInitProviderLinkedHubConnectionStringSecretRef ConnectionStringSecretRef { get; set; }
 
     /// <summary>The location of the IoT hub.</summary>
     [JsonPropertyName("location")]
