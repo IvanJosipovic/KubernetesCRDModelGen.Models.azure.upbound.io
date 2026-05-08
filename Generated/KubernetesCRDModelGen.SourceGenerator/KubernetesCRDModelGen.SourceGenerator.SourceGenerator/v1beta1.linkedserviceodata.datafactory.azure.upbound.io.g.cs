@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>LinkedServiceOData is the Schema for the LinkedServiceODatas API. Manages a Linked Service (connection) between a Database and Azure Data Factory through OData protocol.</summary>
+/// <summary>
+/// LinkedServiceOData is the Schema for the LinkedServiceODatas API. Manages a Linked Service (connection) between a Database and Azure Data Factory through OData protocol.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceODataList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceOData>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LinkedServiceODataList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1LinkedServiceODataSpecDeletionPolicyEnum
 /// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderBasicAuthenticationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderBasicAuthentication
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderBasicAuthentication
 {
     /// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
@@ -94,6 +101,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderBasicAuthentication
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -110,6 +118,7 @@ public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -121,6 +130,7 @@ public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -145,6 +155,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRefPol
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -164,6 +175,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -180,6 +192,7 @@ public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -191,6 +204,7 @@ public enum V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -215,6 +229,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelect
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -235,6 +250,7 @@ public partial class V1beta1LinkedServiceODataSpecForProviderDataFactoryIdSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecForProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service OData.</summary>
@@ -281,6 +297,7 @@ public partial class V1beta1LinkedServiceODataSpecForProvider
 /// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthenticationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -298,6 +315,7 @@ public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthenticatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthentication
 {
     /// <summary>The password associated with the username, which can be used to authenticate to the OData endpoint.</summary>
@@ -323,6 +341,7 @@ public partial class V1beta1LinkedServiceODataSpecInitProviderBasicAuthenticatio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecInitProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service OData.</summary>
@@ -360,6 +379,7 @@ public partial class V1beta1LinkedServiceODataSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -384,6 +404,7 @@ public enum V1beta1LinkedServiceODataSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -400,6 +421,7 @@ public enum V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -411,6 +433,7 @@ public enum V1beta1LinkedServiceODataSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -439,6 +462,7 @@ public partial class V1beta1LinkedServiceODataSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -458,6 +482,7 @@ public partial class V1beta1LinkedServiceODataSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -472,6 +497,7 @@ public partial class V1beta1LinkedServiceODataSpecWriteConnectionSecretToRef
 /// <summary>LinkedServiceODataSpec defines the desired state of LinkedServiceOData</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataSpec
 {
     /// <summary>
@@ -539,6 +565,7 @@ public partial class V1beta1LinkedServiceODataSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataStatusAtProviderBasicAuthentication
 {
     /// <summary>The username which can be used to authenticate to the OData endpoint.</summary>
@@ -548,6 +575,7 @@ public partial class V1beta1LinkedServiceODataStatusAtProviderBasicAuthenticatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataStatusAtProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service OData.</summary>
@@ -590,6 +618,7 @@ public partial class V1beta1LinkedServiceODataStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataStatusConditions
 {
     /// <summary>
@@ -633,6 +662,7 @@ public partial class V1beta1LinkedServiceODataStatusConditions
 /// <summary>LinkedServiceODataStatus defines the observed state of LinkedServiceOData.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceODataStatus
 {
     [JsonPropertyName("atProvider")]
@@ -651,9 +681,13 @@ public partial class V1beta1LinkedServiceODataStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LinkedServiceOData is the Schema for the LinkedServiceODatas API. Manages a Linked Service (connection) between a Database and Azure Data Factory through OData protocol.</summary>
+/// <summary>
+/// LinkedServiceOData is the Schema for the LinkedServiceODatas API. Manages a Linked Service (connection) between a Database and Azure Data Factory through OData protocol.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceOData : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceODataSpec>, IStatus<V1beta1LinkedServiceODataStatus?>
 {

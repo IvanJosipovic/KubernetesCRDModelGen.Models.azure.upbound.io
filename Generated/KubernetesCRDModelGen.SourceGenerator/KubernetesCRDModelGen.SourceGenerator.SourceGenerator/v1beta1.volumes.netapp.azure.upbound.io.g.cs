@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.netapp.azure.upbound.io;
-/// <summary>Volume is the Schema for the Volumes API. Manages a NetApp Volume.</summary>
+/// <summary>
+/// Volume is the Schema for the Volumes API. Manages a NetApp Volume.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VolumeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Volume>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VolumeList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1VolumeSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderAccountNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderAccountNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1VolumeSpecForProviderAccountNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderAccountNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderAccountNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1VolumeSpecForProviderAccountNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderAccountNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1VolumeSpecForProviderAccountNameRefPolicy
 /// <summary>Reference to a Account in netapp to populate accountName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderAccountNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1VolumeSpecForProviderAccountNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1VolumeSpecForProviderAccountNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderAccountNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1VolumeSpecForProviderAccountNameSelectorPolicy
 /// <summary>Selector for a Account in netapp to populate accountName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderAccountNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1VolumeSpecForProviderAccountNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderCoolAccess
 {
     /// <summary>The coolness period in days for the volume. Possible vales are between 2 and 183.</summary>
@@ -227,6 +241,7 @@ public partial class V1beta1VolumeSpecForProviderCoolAccess
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -243,6 +258,7 @@ public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -254,6 +270,7 @@ public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRefPolicy
 {
     /// <summary>
@@ -278,6 +295,7 @@ public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRef
 /// <summary>Reference to a Snapshot in netapp to populate createFromSnapshotResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -313,6 +332,7 @@ public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -324,6 +344,7 @@ public enum V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelectorPolicy
 {
     /// <summary>
@@ -348,6 +369,7 @@ public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSel
 /// <summary>Selector for a Snapshot in netapp to populate createFromSnapshotResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSelector
 {
     /// <summary>
@@ -368,6 +390,7 @@ public partial class V1beta1VolumeSpecForProviderCreateFromSnapshotResourceIdSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionBackupPolicy
 {
     /// <summary>
@@ -400,6 +423,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionBackupPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -416,6 +440,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -427,6 +452,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicy
 {
     /// <summary>
@@ -451,6 +477,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemote
 /// <summary>Reference to a Volume in netapp to populate remoteVolumeResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -470,6 +497,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemote
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -486,6 +514,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -497,6 +526,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicy
 {
     /// <summary>
@@ -521,6 +551,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemote
 /// <summary>Selector for a Volume in netapp to populate remoteVolumeResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemoteVolumeResourceIdSelector
 {
     /// <summary>
@@ -541,6 +572,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionReplicationRemote
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionReplication
 {
     /// <summary>The endpoint type, default value is dst for destination.</summary>
@@ -576,6 +608,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionReplication
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -592,6 +625,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -603,6 +637,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicy
 {
     /// <summary>
@@ -627,6 +662,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySna
 /// <summary>Reference to a SnapshotPolicy in netapp to populate snapshotPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -646,6 +682,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySna
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -662,6 +699,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -673,6 +711,7 @@ public enum V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicy
 {
     /// <summary>
@@ -697,6 +736,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySna
 /// <summary>Selector for a SnapshotPolicy in netapp to populate snapshotPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelector
 {
     /// <summary>
@@ -717,6 +757,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicySna
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicy
 {
     /// <summary>Resource ID of the snapshot policy to apply to the volume.</summary>
@@ -734,6 +775,7 @@ public partial class V1beta1VolumeSpecForProviderDataProtectionSnapshotPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderExportPolicyRule
 {
     /// <summary>A list of allowed clients IPv4 addresses.</summary>
@@ -796,6 +838,7 @@ public partial class V1beta1VolumeSpecForProviderExportPolicyRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderPoolNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderPoolNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -812,6 +855,7 @@ public enum V1beta1VolumeSpecForProviderPoolNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderPoolNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderPoolNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -823,6 +867,7 @@ public enum V1beta1VolumeSpecForProviderPoolNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderPoolNameRefPolicy
 {
     /// <summary>
@@ -847,6 +892,7 @@ public partial class V1beta1VolumeSpecForProviderPoolNameRefPolicy
 /// <summary>Reference to a Pool in netapp to populate poolName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderPoolNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -866,6 +912,7 @@ public partial class V1beta1VolumeSpecForProviderPoolNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -882,6 +929,7 @@ public enum V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -893,6 +941,7 @@ public enum V1beta1VolumeSpecForProviderPoolNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderPoolNameSelectorPolicy
 {
     /// <summary>
@@ -917,6 +966,7 @@ public partial class V1beta1VolumeSpecForProviderPoolNameSelectorPolicy
 /// <summary>Selector for a Pool in netapp to populate poolName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderPoolNameSelector
 {
     /// <summary>
@@ -943,6 +993,7 @@ public partial class V1beta1VolumeSpecForProviderPoolNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -959,6 +1010,7 @@ public enum V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -970,6 +1022,7 @@ public enum V1beta1VolumeSpecForProviderResourceGroupNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -994,6 +1047,7 @@ public partial class V1beta1VolumeSpecForProviderResourceGroupNameRefPolicy
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1013,6 +1067,7 @@ public partial class V1beta1VolumeSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1029,6 +1084,7 @@ public enum V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1040,6 +1096,7 @@ public enum V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -1064,6 +1121,7 @@ public partial class V1beta1VolumeSpecForProviderResourceGroupNameSelectorPolicy
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -1090,6 +1148,7 @@ public partial class V1beta1VolumeSpecForProviderResourceGroupNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1106,6 +1165,7 @@ public enum V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1117,6 +1177,7 @@ public enum V1beta1VolumeSpecForProviderSubnetIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderSubnetIdRefPolicy
 {
     /// <summary>
@@ -1141,6 +1202,7 @@ public partial class V1beta1VolumeSpecForProviderSubnetIdRefPolicy
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1160,6 +1222,7 @@ public partial class V1beta1VolumeSpecForProviderSubnetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1176,6 +1239,7 @@ public enum V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1187,6 +1251,7 @@ public enum V1beta1VolumeSpecForProviderSubnetIdSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1211,6 +1276,7 @@ public partial class V1beta1VolumeSpecForProviderSubnetIdSelectorPolicy
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProviderSubnetIdSelector
 {
     /// <summary>
@@ -1231,6 +1297,7 @@ public partial class V1beta1VolumeSpecForProviderSubnetIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecForProvider
 {
     /// <summary>
@@ -1421,6 +1488,7 @@ public partial class V1beta1VolumeSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderCoolAccess
 {
     /// <summary>The coolness period in days for the volume. Possible vales are between 2 and 183.</summary>
@@ -1444,6 +1512,7 @@ public partial class V1beta1VolumeSpecInitProviderCoolAccess
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1460,6 +1529,7 @@ public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1471,6 +1541,7 @@ public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRefPolicy
 {
     /// <summary>
@@ -1495,6 +1566,7 @@ public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRe
 /// <summary>Reference to a Snapshot in netapp to populate createFromSnapshotResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1514,6 +1586,7 @@ public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1530,6 +1603,7 @@ public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1541,6 +1615,7 @@ public enum V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1565,6 +1640,7 @@ public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSe
 /// <summary>Selector for a Snapshot in netapp to populate createFromSnapshotResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSelector
 {
     /// <summary>
@@ -1585,6 +1661,7 @@ public partial class V1beta1VolumeSpecInitProviderCreateFromSnapshotResourceIdSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionBackupPolicy
 {
     /// <summary>
@@ -1617,6 +1694,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionBackupPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1633,6 +1711,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1644,6 +1723,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRefPolicy
 {
     /// <summary>
@@ -1668,6 +1748,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemot
 /// <summary>Reference to a Volume in netapp to populate remoteVolumeResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1687,6 +1768,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemot
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1703,6 +1785,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1714,6 +1797,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1738,6 +1822,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemot
 /// <summary>Selector for a Volume in netapp to populate remoteVolumeResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemoteVolumeResourceIdSelector
 {
     /// <summary>
@@ -1758,6 +1843,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionReplicationRemot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionReplication
 {
     /// <summary>The endpoint type, default value is dst for destination.</summary>
@@ -1793,6 +1879,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionReplication
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1809,6 +1896,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1820,6 +1908,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRefPolicy
 {
     /// <summary>
@@ -1844,6 +1933,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySn
 /// <summary>Reference to a SnapshotPolicy in netapp to populate snapshotPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1863,6 +1953,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1879,6 +1970,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1890,6 +1982,7 @@ public enum V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelectorPolicy
 {
     /// <summary>
@@ -1914,6 +2007,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySn
 /// <summary>Selector for a SnapshotPolicy in netapp to populate snapshotPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySnapshotPolicyIdSelector
 {
     /// <summary>
@@ -1934,6 +2028,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicySn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicy
 {
     /// <summary>Resource ID of the snapshot policy to apply to the volume.</summary>
@@ -1951,6 +2046,7 @@ public partial class V1beta1VolumeSpecInitProviderDataProtectionSnapshotPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderExportPolicyRule
 {
     /// <summary>A list of allowed clients IPv4 addresses.</summary>
@@ -2013,6 +2109,7 @@ public partial class V1beta1VolumeSpecInitProviderExportPolicyRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2029,6 +2126,7 @@ public enum V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2040,6 +2138,7 @@ public enum V1beta1VolumeSpecInitProviderSubnetIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderSubnetIdRefPolicy
 {
     /// <summary>
@@ -2064,6 +2163,7 @@ public partial class V1beta1VolumeSpecInitProviderSubnetIdRefPolicy
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2083,6 +2183,7 @@ public partial class V1beta1VolumeSpecInitProviderSubnetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2099,6 +2200,7 @@ public enum V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2110,6 +2212,7 @@ public enum V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2134,6 +2237,7 @@ public partial class V1beta1VolumeSpecInitProviderSubnetIdSelectorPolicy
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProviderSubnetIdSelector
 {
     /// <summary>
@@ -2166,6 +2270,7 @@ public partial class V1beta1VolumeSpecInitProviderSubnetIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecInitProvider
 {
     /// <summary>
@@ -2324,6 +2429,7 @@ public partial class V1beta1VolumeSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2348,6 +2454,7 @@ public enum V1beta1VolumeSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2364,6 +2471,7 @@ public enum V1beta1VolumeSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VolumeSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VolumeSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2375,6 +2483,7 @@ public enum V1beta1VolumeSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2403,6 +2512,7 @@ public partial class V1beta1VolumeSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2422,6 +2532,7 @@ public partial class V1beta1VolumeSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2436,6 +2547,7 @@ public partial class V1beta1VolumeSpecWriteConnectionSecretToRef
 /// <summary>VolumeSpec defines the desired state of Volume</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeSpec
 {
     /// <summary>
@@ -2503,6 +2615,7 @@ public partial class V1beta1VolumeSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProviderCoolAccess
 {
     /// <summary>The coolness period in days for the volume. Possible vales are between 2 and 183.</summary>
@@ -2520,6 +2633,7 @@ public partial class V1beta1VolumeStatusAtProviderCoolAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProviderDataProtectionBackupPolicy
 {
     /// <summary>
@@ -2546,6 +2660,7 @@ public partial class V1beta1VolumeStatusAtProviderDataProtectionBackupPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProviderDataProtectionReplication
 {
     /// <summary>The endpoint type, default value is dst for destination.</summary>
@@ -2567,6 +2682,7 @@ public partial class V1beta1VolumeStatusAtProviderDataProtectionReplication
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProviderDataProtectionSnapshotPolicy
 {
     /// <summary>Resource ID of the snapshot policy to apply to the volume.</summary>
@@ -2576,6 +2692,7 @@ public partial class V1beta1VolumeStatusAtProviderDataProtectionSnapshotPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProviderExportPolicyRule
 {
     /// <summary>A list of allowed clients IPv4 addresses.</summary>
@@ -2632,6 +2749,7 @@ public partial class V1beta1VolumeStatusAtProviderExportPolicyRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusAtProvider
 {
     /// <summary>
@@ -2791,6 +2909,7 @@ public partial class V1beta1VolumeStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatusConditions
 {
     /// <summary>
@@ -2834,6 +2953,7 @@ public partial class V1beta1VolumeStatusConditions
 /// <summary>VolumeStatus defines the observed state of Volume.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VolumeStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2852,9 +2972,13 @@ public partial class V1beta1VolumeStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Volume is the Schema for the Volumes API. Manages a NetApp Volume.</summary>
+/// <summary>
+/// Volume is the Schema for the Volumes API. Manages a NetApp Volume.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Volume : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VolumeSpec>, IStatus<V1beta1VolumeStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>PrivateEndpoint is the Schema for the PrivateEndpoints API. Manages a Private Endpoint.</summary>
+/// <summary>
+/// PrivateEndpoint is the Schema for the PrivateEndpoints API. Manages a Private Endpoint.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateEndpoint>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PrivateEndpointList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PrivateEndpointSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderIpConfiguration
 {
     /// <summary>Specifies the member name this IP address applies to. If it is not specified, it will use the value of subresource_name. Changing this forces a new resource to be created.</summary>
@@ -84,6 +90,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderIpConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -100,6 +107,7 @@ public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -111,6 +119,7 @@ public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicy
 {
     /// <summary>
@@ -135,6 +144,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPri
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -170,6 +181,7 @@ public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -181,6 +193,7 @@ public enum V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicy
 {
     /// <summary>
@@ -205,6 +218,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPri
 /// <summary>Selector for a list of PrivateDNSZone in network to populate privateDnsZoneIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelector
 {
     /// <summary>
@@ -225,6 +239,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroupPri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroup
 {
     /// <summary>Specifies the Name of the Private DNS Zone Group.</summary>
@@ -246,6 +261,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateDnsZoneGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderPrivateServiceConnection
 {
     /// <summary>Does the Private Endpoint require Manual Approval from the remote resource owner? Changing this forces a new resource to be created.</summary>
@@ -281,6 +297,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderPrivateServiceConnecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -297,6 +314,7 @@ public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -308,6 +326,7 @@ public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -332,6 +351,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameRefPo
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -351,6 +371,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -367,6 +388,7 @@ public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -378,6 +400,7 @@ public enum V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -402,6 +425,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelec
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -428,6 +452,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderResourceGroupNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -444,6 +469,7 @@ public enum V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -455,6 +481,7 @@ public enum V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicy
 {
     /// <summary>
@@ -479,6 +506,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdRefPolicy
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -498,6 +526,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -514,6 +543,7 @@ public enum V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -525,6 +555,7 @@ public enum V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -549,6 +580,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdSelectorPolicy
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdSelector
 {
     /// <summary>
@@ -569,6 +601,7 @@ public partial class V1beta1PrivateEndpointSpecForProviderSubnetIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecForProvider
 {
     /// <summary>The custom name of the network interface attached to the private endpoint. Changing this forces a new resource to be created.</summary>
@@ -622,6 +655,7 @@ public partial class V1beta1PrivateEndpointSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderIpConfiguration
 {
     /// <summary>Specifies the member name this IP address applies to. If it is not specified, it will use the value of subresource_name. Changing this forces a new resource to be created.</summary>
@@ -649,6 +683,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderIpConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -665,6 +700,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -676,6 +712,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZ
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefsPolicy
 {
     /// <summary>
@@ -700,6 +737,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPr
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -719,6 +757,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -735,6 +774,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -746,6 +786,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZ
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelectorPolicy
 {
     /// <summary>
@@ -770,6 +811,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPr
 /// <summary>Selector for a list of PrivateDNSZone in network to populate privateDnsZoneIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPrivateDnsZoneIdsSelector
 {
     /// <summary>
@@ -790,6 +832,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroupPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroup
 {
     /// <summary>Specifies the Name of the Private DNS Zone Group.</summary>
@@ -811,6 +854,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateDnsZoneGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderPrivateServiceConnection
 {
     /// <summary>Does the Private Endpoint require Manual Approval from the remote resource owner? Changing this forces a new resource to be created.</summary>
@@ -846,6 +890,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderPrivateServiceConnect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -862,6 +907,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -873,6 +919,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicy
 {
     /// <summary>
@@ -897,6 +944,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdRefPolicy
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -916,6 +964,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -932,6 +981,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -943,6 +993,7 @@ public enum V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -967,6 +1018,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdSelectorPolic
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdSelector
 {
     /// <summary>
@@ -999,6 +1051,7 @@ public partial class V1beta1PrivateEndpointSpecInitProviderSubnetIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecInitProvider
 {
     /// <summary>The custom name of the network interface attached to the private endpoint. Changing this forces a new resource to be created.</summary>
@@ -1044,6 +1097,7 @@ public partial class V1beta1PrivateEndpointSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1068,6 +1122,7 @@ public enum V1beta1PrivateEndpointSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1084,6 +1139,7 @@ public enum V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1095,6 +1151,7 @@ public enum V1beta1PrivateEndpointSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1123,6 +1180,7 @@ public partial class V1beta1PrivateEndpointSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1142,6 +1200,7 @@ public partial class V1beta1PrivateEndpointSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1156,6 +1215,7 @@ public partial class V1beta1PrivateEndpointSpecWriteConnectionSecretToRef
 /// <summary>PrivateEndpointSpec defines the desired state of PrivateEndpoint</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointSpec
 {
     /// <summary>
@@ -1223,6 +1283,7 @@ public partial class V1beta1PrivateEndpointSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderCustomDnsConfigs
 {
     /// <summary>The fully qualified domain name to the private_endpoint.</summary>
@@ -1236,6 +1297,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderCustomDnsConfigs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderIpConfiguration
 {
     /// <summary>Specifies the member name this IP address applies to. If it is not specified, it will use the value of subresource_name. Changing this forces a new resource to be created.</summary>
@@ -1257,6 +1319,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderIpConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderNetworkInterface
 {
     /// <summary>The ID of the network interface associated with the private_endpoint.</summary>
@@ -1270,6 +1333,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderNetworkInterface
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneConfigsRecordSets
 {
     /// <summary>The fully qualified domain name to the private_dns_zone.</summary>
@@ -1295,6 +1359,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneConfigs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneConfigs
 {
     /// <summary>The ID of the Private DNS Zone Config.</summary>
@@ -1316,6 +1381,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneConfigs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneGroup
 {
     /// <summary>The ID of the Private DNS Zone Group.</summary>
@@ -1333,6 +1399,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateDnsZoneGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProviderPrivateServiceConnection
 {
     /// <summary>Does the Private Endpoint require Manual Approval from the remote resource owner? Changing this forces a new resource to be created.</summary>
@@ -1366,6 +1433,7 @@ public partial class V1beta1PrivateEndpointStatusAtProviderPrivateServiceConnect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusAtProvider
 {
     /// <summary>A custom_dns_configs block as defined below.</summary>
@@ -1420,6 +1488,7 @@ public partial class V1beta1PrivateEndpointStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatusConditions
 {
     /// <summary>
@@ -1463,6 +1532,7 @@ public partial class V1beta1PrivateEndpointStatusConditions
 /// <summary>PrivateEndpointStatus defines the observed state of PrivateEndpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateEndpointStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1481,9 +1551,13 @@ public partial class V1beta1PrivateEndpointStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PrivateEndpoint is the Schema for the PrivateEndpoints API. Manages a Private Endpoint.</summary>
+/// <summary>
+/// PrivateEndpoint is the Schema for the PrivateEndpoints API. Manages a Private Endpoint.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateEndpointSpec>, IStatus<V1beta1PrivateEndpointStatus?>
 {

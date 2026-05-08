@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.web.azure.upbound.io;
-/// <summary>WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.</summary>
+/// <summary>
+/// WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WindowsWebAppSlotList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WindowsWebAppSlot>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WindowsWebAppSlotList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1WindowsWebAppSlotSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRefPolic
 /// <summary>Reference to a WindowsWebApp in web to populate appServiceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 /// <summary>Selector for a WindowsWebApp in web to populate appServiceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 {
     /// <summary>
@@ -208,6 +221,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAppServiceIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -225,6 +239,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsActiveDi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsActiveDirectory
 {
     /// <summary>
@@ -262,6 +277,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsActiveDi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsFacebookAppSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -279,6 +295,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 {
     /// <summary>
@@ -316,6 +333,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsFacebook
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGithubClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -333,6 +351,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGithubCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGithub
 {
     /// <summary>
@@ -370,6 +389,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGithub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGoogleClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -387,6 +407,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGoogleCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGoogle
 {
     /// <summary>
@@ -424,6 +445,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsGoogle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -441,6 +463,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsMicrosof
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsMicrosoft
 {
     /// <summary>
@@ -478,6 +501,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsMicrosof
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -495,6 +519,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsTwitterC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsTwitter
 {
     /// <summary>
@@ -521,6 +546,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsTwitter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettings
 {
     /// <summary>An active_directory block as defined above.</summary>
@@ -613,6 +639,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2ActiveDirectoryV2
 {
     /// <summary>
@@ -702,6 +729,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Active
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2AppleV2
 {
     /// <summary>
@@ -721,6 +749,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2AppleV
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2AzureStaticWebAppV2
 {
     /// <summary>
@@ -733,6 +762,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2AzureS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2CustomOidcV2
 {
     /// <summary>
@@ -773,6 +803,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Custom
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2FacebookV2
 {
     /// <summary>
@@ -806,6 +837,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Facebo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2GithubV2
 {
     /// <summary>
@@ -832,6 +864,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Github
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2GoogleV2
 {
     /// <summary>
@@ -865,6 +898,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Google
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Login
 {
     /// <summary>
@@ -947,6 +981,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Login
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2MicrosoftV2
 {
     /// <summary>
@@ -980,6 +1015,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Micros
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2TwitterV2
 {
     /// <summary>
@@ -999,6 +1035,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2Twitte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2
 {
     /// <summary>An active_directory_v2 block as defined below.</summary>
@@ -1128,6 +1165,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderAuthSettingsV2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderBackupSchedule
 {
     /// <summary>
@@ -1172,6 +1210,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderBackupSchedule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderBackupStorageAccountUrlSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1189,6 +1228,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderBackupStorageAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderBackup
 {
     /// <summary>
@@ -1223,6 +1263,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderBackup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderConnectionStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1240,6 +1281,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderConnectionStringValu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderConnectionString
 {
     /// <summary>
@@ -1266,6 +1308,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderConnectionString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Windows Web App Slot.</summary>
@@ -1279,6 +1322,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsApplicationLogsAzureBlobStorage
 {
     /// <summary>The level at which to log. Possible values include Error, Warning, Information, Verbose and Off. NOTE: this field is not available for http_logs</summary>
@@ -1296,6 +1340,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsApplicationLogsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsApplicationLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -1310,6 +1355,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsApplicationLogs
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1327,6 +1373,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlobStorage
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -1340,6 +1387,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsAzureBlo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsFileSystem
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -1353,6 +1401,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogsFileSyst
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -1366,6 +1415,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogsHttpLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderLogs
 {
     /// <summary>A application_logs block as defined above.</summary>
@@ -1388,6 +1438,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderLogs
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1405,6 +1456,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigApplicatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigApplicationStack
 {
     /// <summary>The Application Stack for the Windows Web App. Possible values include dotnet, dotnetcore, node, python, php, and java.</summary>
@@ -1474,6 +1526,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigApplicatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingActionCustomAction
 {
     /// <summary>The executable to run for the custom_action.</summary>
@@ -1487,6 +1540,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingAction
 {
     /// <summary>Predefined action to be taken to an Auto Heal trigger. Possible values are CustomAction, LogEvent and Recycle.</summary>
@@ -1504,6 +1558,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerRequests
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -1517,6 +1572,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -1534,6 +1590,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -1555,6 +1612,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -1584,6 +1642,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSettingTrigger
 {
     /// <summary>The amount of Private Memory to be consumed for this rule to trigger. Possible values are between 102400 and 13631488.</summary>
@@ -1609,6 +1668,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSetting
 {
     /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
@@ -1622,6 +1682,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigAutoHealSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigCors
 {
     /// <summary>
@@ -1641,6 +1702,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigHandlerMapping
 {
     /// <summary>Specify the command-line arguments to be passed to the script processor.</summary>
@@ -1658,6 +1720,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigHandlerMap
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -1685,6 +1748,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1701,6 +1765,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1712,6 +1777,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -1736,6 +1802,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1755,6 +1822,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1771,6 +1839,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1782,6 +1851,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtua
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1806,6 +1876,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -1826,6 +1897,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestriction
 {
     /// <summary>
@@ -1892,6 +1964,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigIpRestrict
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -1919,6 +1992,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1935,6 +2009,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1946,6 +2021,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -1970,6 +2046,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1989,6 +2066,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2005,6 +2083,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2016,6 +2095,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVir
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2040,6 +2120,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -2060,6 +2141,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestriction
 {
     /// <summary>
@@ -2126,6 +2208,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigScmIpRestr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigVirtualApplicationVirtualDirectory
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -2139,6 +2222,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigVirtualApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigVirtualApplication
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -2160,6 +2244,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfigVirtualApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfig
 {
     /// <summary>If this Windows Web App Slot is Always On enabled. Defaults to true.</summary>
@@ -2304,6 +2389,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderSiteConfig
 /// <summary>The Access key for the storage account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderStorageAccountAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2321,6 +2407,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderStorageAccountAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderStorageAccount
 {
     /// <summary>The Access key for the storage account.</summary>
@@ -2356,6 +2443,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderStorageAccount
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2372,6 +2460,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2383,6 +2472,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -2407,6 +2497,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2426,6 +2517,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2442,6 +2534,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2453,6 +2546,7 @@ public enum V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2477,6 +2571,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -2497,6 +2592,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProviderVirtualNetworkSubnet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecForProvider
 {
     /// <summary>The ID of the Windows Web App this Deployment Slot will be part of. Changing this forces a new Windows Web App to be created.</summary>
@@ -2632,6 +2728,7 @@ public partial class V1beta1WindowsWebAppSlotSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsActiveDirectoryClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2649,6 +2746,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsActiveD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsActiveDirectory
 {
     /// <summary>
@@ -2686,6 +2784,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsActiveD
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsFacebookAppSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2703,6 +2802,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsFaceboo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsFacebook
 {
     /// <summary>
@@ -2740,6 +2840,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsFaceboo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGithubClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2757,6 +2858,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGithubC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGithub
 {
     /// <summary>
@@ -2794,6 +2896,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGithub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGoogleClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2811,6 +2914,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGoogleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGoogle
 {
     /// <summary>
@@ -2848,6 +2952,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsGoogle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsMicrosoftClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2865,6 +2970,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsMicroso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsMicrosoft
 {
     /// <summary>
@@ -2902,6 +3008,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsMicroso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsTwitterConsumerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2919,6 +3026,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 {
     /// <summary>
@@ -2945,6 +3053,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsTwitter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettings
 {
     /// <summary>An active_directory block as defined above.</summary>
@@ -3037,6 +3146,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2ActiveDirectoryV2
 {
     /// <summary>
@@ -3126,6 +3236,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Activ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2AppleV2
 {
     /// <summary>
@@ -3145,6 +3256,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Apple
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2AzureStaticWebAppV2
 {
     /// <summary>
@@ -3157,6 +3269,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Azure
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2CustomOidcV2
 {
     /// <summary>
@@ -3197,6 +3310,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Custo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2FacebookV2
 {
     /// <summary>
@@ -3230,6 +3344,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Faceb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2GithubV2
 {
     /// <summary>
@@ -3256,6 +3371,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Githu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2GoogleV2
 {
     /// <summary>
@@ -3289,6 +3405,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Googl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Login
 {
     /// <summary>
@@ -3371,6 +3488,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Login
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2MicrosoftV2
 {
     /// <summary>
@@ -3404,6 +3522,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Micro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2TwitterV2
 {
     /// <summary>
@@ -3423,6 +3542,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2Twitt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2
 {
     /// <summary>An active_directory_v2 block as defined below.</summary>
@@ -3552,6 +3672,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderAuthSettingsV2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackupSchedule
 {
     /// <summary>
@@ -3596,6 +3717,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackupSchedule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackupStorageAccountUrlSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3613,6 +3735,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackupStorageAccoun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackup
 {
     /// <summary>
@@ -3647,6 +3770,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderBackup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderConnectionStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3664,6 +3788,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderConnectionStringVal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderConnectionString
 {
     /// <summary>
@@ -3690,6 +3815,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderConnectionString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Windows Web App Slot.</summary>
@@ -3703,6 +3829,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsApplicationLogsAzureBlobStorage
 {
     /// <summary>The level at which to log. Possible values include Error, Warning, Information, Verbose and Off. NOTE: this field is not available for http_logs</summary>
@@ -3720,6 +3847,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -3734,6 +3862,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsApplicationLogs
 /// <summary>SAS url to an Azure blob container with read/write/list/delete permissions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBlobStorageSasurlSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3751,6 +3880,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBlobStorage
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -3764,6 +3894,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsAzureBl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsFileSystem
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -3777,6 +3908,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogsFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -3790,6 +3922,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogsHttpLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogs
 {
     /// <summary>A application_logs block as defined above.</summary>
@@ -3812,6 +3945,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderLogs
 /// <summary>The User Name to use for authentication against the registry to pull the image.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigApplicationStackDockerRegistryPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3829,6 +3963,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigApplicati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigApplicationStack
 {
     /// <summary>The Application Stack for the Windows Web App. Possible values include dotnet, dotnetcore, node, python, php, and java.</summary>
@@ -3898,6 +4033,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigApplicati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingActionCustomAction
 {
     /// <summary>The executable to run for the custom_action.</summary>
@@ -3911,6 +4047,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingAction
 {
     /// <summary>Predefined action to be taken to an Auto Heal trigger. Possible values are CustomAction, LogEvent and Recycle.</summary>
@@ -3928,6 +4065,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerRequests
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -3941,6 +4079,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -3958,6 +4097,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -3979,6 +4119,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -4008,6 +4149,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSettingTrigger
 {
     /// <summary>The amount of Private Memory to be consumed for this rule to trigger. Possible values are between 102400 and 13631488.</summary>
@@ -4033,6 +4175,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealSetting
 {
     /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
@@ -4046,6 +4189,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigCors
 {
     /// <summary>
@@ -4065,6 +4209,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigHandlerMapping
 {
     /// <summary>Specify the command-line arguments to be passed to the script processor.</summary>
@@ -4082,6 +4227,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigHandlerMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -4109,6 +4255,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4125,6 +4272,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4136,6 +4284,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -4160,6 +4309,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4179,6 +4329,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4195,6 +4346,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4206,6 +4358,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -4230,6 +4383,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestrictionVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -4250,6 +4404,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestriction
 {
     /// <summary>
@@ -4316,6 +4471,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigIpRestric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -4343,6 +4499,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4359,6 +4516,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4370,6 +4528,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -4394,6 +4553,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4413,6 +4573,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4429,6 +4590,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4440,6 +4602,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -4464,6 +4627,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestrictionVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -4484,6 +4648,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRestriction
 {
     /// <summary>
@@ -4550,6 +4715,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigScmIpRest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigVirtualApplicationVirtualDirectory
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -4563,6 +4729,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigVirtualAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigVirtualApplication
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -4584,6 +4751,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfigVirtualAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfig
 {
     /// <summary>If this Windows Web App Slot is Always On enabled. Defaults to true.</summary>
@@ -4728,6 +4896,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderSiteConfig
 /// <summary>The Access key for the storage account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderStorageAccountAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -4745,6 +4914,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderStorageAccountAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderStorageAccount
 {
     /// <summary>The Access key for the storage account.</summary>
@@ -4780,6 +4950,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderStorageAccount
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4796,6 +4967,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4807,6 +4979,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRefPolicy
 {
     /// <summary>
@@ -4831,6 +5004,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// <summary>Reference to a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4850,6 +5024,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4866,6 +5041,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4877,6 +5053,7 @@ public enum V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -4901,6 +5078,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// <summary>Selector for a Subnet in network to populate virtualNetworkSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubnetIdSelector
 {
     /// <summary>
@@ -4933,6 +5111,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProviderVirtualNetworkSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecInitProvider
 {
     /// <summary>A map of key-value pairs of App Settings.</summary>
@@ -5056,6 +5235,7 @@ public partial class V1beta1WindowsWebAppSlotSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -5080,6 +5260,7 @@ public enum V1beta1WindowsWebAppSlotSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5096,6 +5277,7 @@ public enum V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5107,6 +5289,7 @@ public enum V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -5135,6 +5318,7 @@ public partial class V1beta1WindowsWebAppSlotSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5154,6 +5338,7 @@ public partial class V1beta1WindowsWebAppSlotSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -5168,6 +5353,7 @@ public partial class V1beta1WindowsWebAppSlotSpecWriteConnectionSecretToRef
 /// <summary>WindowsWebAppSlotSpec defines the desired state of WindowsWebAppSlot</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotSpec
 {
     /// <summary>
@@ -5235,6 +5421,7 @@ public partial class V1beta1WindowsWebAppSlotSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsActiveDirectory
 {
     /// <summary>
@@ -5261,6 +5448,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsActiveD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsFacebook
 {
     /// <summary>
@@ -5287,6 +5475,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsFaceboo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsGithub
 {
     /// <summary>
@@ -5313,6 +5502,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsGithub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsGoogle
 {
     /// <summary>
@@ -5339,6 +5529,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsGoogle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsMicrosoft
 {
     /// <summary>
@@ -5365,6 +5556,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsMicroso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsTwitter
 {
     /// <summary>
@@ -5384,6 +5576,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsTwitter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettings
 {
     /// <summary>An active_directory block as defined above.</summary>
@@ -5476,6 +5669,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2ActiveDirectoryV2
 {
     /// <summary>
@@ -5565,6 +5759,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Activ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2AppleV2
 {
     /// <summary>
@@ -5588,6 +5783,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Apple
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2AzureStaticWebAppV2
 {
     /// <summary>
@@ -5600,6 +5796,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Azure
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2CustomOidcV2
 {
     /// <summary>
@@ -5682,6 +5879,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Custo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2FacebookV2
 {
     /// <summary>
@@ -5715,6 +5913,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Faceb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2GithubV2
 {
     /// <summary>
@@ -5741,6 +5940,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Githu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2GoogleV2
 {
     /// <summary>
@@ -5774,6 +5974,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Googl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Login
 {
     /// <summary>
@@ -5856,6 +6057,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Login
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2MicrosoftV2
 {
     /// <summary>
@@ -5889,6 +6091,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Micro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2TwitterV2
 {
     /// <summary>
@@ -5908,6 +6111,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2Twitt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2
 {
     /// <summary>An active_directory_v2 block as defined below.</summary>
@@ -6037,6 +6241,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderAuthSettingsV2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderBackupSchedule
 {
     /// <summary>
@@ -6081,6 +6286,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderBackupSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderBackup
 {
     /// <summary>
@@ -6104,6 +6310,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderBackup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderConnectionString
 {
     /// <summary>
@@ -6123,6 +6330,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderConnectionString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Windows Web App Slot.</summary>
@@ -6144,6 +6352,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsApplicationLogsAzureBlobStorage
 {
     /// <summary>The level at which to log. Possible values include Error, Warning, Information, Verbose and Off. NOTE: this field is not available for http_logs</summary>
@@ -6161,6 +6370,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -6174,6 +6384,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsApplicationLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogsAzureBlobStorage
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -6183,6 +6394,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogsAzureBl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogsFileSystem
 {
     /// <summary>The retention period in days. A values of 0 means no retention.</summary>
@@ -6196,6 +6408,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogsFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogs
 {
     /// <summary>A azure_blob_storage_http block as defined above.</summary>
@@ -6209,6 +6422,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogsHttpLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogs
 {
     /// <summary>A application_logs block as defined above.</summary>
@@ -6230,6 +6444,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigApplicationStack
 {
     /// <summary>The Application Stack for the Windows Web App. Possible values include dotnet, dotnetcore, node, python, php, and java.</summary>
@@ -6295,6 +6510,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigApplicati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingActionCustomAction
 {
     /// <summary>The executable to run for the custom_action.</summary>
@@ -6308,6 +6524,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingAction
 {
     /// <summary>Predefined action to be taken to an Auto Heal trigger. Possible values are CustomAction, LogEvent and Recycle.</summary>
@@ -6325,6 +6542,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerRequests
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -6338,6 +6556,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequest
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -6355,6 +6574,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -6376,6 +6596,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTriggerStatusCode
 {
     /// <summary>The number of occurrences of the defined status_code in the specified interval on which to trigger this rule.</summary>
@@ -6405,6 +6626,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSettingTrigger
 {
     /// <summary>The amount of Private Memory to be consumed for this rule to trigger. Possible values are between 102400 and 13631488.</summary>
@@ -6430,6 +6652,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealSetting
 {
     /// <summary>The action to take. Possible values are Allow or Deny. Defaults to Allow.</summary>
@@ -6443,6 +6666,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigAutoHealS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigCors
 {
     /// <summary>
@@ -6462,6 +6686,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigHandlerMapping
 {
     /// <summary>Specify the command-line arguments to be passed to the script processor.</summary>
@@ -6479,6 +6704,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigHandlerMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -6500,6 +6726,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigIpRestric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigIpRestriction
 {
     /// <summary>
@@ -6558,6 +6785,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigIpRestric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRestrictionHeaders
 {
     /// <summary>Specifies a list of Azure Front Door IDs.</summary>
@@ -6579,6 +6807,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRestriction
 {
     /// <summary>
@@ -6637,6 +6866,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigScmIpRest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigVirtualApplicationVirtualDirectory
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -6650,6 +6880,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigVirtualAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigVirtualApplication
 {
     /// <summary>The physical path for the Virtual Application.</summary>
@@ -6671,6 +6902,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfigVirtualAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfig
 {
     /// <summary>If this Windows Web App Slot is Always On enabled. Defaults to true.</summary>
@@ -6824,6 +7056,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderSiteConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProviderStorageAccount
 {
     /// <summary>The Name of the Storage Account.</summary>
@@ -6849,6 +7082,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProviderStorageAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusAtProvider
 {
     /// <summary>The ID of the Windows Web App this Deployment Slot will be part of. Changing this forces a new Windows Web App to be created.</summary>
@@ -6997,6 +7231,7 @@ public partial class V1beta1WindowsWebAppSlotStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatusConditions
 {
     /// <summary>
@@ -7040,6 +7275,7 @@ public partial class V1beta1WindowsWebAppSlotStatusConditions
 /// <summary>WindowsWebAppSlotStatus defines the observed state of WindowsWebAppSlot.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsWebAppSlotStatus
 {
     [JsonPropertyName("atProvider")]
@@ -7058,9 +7294,13 @@ public partial class V1beta1WindowsWebAppSlotStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.</summary>
+/// <summary>
+/// WindowsWebAppSlot is the Schema for the WindowsWebAppSlots API. Manages a Windows Web App Slot.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WindowsWebAppSlot : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WindowsWebAppSlotSpec>, IStatus<V1beta1WindowsWebAppSlotStatus?>
 {

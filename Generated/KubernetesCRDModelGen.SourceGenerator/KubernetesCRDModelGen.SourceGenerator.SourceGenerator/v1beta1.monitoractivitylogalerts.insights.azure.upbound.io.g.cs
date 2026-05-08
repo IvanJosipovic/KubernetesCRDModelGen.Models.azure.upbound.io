@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
-/// <summary>MonitorActivityLogAlert is the Schema for the MonitorActivityLogAlerts API. Manages an Activity Log Alert within Azure Monitor</summary>
+/// <summary>
+/// MonitorActivityLogAlert is the Schema for the MonitorActivityLogAlerts API. Manages an Activity Log Alert within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorActivityLogAlertList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorActivityLogAlert>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MonitorActivityLogAlertList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MonitorActivityLogAlertSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGr
 /// <summary>Reference to a MonitorActionGroup in insights to populate actionGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGr
 /// <summary>Selector for a MonitorActionGroup in insights to populate actionGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGroupIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderActionActionGr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderAction
 {
     /// <summary>The ID of the Action Group can be sourced from the .</summary>
@@ -225,6 +239,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceHealth
 {
     /// <summary>The current resource health statuses that will log an alert. Possible values are Available, Degraded, Unavailable and Unknown.</summary>
@@ -248,6 +263,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResour
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -264,6 +280,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -275,6 +292,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRefPolicy
 {
     /// <summary>
@@ -299,6 +317,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResour
 /// <summary>Reference to a Account in storage to populate resourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -318,6 +337,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResour
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -334,6 +354,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -345,6 +366,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelectorPolicy
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResour
 /// <summary>Selector for a Account in storage to populate resourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResourceIdSelector
 {
     /// <summary>
@@ -389,6 +412,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaResour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaServiceHealth
 {
     /// <summary>Events this alert will monitor Possible values are Incident, Maintenance, Informational, ActionRequired and Security.</summary>
@@ -406,6 +430,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteriaServic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteria
 {
     /// <summary>The email address or Azure Active Directory identifier of the user who performed the operation.</summary>
@@ -513,6 +538,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -529,6 +555,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -540,6 +567,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -564,6 +592,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupN
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -583,6 +612,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -599,6 +629,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -610,6 +641,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -634,6 +666,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupN
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -660,6 +693,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -676,6 +710,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -687,6 +722,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPolicy
 {
     /// <summary>
@@ -711,6 +747,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesRefsPoli
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -730,6 +767,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -746,6 +784,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -757,6 +796,7 @@ public enum V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesSelectorPolicy
 {
     /// <summary>
@@ -781,6 +821,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesSelector
 /// <summary>Selector for a list of ResourceGroup in azure to populate scopes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesSelector
 {
     /// <summary>
@@ -801,6 +842,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProviderScopesSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecForProvider
 {
     /// <summary>One or more action blocks as defined below.</summary>
@@ -864,6 +906,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -880,6 +923,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -891,6 +935,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRefPolicy
 {
     /// <summary>
@@ -915,6 +960,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionG
 /// <summary>Reference to a MonitorActionGroup in insights to populate actionGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -934,6 +980,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -950,6 +997,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -961,6 +1009,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelectorPolicy
 {
     /// <summary>
@@ -985,6 +1034,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionG
 /// <summary>Selector for a MonitorActionGroup in insights to populate actionGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionGroupIdSelector
 {
     /// <summary>
@@ -1005,6 +1055,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderActionActionG
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderAction
 {
     /// <summary>The ID of the Action Group can be sourced from the .</summary>
@@ -1026,6 +1077,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceHealth
 {
     /// <summary>The current resource health statuses that will log an alert. Possible values are Available, Degraded, Unavailable and Unknown.</summary>
@@ -1049,6 +1101,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1065,6 +1118,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1076,6 +1130,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRefPolicy
 {
     /// <summary>
@@ -1100,6 +1155,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResou
 /// <summary>Reference to a Account in storage to populate resourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1119,6 +1175,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1135,6 +1192,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1146,6 +1204,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1170,6 +1229,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResou
 /// <summary>Selector for a Account in storage to populate resourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResourceIdSelector
 {
     /// <summary>
@@ -1190,6 +1250,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaResou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaServiceHealth
 {
     /// <summary>Events this alert will monitor Possible values are Incident, Maintenance, Informational, ActionRequired and Security.</summary>
@@ -1207,6 +1268,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteriaServi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteria
 {
     /// <summary>The email address or Azure Active Directory identifier of the user who performed the operation.</summary>
@@ -1314,6 +1376,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1330,6 +1393,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1341,6 +1405,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -1365,6 +1430,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroup
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1384,6 +1450,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1400,6 +1467,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1411,6 +1479,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -1435,6 +1504,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroup
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -1461,6 +1531,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1477,6 +1548,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1488,6 +1560,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPolicy
 {
     /// <summary>
@@ -1512,6 +1585,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefsPol
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1531,6 +1605,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1547,6 +1622,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1558,6 +1634,7 @@ public enum V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelectorPolicy
 {
     /// <summary>
@@ -1582,6 +1659,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelecto
 /// <summary>Selector for a list of ResourceGroup in azure to populate scopes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelector
 {
     /// <summary>
@@ -1614,6 +1692,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProviderScopesSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecInitProvider
 {
     /// <summary>One or more action blocks as defined below.</summary>
@@ -1675,6 +1754,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1699,6 +1779,7 @@ public enum V1beta1MonitorActivityLogAlertSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1715,6 +1796,7 @@ public enum V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1726,6 +1808,7 @@ public enum V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1754,6 +1837,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1773,6 +1857,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1787,6 +1872,7 @@ public partial class V1beta1MonitorActivityLogAlertSpecWriteConnectionSecretToRe
 /// <summary>MonitorActivityLogAlertSpec defines the desired state of MonitorActivityLogAlert</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertSpec
 {
     /// <summary>
@@ -1854,6 +1940,7 @@ public partial class V1beta1MonitorActivityLogAlertSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusAtProviderAction
 {
     /// <summary>The ID of the Action Group can be sourced from the .</summary>
@@ -1867,6 +1954,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusAtProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteriaResourceHealth
 {
     /// <summary>The current resource health statuses that will log an alert. Possible values are Available, Degraded, Unavailable and Unknown.</summary>
@@ -1884,6 +1972,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteriaResou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteriaServiceHealth
 {
     /// <summary>Events this alert will monitor Possible values are Incident, Maintenance, Informational, ActionRequired and Security.</summary>
@@ -1901,6 +1990,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteriaServi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteria
 {
     /// <summary>The email address or Azure Active Directory identifier of the user who performed the operation.</summary>
@@ -1994,6 +2084,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusAtProviderCriteria
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusAtProvider
 {
     /// <summary>One or more action blocks as defined below.</summary>
@@ -2040,6 +2131,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatusConditions
 {
     /// <summary>
@@ -2083,6 +2175,7 @@ public partial class V1beta1MonitorActivityLogAlertStatusConditions
 /// <summary>MonitorActivityLogAlertStatus defines the observed state of MonitorActivityLogAlert.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActivityLogAlertStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2101,9 +2194,13 @@ public partial class V1beta1MonitorActivityLogAlertStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MonitorActivityLogAlert is the Schema for the MonitorActivityLogAlerts API. Manages an Activity Log Alert within Azure Monitor</summary>
+/// <summary>
+/// MonitorActivityLogAlert is the Schema for the MonitorActivityLogAlerts API. Manages an Activity Log Alert within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorActivityLogAlert : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorActivityLogAlertSpec>, IStatus<V1beta1MonitorActivityLogAlertStatus?>
 {

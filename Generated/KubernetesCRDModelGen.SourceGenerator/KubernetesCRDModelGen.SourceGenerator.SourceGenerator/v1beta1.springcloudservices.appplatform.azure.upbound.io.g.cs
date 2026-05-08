@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
-/// <summary>SpringCloudService is the Schema for the SpringCloudServices API. Manages an Azure Spring Cloud Service.</summary>
+/// <summary>
+/// SpringCloudService is the Schema for the SpringCloudServices API. Manages an Azure Spring Cloud Service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudService>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SpringCloudServiceList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1SpringCloudServiceSpecDeletionPolicyEnum
 /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingHttpBasicAuthPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingHttpBasicAuth
 {
     /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -89,6 +96,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepositoryHttpBasicAuthPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -106,6 +114,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepositoryHttpBasicAuth
 {
     /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -120,6 +129,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepositorySshAuthHostKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -138,6 +148,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepositorySshAuthPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -155,6 +166,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepositorySshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -176,6 +188,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingRepository
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -210,6 +223,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingSshAuthHostKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -228,6 +242,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingSshAuthPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -245,6 +260,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSettingSshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -266,6 +282,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSetting
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -296,6 +313,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderConfigServerGitSett
 /// <summary>Specifies the password of the container registry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderContainerRegistryPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -313,6 +331,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderContainerRegistryPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderContainerRegistry
 {
     /// <summary>Specifies the name of the container registry.</summary>
@@ -334,6 +353,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderContainerRegistry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderDefaultBuildService
 {
     /// <summary>Specifies the name of the container registry used in the default build service.</summary>
@@ -343,6 +363,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderDefaultBuildService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderMarketplace
 {
     /// <summary>Specifies the plan ID of the 3rd Party Artifact that is being procured.</summary>
@@ -366,6 +387,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderMarketplace
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -382,6 +404,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -393,6 +416,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRefPolicy
 {
     /// <summary>
@@ -417,6 +441,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdR
 /// <summary>Reference to a Subnet in network to populate appSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -436,6 +461,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -452,6 +478,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -463,6 +490,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -487,6 +515,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdS
 /// <summary>Selector for a Subnet in network to populate appSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdSelector
 {
     /// <summary>
@@ -513,6 +542,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkAppSubnetIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -529,6 +559,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -540,6 +571,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRefPolicy
 {
     /// <summary>
@@ -564,6 +596,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRunti
 /// <summary>Reference to a Subnet in network to populate serviceRuntimeSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -583,6 +616,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRunti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -599,6 +633,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -610,6 +645,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -634,6 +670,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRunti
 /// <summary>Selector for a Subnet in network to populate serviceRuntimeSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRuntimeSubnetIdSelector
 {
     /// <summary>
@@ -654,6 +691,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetworkServiceRunti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderNetwork
 {
     /// <summary>Specifies the Name of the resource group containing network resources of Azure Spring Cloud Apps. Changing this forces a new resource to be created.</summary>
@@ -709,6 +747,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -725,6 +764,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -736,6 +776,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -760,6 +801,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRe
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -779,6 +821,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -795,6 +838,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -806,6 +850,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -830,6 +875,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSe
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -856,6 +902,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderResourceGroupNameSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -872,6 +919,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -883,6 +931,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRefPolicy
 {
     /// <summary>
@@ -907,6 +956,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStri
 /// <summary>Reference to a ApplicationInsights in insights to populate connectionString.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -926,6 +976,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -942,6 +993,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -953,6 +1005,7 @@ public enum V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelectorPolicy
 {
     /// <summary>
@@ -977,6 +1030,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStri
 /// <summary>Selector for a ApplicationInsights in insights to populate connectionString.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStringSelector
 {
     /// <summary>
@@ -997,6 +1051,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderTraceConnectionStri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProviderTrace
 {
     /// <summary>The connection string used for Application Insights.</summary>
@@ -1018,6 +1073,7 @@ public partial class V1beta1SpringCloudServiceSpecForProviderTrace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecForProvider
 {
     /// <summary>Specifies the size for this Spring Cloud Service&apos;s default build agent pool. Possible values are S1, S2, S3, S4 and S5. This field is applicable only for Spring Cloud Service with enterprise tier.</summary>
@@ -1096,6 +1152,7 @@ public partial class V1beta1SpringCloudServiceSpecForProvider
 /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingHttpBasicAuthPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1113,6 +1170,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingHttpBasicAuth
 {
     /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -1127,6 +1185,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositoryHttpBasicAuthPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1144,6 +1203,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositoryHttpBasicAuth
 {
     /// <summary>The password used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -1158,6 +1218,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthHostKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1176,6 +1237,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuthPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1193,6 +1255,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepositorySshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -1214,6 +1277,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingRepository
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -1248,6 +1312,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>The host key of the Git repository server, should not include the algorithm prefix as covered by host-key-algorithm.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthHostKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1266,6 +1331,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>The SSH private key to access the Git repository, required when the URI starts with git@ or ssh://.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuthPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1283,6 +1349,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSettingSshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -1304,6 +1371,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSetting
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -1334,6 +1402,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderConfigServerGitSet
 /// <summary>Specifies the password of the container registry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistryPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1351,6 +1420,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistryP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistry
 {
     /// <summary>Specifies the name of the container registry.</summary>
@@ -1372,6 +1442,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderContainerRegistry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderDefaultBuildService
 {
     /// <summary>Specifies the name of the container registry used in the default build service.</summary>
@@ -1381,6 +1452,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderDefaultBuildServic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderMarketplace
 {
     /// <summary>Specifies the plan ID of the 3rd Party Artifact that is being procured.</summary>
@@ -1404,6 +1476,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderMarketplace
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1420,6 +1493,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1431,6 +1505,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRefPolicy
 {
     /// <summary>
@@ -1455,6 +1530,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetId
 /// <summary>Reference to a Subnet in network to populate appSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1474,6 +1550,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1490,6 +1567,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1501,6 +1579,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1525,6 +1604,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetId
 /// <summary>Selector for a Subnet in network to populate appSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetIdSelector
 {
     /// <summary>
@@ -1551,6 +1631,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkAppSubnetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1567,6 +1648,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1578,6 +1660,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnet
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRefPolicy
 {
     /// <summary>
@@ -1602,6 +1685,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRunt
 /// <summary>Reference to a Subnet in network to populate serviceRuntimeSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1621,6 +1705,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRunt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1637,6 +1722,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1648,6 +1734,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnet
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1672,6 +1759,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRunt
 /// <summary>Selector for a Subnet in network to populate serviceRuntimeSubnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRuntimeSubnetIdSelector
 {
     /// <summary>
@@ -1692,6 +1780,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetworkServiceRunt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderNetwork
 {
     /// <summary>Specifies the Name of the resource group containing network resources of Azure Spring Cloud Apps. Changing this forces a new resource to be created.</summary>
@@ -1747,6 +1836,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1763,6 +1853,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1774,6 +1865,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRefPolicy
 {
     /// <summary>
@@ -1798,6 +1890,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStr
 /// <summary>Reference to a ApplicationInsights in insights to populate connectionString.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1817,6 +1910,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1833,6 +1927,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1844,6 +1939,7 @@ public enum V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelectorPolicy
 {
     /// <summary>
@@ -1868,6 +1964,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStr
 /// <summary>Selector for a ApplicationInsights in insights to populate connectionString.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStringSelector
 {
     /// <summary>
@@ -1888,6 +1985,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderTraceConnectionStr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProviderTrace
 {
     /// <summary>The connection string used for Application Insights.</summary>
@@ -1921,6 +2019,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProviderTrace
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecInitProvider
 {
     /// <summary>Specifies the size for this Spring Cloud Service&apos;s default build agent pool. Possible values are S1, S2, S3, S4 and S5. This field is applicable only for Spring Cloud Service with enterprise tier.</summary>
@@ -1990,6 +2089,7 @@ public partial class V1beta1SpringCloudServiceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2014,6 +2114,7 @@ public enum V1beta1SpringCloudServiceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2030,6 +2131,7 @@ public enum V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2041,6 +2143,7 @@ public enum V1beta1SpringCloudServiceSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2069,6 +2172,7 @@ public partial class V1beta1SpringCloudServiceSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2088,6 +2192,7 @@ public partial class V1beta1SpringCloudServiceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2102,6 +2207,7 @@ public partial class V1beta1SpringCloudServiceSpecWriteConnectionSecretToRef
 /// <summary>SpringCloudServiceSpec defines the desired state of SpringCloudService</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceSpec
 {
     /// <summary>
@@ -2169,6 +2275,7 @@ public partial class V1beta1SpringCloudServiceSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSettingHttpBasicAuth
 {
     /// <summary>The username that&apos;s used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -2178,6 +2285,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSettingRepositoryHttpBasicAuth
 {
     /// <summary>The username that&apos;s used to access the Git repository server, required when the Git repository server supports HTTP Basic Authentication.</summary>
@@ -2187,6 +2295,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSettingRepositorySshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -2200,6 +2309,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSettingRepository
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -2233,6 +2343,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSettingSshAuth
 {
     /// <summary>The host key algorithm, should be ssh-dss, ssh-rsa, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521. Required only if host-key exists.</summary>
@@ -2246,6 +2357,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSetting
 {
     /// <summary>A http_basic_auth block as defined below.</summary>
@@ -2275,6 +2387,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderConfigServerGitSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderContainerRegistry
 {
     /// <summary>Specifies the name of the container registry.</summary>
@@ -2292,6 +2405,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderContainerRegistry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderDefaultBuildService
 {
     /// <summary>Specifies the name of the container registry used in the default build service.</summary>
@@ -2301,6 +2415,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderDefaultBuildServic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderMarketplace
 {
     /// <summary>Specifies the plan ID of the 3rd Party Artifact that is being procured.</summary>
@@ -2318,6 +2433,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderMarketplace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderNetwork
 {
     /// <summary>Specifies the Name of the resource group containing network resources of Azure Spring Cloud Apps. Changing this forces a new resource to be created.</summary>
@@ -2351,6 +2467,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderRequiredNetworkTrafficRules
 {
     /// <summary>The direction of required traffic. Possible values are Inbound, Outbound.</summary>
@@ -2376,6 +2493,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderRequiredNetworkTra
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProviderTrace
 {
     /// <summary>The connection string used for Application Insights.</summary>
@@ -2389,6 +2507,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProviderTrace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusAtProvider
 {
     /// <summary>Specifies the size for this Spring Cloud Service&apos;s default build agent pool. Possible values are S1, S2, S3, S4 and S5. This field is applicable only for Spring Cloud Service with enterprise tier.</summary>
@@ -2475,6 +2594,7 @@ public partial class V1beta1SpringCloudServiceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatusConditions
 {
     /// <summary>
@@ -2518,6 +2638,7 @@ public partial class V1beta1SpringCloudServiceStatusConditions
 /// <summary>SpringCloudServiceStatus defines the observed state of SpringCloudService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudServiceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2536,9 +2657,13 @@ public partial class V1beta1SpringCloudServiceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SpringCloudService is the Schema for the SpringCloudServices API. Manages an Azure Spring Cloud Service.</summary>
+/// <summary>
+/// SpringCloudService is the Schema for the SpringCloudServices API. Manages an Azure Spring Cloud Service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudServiceSpec>, IStatus<V1beta1SpringCloudServiceStatus?>
 {

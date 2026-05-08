@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.synapse.azure.upbound.io;
-/// <summary>SparkPool is the Schema for the SparkPools API. Manages a Synapse Spark Pool.</summary>
+/// <summary>
+/// SparkPool is the Schema for the SparkPools API. Manages a Synapse Spark Pool.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SparkPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SparkPool>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SparkPoolList : IKubernetesObject<V1ListMeta>, IItem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SparkPoolSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderAutoPause
 {
     /// <summary>Number of minutes of idle time before the Spark Pool is automatically paused. Must be between 5 and 10080.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1SparkPoolSpecForProviderAutoPause
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderAutoScale
 {
     /// <summary>The maximum number of nodes the Spark Pool can support. Must be between 3 and 200.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1SparkPoolSpecForProviderAutoScale
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderLibraryRequirement
 {
     /// <summary>The content of library requirements.</summary>
@@ -92,6 +100,7 @@ public partial class V1beta1SparkPoolSpecForProviderLibraryRequirement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderSparkConfig
 {
     /// <summary>The contents of a spark configuration.</summary>
@@ -111,6 +120,7 @@ public partial class V1beta1SparkPoolSpecForProviderSparkConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -127,6 +137,7 @@ public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -138,6 +149,7 @@ public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicy
 {
     /// <summary>
@@ -162,6 +174,7 @@ public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRefPolicy
 /// <summary>Reference to a Workspace in synapse to populate synapseWorkspaceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -181,6 +194,7 @@ public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -197,6 +211,7 @@ public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -208,6 +223,7 @@ public enum V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPolicy
 {
     /// <summary>
@@ -232,6 +248,7 @@ public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelectorPo
 /// <summary>Selector for a Workspace in synapse to populate synapseWorkspaceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelector
 {
     /// <summary>
@@ -252,6 +269,7 @@ public partial class V1beta1SparkPoolSpecForProviderSynapseWorkspaceIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecForProvider
 {
     /// <summary>An auto_pause block as defined below.</summary>
@@ -337,6 +355,7 @@ public partial class V1beta1SparkPoolSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecInitProviderAutoPause
 {
     /// <summary>Number of minutes of idle time before the Spark Pool is automatically paused. Must be between 5 and 10080.</summary>
@@ -346,6 +365,7 @@ public partial class V1beta1SparkPoolSpecInitProviderAutoPause
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecInitProviderAutoScale
 {
     /// <summary>The maximum number of nodes the Spark Pool can support. Must be between 3 and 200.</summary>
@@ -359,6 +379,7 @@ public partial class V1beta1SparkPoolSpecInitProviderAutoScale
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecInitProviderLibraryRequirement
 {
     /// <summary>The content of library requirements.</summary>
@@ -372,6 +393,7 @@ public partial class V1beta1SparkPoolSpecInitProviderLibraryRequirement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecInitProviderSparkConfig
 {
     /// <summary>The contents of a spark configuration.</summary>
@@ -397,6 +419,7 @@ public partial class V1beta1SparkPoolSpecInitProviderSparkConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecInitProvider
 {
     /// <summary>An auto_pause block as defined below.</summary>
@@ -474,6 +497,7 @@ public partial class V1beta1SparkPoolSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -498,6 +522,7 @@ public enum V1beta1SparkPoolSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -514,6 +539,7 @@ public enum V1beta1SparkPoolSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SparkPoolSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SparkPoolSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -525,6 +551,7 @@ public enum V1beta1SparkPoolSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -553,6 +580,7 @@ public partial class V1beta1SparkPoolSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -572,6 +600,7 @@ public partial class V1beta1SparkPoolSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -586,6 +615,7 @@ public partial class V1beta1SparkPoolSpecWriteConnectionSecretToRef
 /// <summary>SparkPoolSpec defines the desired state of SparkPool</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolSpec
 {
     /// <summary>
@@ -653,6 +683,7 @@ public partial class V1beta1SparkPoolSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusAtProviderAutoPause
 {
     /// <summary>Number of minutes of idle time before the Spark Pool is automatically paused. Must be between 5 and 10080.</summary>
@@ -662,6 +693,7 @@ public partial class V1beta1SparkPoolStatusAtProviderAutoPause
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusAtProviderAutoScale
 {
     /// <summary>The maximum number of nodes the Spark Pool can support. Must be between 3 and 200.</summary>
@@ -675,6 +707,7 @@ public partial class V1beta1SparkPoolStatusAtProviderAutoScale
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusAtProviderLibraryRequirement
 {
     /// <summary>The content of library requirements.</summary>
@@ -688,6 +721,7 @@ public partial class V1beta1SparkPoolStatusAtProviderLibraryRequirement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusAtProviderSparkConfig
 {
     /// <summary>The contents of a spark configuration.</summary>
@@ -701,6 +735,7 @@ public partial class V1beta1SparkPoolStatusAtProviderSparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusAtProvider
 {
     /// <summary>An auto_pause block as defined below.</summary>
@@ -783,6 +818,7 @@ public partial class V1beta1SparkPoolStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatusConditions
 {
     /// <summary>
@@ -826,6 +862,7 @@ public partial class V1beta1SparkPoolStatusConditions
 /// <summary>SparkPoolStatus defines the observed state of SparkPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SparkPoolStatus
 {
     [JsonPropertyName("atProvider")]
@@ -844,9 +881,13 @@ public partial class V1beta1SparkPoolStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SparkPool is the Schema for the SparkPools API. Manages a Synapse Spark Pool.</summary>
+/// <summary>
+/// SparkPool is the Schema for the SparkPools API. Manages a Synapse Spark Pool.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SparkPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SparkPoolSpec>, IStatus<V1beta1SparkPoolStatus?>
 {

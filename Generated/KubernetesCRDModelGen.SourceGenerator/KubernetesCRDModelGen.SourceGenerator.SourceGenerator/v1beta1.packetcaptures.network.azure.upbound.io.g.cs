@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>PacketCapture is the Schema for the PacketCaptures API. Configures Packet Capturing against a Virtual Machine using a Network Watcher.</summary>
+/// <summary>
+/// PacketCapture is the Schema for the PacketCaptures API. Configures Packet Capturing against a Virtual Machine using a Network Watcher.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PacketCaptureList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PacketCapture>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PacketCaptureList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PacketCaptureSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderFilter
 {
     /// <summary>The local IP Address to be filtered on. Notation: &quot;127.0.0.1&quot; for single address entry. &quot;127.0.0.1-127.0.0.255&quot; for range. &quot;127.0.0.1;127.0.0.5&quot; for multiple entries. Multiple ranges not currently supported. Mixing ranges with multiple entries not currently supported. Changing this forces a new resource to be created.</summary>
@@ -88,6 +94,7 @@ public partial class V1beta1PacketCaptureSpecForProviderFilter
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -104,6 +111,7 @@ public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -115,6 +123,7 @@ public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPolicy
 {
     /// <summary>
@@ -139,6 +148,7 @@ public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRefPol
 /// <summary>Reference to a Watcher in network to populate networkWatcherName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -158,6 +168,7 @@ public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -174,6 +185,7 @@ public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -185,6 +197,7 @@ public enum V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelectorPolicy
 {
     /// <summary>
@@ -209,6 +222,7 @@ public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelect
 /// <summary>Selector for a Watcher in network to populate networkWatcherName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelector
 {
     /// <summary>
@@ -235,6 +249,7 @@ public partial class V1beta1PacketCaptureSpecForProviderNetworkWatcherNameSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -251,6 +266,7 @@ public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -262,6 +278,7 @@ public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -286,6 +303,7 @@ public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameRefPoli
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -305,6 +323,7 @@ public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -321,6 +340,7 @@ public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -332,6 +352,7 @@ public enum V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -356,6 +377,7 @@ public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameSelecto
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -382,6 +404,7 @@ public partial class V1beta1PacketCaptureSpecForProviderResourceGroupNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -398,6 +421,7 @@ public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -409,6 +433,7 @@ public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -433,6 +458,7 @@ public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAc
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -452,6 +478,7 @@ public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -468,6 +495,7 @@ public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -479,6 +507,7 @@ public enum V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -503,6 +532,7 @@ public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAc
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAccountIdSelector
 {
     /// <summary>
@@ -523,6 +553,7 @@ public partial class V1beta1PacketCaptureSpecForProviderStorageLocationStorageAc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProviderStorageLocation
 {
     /// <summary>A valid local path on the targeting VM. Must include the name of the capture file (*.cap). For Linux virtual machine it must start with /var/captures.</summary>
@@ -544,6 +575,7 @@ public partial class V1beta1PacketCaptureSpecForProviderStorageLocation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecForProvider
 {
     /// <summary>One or more filter blocks as defined below. Changing this forces a new resource to be created.</summary>
@@ -597,6 +629,7 @@ public partial class V1beta1PacketCaptureSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderFilter
 {
     /// <summary>The local IP Address to be filtered on. Notation: &quot;127.0.0.1&quot; for single address entry. &quot;127.0.0.1-127.0.0.255&quot; for range. &quot;127.0.0.1;127.0.0.5&quot; for multiple entries. Multiple ranges not currently supported. Mixing ranges with multiple entries not currently supported. Changing this forces a new resource to be created.</summary>
@@ -628,6 +661,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderFilter
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -644,6 +678,7 @@ public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -655,6 +690,7 @@ public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -679,6 +715,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageA
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -698,6 +735,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -714,6 +752,7 @@ public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -725,6 +764,7 @@ public enum V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -749,6 +789,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageA
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageAccountIdSelector
 {
     /// <summary>
@@ -769,6 +810,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderStorageLocationStorageA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProviderStorageLocation
 {
     /// <summary>A valid local path on the targeting VM. Must include the name of the capture file (*.cap). For Linux virtual machine it must start with /var/captures.</summary>
@@ -802,6 +844,7 @@ public partial class V1beta1PacketCaptureSpecInitProviderStorageLocation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecInitProvider
 {
     /// <summary>One or more filter blocks as defined below. Changing this forces a new resource to be created.</summary>
@@ -835,6 +878,7 @@ public partial class V1beta1PacketCaptureSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -859,6 +903,7 @@ public enum V1beta1PacketCaptureSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -875,6 +920,7 @@ public enum V1beta1PacketCaptureSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PacketCaptureSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PacketCaptureSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -886,6 +932,7 @@ public enum V1beta1PacketCaptureSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -914,6 +961,7 @@ public partial class V1beta1PacketCaptureSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -933,6 +981,7 @@ public partial class V1beta1PacketCaptureSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -947,6 +996,7 @@ public partial class V1beta1PacketCaptureSpecWriteConnectionSecretToRef
 /// <summary>PacketCaptureSpec defines the desired state of PacketCapture</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureSpec
 {
     /// <summary>
@@ -1014,6 +1064,7 @@ public partial class V1beta1PacketCaptureSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureStatusAtProviderFilter
 {
     /// <summary>The local IP Address to be filtered on. Notation: &quot;127.0.0.1&quot; for single address entry. &quot;127.0.0.1-127.0.0.255&quot; for range. &quot;127.0.0.1;127.0.0.5&quot; for multiple entries. Multiple ranges not currently supported. Mixing ranges with multiple entries not currently supported. Changing this forces a new resource to be created.</summary>
@@ -1039,6 +1090,7 @@ public partial class V1beta1PacketCaptureStatusAtProviderFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureStatusAtProviderStorageLocation
 {
     /// <summary>A valid local path on the targeting VM. Must include the name of the capture file (*.cap). For Linux virtual machine it must start with /var/captures.</summary>
@@ -1056,6 +1108,7 @@ public partial class V1beta1PacketCaptureStatusAtProviderStorageLocation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureStatusAtProvider
 {
     /// <summary>One or more filter blocks as defined below. Changing this forces a new resource to be created.</summary>
@@ -1098,6 +1151,7 @@ public partial class V1beta1PacketCaptureStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureStatusConditions
 {
     /// <summary>
@@ -1141,6 +1195,7 @@ public partial class V1beta1PacketCaptureStatusConditions
 /// <summary>PacketCaptureStatus defines the observed state of PacketCapture.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PacketCaptureStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1159,9 +1214,13 @@ public partial class V1beta1PacketCaptureStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PacketCapture is the Schema for the PacketCaptures API. Configures Packet Capturing against a Virtual Machine using a Network Watcher.</summary>
+/// <summary>
+/// PacketCapture is the Schema for the PacketCaptures API. Configures Packet Capturing against a Virtual Machine using a Network Watcher.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PacketCapture : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PacketCaptureSpec>, IStatus<V1beta1PacketCaptureStatus?>
 {

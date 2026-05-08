@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.</summary>
+/// <summary>
+/// IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeAzureSSISList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IntegrationRuntimeAzureSSIS>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISList : IKubernetesObject<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecDeletionPolicyEnum
 /// <summary>Administrator login password for the SQL Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInfoAdministratorPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInfo
 {
     /// <summary>Administrator login name for the SQL Server.</summary>
@@ -104,6 +111,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCopyComputeScale
 {
     /// <summary>Specifies the data integration unit number setting reserved for copy activity execution. Supported values are multiples of 4 in range 4-256.</summary>
@@ -118,6 +126,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCopyComput
 /// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetupScriptSasTokenSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -135,6 +144,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetupScript
 {
     /// <summary>The blob endpoint for the container which contains a custom setup script that will be run on every node on startup. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -170,6 +181,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -181,6 +193,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -205,6 +218,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -224,6 +238,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -240,6 +255,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -251,6 +267,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -275,6 +292,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -295,6 +313,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -317,6 +336,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 /// <summary>The password for the target device.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKeyPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -334,6 +354,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKey
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -355,6 +376,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponentKeyVaultLicense
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -377,6 +399,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 /// <summary>The license used for the Component.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponentLicenseSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -394,6 +417,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponent
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -411,6 +435,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetup
 {
     /// <summary>One or more command_key blocks as defined below.</summary>
@@ -438,6 +463,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -454,6 +480,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -465,6 +492,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicy
 {
     /// <summary>
@@ -489,6 +517,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -508,6 +537,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -524,6 +554,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -535,6 +566,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -559,6 +591,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelector
 {
     /// <summary>
@@ -579,6 +612,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegration
 {
     /// <summary>id of the subnet to which the nodes of the Azure-SSIS Integration Runtime will be added.</summary>
@@ -596,6 +630,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPackageStore
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -609,6 +644,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPackageSto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPipelineExternalComputeScale
 {
     /// <summary>Specifies the number of the external nodes, which should be greater than 0 and less than 11.</summary>
@@ -626,6 +662,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPipelineEx
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderProxy
 {
     /// <summary>The path in the data store to be used when moving data between Self-Hosted and Azure-SSIS Integration Runtimes.</summary>
@@ -649,6 +686,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderProxy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -665,6 +703,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -676,6 +715,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicy
 {
     /// <summary>
@@ -700,6 +740,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -719,6 +760,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -735,6 +777,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -746,6 +789,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -770,6 +814,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelector
 {
     /// <summary>
@@ -796,6 +841,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -812,6 +858,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -823,6 +870,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicy
 {
     /// <summary>
@@ -847,6 +895,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// <summary>Reference to a Subnet in network to populate subnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -866,6 +915,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -882,6 +932,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -893,6 +944,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicy
 {
     /// <summary>
@@ -917,6 +969,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// <summary>Selector for a Subnet in network to populate subnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelector
 {
     /// <summary>
@@ -937,6 +990,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegration
 {
     /// <summary>Static public IP addresses for the Azure-SSIS Integration Runtime. The size must be 2.</summary>
@@ -974,6 +1028,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProvider
 {
     /// <summary>A catalog_info block as defined below.</summary>
@@ -1060,6 +1115,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProvider
 /// <summary>Administrator login password for the SQL Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogInfoAdministratorPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1077,6 +1133,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogInfo
 {
     /// <summary>Administrator login name for the SQL Server.</summary>
@@ -1106,6 +1163,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCopyComputeScale
 {
     /// <summary>Specifies the data integration unit number setting reserved for copy activity execution. Supported values are multiples of 4 in range 4-256.</summary>
@@ -1120,6 +1178,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCopyCompu
 /// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScriptSasTokenSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1137,6 +1196,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScript
 {
     /// <summary>The blob endpoint for the container which contains a custom setup script that will be run on every node on startup. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
@@ -1150,6 +1210,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -1172,6 +1233,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 /// <summary>The password for the target device.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKeyPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1189,6 +1251,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKey
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -1210,6 +1273,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponentKeyVaultLicense
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -1232,6 +1296,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 /// <summary>The license used for the Component.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponentLicenseSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1249,6 +1314,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponent
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -1266,6 +1332,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetup
 {
     /// <summary>One or more command_key blocks as defined below.</summary>
@@ -1293,6 +1360,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1309,6 +1377,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1320,6 +1389,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicy
 {
     /// <summary>
@@ -1344,6 +1414,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1363,6 +1434,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1379,6 +1451,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1390,6 +1463,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1414,6 +1488,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelector
 {
     /// <summary>
@@ -1434,6 +1509,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegration
 {
     /// <summary>id of the subnet to which the nodes of the Azure-SSIS Integration Runtime will be added.</summary>
@@ -1451,6 +1527,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPackageStore
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -1464,6 +1541,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPackageSt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPipelineExternalComputeScale
 {
     /// <summary>Specifies the number of the external nodes, which should be greater than 0 and less than 11.</summary>
@@ -1481,6 +1559,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPipelineE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderProxy
 {
     /// <summary>The path in the data store to be used when moving data between Self-Hosted and Azure-SSIS Integration Runtimes.</summary>
@@ -1504,6 +1583,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderProxy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1520,6 +1600,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1531,6 +1612,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicy
 {
     /// <summary>
@@ -1555,6 +1637,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1574,6 +1657,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1590,6 +1674,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1601,6 +1686,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1625,6 +1711,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelector
 {
     /// <summary>
@@ -1651,6 +1738,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1667,6 +1755,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1678,6 +1767,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicy
 {
     /// <summary>
@@ -1702,6 +1792,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// <summary>Reference to a Subnet in network to populate subnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1721,6 +1812,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1737,6 +1829,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1748,6 +1841,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicy
 {
     /// <summary>
@@ -1772,6 +1866,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// <summary>Selector for a Subnet in network to populate subnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelector
 {
     /// <summary>
@@ -1792,6 +1887,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegration
 {
     /// <summary>Static public IP addresses for the Azure-SSIS Integration Runtime. The size must be 2.</summary>
@@ -1841,6 +1937,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProvider
 {
     /// <summary>A catalog_info block as defined below.</summary>
@@ -1918,6 +2015,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1942,6 +2040,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1958,6 +2057,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1969,6 +2069,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1997,6 +2098,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2016,6 +2118,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2030,6 +2133,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecWriteConnectionSecret
 /// <summary>IntegrationRuntimeAzureSSISSpec defines the desired state of IntegrationRuntimeAzureSSIS</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpec
 {
     /// <summary>
@@ -2097,6 +2201,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCatalogInfo
 {
     /// <summary>Administrator login name for the SQL Server.</summary>
@@ -2122,6 +2227,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCatalogIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCopyComputeScale
 {
     /// <summary>Specifies the data integration unit number setting reserved for copy activity execution. Supported values are multiples of 4 in range 4-256.</summary>
@@ -2135,6 +2241,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCopyCompu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCustomSetupScript
 {
     /// <summary>The blob endpoint for the container which contains a custom setup script that will be run on every node on startup. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
@@ -2144,6 +2251,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCustomSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -2165,6 +2273,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupCommandKey
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -2182,6 +2291,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupComponentKeyVaultLicense
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -2203,6 +2313,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupComponent
 {
     /// <summary>A key_vault_secret_reference block as defined below.</summary>
@@ -2216,6 +2327,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetup
 {
     /// <summary>One or more command_key blocks as defined below.</summary>
@@ -2237,6 +2349,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressVnetIntegration
 {
     /// <summary>id of the subnet to which the nodes of the Azure-SSIS Integration Runtime will be added.</summary>
@@ -2246,6 +2359,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressVn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPackageStore
 {
     /// <summary>Name of the Linked Service to associate with the packages.</summary>
@@ -2259,6 +2373,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPackageSt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPipelineExternalComputeScale
 {
     /// <summary>Specifies the number of the external nodes, which should be greater than 0 and less than 11.</summary>
@@ -2276,6 +2391,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPipelineE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderProxy
 {
     /// <summary>The path in the data store to be used when moving data between Self-Hosted and Azure-SSIS Integration Runtimes.</summary>
@@ -2293,6 +2409,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderProxy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderVnetIntegration
 {
     /// <summary>Static public IP addresses for the Azure-SSIS Integration Runtime. The size must be 2.</summary>
@@ -2314,6 +2431,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderVnetInteg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProvider
 {
     /// <summary>A catalog_info block as defined below.</summary>
@@ -2396,6 +2514,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusConditions
 {
     /// <summary>
@@ -2439,6 +2558,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusConditions
 /// <summary>IntegrationRuntimeAzureSSISStatus defines the observed state of IntegrationRuntimeAzureSSIS.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2457,9 +2577,13 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.</summary>
+/// <summary>
+/// IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeAzureSSIS : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntegrationRuntimeAzureSSISSpec>, IStatus<V1beta1IntegrationRuntimeAzureSSISStatus?>
 {

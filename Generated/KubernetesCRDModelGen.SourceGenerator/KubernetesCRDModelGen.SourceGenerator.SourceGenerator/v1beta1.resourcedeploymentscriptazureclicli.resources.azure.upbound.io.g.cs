@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azure.upbound.io;
-/// <summary>ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.</summary>
+/// <summary>
+/// ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceDeploymentScriptAzureCliList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResourceDeploymentScriptAzureCli>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliList : IKubernetesOb
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderContainer
 {
     /// <summary>Container group name, if not specified then the name will get auto-generated. For more information, please refer to the Container Configuration documentation.</summary>
@@ -67,6 +73,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderConta
 /// <summary>Specifies the value of the secure environment variable.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderEnvironmentVariableSecureValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -84,6 +91,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderEnvir
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderEnvironmentVariable
 {
     /// <summary>Specifies the name of the environment variable.</summary>
@@ -107,6 +115,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderEnvir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -123,6 +132,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -134,6 +144,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -158,6 +169,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -177,6 +189,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -193,6 +206,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -204,6 +218,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdenti
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -228,6 +243,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -248,6 +264,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdentity
 {
     /// <summary>Specifies the list of user-assigned managed identity IDs associated with the resource. Changing this forces a new resource to be created.</summary>
@@ -275,6 +292,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -291,6 +309,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -302,6 +321,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -326,6 +346,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResou
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -345,6 +366,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -361,6 +383,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -372,6 +395,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupN
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -396,6 +420,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResou
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -417,6 +442,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderResou
 /// <summary>Specifies the storage account access key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderStorageAccountKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -434,6 +460,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderStora
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderStorageAccount
 {
     /// <summary>Specifies the storage account access key.</summary>
@@ -447,6 +474,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProviderStora
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProvider
 {
     /// <summary>Specifies the cleanup preference when the script execution gets in a terminal state. Possible values are Always, OnExpiration, OnSuccess. Defaults to Always. Changing this forces a new Resource Deployment Script to be created.</summary>
@@ -528,6 +556,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderContainer
 {
     /// <summary>Container group name, if not specified then the name will get auto-generated. For more information, please refer to the Container Configuration documentation.</summary>
@@ -538,6 +567,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderCont
 /// <summary>Specifies the secure value of the environment variable.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariableSecureValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -555,6 +585,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvironmentVariable
 {
     /// <summary>Specifies the name of the environment variable.</summary>
@@ -578,6 +609,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderEnvi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -594,6 +626,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -605,6 +638,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -629,6 +663,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -648,6 +683,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -664,6 +700,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -675,6 +712,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdent
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -699,6 +737,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -719,6 +758,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIden
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIdentity
 {
     /// <summary>Specifies the list of user-assigned managed identity IDs associated with the resource. Changing this forces a new resource to be created.</summary>
@@ -746,6 +786,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -762,6 +803,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -773,6 +815,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -797,6 +840,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderReso
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -816,6 +860,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -832,6 +877,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -843,6 +889,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroup
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -867,6 +914,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderReso
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -888,6 +936,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderReso
 /// <summary>Specifies the storage account access key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccountKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -905,6 +954,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStorageAccount
 {
     /// <summary>Specifies the storage account access key.</summary>
@@ -930,6 +980,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProviderStor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProvider
 {
     /// <summary>Specifies the cleanup preference when the script execution gets in a terminal state. Possible values are Always, OnExpiration, OnSuccess. Defaults to Always. Changing this forces a new Resource Deployment Script to be created.</summary>
@@ -1015,6 +1066,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1039,6 +1091,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1055,6 +1108,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1066,6 +1120,7 @@ public enum V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1094,6 +1149,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1113,6 +1169,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecProviderConfigRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1127,6 +1184,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpecWriteConnectionS
 /// <summary>ResourceDeploymentScriptAzureCliSpec defines the desired state of ResourceDeploymentScriptAzureCli</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliSpec
 {
     /// <summary>
@@ -1194,6 +1252,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderContainer
 {
     /// <summary>Container group name, if not specified then the name will get auto-generated. For more information, please refer to the Container Configuration documentation.</summary>
@@ -1203,6 +1262,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderCont
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderEnvironmentVariable
 {
     /// <summary>Specifies the name of the environment variable.</summary>
@@ -1216,6 +1276,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderEnvi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderIdentity
 {
     /// <summary>Specifies the list of user-assigned managed identity IDs associated with the resource. Changing this forces a new resource to be created.</summary>
@@ -1229,6 +1290,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderIden
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderStorageAccount
 {
     /// <summary>Specifies the storage account name.</summary>
@@ -1238,6 +1300,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProviderStor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProvider
 {
     /// <summary>Specifies the cleanup preference when the script execution gets in a terminal state. Possible values are Always, OnExpiration, OnSuccess. Defaults to Always. Changing this forces a new Resource Deployment Script to be created.</summary>
@@ -1320,6 +1383,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatusConditions
 {
     /// <summary>
@@ -1363,6 +1427,7 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatusConditions
 /// <summary>ResourceDeploymentScriptAzureCliStatus defines the observed state of ResourceDeploymentScriptAzureCli.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceDeploymentScriptAzureCliStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1381,9 +1446,13 @@ public partial class V1beta1ResourceDeploymentScriptAzureCliStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.</summary>
+/// <summary>
+/// ResourceDeploymentScriptAzureCli is the Schema for the ResourceDeploymentScriptAzureClis API. Manages a Resource Deployment Script of Azure Cli.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceDeploymentScriptAzureCli : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResourceDeploymentScriptAzureCliSpec>, IStatus<V1beta1ResourceDeploymentScriptAzureCliStatus?>
 {

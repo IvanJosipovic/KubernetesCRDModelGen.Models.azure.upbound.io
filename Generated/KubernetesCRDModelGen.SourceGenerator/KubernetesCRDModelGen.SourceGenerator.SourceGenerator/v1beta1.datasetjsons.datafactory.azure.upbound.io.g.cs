@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>DataSetJSON is the Schema for the DataSetJSONs API. Manages an Azure JSON Dataset inside an Azure Data Factory.</summary>
+/// <summary>
+/// DataSetJSON is the Schema for the DataSetJSONs API. Manages an Azure JSON Dataset inside an Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetJSONList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSetJSON>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DataSetJSONList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DataSetJSONSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderAzureBlobStorageLocation
 {
     /// <summary>The container on the Azure Blob Storage Account hosting the file.</summary>
@@ -92,6 +98,7 @@ public partial class V1beta1DataSetJSONSpecForProviderAzureBlobStorageLocation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -108,6 +115,7 @@ public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -119,6 +127,7 @@ public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -143,6 +152,7 @@ public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdRefPolicy
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -162,6 +172,7 @@ public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -178,6 +189,7 @@ public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -189,6 +201,7 @@ public enum V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -213,6 +226,7 @@ public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdSelectorPolic
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -233,6 +247,7 @@ public partial class V1beta1DataSetJSONSpecForProviderDataFactoryIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderHttpServerLocation
 {
     /// <summary>Is the filename using dynamic expression, function or system variables? Defaults to false.</summary>
@@ -264,6 +279,7 @@ public partial class V1beta1DataSetJSONSpecForProviderHttpServerLocation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -280,6 +296,7 @@ public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -291,6 +308,7 @@ public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -315,6 +333,7 @@ public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameRefPolicy
 /// <summary>Reference to a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -334,6 +353,7 @@ public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -350,6 +370,7 @@ public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -361,6 +382,7 @@ public enum V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -385,6 +407,7 @@ public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelectorP
 /// <summary>Selector for a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelector
 {
     /// <summary>
@@ -405,6 +428,7 @@ public partial class V1beta1DataSetJSONSpecForProviderLinkedServiceNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProviderSchemaColumn
 {
     /// <summary>The description of the column.</summary>
@@ -422,6 +446,7 @@ public partial class V1beta1DataSetJSONSpecForProviderSchemaColumn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecForProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Dataset.</summary>
@@ -487,6 +512,7 @@ public partial class V1beta1DataSetJSONSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderAzureBlobStorageLocation
 {
     /// <summary>The container on the Azure Blob Storage Account hosting the file.</summary>
@@ -516,6 +542,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderAzureBlobStorageLocation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderHttpServerLocation
 {
     /// <summary>Is the filename using dynamic expression, function or system variables? Defaults to false.</summary>
@@ -547,6 +574,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderHttpServerLocation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -563,6 +591,7 @@ public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -574,6 +603,7 @@ public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -598,6 +628,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRefPolic
 /// <summary>Reference to a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -617,6 +648,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -633,6 +665,7 @@ public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -644,6 +677,7 @@ public enum V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -668,6 +702,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelector
 /// <summary>Selector for a LinkedServiceWeb in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelector
 {
     /// <summary>
@@ -688,6 +723,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderLinkedServiceNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProviderSchemaColumn
 {
     /// <summary>The description of the column.</summary>
@@ -717,6 +753,7 @@ public partial class V1beta1DataSetJSONSpecInitProviderSchemaColumn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecInitProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Dataset.</summary>
@@ -774,6 +811,7 @@ public partial class V1beta1DataSetJSONSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -798,6 +836,7 @@ public enum V1beta1DataSetJSONSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -814,6 +853,7 @@ public enum V1beta1DataSetJSONSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSetJSONSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataSetJSONSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -825,6 +865,7 @@ public enum V1beta1DataSetJSONSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -853,6 +894,7 @@ public partial class V1beta1DataSetJSONSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -872,6 +914,7 @@ public partial class V1beta1DataSetJSONSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -886,6 +929,7 @@ public partial class V1beta1DataSetJSONSpecWriteConnectionSecretToRef
 /// <summary>DataSetJSONSpec defines the desired state of DataSetJSON</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONSpec
 {
     /// <summary>
@@ -953,6 +997,7 @@ public partial class V1beta1DataSetJSONSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatusAtProviderAzureBlobStorageLocation
 {
     /// <summary>The container on the Azure Blob Storage Account hosting the file.</summary>
@@ -982,6 +1027,7 @@ public partial class V1beta1DataSetJSONStatusAtProviderAzureBlobStorageLocation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatusAtProviderHttpServerLocation
 {
     /// <summary>Is the filename using dynamic expression, function or system variables? Defaults to false.</summary>
@@ -1007,6 +1053,7 @@ public partial class V1beta1DataSetJSONStatusAtProviderHttpServerLocation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatusAtProviderSchemaColumn
 {
     /// <summary>The description of the column.</summary>
@@ -1024,6 +1071,7 @@ public partial class V1beta1DataSetJSONStatusAtProviderSchemaColumn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatusAtProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Dataset.</summary>
@@ -1078,6 +1126,7 @@ public partial class V1beta1DataSetJSONStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatusConditions
 {
     /// <summary>
@@ -1121,6 +1170,7 @@ public partial class V1beta1DataSetJSONStatusConditions
 /// <summary>DataSetJSONStatus defines the observed state of DataSetJSON.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataSetJSONStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1139,9 +1189,13 @@ public partial class V1beta1DataSetJSONStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DataSetJSON is the Schema for the DataSetJSONs API. Manages an Azure JSON Dataset inside an Azure Data Factory.</summary>
+/// <summary>
+/// DataSetJSON is the Schema for the DataSetJSONs API. Manages an Azure JSON Dataset inside an Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSetJSON : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSetJSONSpec>, IStatus<V1beta1DataSetJSONStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>LinkedServiceAzureSQLDatabase is the Schema for the LinkedServiceAzureSQLDatabases API. Manages a Linked Service (connection) between Azure SQL Database and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureSQLDatabase is the Schema for the LinkedServiceAzureSQLDatabases API. Manages a Linked Service (connection) between Azure SQL Database and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceAzureSQLDatabase>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFact
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFact
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFact
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderDataFact
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderKeyVaultConnectionString
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -217,6 +231,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderKeyVault
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -230,6 +245,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProviderKeyVault
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service Azure SQL Database.</summary>
@@ -299,6 +315,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProviderKeyVaultConnectionString
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -312,6 +329,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -337,6 +355,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProviderKeyVaul
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service Azure SQL Database.</summary>
@@ -398,6 +417,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -422,6 +442,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -438,6 +459,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -449,6 +471,7 @@ public enum V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -477,6 +500,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -496,6 +520,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -510,6 +535,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpecWriteConnectionSecr
 /// <summary>LinkedServiceAzureSQLDatabaseSpec defines the desired state of LinkedServiceAzureSQLDatabase</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseSpec
 {
     /// <summary>
@@ -577,6 +603,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProviderKeyVaultConnectionString
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -590,6 +617,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -603,6 +631,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service Azure SQL Database.</summary>
@@ -669,6 +698,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusConditions
 {
     /// <summary>
@@ -712,6 +742,7 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseStatusConditions
 /// <summary>LinkedServiceAzureSQLDatabaseStatus defines the observed state of LinkedServiceAzureSQLDatabase.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureSQLDatabaseStatus
 {
     [JsonPropertyName("atProvider")]
@@ -730,9 +761,13 @@ public partial class V1beta1LinkedServiceAzureSQLDatabaseStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LinkedServiceAzureSQLDatabase is the Schema for the LinkedServiceAzureSQLDatabases API. Manages a Linked Service (connection) between Azure SQL Database and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureSQLDatabase is the Schema for the LinkedServiceAzureSQLDatabases API. Manages a Linked Service (connection) between Azure SQL Database and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureSQLDatabase : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceAzureSQLDatabaseSpec>, IStatus<V1beta1LinkedServiceAzureSQLDatabaseStatus?>
 {

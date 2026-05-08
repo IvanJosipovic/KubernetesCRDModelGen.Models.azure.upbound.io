@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.upbound.io;
-/// <summary>MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.</summary>
+/// <summary>
+/// MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLServer>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MSSQLServerList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1MSSQLServerSpecDeletionPolicyEnum
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPassword
 /// <summary>The Password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPasswordWoSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -99,6 +106,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPassword
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -115,6 +123,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -126,6 +135,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicy
 {
     /// <summary>
@@ -150,6 +160,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -169,6 +180,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -185,6 +197,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -196,6 +209,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicy
 {
     /// <summary>
@@ -220,6 +234,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelector
 {
     /// <summary>
@@ -246,6 +261,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -262,6 +278,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -273,6 +290,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicy
 {
     /// <summary>
@@ -297,6 +315,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate objectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -316,6 +335,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -332,6 +352,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -343,6 +364,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicy
 {
     /// <summary>
@@ -367,6 +389,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate objectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelector
 {
     /// <summary>
@@ -387,6 +410,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministrator
 {
     /// <summary>Specifies whether only AD Users and administrators (e.g. azuread_administrator[0].login_username) can be used to login, or also local database users (e.g. administrator_login). When true, the administrator_login and administrator_login_password properties can be omitted.</summary>
@@ -430,6 +454,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministrator
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -446,6 +471,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -457,6 +483,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -481,6 +508,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPol
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -500,6 +528,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -516,6 +545,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -527,6 +557,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -551,6 +582,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelecto
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -571,6 +603,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this SQL Server.</summary>
@@ -598,6 +631,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -614,6 +648,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -625,6 +660,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicy
 {
     /// <summary>
@@ -649,6 +685,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -668,6 +705,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -684,6 +722,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -695,6 +734,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicy
 {
     /// <summary>
@@ -719,6 +759,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelector
 {
     /// <summary>
@@ -745,6 +786,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -761,6 +803,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -772,6 +815,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -796,6 +840,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicy
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -815,6 +860,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -831,6 +877,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -842,6 +889,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -866,6 +914,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorP
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -892,6 +941,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -908,6 +958,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -919,6 +970,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicy
 {
     /// <summary>
@@ -943,6 +995,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 /// <summary>Reference to a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -962,6 +1015,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -978,6 +1032,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -989,6 +1044,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicy
 {
     /// <summary>
@@ -1013,6 +1069,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 /// <summary>Selector for a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelector
 {
     /// <summary>
@@ -1033,6 +1090,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecForProvider
 {
     /// <summary>The administrator login name for the new server. Required unless azuread_authentication_only in the azuread_administrator block is true. When omitted, Azure will generate a default username which cannot be subsequently changed. Changing this forces a new resource to be created.</summary>
@@ -1131,6 +1189,7 @@ public partial class V1beta1MSSQLServerSpecForProvider
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1149,6 +1208,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswor
 /// <summary>The Password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswordWoSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1172,6 +1232,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1188,6 +1249,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1199,6 +1261,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicy
 {
     /// <summary>
@@ -1223,6 +1286,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1242,6 +1306,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1258,6 +1323,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1269,6 +1335,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicy
 {
     /// <summary>
@@ -1293,6 +1360,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelector
 {
     /// <summary>
@@ -1319,6 +1387,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1335,6 +1404,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1346,6 +1416,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicy
 {
     /// <summary>
@@ -1370,6 +1441,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate objectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1389,6 +1461,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1405,6 +1478,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1416,6 +1490,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicy
 {
     /// <summary>
@@ -1440,6 +1515,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate objectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelector
 {
     /// <summary>
@@ -1460,6 +1536,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministrator
 {
     /// <summary>Specifies whether only AD Users and administrators (e.g. azuread_administrator[0].login_username) can be used to login, or also local database users (e.g. administrator_login). When true, the administrator_login and administrator_login_password properties can be omitted.</summary>
@@ -1503,6 +1580,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministrator
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1519,6 +1597,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1530,6 +1609,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -1554,6 +1634,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPo
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1573,6 +1654,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1589,6 +1671,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1600,6 +1683,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -1624,6 +1708,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelect
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -1644,6 +1729,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this SQL Server.</summary>
@@ -1671,6 +1757,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1687,6 +1774,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1698,6 +1786,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicy
 {
     /// <summary>
@@ -1722,6 +1811,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1741,6 +1831,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1757,6 +1848,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1768,6 +1860,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicy
 {
     /// <summary>
@@ -1792,6 +1885,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelector
 {
     /// <summary>
@@ -1818,6 +1912,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1834,6 +1929,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1845,6 +1941,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicy
 {
     /// <summary>
@@ -1869,6 +1966,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// <summary>Reference to a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1888,6 +1986,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1904,6 +2003,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1915,6 +2015,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicy
 {
     /// <summary>
@@ -1939,6 +2040,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// <summary>Selector for a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelector
 {
     /// <summary>
@@ -1971,6 +2073,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecInitProvider
 {
     /// <summary>The administrator login name for the new server. Required unless azuread_authentication_only in the azuread_administrator block is true. When omitted, Azure will generate a default username which cannot be subsequently changed. Changing this forces a new resource to be created.</summary>
@@ -2060,6 +2163,7 @@ public partial class V1beta1MSSQLServerSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2084,6 +2188,7 @@ public enum V1beta1MSSQLServerSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2100,6 +2205,7 @@ public enum V1beta1MSSQLServerSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLServerSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2111,6 +2217,7 @@ public enum V1beta1MSSQLServerSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2139,6 +2246,7 @@ public partial class V1beta1MSSQLServerSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2158,6 +2266,7 @@ public partial class V1beta1MSSQLServerSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2172,6 +2281,7 @@ public partial class V1beta1MSSQLServerSpecWriteConnectionSecretToRef
 /// <summary>MSSQLServerSpec defines the desired state of MSSQLServer</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerSpec
 {
     /// <summary>
@@ -2239,6 +2349,7 @@ public partial class V1beta1MSSQLServerSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerStatusAtProviderAzureadAdministrator
 {
     /// <summary>Specifies whether only AD Users and administrators (e.g. azuread_administrator[0].login_username) can be used to login, or also local database users (e.g. administrator_login). When true, the administrator_login and administrator_login_password properties can be omitted.</summary>
@@ -2260,6 +2371,7 @@ public partial class V1beta1MSSQLServerStatusAtProviderAzureadAdministrator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerStatusAtProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this SQL Server.</summary>
@@ -2281,6 +2393,7 @@ public partial class V1beta1MSSQLServerStatusAtProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerStatusAtProvider
 {
     /// <summary>The administrator login name for the new server. Required unless azuread_authentication_only in the azuread_administrator block is true. When omitted, Azure will generate a default username which cannot be subsequently changed. Changing this forces a new resource to be created.</summary>
@@ -2359,6 +2472,7 @@ public partial class V1beta1MSSQLServerStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerStatusConditions
 {
     /// <summary>
@@ -2402,6 +2516,7 @@ public partial class V1beta1MSSQLServerStatusConditions
 /// <summary>MSSQLServerStatus defines the observed state of MSSQLServer.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLServerStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2420,9 +2535,13 @@ public partial class V1beta1MSSQLServerStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.</summary>
+/// <summary>
+/// MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLServerSpec>, IStatus<V1beta1MSSQLServerStatus?>
 {

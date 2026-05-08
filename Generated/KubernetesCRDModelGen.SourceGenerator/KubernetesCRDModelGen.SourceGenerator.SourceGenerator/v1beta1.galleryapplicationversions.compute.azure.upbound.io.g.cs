@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
-/// <summary>GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.</summary>
+/// <summary>
+/// GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GalleryApplicationVersionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GalleryApplicationVersion>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1GalleryApplicationVersionList : IKubernetesObject<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1GalleryApplicationVersionSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryAppli
 /// <summary>Reference to a GalleryApplication in compute to populate galleryApplicationId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryAppli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryAppli
 /// <summary>Selector for a GalleryApplication in compute to populate galleryApplicationId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryApplicationIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderGalleryAppli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderManageAction
 {
     /// <summary>The command to install the Gallery Application. Changing this forces a new resource to be created.</summary>
@@ -227,6 +241,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderManageAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -243,6 +258,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -254,6 +270,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRefPolicy
 {
     /// <summary>
@@ -278,6 +295,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaL
 /// <summary>Reference to a Blob in storage to populate mediaLink.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -313,6 +332,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -324,6 +344,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelectorPolicy
 {
     /// <summary>
@@ -348,6 +369,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaL
 /// <summary>Selector for a Blob in storage to populate mediaLink.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaLinkSelector
 {
     /// <summary>
@@ -368,6 +390,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderSourceMediaL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderSource
 {
     /// <summary>The Storage Blob URI of the default configuration. Changing this forces a new resource to be created.</summary>
@@ -395,6 +418,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderSource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -411,6 +435,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -422,6 +447,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRefPolicy
 {
     /// <summary>
@@ -446,6 +472,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 /// <summary>Reference to a GalleryApplication in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -465,6 +492,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -481,6 +509,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -492,6 +521,7 @@ public enum V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelectorPolicy
 {
     /// <summary>
@@ -516,6 +546,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 /// <summary>Selector for a GalleryApplication in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegionNameSelector
 {
     /// <summary>
@@ -536,6 +567,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 {
     /// <summary>Specifies whether this Gallery Application Version should be excluded from the latest filter. If set to true, this Gallery Application Version won&apos;t be returned for the latest version. Defaults to false.</summary>
@@ -565,6 +597,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProviderTargetRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecForProvider
 {
     /// <summary>Specifies the name of the config file on the VM. Changing this forces a new resource to be created.</summary>
@@ -632,6 +665,7 @@ public partial class V1beta1GalleryApplicationVersionSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -648,6 +682,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -659,6 +694,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRefPolicy
 {
     /// <summary>
@@ -683,6 +719,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryAppl
 /// <summary>Reference to a GalleryApplication in compute to populate galleryApplicationId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -702,6 +739,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryAppl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -718,6 +756,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -729,6 +768,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationId
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelectorPolicy
 {
     /// <summary>
@@ -753,6 +793,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryAppl
 /// <summary>Selector for a GalleryApplication in compute to populate galleryApplicationId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryApplicationIdSelector
 {
     /// <summary>
@@ -773,6 +814,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderGalleryAppl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderManageAction
 {
     /// <summary>The command to install the Gallery Application. Changing this forces a new resource to be created.</summary>
@@ -796,6 +838,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderManageActio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -812,6 +855,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -823,6 +867,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRefPolicy
 {
     /// <summary>
@@ -847,6 +892,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMedia
 /// <summary>Reference to a Blob in storage to populate mediaLink.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -866,6 +912,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMedia
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -882,6 +929,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -893,6 +941,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelectorPolicy
 {
     /// <summary>
@@ -917,6 +966,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMedia
 /// <summary>Selector for a Blob in storage to populate mediaLink.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMediaLinkSelector
 {
     /// <summary>
@@ -937,6 +987,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderSourceMedia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderSource
 {
     /// <summary>The Storage Blob URI of the default configuration. Changing this forces a new resource to be created.</summary>
@@ -964,6 +1015,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderSource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -980,6 +1032,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -991,6 +1044,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRefPolicy
 {
     /// <summary>
@@ -1015,6 +1069,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegio
 /// <summary>Reference to a GalleryApplication in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1034,6 +1089,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1050,6 +1106,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1061,6 +1118,7 @@ public enum V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelectorPolicy
 {
     /// <summary>
@@ -1085,6 +1143,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegio
 /// <summary>Selector for a GalleryApplication in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegionNameSelector
 {
     /// <summary>
@@ -1105,6 +1164,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegion
 {
     /// <summary>Specifies whether this Gallery Application Version should be excluded from the latest filter. If set to true, this Gallery Application Version won&apos;t be returned for the latest version. Defaults to false.</summary>
@@ -1146,6 +1206,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProviderTargetRegio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecInitProvider
 {
     /// <summary>Specifies the name of the config file on the VM. Changing this forces a new resource to be created.</summary>
@@ -1211,6 +1272,7 @@ public partial class V1beta1GalleryApplicationVersionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1235,6 +1297,7 @@ public enum V1beta1GalleryApplicationVersionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1251,6 +1314,7 @@ public enum V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1262,6 +1326,7 @@ public enum V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1290,6 +1355,7 @@ public partial class V1beta1GalleryApplicationVersionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1309,6 +1375,7 @@ public partial class V1beta1GalleryApplicationVersionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1323,6 +1390,7 @@ public partial class V1beta1GalleryApplicationVersionSpecWriteConnectionSecretTo
 /// <summary>GalleryApplicationVersionSpec defines the desired state of GalleryApplicationVersion</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionSpec
 {
     /// <summary>
@@ -1390,6 +1458,7 @@ public partial class V1beta1GalleryApplicationVersionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatusAtProviderManageAction
 {
     /// <summary>The command to install the Gallery Application. Changing this forces a new resource to be created.</summary>
@@ -1407,6 +1476,7 @@ public partial class V1beta1GalleryApplicationVersionStatusAtProviderManageActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatusAtProviderSource
 {
     /// <summary>The Storage Blob URI of the default configuration. Changing this forces a new resource to be created.</summary>
@@ -1420,6 +1490,7 @@ public partial class V1beta1GalleryApplicationVersionStatusAtProviderSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatusAtProviderTargetRegion
 {
     /// <summary>Specifies whether this Gallery Application Version should be excluded from the latest filter. If set to true, this Gallery Application Version won&apos;t be returned for the latest version. Defaults to false.</summary>
@@ -1441,6 +1512,7 @@ public partial class V1beta1GalleryApplicationVersionStatusAtProviderTargetRegio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatusAtProvider
 {
     /// <summary>Specifies the name of the config file on the VM. Changing this forces a new resource to be created.</summary>
@@ -1499,6 +1571,7 @@ public partial class V1beta1GalleryApplicationVersionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatusConditions
 {
     /// <summary>
@@ -1542,6 +1615,7 @@ public partial class V1beta1GalleryApplicationVersionStatusConditions
 /// <summary>GalleryApplicationVersionStatus defines the observed state of GalleryApplicationVersion.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GalleryApplicationVersionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1560,9 +1634,13 @@ public partial class V1beta1GalleryApplicationVersionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.</summary>
+/// <summary>
+/// GalleryApplicationVersion is the Schema for the GalleryApplicationVersions API. Manages a Gallery Application Version.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GalleryApplicationVersion : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GalleryApplicationVersionSpec>, IStatus<V1beta1GalleryApplicationVersionStatus?>
 {

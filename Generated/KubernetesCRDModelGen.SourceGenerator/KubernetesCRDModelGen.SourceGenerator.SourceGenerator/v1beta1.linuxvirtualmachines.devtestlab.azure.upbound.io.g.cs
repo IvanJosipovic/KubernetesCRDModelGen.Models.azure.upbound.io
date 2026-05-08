@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devtestlab.azure.upbound.io;
-/// <summary>LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.</summary>
+/// <summary>
+/// LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinuxVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinuxVirtualMachine>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LinuxVirtualMachineList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1LinuxVirtualMachineSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderGalleryImageReference
 {
     /// <summary>The Offer of the Gallery Image. Changing this forces a new resource to be created.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderGalleryImageRefere
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderInboundNatRule
 {
     /// <summary>The Backend Port associated with this NAT Rule. Changing this forces a new resource to be created.</summary>
@@ -97,6 +104,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderInboundNatRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -113,6 +121,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -124,6 +133,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicy
 {
     /// <summary>
@@ -148,6 +158,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameRefPolicy
 /// <summary>Reference to a Lab in devtestlab to populate labName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -167,6 +178,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -183,6 +195,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -194,6 +207,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPolicy
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameSelectorPol
 /// <summary>Selector for a Lab in devtestlab to populate labName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameSelector
 {
     /// <summary>
@@ -244,6 +259,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -260,6 +276,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -271,6 +288,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPolicy
 {
     /// <summary>
@@ -295,6 +313,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRefPo
 /// <summary>Reference to a Subnet in network to populate labSubnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -314,6 +333,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -330,6 +350,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -341,6 +362,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelectorPolicy
 {
     /// <summary>
@@ -365,6 +387,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelec
 /// <summary>Selector for a Subnet in network to populate labSubnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelector
 {
     /// <summary>
@@ -391,6 +414,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabSubnetNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -407,6 +431,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -418,6 +443,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRefPolicy
 {
     /// <summary>
@@ -442,6 +468,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 /// <summary>Reference to a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -461,6 +488,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -477,6 +505,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -488,6 +517,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelectorPolicy
 {
     /// <summary>
@@ -512,6 +542,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 /// <summary>Selector for a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkIdSelector
 {
     /// <summary>
@@ -533,6 +564,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderLabVirtualNetworkI
 /// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -556,6 +588,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderPasswordSecretRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -572,6 +605,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -583,6 +617,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -607,6 +642,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameR
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -626,6 +662,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -642,6 +679,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -653,6 +691,7 @@ public enum V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -677,6 +716,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameS
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -697,6 +737,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProviderResourceGroupNameS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecForProvider
 {
     /// <summary>Can this Virtual Machine be claimed by users? Defaults to true.</summary>
@@ -802,6 +843,7 @@ public partial class V1beta1LinuxVirtualMachineSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderGalleryImageReference
 {
     /// <summary>The Offer of the Gallery Image. Changing this forces a new resource to be created.</summary>
@@ -823,6 +865,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderGalleryImageRefer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderInboundNatRule
 {
     /// <summary>The Backend Port associated with this NAT Rule. Changing this forces a new resource to be created.</summary>
@@ -842,6 +885,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderInboundNatRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -858,6 +902,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -869,6 +914,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicy
 {
     /// <summary>
@@ -893,6 +939,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameRefPolicy
 /// <summary>Reference to a Lab in devtestlab to populate labName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -912,6 +959,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -928,6 +976,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -939,6 +988,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPolicy
 {
     /// <summary>
@@ -963,6 +1013,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelectorPo
 /// <summary>Selector for a Lab in devtestlab to populate labName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelector
 {
     /// <summary>
@@ -989,6 +1040,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1005,6 +1057,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1016,6 +1069,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefPolicy
 {
     /// <summary>
@@ -1040,6 +1094,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRefP
 /// <summary>Reference to a Subnet in network to populate labSubnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1059,6 +1114,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1075,6 +1131,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1086,6 +1143,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelectorPolicy
 {
     /// <summary>
@@ -1110,6 +1168,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSele
 /// <summary>Selector for a Subnet in network to populate labSubnetName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSelector
 {
     /// <summary>
@@ -1136,6 +1195,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabSubnetNameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1152,6 +1212,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1163,6 +1224,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRefPolicy
 {
     /// <summary>
@@ -1187,6 +1249,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 /// <summary>Reference to a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1206,6 +1269,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1222,6 +1286,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1233,6 +1298,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelectorPolicy
 {
     /// <summary>
@@ -1257,6 +1323,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 /// <summary>Selector for a VirtualNetwork in devtestlab to populate labVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetworkIdSelector
 {
     /// <summary>
@@ -1278,6 +1345,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderLabVirtualNetwork
 /// <summary>The Password associated with the username used to login to this Virtual Machine. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1301,6 +1369,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderPasswordSecretRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1317,6 +1386,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1328,6 +1398,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -1352,6 +1423,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1371,6 +1443,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1387,6 +1460,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1398,6 +1472,7 @@ public enum V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -1422,6 +1497,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -1454,6 +1530,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecInitProvider
 {
     /// <summary>Can this Virtual Machine be claimed by users? Defaults to true.</summary>
@@ -1563,6 +1640,7 @@ public partial class V1beta1LinuxVirtualMachineSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1587,6 +1665,7 @@ public enum V1beta1LinuxVirtualMachineSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1603,6 +1682,7 @@ public enum V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1614,6 +1694,7 @@ public enum V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1642,6 +1723,7 @@ public partial class V1beta1LinuxVirtualMachineSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1661,6 +1743,7 @@ public partial class V1beta1LinuxVirtualMachineSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1675,6 +1758,7 @@ public partial class V1beta1LinuxVirtualMachineSpecWriteConnectionSecretToRef
 /// <summary>LinuxVirtualMachineSpec defines the desired state of LinuxVirtualMachine</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineSpec
 {
     /// <summary>
@@ -1742,6 +1826,7 @@ public partial class V1beta1LinuxVirtualMachineSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineStatusAtProviderGalleryImageReference
 {
     /// <summary>The Offer of the Gallery Image. Changing this forces a new resource to be created.</summary>
@@ -1763,6 +1848,7 @@ public partial class V1beta1LinuxVirtualMachineStatusAtProviderGalleryImageRefer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineStatusAtProviderInboundNatRule
 {
     /// <summary>The Backend Port associated with this NAT Rule. Changing this forces a new resource to be created.</summary>
@@ -1780,6 +1866,7 @@ public partial class V1beta1LinuxVirtualMachineStatusAtProviderInboundNatRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineStatusAtProvider
 {
     /// <summary>Can this Virtual Machine be claimed by users? Defaults to true.</summary>
@@ -1862,6 +1949,7 @@ public partial class V1beta1LinuxVirtualMachineStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineStatusConditions
 {
     /// <summary>
@@ -1905,6 +1993,7 @@ public partial class V1beta1LinuxVirtualMachineStatusConditions
 /// <summary>LinuxVirtualMachineStatus defines the observed state of LinuxVirtualMachine.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinuxVirtualMachineStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1923,9 +2012,13 @@ public partial class V1beta1LinuxVirtualMachineStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.</summary>
+/// <summary>
+/// LinuxVirtualMachine is the Schema for the LinuxVirtualMachines API. Manages a Linux Virtual Machine within a Dev Test Lab.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinuxVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinuxVirtualMachineSpec>, IStatus<V1beta1LinuxVirtualMachineStatus?>
 {

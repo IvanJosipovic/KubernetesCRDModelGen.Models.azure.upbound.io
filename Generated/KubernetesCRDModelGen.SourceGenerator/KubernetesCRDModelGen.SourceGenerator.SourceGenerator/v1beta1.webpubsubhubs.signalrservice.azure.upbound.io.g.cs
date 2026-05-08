@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.signalrservice.azure.upbound.io;
-/// <summary>WebPubsubHub is the Schema for the WebPubsubHubs API. Manages the hub settings for a Web Pubsub service.</summary>
+/// <summary>
+/// WebPubsubHub is the Schema for the WebPubsubHubs API. Manages the hub settings for a Web Pubsub service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebPubsubHubList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebPubsubHub>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WebPubsubHubList : IKubernetesObject<V1ListMeta>, II
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1WebPubsubHubSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedId
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate managedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedId
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate managedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedIdentityIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuthManagedId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuth
 {
     /// <summary>Specify the identity ID of the target resource.</summary>
@@ -221,6 +235,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandlerAuth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventHandler
 {
     /// <summary>An auth block as defined below.</summary>
@@ -248,6 +263,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventHandler
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -264,6 +280,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -275,6 +292,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRefPolicy
 {
     /// <summary>
@@ -299,6 +317,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// <summary>Reference to a EventHub in eventhub to populate eventhubName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -318,6 +337,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -334,6 +354,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -345,6 +366,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelectorPolicy
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// <summary>Selector for a EventHub in eventhub to populate eventhubName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNameSelector
 {
     /// <summary>
@@ -395,6 +418,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -411,6 +435,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -422,6 +447,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceName
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRefPolicy
 {
     /// <summary>
@@ -446,6 +472,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// <summary>Reference to a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -465,6 +492,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -481,6 +509,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -492,6 +521,7 @@ public enum V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceName
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelectorPolicy
 {
     /// <summary>
@@ -516,6 +546,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 /// <summary>Selector for a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubNamespaceNameSelector
 {
     /// <summary>
@@ -536,6 +567,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListenerEventhubName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderEventListener
 {
     /// <summary>Specifies the event hub name to receive the events.</summary>
@@ -579,6 +611,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderEventListener
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -595,6 +628,7 @@ public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -606,6 +640,7 @@ public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicy
 {
     /// <summary>
@@ -630,6 +665,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdRefPolicy
 /// <summary>Reference to a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -649,6 +685,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -665,6 +702,7 @@ public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -676,6 +714,7 @@ public enum V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicy
 {
     /// <summary>
@@ -700,6 +739,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelectorPolicy
 /// <summary>Selector for a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelector
 {
     /// <summary>
@@ -720,6 +760,7 @@ public partial class V1beta1WebPubsubHubSpecForProviderWebPubsubIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecForProvider
 {
     /// <summary>
@@ -762,6 +803,7 @@ public partial class V1beta1WebPubsubHubSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -778,6 +820,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -789,6 +832,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityId
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRefPolicy
 {
     /// <summary>
@@ -813,6 +857,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedI
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate managedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -832,6 +877,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -848,6 +894,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -859,6 +906,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityId
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelectorPolicy
 {
     /// <summary>
@@ -883,6 +931,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedI
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate managedIdentityId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedIdentityIdSelector
 {
     /// <summary>
@@ -903,6 +952,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuthManagedI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuth
 {
     /// <summary>Specify the identity ID of the target resource.</summary>
@@ -920,6 +970,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandlerAuth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventHandler
 {
     /// <summary>An auth block as defined below.</summary>
@@ -947,6 +998,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventHandler
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -963,6 +1015,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -974,6 +1027,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRefPolicy
 {
     /// <summary>
@@ -998,6 +1052,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// <summary>Reference to a EventHub in eventhub to populate eventhubName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1017,6 +1072,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1033,6 +1089,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1044,6 +1101,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelectorPolicy
 {
     /// <summary>
@@ -1068,6 +1126,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// <summary>Selector for a EventHub in eventhub to populate eventhubName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNameSelector
 {
     /// <summary>
@@ -1094,6 +1153,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1110,6 +1170,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1121,6 +1182,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNam
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRefPolicy
 {
     /// <summary>
@@ -1145,6 +1207,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// <summary>Reference to a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1164,6 +1227,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1180,6 +1244,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1191,6 +1256,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNam
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelectorPolicy
 {
     /// <summary>
@@ -1215,6 +1281,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 /// <summary>Selector for a EventHubNamespace in eventhub to populate eventhubNamespaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNamespaceNameSelector
 {
     /// <summary>
@@ -1235,6 +1302,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListenerEventhubNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderEventListener
 {
     /// <summary>Specifies the event hub name to receive the events.</summary>
@@ -1278,6 +1346,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderEventListener
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1294,6 +1363,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1305,6 +1375,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicy
 {
     /// <summary>
@@ -1329,6 +1400,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRefPolicy
 /// <summary>Reference to a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1348,6 +1420,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1364,6 +1437,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1375,6 +1449,7 @@ public enum V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolicy
 {
     /// <summary>
@@ -1399,6 +1474,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelectorPolic
 /// <summary>Selector for a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelector
 {
     /// <summary>
@@ -1431,6 +1507,7 @@ public partial class V1beta1WebPubsubHubSpecInitProviderWebPubsubIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecInitProvider
 {
     /// <summary>
@@ -1471,6 +1548,7 @@ public partial class V1beta1WebPubsubHubSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1495,6 +1573,7 @@ public enum V1beta1WebPubsubHubSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1511,6 +1590,7 @@ public enum V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1522,6 +1602,7 @@ public enum V1beta1WebPubsubHubSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1550,6 +1631,7 @@ public partial class V1beta1WebPubsubHubSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1569,6 +1651,7 @@ public partial class V1beta1WebPubsubHubSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1583,6 +1666,7 @@ public partial class V1beta1WebPubsubHubSpecWriteConnectionSecretToRef
 /// <summary>WebPubsubHubSpec defines the desired state of WebPubsubHub</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubSpec
 {
     /// <summary>
@@ -1650,6 +1734,7 @@ public partial class V1beta1WebPubsubHubSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatusAtProviderEventHandlerAuth
 {
     /// <summary>Specify the identity ID of the target resource.</summary>
@@ -1659,6 +1744,7 @@ public partial class V1beta1WebPubsubHubStatusAtProviderEventHandlerAuth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatusAtProviderEventHandler
 {
     /// <summary>An auth block as defined below.</summary>
@@ -1680,6 +1766,7 @@ public partial class V1beta1WebPubsubHubStatusAtProviderEventHandler
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatusAtProviderEventListener
 {
     /// <summary>Specifies the event hub name to receive the events.</summary>
@@ -1701,6 +1788,7 @@ public partial class V1beta1WebPubsubHubStatusAtProviderEventListener
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatusAtProvider
 {
     /// <summary>
@@ -1734,6 +1822,7 @@ public partial class V1beta1WebPubsubHubStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatusConditions
 {
     /// <summary>
@@ -1777,6 +1866,7 @@ public partial class V1beta1WebPubsubHubStatusConditions
 /// <summary>WebPubsubHubStatus defines the observed state of WebPubsubHub.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubHubStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1795,9 +1885,13 @@ public partial class V1beta1WebPubsubHubStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WebPubsubHub is the Schema for the WebPubsubHubs API. Manages the hub settings for a Web Pubsub service.</summary>
+/// <summary>
+/// WebPubsubHub is the Schema for the WebPubsubHubs API. Manages the hub settings for a Web Pubsub service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebPubsubHub : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebPubsubHubSpec>, IStatus<V1beta1WebPubsubHubStatus?>
 {

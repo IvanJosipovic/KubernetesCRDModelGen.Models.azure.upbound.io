@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apimanagement.azure.upbound.io;
-/// <summary>APIDiagnostic is the Schema for the APIDiagnostics API. Manages a API Management Service API Diagnostics Logs.</summary>
+/// <summary>
+/// APIDiagnostic is the Schema for the APIDiagnostics API. Manages a API Management Service API Diagnostics Logs.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1APIDiagnosticList : IKubernetesObject<V1ListMeta>, IItems<V1beta1APIDiagnostic>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1APIDiagnosticList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1APIDiagnosticSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRef
 /// <summary>Reference to a Logger in apimanagement to populate apiManagementLoggerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSel
 /// <summary>Selector for a Logger in apimanagement to populate apiManagementLoggerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementLoggerIdSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameRefPoli
 /// <summary>Reference to a Management in apimanagement to populate apiManagementName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameSelecto
 /// <summary>Selector for a Management in apimanagement to populate apiManagementName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameSelector
 {
     /// <summary>
@@ -357,6 +378,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiManagementNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -373,6 +395,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -384,6 +407,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiNameRefPolicy
 {
     /// <summary>
@@ -408,6 +432,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiNameRefPolicy
 /// <summary>Reference to a API in apimanagement to populate apiName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -443,6 +469,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -454,6 +481,7 @@ public enum V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicy
 {
     /// <summary>
@@ -478,6 +506,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiNameSelectorPolicy
 /// <summary>Selector for a API in apimanagement to populate apiName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderApiNameSelector
 {
     /// <summary>
@@ -498,6 +527,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderApiNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -511,6 +541,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMaskin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -524,6 +555,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMaskin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -537,6 +569,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendRequestDataMaskin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -554,6 +587,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -567,6 +601,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -580,6 +615,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -593,6 +629,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendResponseDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderBackendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -610,6 +647,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderBackendResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -623,6 +661,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -636,6 +675,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -649,6 +689,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -666,6 +707,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -679,6 +721,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -692,6 +735,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -705,6 +749,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -728,6 +773,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderFrontendResponse
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -744,6 +790,7 @@ public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -755,6 +802,7 @@ public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -779,6 +827,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameRefPoli
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -798,6 +847,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -814,6 +864,7 @@ public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -825,6 +876,7 @@ public enum V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -849,6 +901,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelecto
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -869,6 +922,7 @@ public partial class V1beta1APIDiagnosticSpecForProviderResourceGroupNameSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecForProvider
 {
     /// <summary>Always log errors. Send telemetry if there is an erroneous condition, regardless of sampling settings.</summary>
@@ -968,6 +1022,7 @@ public partial class V1beta1APIDiagnosticSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -984,6 +1039,7 @@ public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -995,6 +1051,7 @@ public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRefPolicy
 {
     /// <summary>
@@ -1019,6 +1076,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRe
 /// <summary>Reference to a Logger in apimanagement to populate apiManagementLoggerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1038,6 +1096,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1054,6 +1113,7 @@ public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1065,6 +1125,7 @@ public enum V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelectorPolicy
 {
     /// <summary>
@@ -1089,6 +1150,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSe
 /// <summary>Selector for a Logger in apimanagement to populate apiManagementLoggerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSelector
 {
     /// <summary>
@@ -1109,6 +1171,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderApiManagementLoggerIdSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1122,6 +1185,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1135,6 +1199,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1148,6 +1213,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1165,6 +1231,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1178,6 +1245,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1191,6 +1259,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1204,6 +1273,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1221,6 +1291,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderBackendResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1234,6 +1305,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1247,6 +1319,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1260,6 +1333,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1277,6 +1351,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1290,6 +1365,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1303,6 +1379,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1316,6 +1393,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1345,6 +1423,7 @@ public partial class V1beta1APIDiagnosticSpecInitProviderFrontendResponse
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecInitProvider
 {
     /// <summary>Always log errors. Send telemetry if there is an erroneous condition, regardless of sampling settings.</summary>
@@ -1406,6 +1485,7 @@ public partial class V1beta1APIDiagnosticSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1430,6 +1510,7 @@ public enum V1beta1APIDiagnosticSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1446,6 +1527,7 @@ public enum V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1457,6 +1539,7 @@ public enum V1beta1APIDiagnosticSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1485,6 +1568,7 @@ public partial class V1beta1APIDiagnosticSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1504,6 +1588,7 @@ public partial class V1beta1APIDiagnosticSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1518,6 +1603,7 @@ public partial class V1beta1APIDiagnosticSpecWriteConnectionSecretToRef
 /// <summary>APIDiagnosticSpec defines the desired state of APIDiagnostic</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticSpec
 {
     /// <summary>
@@ -1585,6 +1671,7 @@ public partial class V1beta1APIDiagnosticSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1598,6 +1685,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1611,6 +1699,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1624,6 +1713,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequestDataMaski
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1641,6 +1731,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1654,6 +1745,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1667,6 +1759,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1680,6 +1773,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponseDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1697,6 +1791,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderBackendResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1710,6 +1805,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1723,6 +1819,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1736,6 +1833,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequestDataMask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequest
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1753,6 +1851,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMaskingHeaders
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1766,6 +1865,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMaskingQueryParams
 {
     /// <summary>The data masking mode. Possible values are Mask and Hide for query_params. The only possible value is Mask for headers.</summary>
@@ -1779,6 +1879,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMasking
 {
     /// <summary>A headers block as defined below.</summary>
@@ -1792,6 +1893,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponseDataMas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponse
 {
     /// <summary>Number of payload bytes to log (up to 8192).</summary>
@@ -1809,6 +1911,7 @@ public partial class V1beta1APIDiagnosticStatusAtProviderFrontendResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusAtProvider
 {
     /// <summary>Always log errors. Send telemetry if there is an erroneous condition, regardless of sampling settings.</summary>
@@ -1875,6 +1978,7 @@ public partial class V1beta1APIDiagnosticStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatusConditions
 {
     /// <summary>
@@ -1918,6 +2022,7 @@ public partial class V1beta1APIDiagnosticStatusConditions
 /// <summary>APIDiagnosticStatus defines the observed state of APIDiagnostic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1APIDiagnosticStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1936,9 +2041,13 @@ public partial class V1beta1APIDiagnosticStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>APIDiagnostic is the Schema for the APIDiagnostics API. Manages a API Management Service API Diagnostics Logs.</summary>
+/// <summary>
+/// APIDiagnostic is the Schema for the APIDiagnostics API. Manages a API Management Service API Diagnostics Logs.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1APIDiagnostic : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1APIDiagnosticSpec>, IStatus<V1beta1APIDiagnosticStatus?>
 {

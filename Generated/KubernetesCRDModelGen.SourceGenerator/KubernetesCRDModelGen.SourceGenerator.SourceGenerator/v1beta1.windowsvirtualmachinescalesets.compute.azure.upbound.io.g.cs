@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
-/// <summary>WindowsVirtualMachineScaleSet is the Schema for the WindowsVirtualMachineScaleSets API. Manages a Windows Virtual Machine Scale Set.</summary>
+/// <summary>
+/// WindowsVirtualMachineScaleSet is the Schema for the WindowsVirtualMachineScaleSets API. Manages a Windows Virtual Machine Scale Set.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WindowsVirtualMachineScaleSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WindowsVirtualMachineScaleSet>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAdditionalCapabilities
 {
     /// <summary>Should the capacity to enable Data Disks of the UltraSSD_LRS storage account type be supported on this Virtual Machine Scale Set? Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -67,6 +73,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAddition
 /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAdditionalUnattendContentContentSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -84,6 +91,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAddition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAdditionalUnattendContent
 {
     /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
@@ -98,6 +106,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAddition
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAdminPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -115,6 +124,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAdminPas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAutomaticInstanceRepair
 {
     /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
@@ -132,6 +142,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAutomati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAutomaticOsUpgradePolicy
 {
     /// <summary>Should automatic rollbacks be disabled?</summary>
@@ -145,6 +156,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderAutomati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderBootDiagnostics
 {
     /// <summary>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.</summary>
@@ -155,6 +167,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderBootDiag
 /// <summary>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderCustomDataSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -172,6 +185,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderCustomDa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderDataDisk
 {
     /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -217,6 +231,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderDataDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtensionProtectedSettingsFromKeyVault
 {
     /// <summary>The URL to the Key Vault Secret which stores the protected settings.</summary>
@@ -231,6 +246,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtensio
 /// <summary>A JSON String which specifies Sensitive Settings (such as Passwords) for the Extension.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtensionProtectedSettingsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -248,6 +264,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtensio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtension
 {
     /// <summary>Should the latest version of the Extension be used at Deployment Time, if one is available? This won&apos;t auto-update the extension on existing installation. Defaults to true.</summary>
@@ -297,6 +314,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderExtensio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderGalleryApplication
 {
     /// <summary>Specifies the URI to an Azure Blob that will replace the default configuration for the package if provided. Changing this forces a new resource to be created.</summary>
@@ -318,6 +336,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderGalleryA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
@@ -331,6 +350,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
     /// <summary>The IP Tag associated with the Public IP, such as SQL or Storage. Changing this forces a new resource to be created.</summary>
@@ -344,6 +364,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
     /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.</summary>
@@ -379,6 +400,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -395,6 +417,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -406,6 +429,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -430,6 +454,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -449,6 +474,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -465,6 +491,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -476,6 +503,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -500,6 +528,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -520,6 +549,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterfaceIpConfiguration
 {
     /// <summary>A list of Backend Address Pools ID&apos;s from a Application Gateway which this Virtual Machine Scale Set should be connected to.</summary>
@@ -569,6 +599,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkInterface
 {
     /// <summary>Specifies the auxiliary mode used to enable network high-performance feature on Network Virtual Appliances (NVAs). This feature offers competitive performance in Connections Per Second (CPS) optimization, along with improvements to handling large amounts of simultaneous connections. Possible values are AcceleratedConnections and Floating.</summary>
@@ -610,6 +641,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderNetworkI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderOsDiskDiffDiskSettings
 {
     /// <summary>Specifies the Ephemeral Disk Settings for the OS Disk. At this time the only possible value is Local. Changing this forces a new resource to be created.</summary>
@@ -623,6 +655,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderOsDiskDi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderOsDisk
 {
     /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -660,6 +693,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderOsDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderPlan
 {
     /// <summary>Specifies the name of the image from the marketplace. Changing this forces a new resource to be created.</summary>
@@ -683,6 +717,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderPlan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -699,6 +734,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -710,6 +746,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupName
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -734,6 +771,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResource
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -753,6 +791,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -769,6 +808,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -780,6 +820,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupName
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -804,6 +845,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResource
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -824,6 +866,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderRollingUpgradePolicy
 {
     /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
@@ -857,6 +900,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderRollingU
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderScaleIn
 {
     /// <summary>Should the virtual machines chosen for removal be force deleted when the virtual machine scale set is being scaled-in? Possible values are true or false. Defaults to false.</summary>
@@ -870,6 +914,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderScaleIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSecretCertificate
 {
     /// <summary>The certificate store on the Virtual Machine where the certificate should be added.</summary>
@@ -883,6 +928,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSecretCe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSecret
 {
     /// <summary>One or more certificate blocks as defined above.</summary>
@@ -896,6 +942,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSourceImageReference
 {
     /// <summary>Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created.</summary>
@@ -917,6 +964,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSourceIm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSpotRestore
 {
     /// <summary>Should the Spot-Try-Restore feature be enabled? The Spot-Try-Restore feature will attempt to automatically restore the evicted Spot Virtual Machine Scale Set VM instances opportunistically based on capacity availability and pricing constraints. Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -930,6 +978,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderSpotRest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderTerminationNotification
 {
     /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set?</summary>
@@ -943,6 +992,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderTerminat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderWinrmListener
 {
     /// <summary>The Secret URL of a Key Vault Certificate, which must be specified when protocol is set to Https. Changing this forces a new resource to be created.</summary>
@@ -956,6 +1006,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProviderWinrmLis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProvider
 {
     /// <summary>An additional_capabilities block as defined below.</summary>
@@ -1193,6 +1244,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditionalCapabilities
 {
     /// <summary>Should the capacity to enable Data Disks of the UltraSSD_LRS storage account type be supported on this Virtual Machine Scale Set? Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -1203,6 +1255,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditio
 /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditionalUnattendContentContentSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1220,6 +1273,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditionalUnattendContent
 {
     /// <summary>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.</summary>
@@ -1234,6 +1288,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdditio
 /// <summary>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdminPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1251,6 +1306,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAdminPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAutomaticInstanceRepair
 {
     /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
@@ -1268,6 +1324,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAutomat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAutomaticOsUpgradePolicy
 {
     /// <summary>Should automatic rollbacks be disabled?</summary>
@@ -1281,6 +1338,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderAutomat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderBootDiagnostics
 {
     /// <summary>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.</summary>
@@ -1291,6 +1349,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderBootDia
 /// <summary>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderCustomDataSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1308,6 +1367,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderCustomD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderDataDisk
 {
     /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -1353,6 +1413,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderDataDis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtensionProtectedSettingsFromKeyVault
 {
     /// <summary>The URL to the Key Vault Secret which stores the protected settings.</summary>
@@ -1367,6 +1428,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtensi
 /// <summary>A JSON String which specifies Sensitive Settings (such as Passwords) for the Extension.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtensionProtectedSettingsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1384,6 +1446,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtension
 {
     /// <summary>Should the latest version of the Extension be used at Deployment Time, if one is available? This won&apos;t auto-update the extension on existing installation. Defaults to true.</summary>
@@ -1433,6 +1496,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderGalleryApplication
 {
     /// <summary>Specifies the URI to an Azure Blob that will replace the default configuration for the package if provided. Changing this forces a new resource to be created.</summary>
@@ -1454,6 +1518,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderGallery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
@@ -1467,6 +1532,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderIdentit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
     /// <summary>The IP Tag associated with the Public IP, such as SQL or Storage. Changing this forces a new resource to be created.</summary>
@@ -1480,6 +1546,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
     /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.</summary>
@@ -1515,6 +1582,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1531,6 +1599,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterface
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1542,6 +1611,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterface
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -1566,6 +1636,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1585,6 +1656,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1601,6 +1673,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterface
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1612,6 +1685,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterface
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1636,6 +1710,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -1656,6 +1731,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterfaceIpConfiguration
 {
     /// <summary>A list of Backend Address Pools ID&apos;s from a Application Gateway which this Virtual Machine Scale Set should be connected to.</summary>
@@ -1705,6 +1781,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetworkInterface
 {
     /// <summary>Specifies the auxiliary mode used to enable network high-performance feature on Network Virtual Appliances (NVAs). This feature offers competitive performance in Connections Per Second (CPS) optimization, along with improvements to handling large amounts of simultaneous connections. Possible values are AcceleratedConnections and Floating.</summary>
@@ -1746,6 +1823,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderOsDiskDiffDiskSettings
 {
     /// <summary>Specifies the Ephemeral Disk Settings for the OS Disk. At this time the only possible value is Local. Changing this forces a new resource to be created.</summary>
@@ -1759,6 +1837,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderOsDiskD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderOsDisk
 {
     /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -1796,6 +1875,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderOsDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderPlan
 {
     /// <summary>Specifies the name of the image from the marketplace. Changing this forces a new resource to be created.</summary>
@@ -1813,6 +1893,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderPlan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderRollingUpgradePolicy
 {
     /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
@@ -1846,6 +1927,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderRolling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderScaleIn
 {
     /// <summary>Should the virtual machines chosen for removal be force deleted when the virtual machine scale set is being scaled-in? Possible values are true or false. Defaults to false.</summary>
@@ -1859,6 +1941,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderScaleIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSecretCertificate
 {
     /// <summary>The certificate store on the Virtual Machine where the certificate should be added.</summary>
@@ -1872,6 +1955,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSecretC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSecret
 {
     /// <summary>One or more certificate blocks as defined above.</summary>
@@ -1885,6 +1969,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSourceImageReference
 {
     /// <summary>Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created.</summary>
@@ -1906,6 +1991,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSourceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSpotRestore
 {
     /// <summary>Should the Spot-Try-Restore feature be enabled? The Spot-Try-Restore feature will attempt to automatically restore the evicted Spot Virtual Machine Scale Set VM instances opportunistically based on capacity availability and pricing constraints. Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -1919,6 +2005,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderSpotRes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderTerminationNotification
 {
     /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set?</summary>
@@ -1932,6 +2019,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderTermina
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderWinrmListener
 {
     /// <summary>The Secret URL of a Key Vault Certificate, which must be specified when protocol is set to Https. Changing this forces a new resource to be created.</summary>
@@ -1957,6 +2045,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProviderWinrmLi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProvider
 {
     /// <summary>An additional_capabilities block as defined below.</summary>
@@ -2186,6 +2275,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2210,6 +2300,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2226,6 +2317,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2237,6 +2329,7 @@ public enum V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2265,6 +2358,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2284,6 +2378,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2298,6 +2393,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpecWriteConnectionSecr
 /// <summary>WindowsVirtualMachineScaleSetSpec defines the desired state of WindowsVirtualMachineScaleSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetSpec
 {
     /// <summary>
@@ -2365,6 +2461,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAdditionalCapabilities
 {
     /// <summary>Should the capacity to enable Data Disks of the UltraSSD_LRS storage account type be supported on this Virtual Machine Scale Set? Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -2374,6 +2471,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAdditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAdditionalUnattendContent
 {
     /// <summary>The name of the setting to which the content applies. Possible values are AutoLogon and FirstLogonCommands. Changing this forces a new resource to be created.</summary>
@@ -2383,6 +2481,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAdditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAutomaticInstanceRepair
 {
     /// <summary>The repair action that will be used for repairing unhealthy virtual machines in the scale set. Possible values include Replace, Restart, Reimage.</summary>
@@ -2400,6 +2499,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAutomat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAutomaticOsUpgradePolicy
 {
     /// <summary>Should automatic rollbacks be disabled?</summary>
@@ -2413,6 +2513,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderAutomat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderBootDiagnostics
 {
     /// <summary>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.</summary>
@@ -2422,6 +2523,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderBootDia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderDataDisk
 {
     /// <summary>The type of Caching which should be used for this Data Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -2467,6 +2569,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderDataDis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderExtensionProtectedSettingsFromKeyVault
 {
     /// <summary>The URL to the Key Vault Secret which stores the protected settings.</summary>
@@ -2480,6 +2583,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderExtension
 {
     /// <summary>Should the latest version of the Extension be used at Deployment Time, if one is available? This won&apos;t auto-update the extension on existing installation. Defaults to true.</summary>
@@ -2525,6 +2629,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderGalleryApplication
 {
     /// <summary>Specifies the URI to an Azure Blob that will replace the default configuration for the package if provided. Changing this forces a new resource to be created.</summary>
@@ -2546,6 +2651,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderGallery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderIdentity
 {
     /// <summary>Specifies a list of User Assigned Managed Identity IDs to be assigned to this Windows Virtual Machine Scale Set.</summary>
@@ -2567,6 +2673,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderIdentit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddressIpTag
 {
     /// <summary>The IP Tag associated with the Public IP, such as SQL or Storage. Changing this forces a new resource to be created.</summary>
@@ -2580,6 +2687,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfigurationPublicIpAddress
 {
     /// <summary>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.</summary>
@@ -2609,6 +2717,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetworkInterfaceIpConfiguration
 {
     /// <summary>A list of Backend Address Pools ID&apos;s from a Application Gateway which this Virtual Machine Scale Set should be connected to.</summary>
@@ -2650,6 +2759,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetworkInterface
 {
     /// <summary>Specifies the auxiliary mode used to enable network high-performance feature on Network Virtual Appliances (NVAs). This feature offers competitive performance in Connections Per Second (CPS) optimization, along with improvements to handling large amounts of simultaneous connections. Possible values are AcceleratedConnections and Floating.</summary>
@@ -2691,6 +2801,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderOsDiskDiffDiskSettings
 {
     /// <summary>Specifies the Ephemeral Disk Settings for the OS Disk. At this time the only possible value is Local. Changing this forces a new resource to be created.</summary>
@@ -2704,6 +2815,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderOsDiskD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderOsDisk
 {
     /// <summary>The Type of Caching which should be used for the Internal OS Disk. Possible values are None, ReadOnly and ReadWrite.</summary>
@@ -2741,6 +2853,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderOsDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderPlan
 {
     /// <summary>Specifies the name of the image from the marketplace. Changing this forces a new resource to be created.</summary>
@@ -2758,6 +2871,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderPlan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderRollingUpgradePolicy
 {
     /// <summary>Should the Virtual Machine Scale Set ignore the Azure Zone boundaries when constructing upgrade batches? Possible values are true or false.</summary>
@@ -2791,6 +2905,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderRolling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderScaleIn
 {
     /// <summary>Should the virtual machines chosen for removal be force deleted when the virtual machine scale set is being scaled-in? Possible values are true or false. Defaults to false.</summary>
@@ -2804,6 +2919,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderScaleIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSecretCertificate
 {
     /// <summary>The certificate store on the Virtual Machine where the certificate should be added.</summary>
@@ -2817,6 +2933,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSecretC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSecret
 {
     /// <summary>One or more certificate blocks as defined above.</summary>
@@ -2830,6 +2947,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSourceImageReference
 {
     /// <summary>Specifies the offer of the image used to create the virtual machines. Changing this forces a new resource to be created.</summary>
@@ -2851,6 +2969,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSourceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSpotRestore
 {
     /// <summary>Should the Spot-Try-Restore feature be enabled? The Spot-Try-Restore feature will attempt to automatically restore the evicted Spot Virtual Machine Scale Set VM instances opportunistically based on capacity availability and pricing constraints. Possible values are true or false. Defaults to false. Changing this forces a new resource to be created.</summary>
@@ -2864,6 +2983,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderSpotRes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderTerminationNotification
 {
     /// <summary>Should the termination notification be enabled on this Virtual Machine Scale Set?</summary>
@@ -2877,6 +2997,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderTermina
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderWinrmListener
 {
     /// <summary>The Secret URL of a Key Vault Certificate, which must be specified when protocol is set to Https. Changing this forces a new resource to be created.</summary>
@@ -2890,6 +3011,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProviderWinrmLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProvider
 {
     /// <summary>An additional_capabilities block as defined below.</summary>
@@ -3120,6 +3242,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatusConditions
 {
     /// <summary>
@@ -3163,6 +3286,7 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatusConditions
 /// <summary>WindowsVirtualMachineScaleSetStatus defines the observed state of WindowsVirtualMachineScaleSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WindowsVirtualMachineScaleSetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3181,9 +3305,13 @@ public partial class V1beta1WindowsVirtualMachineScaleSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WindowsVirtualMachineScaleSet is the Schema for the WindowsVirtualMachineScaleSets API. Manages a Windows Virtual Machine Scale Set.</summary>
+/// <summary>
+/// WindowsVirtualMachineScaleSet is the Schema for the WindowsVirtualMachineScaleSets API. Manages a Windows Virtual Machine Scale Set.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WindowsVirtualMachineScaleSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WindowsVirtualMachineScaleSetSpec>, IStatus<V1beta1WindowsVirtualMachineScaleSetStatus?>
 {

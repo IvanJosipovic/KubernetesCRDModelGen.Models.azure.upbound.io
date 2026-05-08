@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deviceupdate.azure.upbound.io;
-/// <summary>IOTHubDeviceUpdateInstance is the Schema for the IOTHubDeviceUpdateInstances API. Manages an IoT Hub Device Update Instance.</summary>
+/// <summary>
+/// IOTHubDeviceUpdateInstance is the Schema for the IOTHubDeviceUpdateInstances API. Manages an IoT Hub Device Update Instance.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDeviceUpdateInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubDeviceUpdateInstance>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdat
 /// <summary>Reference to a IOTHubDeviceUpdateAccount in deviceupdate to populate deviceUpdateAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdat
 /// <summary>Selector for a IOTHubDeviceUpdateAccount in deviceupdate to populate deviceUpdateAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdateAccountIdSelector
 {
     /// <summary>
@@ -205,6 +218,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDeviceUpdat
 /// <summary>Connection String of the Diagnostic Storage Account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -228,6 +242,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -244,6 +259,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAcc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -255,6 +271,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAcc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -279,6 +296,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 /// <summary>Reference to a Account in storage to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -298,6 +316,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -314,6 +333,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAcc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -325,6 +345,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAcc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -349,6 +370,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 /// <summary>Selector for a Account in storage to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccountIdSelector
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticStorageAccount
 {
     /// <summary>Connection String of the Diagnostic Storage Account.</summary>
@@ -396,6 +419,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderDiagnosticS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -412,6 +436,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -423,6 +448,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRefPolicy
 {
     /// <summary>
@@ -447,6 +473,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRef
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -466,6 +493,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -482,6 +510,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -493,6 +522,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelectorPolicy
 {
     /// <summary>
@@ -517,6 +547,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSel
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSelector
 {
     /// <summary>
@@ -537,6 +568,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProviderIothubIdSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProvider
 {
     /// <summary>Specifies the ID of the IoT Hub Device Update Account where the IoT Hub Device Update Instance exists. Changing this forces a new resource to be created.</summary>
@@ -579,6 +611,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecForProvider
 /// <summary>Connection String of the Diagnostic Storage Account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -602,6 +635,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -618,6 +652,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -629,6 +664,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -653,6 +689,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 /// <summary>Reference to a Account in storage to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -672,6 +709,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -688,6 +726,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -699,6 +738,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -723,6 +763,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 /// <summary>Selector for a Account in storage to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccountIdSelector
 {
     /// <summary>
@@ -743,6 +784,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnosticStorageAccount
 {
     /// <summary>Connection String of the Diagnostic Storage Account.</summary>
@@ -770,6 +812,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderDiagnostic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -786,6 +829,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -797,6 +841,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRefPolicy
 {
     /// <summary>
@@ -821,6 +866,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRe
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -840,6 +886,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -856,6 +903,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -867,6 +915,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelectorPolicy
 {
     /// <summary>
@@ -891,6 +940,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSe
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSelector
 {
     /// <summary>
@@ -923,6 +973,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProviderIothubIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProvider
 {
     /// <summary>Whether the diagnostic log collection is enabled. Possible values are true and false. Defaults to false.</summary>
@@ -956,6 +1007,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -980,6 +1032,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -996,6 +1049,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1007,6 +1061,7 @@ public enum V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1035,6 +1090,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1054,6 +1110,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1068,6 +1125,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpecWriteConnectionSecretT
 /// <summary>IOTHubDeviceUpdateInstanceSpec defines the desired state of IOTHubDeviceUpdateInstance</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceSpec
 {
     /// <summary>
@@ -1135,6 +1193,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceStatusAtProviderDiagnosticStorageAccount
 {
     /// <summary>Resource ID of the Diagnostic Storage Account.</summary>
@@ -1144,6 +1203,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceStatusAtProviderDiagnostic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceStatusAtProvider
 {
     /// <summary>Specifies the ID of the IoT Hub Device Update Account where the IoT Hub Device Update Instance exists. Changing this forces a new resource to be created.</summary>
@@ -1174,6 +1234,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceStatusConditions
 {
     /// <summary>
@@ -1217,6 +1278,7 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceStatusConditions
 /// <summary>IOTHubDeviceUpdateInstanceStatus defines the observed state of IOTHubDeviceUpdateInstance.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IOTHubDeviceUpdateInstanceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1235,9 +1297,13 @@ public partial class V1beta1IOTHubDeviceUpdateInstanceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>IOTHubDeviceUpdateInstance is the Schema for the IOTHubDeviceUpdateInstances API. Manages an IoT Hub Device Update Instance.</summary>
+/// <summary>
+/// IOTHubDeviceUpdateInstance is the Schema for the IOTHubDeviceUpdateInstances API. Manages an IoT Hub Device Update Instance.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubDeviceUpdateInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubDeviceUpdateInstanceSpec>, IStatus<V1beta1IOTHubDeviceUpdateInstanceStatus?>
 {

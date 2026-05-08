@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>VirtualHubConnection is the Schema for the VirtualHubConnections API. Manages a Connection for a Virtual Hub.</summary>
+/// <summary>
+/// VirtualHubConnection is the Schema for the VirtualHubConnections API. Manages a Connection for a Virtual Hub.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualHubConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualHubConnection>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VirtualHubConnectionList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1VirtualHubConnectionSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetw
 /// <summary>Reference to a VirtualNetwork in network to populate remoteVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetw
 /// <summary>Selector for a VirtualNetwork in network to populate remoteVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetworkIdSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRemoteVirtualNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTabl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTabl
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociated
 /// <summary>Reference to a VirtualHubRouteTable in network to populate associatedRouteTableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociated
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTabl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTabl
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociated
 /// <summary>Selector for a VirtualHubRouteTable in network to populate associatedRouteTableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociatedRouteTableIdSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingAssociated
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingPropagatedRouteTable
 {
     /// <summary>The list of labels to assign to this route table.</summary>
@@ -364,6 +386,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingPropagated
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingStaticVnetRoute
 {
     /// <summary>A list of CIDR Ranges which should be used as Address Prefixes.</summary>
@@ -381,6 +404,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRoutingStaticVnet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderRouting
 {
     /// <summary>The ID of the route table associated with this Virtual Hub connection.</summary>
@@ -428,6 +452,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderRouting
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -444,6 +469,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -455,6 +481,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPolicy
 {
     /// <summary>
@@ -479,6 +506,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRefPo
 /// <summary>Reference to a VirtualHub in network to populate virtualHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -498,6 +526,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -514,6 +543,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -525,6 +555,7 @@ public enum V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelectorPolicy
 {
     /// <summary>
@@ -549,6 +580,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelec
 /// <summary>Selector for a VirtualHub in network to populate virtualHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelector
 {
     /// <summary>
@@ -569,6 +601,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProviderVirtualHubIdSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecForProvider
 {
     /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
@@ -612,6 +645,7 @@ public partial class V1beta1VirtualHubConnectionSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -628,6 +662,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -639,6 +674,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRefPolicy
 {
     /// <summary>
@@ -663,6 +699,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNet
 /// <summary>Reference to a VirtualNetwork in network to populate remoteVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -682,6 +719,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -698,6 +736,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -709,6 +748,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelectorPolicy
 {
     /// <summary>
@@ -733,6 +773,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNet
 /// <summary>Selector for a VirtualNetwork in network to populate remoteVirtualNetworkId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNetworkIdSelector
 {
     /// <summary>
@@ -759,6 +800,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRemoteVirtualNet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -775,6 +817,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTab
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -786,6 +829,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTab
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRefPolicy
 {
     /// <summary>
@@ -810,6 +854,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociate
 /// <summary>Reference to a VirtualHubRouteTable in network to populate associatedRouteTableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -829,6 +874,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -845,6 +891,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTab
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -856,6 +903,7 @@ public enum V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTab
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelectorPolicy
 {
     /// <summary>
@@ -880,6 +928,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociate
 /// <summary>Selector for a VirtualHubRouteTable in network to populate associatedRouteTableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociatedRouteTableIdSelector
 {
     /// <summary>
@@ -900,6 +949,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingAssociate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingPropagatedRouteTable
 {
     /// <summary>The list of labels to assign to this route table.</summary>
@@ -913,6 +963,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingPropagate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingStaticVnetRoute
 {
     /// <summary>A list of CIDR Ranges which should be used as Address Prefixes.</summary>
@@ -930,6 +981,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRoutingStaticVne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProviderRouting
 {
     /// <summary>The ID of the route table associated with this Virtual Hub connection.</summary>
@@ -983,6 +1035,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProviderRouting
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecInitProvider
 {
     /// <summary>Should Internet Security be enabled to secure internet traffic? Defaults to false.</summary>
@@ -1012,6 +1065,7 @@ public partial class V1beta1VirtualHubConnectionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1036,6 +1090,7 @@ public enum V1beta1VirtualHubConnectionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1052,6 +1107,7 @@ public enum V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1063,6 +1119,7 @@ public enum V1beta1VirtualHubConnectionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1091,6 +1148,7 @@ public partial class V1beta1VirtualHubConnectionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1110,6 +1168,7 @@ public partial class V1beta1VirtualHubConnectionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1124,6 +1183,7 @@ public partial class V1beta1VirtualHubConnectionSpecWriteConnectionSecretToRef
 /// <summary>VirtualHubConnectionSpec defines the desired state of VirtualHubConnection</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionSpec
 {
     /// <summary>
@@ -1191,6 +1251,7 @@ public partial class V1beta1VirtualHubConnectionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatusAtProviderRoutingPropagatedRouteTable
 {
     /// <summary>The list of labels to assign to this route table.</summary>
@@ -1204,6 +1265,7 @@ public partial class V1beta1VirtualHubConnectionStatusAtProviderRoutingPropagate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatusAtProviderRoutingStaticVnetRoute
 {
     /// <summary>A list of CIDR Ranges which should be used as Address Prefixes.</summary>
@@ -1221,6 +1283,7 @@ public partial class V1beta1VirtualHubConnectionStatusAtProviderRoutingStaticVne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatusAtProviderRouting
 {
     /// <summary>The ID of the route table associated with this Virtual Hub connection.</summary>
@@ -1254,6 +1317,7 @@ public partial class V1beta1VirtualHubConnectionStatusAtProviderRouting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatusAtProvider
 {
     /// <summary>The ID of the Virtual Hub Connection.</summary>
@@ -1280,6 +1344,7 @@ public partial class V1beta1VirtualHubConnectionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatusConditions
 {
     /// <summary>
@@ -1323,6 +1388,7 @@ public partial class V1beta1VirtualHubConnectionStatusConditions
 /// <summary>VirtualHubConnectionStatus defines the observed state of VirtualHubConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualHubConnectionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1341,9 +1407,13 @@ public partial class V1beta1VirtualHubConnectionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VirtualHubConnection is the Schema for the VirtualHubConnections API. Manages a Connection for a Virtual Hub.</summary>
+/// <summary>
+/// VirtualHubConnection is the Schema for the VirtualHubConnections API. Manages a Connection for a Virtual Hub.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualHubConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualHubConnectionSpec>, IStatus<V1beta1VirtualHubConnectionStatus?>
 {

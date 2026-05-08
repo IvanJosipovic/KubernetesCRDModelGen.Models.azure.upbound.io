@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.upbound.io;
-/// <summary>MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.</summary>
+/// <summary>
+/// MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLManagedInstanceFailoverGroup>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupList : IKubernetesO
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstan
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderManagedInstanceIdSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderMana
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManage
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPartnerManagedInstanceIdSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderPart
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderReadWriteEndpointFailoverPolicy
 {
     /// <summary>Applies only if mode is Automatic. The grace period in minutes before failover with data loss is attempted.</summary>
@@ -364,6 +386,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProviderRead
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProvider
 {
     /// <summary>The Azure Region where the Managed Instance Failover Group should exist. Changing this forces a new resource to be created.</summary>
@@ -415,6 +438,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -431,6 +455,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -442,6 +467,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRefPolicy
 {
     /// <summary>
@@ -466,6 +492,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -485,6 +512,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -501,6 +529,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -512,6 +541,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInsta
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -536,6 +566,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate managedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderManagedInstanceIdSelector
 {
     /// <summary>
@@ -562,6 +593,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -578,6 +610,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -589,6 +622,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRefPolicy
 {
     /// <summary>
@@ -613,6 +647,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 /// <summary>Reference to a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -632,6 +667,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -648,6 +684,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -659,6 +696,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManag
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -683,6 +721,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 /// <summary>Selector for a MSSQLManagedInstance in sql to populate partnerManagedInstanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPartnerManagedInstanceIdSelector
 {
     /// <summary>
@@ -703,6 +742,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderPar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderReadWriteEndpointFailoverPolicy
 {
     /// <summary>Applies only if mode is Automatic. The grace period in minutes before failover with data loss is attempted.</summary>
@@ -728,6 +768,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProviderRea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProvider
 {
     /// <summary>The ID of the Azure SQL Managed Instance which will be replicated using a Managed Instance Failover Group. Changing this forces a new resource to be created.</summary>
@@ -773,6 +814,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -797,6 +839,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -813,6 +856,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -824,6 +868,7 @@ public enum V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -852,6 +897,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -871,6 +917,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecProviderConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -885,6 +932,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpecWriteConnection
 /// <summary>MSSQLManagedInstanceFailoverGroupSpec defines the desired state of MSSQLManagedInstanceFailoverGroup</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpec
 {
     /// <summary>
@@ -952,6 +1000,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderPartnerRegion
 {
     /// <summary>The Azure Region where the Managed Instance Failover Group partner exists.</summary>
@@ -965,6 +1014,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderPar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderReadWriteEndpointFailoverPolicy
 {
     /// <summary>Applies only if mode is Automatic. The grace period in minutes before failover with data loss is attempted.</summary>
@@ -978,6 +1028,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProviderRea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProvider
 {
     /// <summary>The ID of the Managed Instance Failover Group.</summary>
@@ -1020,6 +1071,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusConditions
 {
     /// <summary>
@@ -1063,6 +1115,7 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatusConditions
 /// <summary>MSSQLManagedInstanceFailoverGroupStatus defines the observed state of MSSQLManagedInstanceFailoverGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1081,9 +1134,13 @@ public partial class V1beta1MSSQLManagedInstanceFailoverGroupStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.</summary>
+/// <summary>
+/// MSSQLManagedInstanceFailoverGroup is the Schema for the MSSQLManagedInstanceFailoverGroups API. Manages an Azure SQL Managed Instance Failover Group.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLManagedInstanceFailoverGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLManagedInstanceFailoverGroupSpec>, IStatus<V1beta1MSSQLManagedInstanceFailoverGroupStatus?>
 {

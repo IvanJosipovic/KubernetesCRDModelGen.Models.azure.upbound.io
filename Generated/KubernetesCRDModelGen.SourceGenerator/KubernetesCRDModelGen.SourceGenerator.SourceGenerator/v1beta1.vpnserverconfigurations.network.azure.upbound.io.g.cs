@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>VPNServerConfiguration is the Schema for the VPNServerConfigurations API. Manages a VPN Server Configuration.</summary>
+/// <summary>
+/// VPNServerConfiguration is the Schema for the VPNServerConfigurations API. Manages a VPN Server Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPNServerConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPNServerConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VPNServerConfigurationList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1VPNServerConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderAzureActiveDirectoryAuthentication
 {
     /// <summary>The Audience which should be used for authentication.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderAzureActiveDire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderClientRevokedCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderClientRevokedCe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderClientRootCerti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values include DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -137,6 +146,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderIpsecPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusClientRoo
 /// <summary>The Secret used to communicate with the Radius Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -168,6 +179,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServerSec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServer
 {
     /// <summary>The Address of the Radius Server.</summary>
@@ -185,6 +197,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServerRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -198,6 +211,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderRadiusServerRoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderRadius
 {
     /// <summary>One or more client_root_certificate blocks as defined below.</summary>
@@ -221,6 +235,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderRadius
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -237,6 +252,7 @@ public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -248,6 +264,7 @@ public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -272,6 +289,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNa
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -291,6 +309,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -307,6 +326,7 @@ public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -318,6 +338,7 @@ public enum V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -342,6 +363,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNa
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -362,6 +384,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProviderResourceGroupNa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecForProvider
 {
     /// <summary>A azure_active_directory_authentication block as defined below.</summary>
@@ -415,6 +438,7 @@ public partial class V1beta1VPNServerConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderAzureActiveDirectoryAuthentication
 {
     /// <summary>The Audience which should be used for authentication.</summary>
@@ -432,6 +456,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderAzureActiveDir
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderClientRevokedCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -445,6 +470,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderClientRevokedC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -458,6 +484,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderClientRootCert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values include DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -495,6 +522,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderIpsecPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -509,6 +537,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusClientRo
 /// <summary>The Secret used to communicate with the Radius Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -526,6 +555,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServerSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServer
 {
     /// <summary>The Address of the Radius Server.</summary>
@@ -543,6 +573,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServerRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -556,6 +587,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderRadiusServerRo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProviderRadius
 {
     /// <summary>One or more client_root_certificate blocks as defined below.</summary>
@@ -585,6 +617,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProviderRadius
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecInitProvider
 {
     /// <summary>A azure_active_directory_authentication block as defined below.</summary>
@@ -630,6 +663,7 @@ public partial class V1beta1VPNServerConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -654,6 +688,7 @@ public enum V1beta1VPNServerConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -670,6 +705,7 @@ public enum V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -681,6 +717,7 @@ public enum V1beta1VPNServerConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -709,6 +746,7 @@ public partial class V1beta1VPNServerConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -728,6 +766,7 @@ public partial class V1beta1VPNServerConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -742,6 +781,7 @@ public partial class V1beta1VPNServerConfigurationSpecWriteConnectionSecretToRef
 /// <summary>VPNServerConfigurationSpec defines the desired state of VPNServerConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationSpec
 {
     /// <summary>
@@ -809,6 +849,7 @@ public partial class V1beta1VPNServerConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderAzureActiveDirectoryAuthentication
 {
     /// <summary>The Audience which should be used for authentication.</summary>
@@ -826,6 +867,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderAzureActiveDir
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderClientRevokedCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -839,6 +881,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderClientRevokedC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -852,6 +895,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderClientRootCert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values include DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -889,6 +933,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderIpsecPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusClientRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -902,6 +947,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusClientRo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusServer
 {
     /// <summary>The Address of the Radius Server.</summary>
@@ -915,6 +961,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusServerRootCertificate
 {
     /// <summary>A name used to uniquely identify this certificate.</summary>
@@ -928,6 +975,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderRadiusServerRo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProviderRadius
 {
     /// <summary>One or more client_root_certificate blocks as defined below.</summary>
@@ -945,6 +993,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProviderRadius
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusAtProvider
 {
     /// <summary>A azure_active_directory_authentication block as defined below.</summary>
@@ -995,6 +1044,7 @@ public partial class V1beta1VPNServerConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatusConditions
 {
     /// <summary>
@@ -1038,6 +1088,7 @@ public partial class V1beta1VPNServerConfigurationStatusConditions
 /// <summary>VPNServerConfigurationStatus defines the observed state of VPNServerConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPNServerConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1056,9 +1107,13 @@ public partial class V1beta1VPNServerConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VPNServerConfiguration is the Schema for the VPNServerConfigurations API. Manages a VPN Server Configuration.</summary>
+/// <summary>
+/// VPNServerConfiguration is the Schema for the VPNServerConfigurations API. Manages a VPN Server Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPNServerConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPNServerConfigurationSpec>, IStatus<V1beta1VPNServerConfigurationStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.</summary>
+/// <summary>
+/// VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualNetworkGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualNetworkGateway>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VirtualNetworkGatewayList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1VirtualNetworkGatewaySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderBgpSettingsPeeringAddresses
 {
     /// <summary>A list of Azure custom APIPA addresses assigned to the BGP peer of the Virtual Network Gateway.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderBgpSettingsPeeri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderBgpSettings
 {
     /// <summary>The Autonomous System Number (ASN) to use as part of the BGP.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderBgpSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderCustomRoute
 {
     /// <summary>A list of address blocks reserved for this virtual network in CIDR notation.</summary>
@@ -102,6 +110,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderCustomRoute
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -118,6 +127,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -129,6 +139,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
     /// <summary>
@@ -153,6 +164,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -172,6 +184,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -188,6 +201,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -199,6 +213,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
     /// <summary>
@@ -223,6 +238,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelector
 {
     /// <summary>
@@ -249,6 +265,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -265,6 +282,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -276,6 +294,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -300,6 +319,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationS
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -319,6 +339,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -335,6 +356,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -346,6 +368,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -370,6 +393,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationS
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -390,6 +414,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfiguration
 {
     /// <summary>A user-defined name of the IP configuration. Defaults to vnetGatewayConfig.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderIpConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderPolicyGroupPolicyMember
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -444,6 +470,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderPolicyGroupPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderPolicyGroup
 {
     /// <summary>Is this a Default Virtual Network Gateway Policy Group? Defaults to false.</summary>
@@ -471,6 +498,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderPolicyGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -487,6 +515,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -498,6 +527,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -522,6 +552,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNam
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -541,6 +572,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -557,6 +589,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -568,6 +601,7 @@ public enum V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -592,6 +626,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNam
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -612,6 +647,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderResourceGroupNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values are DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -650,6 +686,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 /// <summary>The secret that is used to communicate with the Radius Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -667,6 +704,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServer
 {
     /// <summary>The address of the Radius Server.</summary>
@@ -684,6 +722,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRevokedCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -697,6 +736,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRootCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -710,6 +750,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
     /// <summary>A list of address prefixes for P2S VPN Client.</summary>
@@ -727,6 +768,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfiguration
 {
     /// <summary>
@@ -795,6 +837,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecForProvider
 {
     /// <summary>If true, an active-active Virtual Network Gateway will be created. An active-active gateway requires a HighPerformance or an UltraPerformance SKU. If false, an active-standby gateway will be created. Defaults to false.</summary>
@@ -901,6 +944,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderBgpSettingsPeeringAddresses
 {
     /// <summary>A list of Azure custom APIPA addresses assigned to the BGP peer of the Virtual Network Gateway.</summary>
@@ -914,6 +958,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderBgpSettingsPeer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderBgpSettings
 {
     /// <summary>The Autonomous System Number (ASN) to use as part of the BGP.</summary>
@@ -931,6 +976,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderBgpSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderCustomRoute
 {
     /// <summary>A list of address blocks reserved for this virtual network in CIDR notation.</summary>
@@ -946,6 +992,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderCustomRoute
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -962,6 +1009,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -973,6 +1021,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
     /// <summary>
@@ -997,6 +1046,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1016,6 +1066,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1032,6 +1083,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1043,6 +1095,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
     /// <summary>
@@ -1067,6 +1120,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelector
 {
     /// <summary>
@@ -1093,6 +1147,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1109,6 +1164,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1120,6 +1176,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -1144,6 +1201,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1163,6 +1221,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1179,6 +1238,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1190,6 +1250,7 @@ public enum V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1214,6 +1275,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -1234,6 +1296,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 {
     /// <summary>A user-defined name of the IP configuration. Defaults to vnetGatewayConfig.</summary>
@@ -1271,6 +1334,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderIpConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderPolicyGroupPolicyMember
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1288,6 +1352,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderPolicyGroupPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderPolicyGroup
 {
     /// <summary>Is this a Default Virtual Network Gateway Policy Group? Defaults to false.</summary>
@@ -1309,6 +1374,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderPolicyGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values are DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -1347,6 +1413,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 /// <summary>The secret that is used to communicate with the Radius Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1364,6 +1431,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServer
 {
     /// <summary>The address of the Radius Server.</summary>
@@ -1381,6 +1449,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRevokedCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1394,6 +1463,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRootCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1407,6 +1477,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
     /// <summary>A list of address prefixes for P2S VPN Client.</summary>
@@ -1424,6 +1495,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfiguration
 {
     /// <summary>
@@ -1504,6 +1576,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
 {
     /// <summary>If true, an active-active Virtual Network Gateway will be created. An active-active gateway requires a HighPerformance or an UltraPerformance SKU. If false, an active-standby gateway will be created. Defaults to false.</summary>
@@ -1602,6 +1675,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1626,6 +1700,7 @@ public enum V1beta1VirtualNetworkGatewaySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1642,6 +1717,7 @@ public enum V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1653,6 +1729,7 @@ public enum V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1681,6 +1758,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1700,6 +1778,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1714,6 +1793,7 @@ public partial class V1beta1VirtualNetworkGatewaySpecWriteConnectionSecretToRef
 /// <summary>VirtualNetworkGatewaySpec defines the desired state of VirtualNetworkGateway</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewaySpec
 {
     /// <summary>
@@ -1781,6 +1861,7 @@ public partial class V1beta1VirtualNetworkGatewaySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderBgpSettingsPeeringAddresses
 {
     /// <summary>A list of Azure custom APIPA addresses assigned to the BGP peer of the Virtual Network Gateway.</summary>
@@ -1802,6 +1883,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderBgpSettingsPeer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderBgpSettings
 {
     /// <summary>The Autonomous System Number (ASN) to use as part of the BGP.</summary>
@@ -1819,6 +1901,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderBgpSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderCustomRoute
 {
     /// <summary>A list of address blocks reserved for this virtual network in CIDR notation.</summary>
@@ -1828,6 +1911,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderCustomRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderIpConfiguration
 {
     /// <summary>A user-defined name of the IP configuration. Defaults to vnetGatewayConfig.</summary>
@@ -1849,6 +1933,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderIpConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderPolicyGroupPolicyMember
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1866,6 +1951,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderPolicyGroupPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderPolicyGroup
 {
     /// <summary>Is this a Default Virtual Network Gateway Policy Group? Defaults to false.</summary>
@@ -1887,6 +1973,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderPolicyGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationIpsecPolicy
 {
     /// <summary>The DH Group, used in IKE Phase 1. Possible values are DHGroup1, DHGroup2, DHGroup14, DHGroup24, DHGroup2048, ECP256, ECP384 and None.</summary>
@@ -1924,6 +2011,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRadiusServer
 {
     /// <summary>The address of the Radius Server.</summary>
@@ -1937,6 +2025,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRevokedCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1950,6 +2039,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRootCertificate
 {
     /// <summary>The name of the Virtual Network Gateway Client Connection.</summary>
@@ -1963,6 +2053,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
     /// <summary>A list of address prefixes for P2S VPN Client.</summary>
@@ -1980,6 +2071,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfiguration
 {
     /// <summary>
@@ -2048,6 +2140,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
 {
     /// <summary>If true, an active-active Virtual Network Gateway will be created. An active-active gateway requires a HighPerformance or an UltraPerformance SKU. If false, an active-standby gateway will be created. Defaults to false.</summary>
@@ -2151,6 +2244,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatusConditions
 {
     /// <summary>
@@ -2194,6 +2288,7 @@ public partial class V1beta1VirtualNetworkGatewayStatusConditions
 /// <summary>VirtualNetworkGatewayStatus defines the observed state of VirtualNetworkGateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualNetworkGatewayStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2212,9 +2307,13 @@ public partial class V1beta1VirtualNetworkGatewayStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.</summary>
+/// <summary>
+/// VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualNetworkGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualNetworkGatewaySpec>, IStatus<V1beta1VirtualNetworkGatewayStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.operationsmanagement.azure.upbound.io;
-/// <summary>LogAnalyticsSolution is the Schema for the LogAnalyticsSolutions API. Manages a Log Analytics (formally Operational Insights) Solution.</summary>
+/// <summary>
+/// LogAnalyticsSolution is the Schema for the LogAnalyticsSolutions API. Manages a Log Analytics (formally Operational Insights) Solution.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsSolutionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LogAnalyticsSolution>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LogAnalyticsSolutionList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1LogAnalyticsSolutionSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderPlan
 {
     /// <summary>The product name of the solution. For example OMSGallery/Containers. Changing this forces a new resource to be created.</summary>
@@ -80,6 +86,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderPlan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -96,6 +103,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -107,6 +115,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -131,6 +140,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupName
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -166,6 +177,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -177,6 +189,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -201,6 +214,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupName
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -227,6 +241,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderResourceGroupName
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -243,6 +258,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -254,6 +270,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefPolicy
 {
     /// <summary>
@@ -278,6 +295,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRefP
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -313,6 +332,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -324,6 +344,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelectorPolicy
 {
     /// <summary>
@@ -348,6 +369,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSele
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSelector
 {
     /// <summary>
@@ -374,6 +396,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceNameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -390,6 +413,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -401,6 +425,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRefPolicy
 {
     /// <summary>
@@ -425,6 +450,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResource
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -444,6 +470,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -460,6 +487,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -471,6 +499,7 @@ public enum V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelectorPolicy
 {
     /// <summary>
@@ -495,6 +524,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResource
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResourceIdSelector
 {
     /// <summary>
@@ -515,6 +545,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProviderWorkspaceResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecForProvider
 {
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
@@ -572,6 +603,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderPlan
 {
     /// <summary>The product name of the solution. For example OMSGallery/Containers. Changing this forces a new resource to be created.</summary>
@@ -595,6 +627,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderPlan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -611,6 +644,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -622,6 +656,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -646,6 +681,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNam
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -665,6 +701,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -681,6 +718,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -692,6 +730,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -716,6 +755,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNam
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -742,6 +782,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderResourceGroupNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -758,6 +799,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -769,6 +811,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRefPolicy
 {
     /// <summary>
@@ -793,6 +836,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRef
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -812,6 +856,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -828,6 +873,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -839,6 +885,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelectorPolicy
 {
     /// <summary>
@@ -863,6 +910,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSel
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSelector
 {
     /// <summary>
@@ -889,6 +937,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceNameSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -905,6 +954,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -916,6 +966,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRefPolicy
 {
     /// <summary>
@@ -940,6 +991,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourc
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -959,6 +1011,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -975,6 +1028,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -986,6 +1040,7 @@ public enum V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1010,6 +1065,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourc
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourceIdSelector
 {
     /// <summary>
@@ -1042,6 +1098,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProviderWorkspaceResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecInitProvider
 {
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
@@ -1103,6 +1160,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1127,6 +1185,7 @@ public enum V1beta1LogAnalyticsSolutionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1143,6 +1202,7 @@ public enum V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1154,6 +1214,7 @@ public enum V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1182,6 +1243,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1201,6 +1263,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1215,6 +1278,7 @@ public partial class V1beta1LogAnalyticsSolutionSpecWriteConnectionSecretToRef
 /// <summary>LogAnalyticsSolutionSpec defines the desired state of LogAnalyticsSolution</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionSpec
 {
     /// <summary>
@@ -1282,6 +1346,7 @@ public partial class V1beta1LogAnalyticsSolutionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionStatusAtProviderPlan
 {
     [JsonPropertyName("name")]
@@ -1302,6 +1367,7 @@ public partial class V1beta1LogAnalyticsSolutionStatusAtProviderPlan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionStatusAtProvider
 {
     [JsonPropertyName("id")]
@@ -1339,6 +1405,7 @@ public partial class V1beta1LogAnalyticsSolutionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionStatusConditions
 {
     /// <summary>
@@ -1382,6 +1449,7 @@ public partial class V1beta1LogAnalyticsSolutionStatusConditions
 /// <summary>LogAnalyticsSolutionStatus defines the observed state of LogAnalyticsSolution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LogAnalyticsSolutionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1400,9 +1468,13 @@ public partial class V1beta1LogAnalyticsSolutionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LogAnalyticsSolution is the Schema for the LogAnalyticsSolutions API. Manages a Log Analytics (formally Operational Insights) Solution.</summary>
+/// <summary>
+/// LogAnalyticsSolution is the Schema for the LogAnalyticsSolutions API. Manages a Log Analytics (formally Operational Insights) Solution.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LogAnalyticsSolution : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LogAnalyticsSolutionSpec>, IStatus<V1beta1LogAnalyticsSolutionStatus?>
 {

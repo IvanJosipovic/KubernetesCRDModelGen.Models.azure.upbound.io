@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.streamanalytics.azure.upbound.io;
-/// <summary>FunctionJavascriptUda is the Schema for the FunctionJavascriptUdas API. Manages a JavaScript UDA Function within a Stream Analytics Streaming Job.</summary>
+/// <summary>
+/// FunctionJavascriptUda is the Schema for the FunctionJavascriptUdas API. Manages a JavaScript UDA Function within a Stream Analytics Streaming Job.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FunctionJavascriptUdaList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FunctionJavascriptUda>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FunctionJavascriptUdaList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FunctionJavascriptUdaSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderInput
 {
     /// <summary>Is this input parameter a configuration parameter? Defaults to false.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderOutput
 {
     /// <summary>The output data type from this JavaScript Function. Possible values include any, array, bigint, datetime, float, nvarchar(max) and record.</summary>
@@ -85,6 +92,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderOutput
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -101,6 +109,7 @@ public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -112,6 +121,7 @@ public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRefPolicy
 {
     /// <summary>
@@ -136,6 +146,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJ
 /// <summary>Reference to a Job in streamanalytics to populate streamAnalyticsJobId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -155,6 +166,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -171,6 +183,7 @@ public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -182,6 +195,7 @@ public enum V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelectorPolicy
 {
     /// <summary>
@@ -206,6 +220,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJ
 /// <summary>Selector for a Job in streamanalytics to populate streamAnalyticsJobId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJobIdSelector
 {
     /// <summary>
@@ -226,6 +241,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProviderStreamAnalyticsJ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecForProvider
 {
     /// <summary>One or more input blocks as defined below.</summary>
@@ -255,6 +271,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderInput
 {
     /// <summary>Is this input parameter a configuration parameter? Defaults to false.</summary>
@@ -268,6 +285,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderOutput
 {
     /// <summary>The output data type from this JavaScript Function. Possible values include any, array, bigint, datetime, float, nvarchar(max) and record.</summary>
@@ -283,6 +301,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderOutput
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -299,6 +318,7 @@ public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -310,6 +330,7 @@ public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRefPolicy
 {
     /// <summary>
@@ -334,6 +355,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalytics
 /// <summary>Reference to a Job in streamanalytics to populate streamAnalyticsJobId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -353,6 +375,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalytics
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -369,6 +392,7 @@ public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -380,6 +404,7 @@ public enum V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelectorPolicy
 {
     /// <summary>
@@ -404,6 +429,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalytics
 /// <summary>Selector for a Job in streamanalytics to populate streamAnalyticsJobId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalyticsJobIdSelector
 {
     /// <summary>
@@ -436,6 +462,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProviderStreamAnalytics
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecInitProvider
 {
     /// <summary>One or more input blocks as defined below.</summary>
@@ -469,6 +496,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -493,6 +521,7 @@ public enum V1beta1FunctionJavascriptUdaSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -509,6 +538,7 @@ public enum V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -520,6 +550,7 @@ public enum V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -548,6 +579,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -567,6 +599,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -581,6 +614,7 @@ public partial class V1beta1FunctionJavascriptUdaSpecWriteConnectionSecretToRef
 /// <summary>FunctionJavascriptUdaSpec defines the desired state of FunctionJavascriptUda</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaSpec
 {
     /// <summary>
@@ -648,6 +682,7 @@ public partial class V1beta1FunctionJavascriptUdaSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaStatusAtProviderInput
 {
     /// <summary>Is this input parameter a configuration parameter? Defaults to false.</summary>
@@ -661,6 +696,7 @@ public partial class V1beta1FunctionJavascriptUdaStatusAtProviderInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaStatusAtProviderOutput
 {
     /// <summary>The output data type from this JavaScript Function. Possible values include any, array, bigint, datetime, float, nvarchar(max) and record.</summary>
@@ -670,6 +706,7 @@ public partial class V1beta1FunctionJavascriptUdaStatusAtProviderOutput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaStatusAtProvider
 {
     /// <summary>The ID of the Stream Analytics JavaScript UDA Function.</summary>
@@ -696,6 +733,7 @@ public partial class V1beta1FunctionJavascriptUdaStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaStatusConditions
 {
     /// <summary>
@@ -739,6 +777,7 @@ public partial class V1beta1FunctionJavascriptUdaStatusConditions
 /// <summary>FunctionJavascriptUdaStatus defines the observed state of FunctionJavascriptUda.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FunctionJavascriptUdaStatus
 {
     [JsonPropertyName("atProvider")]
@@ -757,9 +796,13 @@ public partial class V1beta1FunctionJavascriptUdaStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>FunctionJavascriptUda is the Schema for the FunctionJavascriptUdas API. Manages a JavaScript UDA Function within a Stream Analytics Streaming Job.</summary>
+/// <summary>
+/// FunctionJavascriptUda is the Schema for the FunctionJavascriptUdas API. Manages a JavaScript UDA Function within a Stream Analytics Streaming Job.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FunctionJavascriptUda : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FunctionJavascriptUdaSpec>, IStatus<V1beta1FunctionJavascriptUdaStatus?>
 {

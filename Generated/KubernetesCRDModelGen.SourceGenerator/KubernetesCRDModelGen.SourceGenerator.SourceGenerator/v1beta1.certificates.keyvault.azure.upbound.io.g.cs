@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.keyvault.azure.upbound.io;
-/// <summary>Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.</summary>
+/// <summary>
+/// Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Certificate>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CertificateList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1CertificateSpecDeletionPolicyEnum
 /// <summary>The base64-encoded certificate contents.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificateContentsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1CertificateSpecForProviderCertificateContentsSecretR
 /// <summary>The password associated with the certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -93,6 +100,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePasswordSecretR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificate
 {
     /// <summary>The base64-encoded certificate contents.</summary>
@@ -106,6 +114,7 @@ public partial class V1beta1CertificateSpecForProviderCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyIssuerParameters
 {
     /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
@@ -115,6 +124,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyIssuerPar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyKeyProperties
 {
     /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
@@ -140,6 +150,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyKeyProper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeActionAction
 {
     /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
@@ -149,6 +160,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeActionTrigger
 {
     /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
@@ -162,6 +174,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeAction
 {
     /// <summary>A action block as defined below.</summary>
@@ -175,6 +188,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyLifetimeA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicySecretProperties
 {
     /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
@@ -184,6 +198,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicySecretPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
 {
     /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
@@ -201,6 +216,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyX509Certi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicyX509CertificateProperties
 {
     /// <summary>A list of Extended/Enhanced Key Usages.</summary>
@@ -226,6 +242,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicyX509Certi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderCertificatePolicy
 {
     /// <summary>A issuer_parameters block as defined below.</summary>
@@ -257,6 +274,7 @@ public partial class V1beta1CertificateSpecForProviderCertificatePolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -273,6 +291,7 @@ public enum V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -284,6 +303,7 @@ public enum V1beta1CertificateSpecForProviderKeyVaultIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderKeyVaultIdRefPolicy
 {
     /// <summary>
@@ -308,6 +328,7 @@ public partial class V1beta1CertificateSpecForProviderKeyVaultIdRefPolicy
 /// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderKeyVaultIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -327,6 +348,7 @@ public partial class V1beta1CertificateSpecForProviderKeyVaultIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -343,6 +365,7 @@ public enum V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -354,6 +377,7 @@ public enum V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicy
 {
     /// <summary>
@@ -378,6 +402,7 @@ public partial class V1beta1CertificateSpecForProviderKeyVaultIdSelectorPolicy
 /// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProviderKeyVaultIdSelector
 {
     /// <summary>
@@ -398,6 +423,7 @@ public partial class V1beta1CertificateSpecForProviderKeyVaultIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecForProvider
 {
     /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
@@ -432,6 +458,7 @@ public partial class V1beta1CertificateSpecForProvider
 /// <summary>The base64-encoded certificate contents.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificateContentsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -450,6 +477,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificateContentsSecret
 /// <summary>The password associated with the certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -467,6 +495,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePasswordSecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificate
 {
     /// <summary>The base64-encoded certificate contents.</summary>
@@ -480,6 +509,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyIssuerParameters
 {
     /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
@@ -489,6 +519,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyIssuerPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyKeyProperties
 {
     /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
@@ -514,6 +545,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyKeyPrope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetimeActionAction
 {
     /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
@@ -523,6 +555,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetimeActionTrigger
 {
     /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
@@ -536,6 +569,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetimeAction
 {
     /// <summary>A action block as defined below.</summary>
@@ -549,6 +583,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicySecretProperties
 {
     /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
@@ -558,6 +593,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicySecretPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
 {
     /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
@@ -575,6 +611,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyX509Cert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicyX509CertificateProperties
 {
     /// <summary>A list of Extended/Enhanced Key Usages.</summary>
@@ -600,6 +637,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicyX509Cert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderCertificatePolicy
 {
     /// <summary>A issuer_parameters block as defined below.</summary>
@@ -631,6 +669,7 @@ public partial class V1beta1CertificateSpecInitProviderCertificatePolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -647,6 +686,7 @@ public enum V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -658,6 +698,7 @@ public enum V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicy
 {
     /// <summary>
@@ -682,6 +723,7 @@ public partial class V1beta1CertificateSpecInitProviderKeyVaultIdRefPolicy
 /// <summary>Reference to a Vault in keyvault to populate keyVaultId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderKeyVaultIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -701,6 +743,7 @@ public partial class V1beta1CertificateSpecInitProviderKeyVaultIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -717,6 +760,7 @@ public enum V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -728,6 +772,7 @@ public enum V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicy
 {
     /// <summary>
@@ -752,6 +797,7 @@ public partial class V1beta1CertificateSpecInitProviderKeyVaultIdSelectorPolicy
 /// <summary>Selector for a Vault in keyvault to populate keyVaultId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProviderKeyVaultIdSelector
 {
     /// <summary>
@@ -784,6 +830,7 @@ public partial class V1beta1CertificateSpecInitProviderKeyVaultIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecInitProvider
 {
     /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
@@ -821,6 +868,7 @@ public partial class V1beta1CertificateSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -845,6 +893,7 @@ public enum V1beta1CertificateSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -861,6 +910,7 @@ public enum V1beta1CertificateSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -872,6 +922,7 @@ public enum V1beta1CertificateSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -900,6 +951,7 @@ public partial class V1beta1CertificateSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -919,6 +971,7 @@ public partial class V1beta1CertificateSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -933,6 +986,7 @@ public partial class V1beta1CertificateSpecWriteConnectionSecretToRef
 /// <summary>CertificateSpec defines the desired state of Certificate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateSpec
 {
     /// <summary>
@@ -1001,6 +1055,7 @@ public partial class V1beta1CertificateSpec
 /// <summary>The base64-encoded certificate contents.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificateContentsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1019,6 +1074,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificateContentsSecret
 /// <summary>The password associated with the certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1036,6 +1092,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePasswordSecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificate
 {
     /// <summary>The base64-encoded certificate contents.</summary>
@@ -1049,6 +1106,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificateAttribute
 {
     /// <summary>The create time of the Key Vault Certificate.</summary>
@@ -1078,6 +1136,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificateAttribute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyIssuerParameters
 {
     /// <summary>The name of the Certificate Issuer. Possible values include Self (for self-signed certificate), or Unknown (for a certificate issuing authority like Let&apos;s Encrypt and Azure direct supported ones).</summary>
@@ -1087,6 +1146,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyIssuerPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyKeyProperties
 {
     /// <summary>Specifies the curve to use when creating an EC key. Possible values are P-256, P-256K, P-384, and P-521. This field will be required in a future release if key_type is EC or EC-HSM.</summary>
@@ -1112,6 +1172,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyKeyPrope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetimeActionAction
 {
     /// <summary>The Type of action to be performed when the lifetime trigger is triggerec. Possible values include AutoRenew and EmailContacts.</summary>
@@ -1121,6 +1182,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetimeActionTrigger
 {
     /// <summary>The number of days before the Certificate expires that the action associated with this Trigger should run. Conflicts with lifetime_percentage.</summary>
@@ -1134,6 +1196,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetimeAction
 {
     /// <summary>A action block as defined below.</summary>
@@ -1147,6 +1210,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyLifetime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicySecretProperties
 {
     /// <summary>The Content-Type of the Certificate, such as application/x-pkcs12 for a PFX or application/x-pem-file for a PEM.</summary>
@@ -1156,6 +1220,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicySecretPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames
 {
     /// <summary>A list of alternative DNS names (FQDNs) identified by the Certificate.</summary>
@@ -1173,6 +1238,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyX509Cert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicyX509CertificateProperties
 {
     /// <summary>A list of Extended/Enhanced Key Usages.</summary>
@@ -1198,6 +1264,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicyX509Cert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProviderCertificatePolicy
 {
     /// <summary>A issuer_parameters block as defined below.</summary>
@@ -1223,6 +1290,7 @@ public partial class V1beta1CertificateStatusAtProviderCertificatePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusAtProvider
 {
     /// <summary>A certificate block as defined below, used to Import an existing certificate. Changing this will create a new version of the Key Vault Certificate.</summary>
@@ -1293,6 +1361,7 @@ public partial class V1beta1CertificateStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatusConditions
 {
     /// <summary>
@@ -1336,6 +1405,7 @@ public partial class V1beta1CertificateStatusConditions
 /// <summary>CertificateStatus defines the observed state of Certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1354,9 +1424,13 @@ public partial class V1beta1CertificateStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.</summary>
+/// <summary>
+/// Certificate is the Schema for the Certificates API. Manages a Key Vault Certificate.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Certificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CertificateSpec>, IStatus<V1beta1CertificateStatus?>
 {
