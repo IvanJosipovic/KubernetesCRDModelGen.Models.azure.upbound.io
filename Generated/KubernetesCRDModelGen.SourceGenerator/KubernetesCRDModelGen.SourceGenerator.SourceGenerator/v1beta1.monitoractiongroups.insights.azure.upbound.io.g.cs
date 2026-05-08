@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
-/// <summary>MonitorActionGroup is the Schema for the MonitorActionGroups API. Manages an Action Group within Azure Monitor</summary>
+/// <summary>
+/// MonitorActionGroup is the Schema for the MonitorActionGroups API. Manages an Action Group within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorActionGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorActionGroup>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MonitorActionGroupList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1MonitorActionGroupSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderArmRoleReceiver
 {
     /// <summary>The name of the ARM role receiver.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderArmRoleReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderAutomationRunbookReceiver
 {
     /// <summary>The automation account ID which holds this runbook and authenticates to Azure resources.</summary>
@@ -107,6 +114,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderAutomationRunbookRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderAzureAppPushReceiver
 {
     /// <summary>The email address of the user signed into the mobile app who will receive push notifications from this receiver.</summary>
@@ -120,6 +128,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderAzureAppPushReceive
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderAzureFunctionReceiver
 {
     /// <summary>The Azure resource ID of the function app.</summary>
@@ -145,6 +154,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderAzureFunctionReceiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderEmailReceiver
 {
     /// <summary>The email address of this receiver.</summary>
@@ -162,6 +172,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderEmailReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderEventHubReceiver
 {
     /// <summary>The name of the specific Event Hub queue.</summary>
@@ -191,6 +202,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderEventHubReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderItsmReceiver
 {
     /// <summary>The unique connection identifier of the ITSM connection.</summary>
@@ -216,6 +228,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderItsmReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderLogicAppReceiver
 {
     /// <summary>The callback url where HTTP request sent to.</summary>
@@ -243,6 +256,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderLogicAppReceiver
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -259,6 +273,7 @@ public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -270,6 +285,7 @@ public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -294,6 +310,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRe
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -313,6 +330,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -329,6 +347,7 @@ public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -340,6 +359,7 @@ public enum V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -364,6 +384,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSe
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -384,6 +405,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderResourceGroupNameSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderSmsReceiver
 {
     /// <summary>The country code of the SMS receiver.</summary>
@@ -401,6 +423,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderSmsReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderVoiceReceiver
 {
     /// <summary>The country code of the voice receiver.</summary>
@@ -418,6 +441,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderVoiceReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderWebhookReceiverAadAuth
 {
     /// <summary>The identifier URI for AAD auth.</summary>
@@ -435,6 +459,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderWebhookReceiverAadA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProviderWebhookReceiver
 {
     /// <summary>The aad_auth block as defined below.</summary>
@@ -456,6 +481,7 @@ public partial class V1beta1MonitorActionGroupSpecForProviderWebhookReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecForProvider
 {
     /// <summary>One or more arm_role_receiver blocks as defined below.</summary>
@@ -533,6 +559,7 @@ public partial class V1beta1MonitorActionGroupSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderArmRoleReceiver
 {
     /// <summary>The name of the ARM role receiver.</summary>
@@ -550,6 +577,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderArmRoleReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderAutomationRunbookReceiver
 {
     /// <summary>The automation account ID which holds this runbook and authenticates to Azure resources.</summary>
@@ -583,6 +611,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderAutomationRunbookR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderAzureAppPushReceiver
 {
     /// <summary>The email address of the user signed into the mobile app who will receive push notifications from this receiver.</summary>
@@ -596,6 +625,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderAzureAppPushReceiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderAzureFunctionReceiver
 {
     /// <summary>The Azure resource ID of the function app.</summary>
@@ -621,6 +651,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderAzureFunctionRecei
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderEmailReceiver
 {
     /// <summary>The email address of this receiver.</summary>
@@ -638,6 +669,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderEmailReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderEventHubReceiver
 {
     /// <summary>The name of the specific Event Hub queue.</summary>
@@ -667,6 +699,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderEventHubReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderItsmReceiver
 {
     /// <summary>The unique connection identifier of the ITSM connection.</summary>
@@ -692,6 +725,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderItsmReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderLogicAppReceiver
 {
     /// <summary>The callback url where HTTP request sent to.</summary>
@@ -713,6 +747,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderLogicAppReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderSmsReceiver
 {
     /// <summary>The country code of the SMS receiver.</summary>
@@ -730,6 +765,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderSmsReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderVoiceReceiver
 {
     /// <summary>The country code of the voice receiver.</summary>
@@ -747,6 +783,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderVoiceReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderWebhookReceiverAadAuth
 {
     /// <summary>The identifier URI for AAD auth.</summary>
@@ -764,6 +801,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderWebhookReceiverAad
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProviderWebhookReceiver
 {
     /// <summary>The aad_auth block as defined below.</summary>
@@ -797,6 +835,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProviderWebhookReceiver
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecInitProvider
 {
     /// <summary>One or more arm_role_receiver blocks as defined below.</summary>
@@ -866,6 +905,7 @@ public partial class V1beta1MonitorActionGroupSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -890,6 +930,7 @@ public enum V1beta1MonitorActionGroupSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -906,6 +947,7 @@ public enum V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -917,6 +959,7 @@ public enum V1beta1MonitorActionGroupSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -945,6 +988,7 @@ public partial class V1beta1MonitorActionGroupSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -964,6 +1008,7 @@ public partial class V1beta1MonitorActionGroupSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -978,6 +1023,7 @@ public partial class V1beta1MonitorActionGroupSpecWriteConnectionSecretToRef
 /// <summary>MonitorActionGroupSpec defines the desired state of MonitorActionGroup</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupSpec
 {
     /// <summary>
@@ -1045,6 +1091,7 @@ public partial class V1beta1MonitorActionGroupSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderArmRoleReceiver
 {
     /// <summary>The name of the ARM role receiver.</summary>
@@ -1062,6 +1109,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderArmRoleReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderAutomationRunbookReceiver
 {
     /// <summary>The automation account ID which holds this runbook and authenticates to Azure resources.</summary>
@@ -1095,6 +1143,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderAutomationRunbookR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderAzureAppPushReceiver
 {
     /// <summary>The email address of the user signed into the mobile app who will receive push notifications from this receiver.</summary>
@@ -1108,6 +1157,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderAzureAppPushReceiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderAzureFunctionReceiver
 {
     /// <summary>The Azure resource ID of the function app.</summary>
@@ -1133,6 +1183,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderAzureFunctionRecei
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderEmailReceiver
 {
     /// <summary>The email address of this receiver.</summary>
@@ -1150,6 +1201,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderEmailReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderEventHubReceiver
 {
     /// <summary>The name of the specific Event Hub queue.</summary>
@@ -1179,6 +1231,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderEventHubReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderItsmReceiver
 {
     /// <summary>The unique connection identifier of the ITSM connection.</summary>
@@ -1204,6 +1257,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderItsmReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderLogicAppReceiver
 {
     /// <summary>The callback url where HTTP request sent to.</summary>
@@ -1225,6 +1279,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderLogicAppReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderSmsReceiver
 {
     /// <summary>The country code of the SMS receiver.</summary>
@@ -1242,6 +1297,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderSmsReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderVoiceReceiver
 {
     /// <summary>The country code of the voice receiver.</summary>
@@ -1259,6 +1315,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderVoiceReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderWebhookReceiverAadAuth
 {
     /// <summary>The identifier URI for AAD auth.</summary>
@@ -1276,6 +1333,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderWebhookReceiverAad
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProviderWebhookReceiver
 {
     /// <summary>The aad_auth block as defined below.</summary>
@@ -1297,6 +1355,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProviderWebhookReceiver
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusAtProvider
 {
     /// <summary>One or more arm_role_receiver blocks as defined below.</summary>
@@ -1371,6 +1430,7 @@ public partial class V1beta1MonitorActionGroupStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatusConditions
 {
     /// <summary>
@@ -1414,6 +1474,7 @@ public partial class V1beta1MonitorActionGroupStatusConditions
 /// <summary>MonitorActionGroupStatus defines the observed state of MonitorActionGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorActionGroupStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1432,9 +1493,13 @@ public partial class V1beta1MonitorActionGroupStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MonitorActionGroup is the Schema for the MonitorActionGroups API. Manages an Action Group within Azure Monitor</summary>
+/// <summary>
+/// MonitorActionGroup is the Schema for the MonitorActionGroups API. Manages an Action Group within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorActionGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorActionGroupSpec>, IStatus<V1beta1MonitorActionGroupStatus?>
 {

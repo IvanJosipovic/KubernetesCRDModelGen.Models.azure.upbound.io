@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
-/// <summary>MonitorScheduledQueryRulesAlertV2 is the Schema for the MonitorScheduledQueryRulesAlertV2s API. Manages an AlertingAction Scheduled Query Rules Version 2 resource within Azure Monitor</summary>
+/// <summary>
+/// MonitorScheduledQueryRulesAlertV2 is the Schema for the MonitorScheduledQueryRulesAlertV2s API. Manages an AlertingAction Scheduled Query Rules Version 2 resource within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2List : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorScheduledQueryRulesAlertV2>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2List : IKubernetesO
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionG
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefsPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActi
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionG
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActi
 /// <summary>Selector for a list of MonitorActionGroup in insights to populate actionGroups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActionActionGroupsSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderAction
 {
     /// <summary>List of Action Group resource IDs to invoke when the alert fires.</summary>
@@ -225,6 +239,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCriteriaDimension
 {
     /// <summary>Specifies the name which should be used for this Monitor Scheduled Query Rule. Changing this forces a new resource to be created.</summary>
@@ -242,6 +257,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCrit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCriteriaFailingPeriods
 {
     /// <summary>Specifies the number of violations to trigger an alert. Should be smaller or equal to number_of_evaluation_periods. Possible value is integer between 1 and 6.</summary>
@@ -255,6 +271,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCrit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCriteria
 {
     /// <summary>A dimension block as defined below.</summary>
@@ -298,6 +315,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderCrit
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -314,6 +332,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -325,6 +344,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdent
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -349,6 +369,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIden
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -368,6 +389,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -384,6 +406,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdent
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -395,6 +418,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdent
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -419,6 +443,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIden
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -439,6 +464,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIden
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Scheduled Query Rule.</summary>
@@ -466,6 +492,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -482,6 +509,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -493,6 +521,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroup
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -517,6 +546,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderReso
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -536,6 +566,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -552,6 +583,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -563,6 +595,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroup
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -587,6 +620,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderReso
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -613,6 +647,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -629,6 +664,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -640,6 +676,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefsPolicy
 {
     /// <summary>
@@ -664,6 +701,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScop
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -683,6 +721,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScop
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -699,6 +738,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -710,6 +750,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelectorPolicy
 {
     /// <summary>
@@ -734,6 +775,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScop
 /// <summary>Selector for a list of ApplicationInsights in insights to populate scopes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScopesSelector
 {
     /// <summary>
@@ -754,6 +796,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProviderScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProvider
 {
     /// <summary>An action block as defined below.</summary>
@@ -857,6 +900,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -873,6 +917,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -884,6 +929,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionAction
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefsPolicy
 {
     /// <summary>
@@ -908,6 +954,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAct
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -927,6 +974,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAct
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -943,6 +991,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -954,6 +1003,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionAction
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelectorPolicy
 {
     /// <summary>
@@ -978,6 +1028,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAct
 /// <summary>Selector for a list of MonitorActionGroup in insights to populate actionGroups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderActionActionGroupsSelector
 {
     /// <summary>
@@ -998,6 +1049,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAction
 {
     /// <summary>List of Action Group resource IDs to invoke when the alert fires.</summary>
@@ -1019,6 +1071,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCriteriaDimension
 {
     /// <summary>Specifies the name which should be used for this Monitor Scheduled Query Rule. Changing this forces a new resource to be created.</summary>
@@ -1036,6 +1089,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCriteriaFailingPeriods
 {
     /// <summary>Specifies the number of violations to trigger an alert. Should be smaller or equal to number_of_evaluation_periods. Possible value is integer between 1 and 6.</summary>
@@ -1049,6 +1103,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCriteria
 {
     /// <summary>A dimension block as defined below.</summary>
@@ -1092,6 +1147,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderCri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1108,6 +1164,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1119,6 +1176,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIden
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -1143,6 +1201,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIde
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1162,6 +1221,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIde
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1178,6 +1238,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1189,6 +1250,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIden
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -1213,6 +1275,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIde
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -1233,6 +1296,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIde
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Scheduled Query Rule.</summary>
@@ -1260,6 +1324,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderIde
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1276,6 +1341,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1287,6 +1353,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefsPolicy
 {
     /// <summary>
@@ -1311,6 +1378,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderSco
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1330,6 +1398,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderSco
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1346,6 +1415,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1357,6 +1427,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelectorPolicy
 {
     /// <summary>
@@ -1381,6 +1452,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderSco
 /// <summary>Selector for a list of ApplicationInsights in insights to populate scopes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderScopesSelector
 {
     /// <summary>
@@ -1413,6 +1485,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProviderSco
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProvider
 {
     /// <summary>An action block as defined below.</summary>
@@ -1502,6 +1575,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1526,6 +1600,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1542,6 +1617,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1553,6 +1629,7 @@ public enum V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1581,6 +1658,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1600,6 +1678,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecProviderConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1614,6 +1693,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2SpecWriteConnection
 /// <summary>MonitorScheduledQueryRulesAlertV2Spec defines the desired state of MonitorScheduledQueryRulesAlertV2</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2Spec
 {
     /// <summary>
@@ -1681,6 +1761,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2Spec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderAction
 {
     /// <summary>List of Action Group resource IDs to invoke when the alert fires.</summary>
@@ -1694,6 +1775,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCriteriaDimension
 {
     /// <summary>Specifies the name which should be used for this Monitor Scheduled Query Rule. Changing this forces a new resource to be created.</summary>
@@ -1711,6 +1793,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCriteriaFailingPeriods
 {
     /// <summary>Specifies the number of violations to trigger an alert. Should be smaller or equal to number_of_evaluation_periods. Possible value is integer between 1 and 6.</summary>
@@ -1724,6 +1807,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCriteria
 {
     /// <summary>A dimension block as defined below.</summary>
@@ -1761,6 +1845,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderCri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Scheduled Query Rule.</summary>
@@ -1782,6 +1867,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProviderIde
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProvider
 {
     /// <summary>An action block as defined below.</summary>
@@ -1880,6 +1966,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusConditions
 {
     /// <summary>
@@ -1923,6 +2010,7 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2StatusConditions
 /// <summary>MonitorScheduledQueryRulesAlertV2Status defines the observed state of MonitorScheduledQueryRulesAlertV2.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2Status
 {
     [JsonPropertyName("atProvider")]
@@ -1941,9 +2029,13 @@ public partial class V1beta1MonitorScheduledQueryRulesAlertV2Status
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MonitorScheduledQueryRulesAlertV2 is the Schema for the MonitorScheduledQueryRulesAlertV2s API. Manages an AlertingAction Scheduled Query Rules Version 2 resource within Azure Monitor</summary>
+/// <summary>
+/// MonitorScheduledQueryRulesAlertV2 is the Schema for the MonitorScheduledQueryRulesAlertV2s API. Manages an AlertingAction Scheduled Query Rules Version 2 resource within Azure Monitor
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorScheduledQueryRulesAlertV2 : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorScheduledQueryRulesAlertV2Spec>, IStatus<V1beta1MonitorScheduledQueryRulesAlertV2Status?>
 {

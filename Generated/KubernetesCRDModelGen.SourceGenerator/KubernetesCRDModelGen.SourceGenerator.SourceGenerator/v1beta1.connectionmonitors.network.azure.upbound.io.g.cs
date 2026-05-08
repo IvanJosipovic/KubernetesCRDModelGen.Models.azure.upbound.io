@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.</summary>
+/// <summary>
+/// ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionMonitorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectionMonitor>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ConnectionMonitorList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ConnectionMonitorSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderEndpointFilterItem
 {
     /// <summary>The address of the filter item.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderEndpointFilterItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderEndpointFilter
 {
     /// <summary>A item block as defined below.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderEndpointFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderEndpoint
 {
     /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
@@ -126,6 +134,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderEndpoint
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -142,6 +151,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -153,6 +163,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefPolicy
 {
     /// <summary>
@@ -177,6 +188,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRefP
 /// <summary>Reference to a Watcher in network to populate networkWatcherId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -196,6 +208,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -212,6 +225,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -223,6 +237,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelectorPolicy
 {
     /// <summary>
@@ -247,6 +262,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSele
 /// <summary>Selector for a Watcher in network to populate networkWatcherId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSelector
 {
     /// <summary>
@@ -273,6 +289,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderNetworkWatcherIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -289,6 +306,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -300,6 +318,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefsPolicy
 {
     /// <summary>
@@ -324,6 +343,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResou
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -343,6 +363,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -359,6 +380,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -370,6 +392,7 @@ public enum V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelectorPolicy
 {
     /// <summary>
@@ -394,6 +417,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResou
 /// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResourceIdsSelector
 {
     /// <summary>
@@ -414,6 +438,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderOutputWorkspaceResou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationHttpConfigurationRequestHeader
 {
     /// <summary>The name of the test group for the Network Connection Monitor.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationHttpConfiguration
 {
     /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
@@ -456,6 +482,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationIcmpConfiguration
 {
     /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
@@ -465,6 +492,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationIcm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationSuccessThreshold
 {
     /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
@@ -478,6 +506,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationSuc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationTcpConfiguration
 {
     /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
@@ -495,6 +524,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfigurationTcp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestConfiguration
 {
     /// <summary>A http_configuration block as defined below.</summary>
@@ -532,6 +562,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProviderTestGroup
 {
     /// <summary>A list of destination endpoint names.</summary>
@@ -557,6 +588,7 @@ public partial class V1beta1ConnectionMonitorSpecForProviderTestGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecForProvider
 {
     /// <summary>A endpoint block as defined below.</summary>
@@ -610,6 +642,7 @@ public partial class V1beta1ConnectionMonitorSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderEndpointFilterItem
 {
     /// <summary>The address of the filter item.</summary>
@@ -623,6 +656,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderEndpointFilterItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderEndpointFilter
 {
     /// <summary>A item block as defined below.</summary>
@@ -636,6 +670,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderEndpointFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderEndpoint
 {
     /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
@@ -679,6 +714,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderEndpoint
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -695,6 +731,7 @@ public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -706,6 +743,7 @@ public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefsPolicy
 {
     /// <summary>
@@ -730,6 +768,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceReso
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -749,6 +788,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -765,6 +805,7 @@ public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -776,6 +817,7 @@ public enum V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelectorPolicy
 {
     /// <summary>
@@ -800,6 +842,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceReso
 /// <summary>Selector for a list of Workspace in operationalinsights to populate outputWorkspaceResourceIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceResourceIdsSelector
 {
     /// <summary>
@@ -820,6 +863,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderOutputWorkspaceReso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationHttpConfigurationRequestHeader
 {
     /// <summary>The name of the test group for the Network Connection Monitor.</summary>
@@ -833,6 +877,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationHttpConfiguration
 {
     /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
@@ -862,6 +907,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationIcmpConfiguration
 {
     /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
@@ -871,6 +917,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationIc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationSuccessThreshold
 {
     /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
@@ -884,6 +931,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationSu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationTcpConfiguration
 {
     /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
@@ -901,6 +949,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfigurationTc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfiguration
 {
     /// <summary>A http_configuration block as defined below.</summary>
@@ -938,6 +987,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProviderTestGroup
 {
     /// <summary>A list of destination endpoint names.</summary>
@@ -975,6 +1025,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProviderTestGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecInitProvider
 {
     /// <summary>A endpoint block as defined below.</summary>
@@ -1020,6 +1071,7 @@ public partial class V1beta1ConnectionMonitorSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1044,6 +1096,7 @@ public enum V1beta1ConnectionMonitorSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1060,6 +1113,7 @@ public enum V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1071,6 +1125,7 @@ public enum V1beta1ConnectionMonitorSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1099,6 +1154,7 @@ public partial class V1beta1ConnectionMonitorSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1118,6 +1174,7 @@ public partial class V1beta1ConnectionMonitorSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1132,6 +1189,7 @@ public partial class V1beta1ConnectionMonitorSpecWriteConnectionSecretToRef
 /// <summary>ConnectionMonitorSpec defines the desired state of ConnectionMonitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorSpec
 {
     /// <summary>
@@ -1199,6 +1257,7 @@ public partial class V1beta1ConnectionMonitorSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderEndpointFilterItem
 {
     /// <summary>The address of the filter item.</summary>
@@ -1212,6 +1271,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderEndpointFilterItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderEndpointFilter
 {
     /// <summary>A item block as defined below.</summary>
@@ -1225,6 +1285,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderEndpointFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderEndpoint
 {
     /// <summary>The IP address or domain name of the Network Connection Monitor endpoint.</summary>
@@ -1262,6 +1323,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationHttpConfigurationRequestHeader
 {
     /// <summary>The name of the test group for the Network Connection Monitor.</summary>
@@ -1275,6 +1337,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationHttpConfiguration
 {
     /// <summary>The HTTP method for the HTTP request. Possible values are Get and Post. Defaults to Get.</summary>
@@ -1304,6 +1367,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationIcmpConfiguration
 {
     /// <summary>Should path evaluation with trace route be enabled? Defaults to true.</summary>
@@ -1313,6 +1377,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationIc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationSuccessThreshold
 {
     /// <summary>The maximum percentage of failed checks permitted for a test to be successful.</summary>
@@ -1326,6 +1391,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationSu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationTcpConfiguration
 {
     /// <summary>The destination port behavior for the TCP connection. Possible values are None and ListenIfAvailable.</summary>
@@ -1343,6 +1409,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfigurationTc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfiguration
 {
     /// <summary>A http_configuration block as defined below.</summary>
@@ -1380,6 +1447,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProviderTestGroup
 {
     /// <summary>A list of destination endpoint names.</summary>
@@ -1405,6 +1473,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProviderTestGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusAtProvider
 {
     /// <summary>A endpoint block as defined below.</summary>
@@ -1447,6 +1516,7 @@ public partial class V1beta1ConnectionMonitorStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatusConditions
 {
     /// <summary>
@@ -1490,6 +1560,7 @@ public partial class V1beta1ConnectionMonitorStatusConditions
 /// <summary>ConnectionMonitorStatus defines the observed state of ConnectionMonitor.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionMonitorStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1508,9 +1579,13 @@ public partial class V1beta1ConnectionMonitorStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.</summary>
+/// <summary>
+/// ConnectionMonitor is the Schema for the ConnectionMonitors API. Manages a Network Connection Monitor.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionMonitor : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionMonitorSpec>, IStatus<V1beta1ConnectionMonitorStatus?>
 {

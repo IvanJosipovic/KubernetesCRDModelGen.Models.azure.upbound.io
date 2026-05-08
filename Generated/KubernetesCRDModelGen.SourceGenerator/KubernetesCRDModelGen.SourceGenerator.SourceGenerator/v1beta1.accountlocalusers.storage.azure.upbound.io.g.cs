@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
-/// <summary>AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.</summary>
+/// <summary>
+/// AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountLocalUserList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountLocalUser>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1AccountLocalUserList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1AccountLocalUserSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopePermissions
 {
     /// <summary>(Defaults to 30 minutes) Used when creating the Storage Account Local User.</summary>
@@ -88,6 +94,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopePermis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -104,6 +111,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -115,6 +123,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRefPolicy
 {
     /// <summary>
@@ -139,6 +148,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 /// <summary>Reference to a Container in storage to populate resourceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -158,6 +168,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -174,6 +185,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -185,6 +197,7 @@ public enum V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelectorPolicy
 {
     /// <summary>
@@ -209,6 +222,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 /// <summary>Selector for a Container in storage to populate resourceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResourceNameSelector
 {
     /// <summary>
@@ -229,6 +243,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScopeResour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderPermissionScope
 {
     /// <summary>A permissions block as defined below.</summary>
@@ -254,6 +269,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderPermissionScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderSshAuthorizedKey
 {
     /// <summary>The description of this SSH authorized key.</summary>
@@ -273,6 +289,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderSshAuthorizedKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -289,6 +306,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -300,6 +318,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -324,6 +343,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRefPo
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -343,6 +363,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -359,6 +380,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -370,6 +392,7 @@ public enum V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -394,6 +417,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelec
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelector
 {
     /// <summary>
@@ -414,6 +438,7 @@ public partial class V1beta1AccountLocalUserSpecForProviderStorageAccountIdSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecForProvider
 {
     /// <summary>The home directory of the Storage Account Local User.</summary>
@@ -451,6 +476,7 @@ public partial class V1beta1AccountLocalUserSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopePermissions
 {
     /// <summary>(Defaults to 30 minutes) Used when creating the Storage Account Local User.</summary>
@@ -482,6 +508,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopePermi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -498,6 +525,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -509,6 +537,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRefPolicy
 {
     /// <summary>
@@ -533,6 +562,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 /// <summary>Reference to a Container in storage to populate resourceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -552,6 +582,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -568,6 +599,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -579,6 +611,7 @@ public enum V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelectorPolicy
 {
     /// <summary>
@@ -603,6 +636,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 /// <summary>Selector for a Container in storage to populate resourceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResourceNameSelector
 {
     /// <summary>
@@ -623,6 +657,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScopeResou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScope
 {
     /// <summary>A permissions block as defined below.</summary>
@@ -648,6 +683,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderPermissionScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProviderSshAuthorizedKey
 {
     /// <summary>The description of this SSH authorized key.</summary>
@@ -673,6 +709,7 @@ public partial class V1beta1AccountLocalUserSpecInitProviderSshAuthorizedKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecInitProvider
 {
     /// <summary>The home directory of the Storage Account Local User.</summary>
@@ -702,6 +739,7 @@ public partial class V1beta1AccountLocalUserSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -726,6 +764,7 @@ public enum V1beta1AccountLocalUserSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -742,6 +781,7 @@ public enum V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -753,6 +793,7 @@ public enum V1beta1AccountLocalUserSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -781,6 +822,7 @@ public partial class V1beta1AccountLocalUserSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -800,6 +842,7 @@ public partial class V1beta1AccountLocalUserSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -814,6 +857,7 @@ public partial class V1beta1AccountLocalUserSpecWriteConnectionSecretToRef
 /// <summary>AccountLocalUserSpec defines the desired state of AccountLocalUser</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserSpec
 {
     /// <summary>
@@ -881,6 +925,7 @@ public partial class V1beta1AccountLocalUserSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScopePermissions
 {
     /// <summary>(Defaults to 30 minutes) Used when creating the Storage Account Local User.</summary>
@@ -906,6 +951,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScopePermi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScope
 {
     /// <summary>A permissions block as defined below.</summary>
@@ -923,6 +969,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderPermissionScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatusAtProviderSshAuthorizedKey
 {
     /// <summary>The description of this SSH authorized key.</summary>
@@ -936,6 +983,7 @@ public partial class V1beta1AccountLocalUserStatusAtProviderSshAuthorizedKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatusAtProvider
 {
     /// <summary>The home directory of the Storage Account Local User.</summary>
@@ -970,6 +1018,7 @@ public partial class V1beta1AccountLocalUserStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatusConditions
 {
     /// <summary>
@@ -1013,6 +1062,7 @@ public partial class V1beta1AccountLocalUserStatusConditions
 /// <summary>AccountLocalUserStatus defines the observed state of AccountLocalUser.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AccountLocalUserStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1031,9 +1081,13 @@ public partial class V1beta1AccountLocalUserStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.</summary>
+/// <summary>
+/// AccountLocalUser is the Schema for the AccountLocalUsers API. Manages a Storage Account Local User.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountLocalUser : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountLocalUserSpec>, IStatus<V1beta1AccountLocalUserStatus?>
 {

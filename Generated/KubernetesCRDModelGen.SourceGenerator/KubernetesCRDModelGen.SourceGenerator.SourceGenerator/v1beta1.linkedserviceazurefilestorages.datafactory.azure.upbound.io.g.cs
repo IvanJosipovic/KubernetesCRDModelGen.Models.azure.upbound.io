@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureFileStorageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceAzureFileStorage>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecDeletionPolicyEnum
 /// <summary>The connection string.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -81,6 +87,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderConnecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -97,6 +104,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -108,6 +116,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -132,6 +141,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -167,6 +178,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -178,6 +190,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -202,6 +215,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -222,6 +236,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderDataFact
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -236,6 +251,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderKeyVault
 /// <summary>The password to log in the server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -253,6 +269,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProviderPassword
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecForProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -315,6 +332,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecForProvider
 /// <summary>The connection string.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -332,6 +350,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderConnect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -346,6 +365,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderKeyVaul
 /// <summary>The password to log in the server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -375,6 +395,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProviderPasswor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -428,6 +449,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -452,6 +474,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -468,6 +491,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -479,6 +503,7 @@ public enum V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -507,6 +532,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -526,6 +552,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -540,6 +567,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpecWriteConnectionSecr
 /// <summary>LinkedServiceAzureFileStorageSpec defines the desired state of LinkedServiceAzureFileStorage</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageSpec
 {
     /// <summary>
@@ -607,6 +635,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProviderKeyVaultPassword
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -620,6 +649,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -670,6 +700,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageStatusConditions
 {
     /// <summary>
@@ -713,6 +744,7 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatusConditions
 /// <summary>LinkedServiceAzureFileStorageStatus defines the observed state of LinkedServiceAzureFileStorage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureFileStorageStatus
 {
     [JsonPropertyName("atProvider")]
@@ -731,9 +763,13 @@ public partial class V1beta1LinkedServiceAzureFileStorageStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureFileStorage is the Schema for the LinkedServiceAzureFileStorages API. Manages a Linked Service (connection) between an Azure File Storage Account and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureFileStorage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceAzureFileStorageSpec>, IStatus<V1beta1LinkedServiceAzureFileStorageStatus?>
 {

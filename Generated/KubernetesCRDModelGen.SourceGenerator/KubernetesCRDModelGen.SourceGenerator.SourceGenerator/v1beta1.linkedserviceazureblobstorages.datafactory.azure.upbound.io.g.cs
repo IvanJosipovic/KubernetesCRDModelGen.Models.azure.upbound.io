@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.upbound.io;
-/// <summary>LinkedServiceAzureBlobStorage is the Schema for the LinkedServiceAzureBlobStorages API. Manages a Linked Service (connection) between an Azure Blob Storage Account and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureBlobStorage is the Schema for the LinkedServiceAzureBlobStorages API. Manages a Linked Service (connection) between an Azure Blob Storage Account and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureBlobStorageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LinkedServiceAzureBlobStorage>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecDeletionPolicyEnum
 /// <summary>The connection string. Conflicts with connection_string_insecure, sas_uri and service_endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -81,6 +87,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderConnecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -97,6 +104,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -108,6 +116,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRefPolicy
 {
     /// <summary>
@@ -132,6 +141,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFact
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFact
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -167,6 +178,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -178,6 +190,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelectorPolicy
 {
     /// <summary>
@@ -202,6 +215,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFact
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFactoryIdSelector
 {
     /// <summary>
@@ -228,6 +242,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderDataFact
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -244,6 +259,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -255,6 +271,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenL
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -279,6 +296,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVault
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -298,6 +316,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVault
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -314,6 +333,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -325,6 +345,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenL
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -349,6 +370,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVault
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasTokenLinkedServiceNameSelector
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVault
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVaultSasToken
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -391,6 +414,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderKeyVault
 /// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderSasuriSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -409,6 +433,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderSasuriSe
 /// <summary>The Service Endpoint. Conflicts with connection_string, connection_string_insecure and sas_uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceEndpointSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -432,6 +457,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -448,6 +474,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -459,6 +486,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalL
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -483,6 +511,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceP
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -502,6 +531,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -518,6 +548,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -529,6 +560,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalL
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -553,6 +585,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceP
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelector
 {
     /// <summary>
@@ -573,6 +606,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServicePrincipalLinkedKeyVaultKey
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -594,6 +628,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProviderServiceP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -676,6 +711,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecForProvider
 /// <summary>The connection string. Conflicts with connection_string_insecure, sas_uri and service_endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderConnectionStringSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -699,6 +735,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderConnect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -715,6 +752,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -726,6 +764,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -750,6 +789,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -769,6 +809,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -785,6 +826,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -796,6 +838,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -820,6 +863,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasTokenLinkedServiceNameSelector
 {
     /// <summary>
@@ -840,6 +884,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaultSasToken
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -862,6 +907,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderKeyVaul
 /// <summary>The SAS URI. Conflicts with connection_string_insecure, connection_string and service_endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderSasuriSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -880,6 +926,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderSasuriS
 /// <summary>The Service Endpoint. Conflicts with connection_string, connection_string_insecure and sas_uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServiceEndpointSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -903,6 +950,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -919,6 +967,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipal
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -930,6 +979,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipal
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRefPolicy
 {
     /// <summary>
@@ -954,6 +1004,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 /// <summary>Reference to a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -973,6 +1024,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -989,6 +1041,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipal
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1000,6 +1053,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipal
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelectorPolicy
 {
     /// <summary>
@@ -1024,6 +1078,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 /// <summary>Selector for a LinkedServiceKeyVault in datafactory to populate linkedServiceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKeyLinkedServiceNameSelector
 {
     /// <summary>
@@ -1044,6 +1099,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderServicePrincipalLinkedKeyVaultKey
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -1077,6 +1133,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProviderService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -1150,6 +1207,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1174,6 +1232,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1190,6 +1249,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1201,6 +1261,7 @@ public enum V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1229,6 +1290,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1248,6 +1310,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1262,6 +1325,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpecWriteConnectionSecr
 /// <summary>LinkedServiceAzureBlobStorageSpec defines the desired state of LinkedServiceAzureBlobStorage</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageSpec
 {
     /// <summary>
@@ -1329,6 +1393,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProviderKeyVaultSasToken
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -1342,6 +1407,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProviderKeyVaul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProviderServicePrincipalLinkedKeyVaultKey
 {
     /// <summary>Specifies the name of an existing Key Vault Data Factory Linked Service.</summary>
@@ -1355,6 +1421,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProviderService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProvider
 {
     /// <summary>A map of additional properties to associate with the Data Factory Linked Service.</summary>
@@ -1421,6 +1488,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageStatusConditions
 {
     /// <summary>
@@ -1464,6 +1532,7 @@ public partial class V1beta1LinkedServiceAzureBlobStorageStatusConditions
 /// <summary>LinkedServiceAzureBlobStorageStatus defines the observed state of LinkedServiceAzureBlobStorage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LinkedServiceAzureBlobStorageStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1482,9 +1551,13 @@ public partial class V1beta1LinkedServiceAzureBlobStorageStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LinkedServiceAzureBlobStorage is the Schema for the LinkedServiceAzureBlobStorages API. Manages a Linked Service (connection) between an Azure Blob Storage Account and Azure Data Factory.</summary>
+/// <summary>
+/// LinkedServiceAzureBlobStorage is the Schema for the LinkedServiceAzureBlobStorages API. Manages a Linked Service (connection) between an Azure Blob Storage Account and Azure Data Factory.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LinkedServiceAzureBlobStorage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LinkedServiceAzureBlobStorageSpec>, IStatus<V1beta1LinkedServiceAzureBlobStorageStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.</summary>
+/// <summary>
+/// ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExpressRouteCircuitPeeringList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ExpressRouteCircuitPeering>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRout
 /// <summary>Reference to a ExpressRouteCircuit in network to populate expressRouteCircuitName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRout
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitN
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRout
 /// <summary>Selector for a ExpressRouteCircuit in network to populate expressRouteCircuitName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRouteCircuitNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderExpressRout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderIpv6MicrosoftPeering
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -225,6 +239,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderIpv6Microso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderIpv6
 {
     /// <summary>A boolean value indicating whether the IPv6 peering is enabled. Defaults to true.</summary>
@@ -250,6 +265,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderMicrosoftPeeringConfig
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -277,6 +293,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderMicrosoftPe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -293,6 +310,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -304,6 +322,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -328,6 +347,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGro
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -347,6 +367,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -363,6 +384,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -374,6 +396,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -398,6 +421,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGro
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -419,6 +443,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderResourceGro
 /// <summary>The shared key. Can be a maximum of 25 characters.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderSharedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -436,6 +461,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProviderSharedKeySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecForProvider
 {
     /// <summary>The name of the ExpressRoute Circuit in which to create the Peering. Changing this forces a new resource to be created.</summary>
@@ -501,6 +527,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderIpv6MicrosoftPeering
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -522,6 +549,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderIpv6Micros
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderIpv6
 {
     /// <summary>A boolean value indicating whether the IPv6 peering is enabled. Defaults to true.</summary>
@@ -547,6 +575,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderMicrosoftPeeringConfig
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -569,6 +598,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderMicrosoftP
 /// <summary>The shared key. Can be a maximum of 25 characters.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderSharedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -598,6 +628,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProviderSharedKeyS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProvider
 {
     /// <summary>A boolean value indicating whether the IPv4 peering is enabled. Defaults to true.</summary>
@@ -643,6 +674,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -667,6 +699,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -683,6 +716,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -694,6 +728,7 @@ public enum V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -722,6 +757,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -741,6 +777,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -755,6 +792,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpecWriteConnectionSecretT
 /// <summary>ExpressRouteCircuitPeeringSpec defines the desired state of ExpressRouteCircuitPeering</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringSpec
 {
     /// <summary>
@@ -822,6 +860,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderIpv6MicrosoftPeering
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -843,6 +882,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderIpv6Micros
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderIpv6
 {
     /// <summary>A boolean value indicating whether the IPv6 peering is enabled. Defaults to true.</summary>
@@ -868,6 +908,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderMicrosoftPeeringConfig
 {
     /// <summary>The communities of Bgp Peering specified for microsoft peering.</summary>
@@ -889,6 +930,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProviderMicrosoftP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProvider
 {
     /// <summary>The ASN used by Azure.</summary>
@@ -954,6 +996,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatusConditions
 {
     /// <summary>
@@ -997,6 +1040,7 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatusConditions
 /// <summary>ExpressRouteCircuitPeeringStatus defines the observed state of ExpressRouteCircuitPeering.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ExpressRouteCircuitPeeringStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1015,9 +1059,13 @@ public partial class V1beta1ExpressRouteCircuitPeeringStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.</summary>
+/// <summary>
+/// ExpressRouteCircuitPeering is the Schema for the ExpressRouteCircuitPeerings API. Manages an ExpressRoute Circuit Peering.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExpressRouteCircuitPeering : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ExpressRouteCircuitPeeringSpec>, IStatus<V1beta1ExpressRouteCircuitPeeringStatus?>
 {

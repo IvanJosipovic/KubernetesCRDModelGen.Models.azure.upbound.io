@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.upbound.io;
-/// <summary>SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.</summary>
+/// <summary>
+/// SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SiteRecoveryProtectionContainerMapping>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingList : IKubern
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderAutomaticUpdate
 {
     /// <summary>The authentication type used for automation account. Possible values are RunAsAccount and SystemAssignedIdentity.</summary>
@@ -80,6 +86,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -96,6 +103,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -107,6 +115,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicy
 {
     /// <summary>
@@ -131,6 +140,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a SiteRecoveryFabric in recoveryservices to populate recoveryFabricName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -166,6 +177,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -177,6 +189,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicy
 {
     /// <summary>
@@ -201,6 +214,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a SiteRecoveryFabric in recoveryservices to populate recoveryFabricName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelector
 {
     /// <summary>
@@ -227,6 +241,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -243,6 +258,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -254,6 +270,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicy
 {
     /// <summary>
@@ -278,6 +295,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -313,6 +332,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -324,6 +344,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicy
 {
     /// <summary>
@@ -348,6 +369,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelector
 {
     /// <summary>
@@ -374,6 +396,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -390,6 +413,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -401,6 +425,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicy
 {
     /// <summary>
@@ -425,6 +450,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoverySourceProtectionContainerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -444,6 +470,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -460,6 +487,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -471,6 +499,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicy
 {
     /// <summary>
@@ -495,6 +524,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoverySourceProtectionContainerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelector
 {
     /// <summary>
@@ -521,6 +551,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -537,6 +568,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -548,6 +580,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicy
 {
     /// <summary>
@@ -572,6 +605,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -591,6 +625,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -607,6 +642,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -618,6 +654,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicy
 {
     /// <summary>
@@ -642,6 +679,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelector
 {
     /// <summary>
@@ -668,6 +706,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -684,6 +723,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -695,6 +735,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicy
 {
     /// <summary>
@@ -719,6 +760,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -738,6 +780,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -754,6 +797,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -765,6 +809,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicy
 {
     /// <summary>
@@ -789,6 +834,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelector
 {
     /// <summary>
@@ -815,6 +861,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -831,6 +878,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -842,6 +890,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -866,6 +915,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -885,6 +935,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -901,6 +952,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -912,6 +964,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -936,6 +989,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -956,6 +1010,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvider
 {
     /// <summary>a automatic_update block defined as below.</summary>
@@ -1037,6 +1092,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecForProvide
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderAutomaticUpdate
 {
     /// <summary>The authentication type used for automation account. Possible values are RunAsAccount and SystemAssignedIdentity.</summary>
@@ -1060,6 +1116,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1076,6 +1133,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1087,6 +1145,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicy
 {
     /// <summary>
@@ -1111,6 +1170,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// <summary>Reference to a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1130,6 +1190,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1146,6 +1207,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1157,6 +1219,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicy
 {
     /// <summary>
@@ -1181,6 +1244,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// <summary>Selector for a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelector
 {
     /// <summary>
@@ -1207,6 +1271,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1223,6 +1288,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1234,6 +1300,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicy
 {
     /// <summary>
@@ -1258,6 +1325,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1277,6 +1345,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1293,6 +1362,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1304,6 +1374,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicy
 {
     /// <summary>
@@ -1328,6 +1399,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelector
 {
     /// <summary>
@@ -1360,6 +1432,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvider
 {
     /// <summary>a automatic_update block defined as below.</summary>
@@ -1397,6 +1470,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1421,6 +1495,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecManagementPoliciesE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1437,6 +1512,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1448,6 +1524,7 @@ public enum V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1476,6 +1553,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecProviderCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1495,6 +1573,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecProviderCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1509,6 +1588,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpecWriteConne
 /// <summary>SiteRecoveryProtectionContainerMappingSpec defines the desired state of SiteRecoveryProtectionContainerMapping</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingSpec
 {
     /// <summary>
@@ -1576,6 +1656,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusAtProviderAutomaticUpdate
 {
     /// <summary>The authentication type used for automation account. Possible values are RunAsAccount and SystemAssignedIdentity.</summary>
@@ -1593,6 +1674,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusAtProvid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusAtProvider
 {
     /// <summary>a automatic_update block defined as below.</summary>
@@ -1631,6 +1713,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusAtProvid
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusConditions
 {
     /// <summary>
@@ -1674,6 +1757,7 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingStatusConditio
 /// <summary>SiteRecoveryProtectionContainerMappingStatus defines the observed state of SiteRecoveryProtectionContainerMapping.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SiteRecoveryProtectionContainerMappingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1692,9 +1776,13 @@ public partial class V1beta1SiteRecoveryProtectionContainerMappingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.</summary>
+/// <summary>
+/// SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SiteRecoveryProtectionContainerMapping : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SiteRecoveryProtectionContainerMappingSpec>, IStatus<V1beta1SiteRecoveryProtectionContainerMappingStatus?>
 {

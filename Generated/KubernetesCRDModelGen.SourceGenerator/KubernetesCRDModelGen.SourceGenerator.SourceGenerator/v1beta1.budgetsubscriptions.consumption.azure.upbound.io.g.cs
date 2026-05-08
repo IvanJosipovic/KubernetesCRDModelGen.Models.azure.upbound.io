@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.consumption.azure.upbound.io;
-/// <summary>BudgetSubscription is the Schema for the BudgetSubscriptions API. Manages a Subscription Consumption Budget.</summary>
+/// <summary>
+/// BudgetSubscription is the Schema for the BudgetSubscriptions API. Manages a Subscription Consumption Budget.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BudgetSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BudgetSubscription>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1BudgetSubscriptionList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1BudgetSubscriptionSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefsPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValu
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValu
 /// <summary>Selector for a list of ResourceGroup in azure to populate values.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValuesSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimensionValu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimension
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -229,6 +243,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilterTag
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -246,6 +261,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilterTag
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderFilter
 {
     /// <summary>One or more dimension blocks as defined below to filter the budget on.</summary>
@@ -265,6 +281,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderFilter
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -281,6 +298,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -292,6 +310,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefsPolicy
 {
     /// <summary>
@@ -316,6 +335,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContact
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -335,6 +355,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContact
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -351,6 +372,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -362,6 +384,7 @@ public enum V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelectorPolicy
 {
     /// <summary>
@@ -386,6 +409,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContact
 /// <summary>Selector for a list of MonitorActionGroup in insights to populate contactGroups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContactGroupsSelector
 {
     /// <summary>
@@ -406,6 +430,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderNotificationContact
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderNotification
 {
     /// <summary>Specifies a list of email addresses to send the budget notification to when the threshold is exceeded.</summary>
@@ -447,6 +472,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProviderTimePeriod
 {
     /// <summary>The end date for the budget. If not set this will be 10 years after the start date.</summary>
@@ -460,6 +486,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProviderTimePeriod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecForProvider
 {
     /// <summary>The total amount of cost to track with the budget.</summary>
@@ -499,6 +526,7 @@ public partial class V1beta1BudgetSubscriptionSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -515,6 +543,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -526,6 +555,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefsPolicy
 {
     /// <summary>
@@ -550,6 +580,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionVal
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -569,6 +600,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionVal
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -585,6 +617,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -596,6 +629,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelectorPolicy
 {
     /// <summary>
@@ -620,6 +654,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionVal
 /// <summary>Selector for a list of ResourceGroup in azure to populate values.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionValuesSelector
 {
     /// <summary>
@@ -640,6 +675,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimensionVal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimension
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -665,6 +701,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterTag
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -682,6 +719,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilterTag
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderFilter
 {
     /// <summary>One or more dimension blocks as defined below to filter the budget on.</summary>
@@ -701,6 +739,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderFilter
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -717,6 +756,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -728,6 +768,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefsPolicy
 {
     /// <summary>
@@ -752,6 +793,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContac
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -771,6 +813,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContac
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -787,6 +830,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -798,6 +842,7 @@ public enum V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelectorPolicy
 {
     /// <summary>
@@ -822,6 +867,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContac
 /// <summary>Selector for a list of MonitorActionGroup in insights to populate contactGroups.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContactGroupsSelector
 {
     /// <summary>
@@ -842,6 +888,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderNotificationContac
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderNotification
 {
     /// <summary>Specifies a list of email addresses to send the budget notification to when the threshold is exceeded.</summary>
@@ -883,6 +930,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProviderTimePeriod
 {
     /// <summary>The end date for the budget. If not set this will be 10 years after the start date.</summary>
@@ -908,6 +956,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProviderTimePeriod
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecInitProvider
 {
     /// <summary>The total amount of cost to track with the budget.</summary>
@@ -945,6 +994,7 @@ public partial class V1beta1BudgetSubscriptionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -969,6 +1019,7 @@ public enum V1beta1BudgetSubscriptionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -985,6 +1036,7 @@ public enum V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -996,6 +1048,7 @@ public enum V1beta1BudgetSubscriptionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1024,6 +1077,7 @@ public partial class V1beta1BudgetSubscriptionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1043,6 +1097,7 @@ public partial class V1beta1BudgetSubscriptionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1057,6 +1112,7 @@ public partial class V1beta1BudgetSubscriptionSpecWriteConnectionSecretToRef
 /// <summary>BudgetSubscriptionSpec defines the desired state of BudgetSubscription</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionSpec
 {
     /// <summary>
@@ -1124,6 +1180,7 @@ public partial class V1beta1BudgetSubscriptionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProviderFilterDimension
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -1141,6 +1198,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProviderFilterDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProviderFilterTag
 {
     /// <summary>The name of the tag to use for the filter.</summary>
@@ -1158,6 +1216,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProviderFilterTag
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProviderFilter
 {
     /// <summary>One or more dimension blocks as defined below to filter the budget on.</summary>
@@ -1171,6 +1230,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProviderFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProviderNotification
 {
     /// <summary>Specifies a list of email addresses to send the budget notification to when the threshold is exceeded.</summary>
@@ -1204,6 +1264,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProviderTimePeriod
 {
     /// <summary>The end date for the budget. If not set this will be 10 years after the start date.</summary>
@@ -1217,6 +1278,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProviderTimePeriod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusAtProvider
 {
     /// <summary>The total amount of cost to track with the budget.</summary>
@@ -1255,6 +1317,7 @@ public partial class V1beta1BudgetSubscriptionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatusConditions
 {
     /// <summary>
@@ -1298,6 +1361,7 @@ public partial class V1beta1BudgetSubscriptionStatusConditions
 /// <summary>BudgetSubscriptionStatus defines the observed state of BudgetSubscription.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BudgetSubscriptionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1316,9 +1380,13 @@ public partial class V1beta1BudgetSubscriptionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>BudgetSubscription is the Schema for the BudgetSubscriptions API. Manages a Subscription Consumption Budget.</summary>
+/// <summary>
+/// BudgetSubscription is the Schema for the BudgetSubscriptions API. Manages a Subscription Consumption Budget.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BudgetSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BudgetSubscriptionSpec>, IStatus<V1beta1BudgetSubscriptionStatus?>
 {

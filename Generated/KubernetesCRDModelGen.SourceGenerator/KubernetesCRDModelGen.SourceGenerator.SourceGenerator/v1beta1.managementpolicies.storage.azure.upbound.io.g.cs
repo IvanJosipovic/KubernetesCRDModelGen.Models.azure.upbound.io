@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.azure.upbound.io;
-/// <summary>ManagementPolicy is the Schema for the ManagementPolicys API. Manages an Azure Storage Account Management Policy.</summary>
+/// <summary>
+/// ManagementPolicy is the Schema for the ManagementPolicys API. Manages an Azure Storage Account Management Policy.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagementPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagementPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ManagementPolicyList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ManagementPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleActionsBaseBlob
 {
     /// <summary>Whether a blob should automatically be tiered from cool back to hot if it&apos;s accessed again after being tiered to cool. Defaults to false.</summary>
@@ -118,6 +124,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleActionsBaseBlob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleActionsSnapshot
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -143,6 +150,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleActionsSnapshot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleActionsVersion
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -168,6 +176,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleActionsVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleActions
 {
     /// <summary>A base_blob block as documented below.</summary>
@@ -185,6 +194,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleFiltersMatchBlobIndexTag
 {
     /// <summary>The name of the rule. Rule name is case-sensitive. It must be unique within a policy.</summary>
@@ -202,6 +212,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleFiltersMatchBlobI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRuleFilters
 {
     /// <summary>An array of predefined values. Valid options are blockBlob and appendBlob.</summary>
@@ -219,6 +230,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRuleFilters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderRule
 {
     /// <summary>An actions block as documented below.</summary>
@@ -246,6 +258,7 @@ public partial class V1beta1ManagementPolicySpecForProviderRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -262,6 +275,7 @@ public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -273,6 +287,7 @@ public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -297,6 +312,7 @@ public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdRefPo
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -316,6 +332,7 @@ public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -332,6 +349,7 @@ public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -343,6 +361,7 @@ public enum V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -367,6 +386,7 @@ public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdSelec
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdSelector
 {
     /// <summary>
@@ -387,6 +407,7 @@ public partial class V1beta1ManagementPolicySpecForProviderStorageAccountIdSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecForProvider
 {
     /// <summary>A rule block as documented below.</summary>
@@ -408,6 +429,7 @@ public partial class V1beta1ManagementPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsBaseBlob
 {
     /// <summary>Whether a blob should automatically be tiered from cool back to hot if it&apos;s accessed again after being tiered to cool. Defaults to false.</summary>
@@ -469,6 +491,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsBaseBlob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsSnapshot
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -494,6 +517,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsSnapshot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsVersion
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -519,6 +543,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleActionsVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleActions
 {
     /// <summary>A base_blob block as documented below.</summary>
@@ -536,6 +561,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleFiltersMatchBlobIndexTag
 {
     /// <summary>The name of the rule. Rule name is case-sensitive. It must be unique within a policy.</summary>
@@ -553,6 +579,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleFiltersMatchBlob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRuleFilters
 {
     /// <summary>An array of predefined values. Valid options are blockBlob and appendBlob.</summary>
@@ -570,6 +597,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRuleFilters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderRule
 {
     /// <summary>An actions block as documented below.</summary>
@@ -597,6 +625,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -613,6 +642,7 @@ public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -624,6 +654,7 @@ public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -648,6 +679,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdRefP
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -667,6 +699,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -683,6 +716,7 @@ public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -694,6 +728,7 @@ public enum V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -718,6 +753,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdSele
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdSelector
 {
     /// <summary>
@@ -750,6 +786,7 @@ public partial class V1beta1ManagementPolicySpecInitProviderStorageAccountIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecInitProvider
 {
     /// <summary>A rule block as documented below.</summary>
@@ -775,6 +812,7 @@ public partial class V1beta1ManagementPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -799,6 +837,7 @@ public enum V1beta1ManagementPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -815,6 +854,7 @@ public enum V1beta1ManagementPolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagementPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagementPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -826,6 +866,7 @@ public enum V1beta1ManagementPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -854,6 +895,7 @@ public partial class V1beta1ManagementPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -873,6 +915,7 @@ public partial class V1beta1ManagementPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -887,6 +930,7 @@ public partial class V1beta1ManagementPolicySpecWriteConnectionSecretToRef
 /// <summary>ManagementPolicySpec defines the desired state of ManagementPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicySpec
 {
     /// <summary>
@@ -954,6 +998,7 @@ public partial class V1beta1ManagementPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsBaseBlob
 {
     /// <summary>Whether a blob should automatically be tiered from cool back to hot if it&apos;s accessed again after being tiered to cool. Defaults to false.</summary>
@@ -1015,6 +1060,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsBaseBlob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsSnapshot
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -1040,6 +1086,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsSnapshot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsVersion
 {
     /// <summary>The age in days after creation to tier blob version to archive storage. Must be between 0 and 99999. Defaults to -1.</summary>
@@ -1065,6 +1112,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleActionsVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleActions
 {
     /// <summary>A base_blob block as documented below.</summary>
@@ -1082,6 +1130,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleFiltersMatchBlobIndexTag
 {
     /// <summary>The name of the rule. Rule name is case-sensitive. It must be unique within a policy.</summary>
@@ -1099,6 +1148,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleFiltersMatchBlob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRuleFilters
 {
     /// <summary>An array of predefined values. Valid options are blockBlob and appendBlob.</summary>
@@ -1116,6 +1166,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRuleFilters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProviderRule
 {
     /// <summary>An actions block as documented below.</summary>
@@ -1137,6 +1188,7 @@ public partial class V1beta1ManagementPolicyStatusAtProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusAtProvider
 {
     /// <summary>The ID of the Storage Account Management Policy.</summary>
@@ -1155,6 +1207,7 @@ public partial class V1beta1ManagementPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatusConditions
 {
     /// <summary>
@@ -1198,6 +1251,7 @@ public partial class V1beta1ManagementPolicyStatusConditions
 /// <summary>ManagementPolicyStatus defines the observed state of ManagementPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagementPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1216,9 +1270,13 @@ public partial class V1beta1ManagementPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ManagementPolicy is the Schema for the ManagementPolicys API. Manages an Azure Storage Account Management Policy.</summary>
+/// <summary>
+/// ManagementPolicy is the Schema for the ManagementPolicys API. Manages an Azure Storage Account Management Policy.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagementPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagementPolicySpec>, IStatus<V1beta1ManagementPolicyStatus?>
 {

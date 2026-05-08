@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
-/// <summary>VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.</summary>
+/// <summary>
+/// VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineRunCommandList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualMachineRunCommand>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VirtualMachineRunCommandList : IKubernetesObject<V1L
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1VirtualMachineRunCommandSpecDeletionPolicyEnum
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobMana
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -93,6 +100,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobMana
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -112,6 +120,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobMana
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -128,6 +137,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -139,6 +149,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicy
 {
     /// <summary>
@@ -163,6 +174,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriR
 /// <summary>Reference to a Blob in storage to populate errorBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -182,6 +194,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -198,6 +211,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -209,6 +223,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicy
 {
     /// <summary>
@@ -233,6 +248,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriS
 /// <summary>Selector for a Blob in storage to populate errorBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriSelector
 {
     /// <summary>
@@ -254,6 +270,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderErrorBlobUriS
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -272,6 +289,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobMan
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -289,6 +307,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobMan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -308,6 +327,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -324,6 +344,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -335,6 +356,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 {
     /// <summary>
@@ -359,6 +381,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUri
 /// <summary>Reference to a Blob in storage to populate outputBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -378,6 +401,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -394,6 +418,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -405,6 +430,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicy
 {
     /// <summary>
@@ -429,6 +455,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUri
 /// <summary>Selector for a Blob in storage to populate outputBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUriSelector
 {
     /// <summary>
@@ -449,6 +476,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderOutputBlobUri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -463,6 +491,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderParameter
 /// <summary>The run parameter name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedParameterNameSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -481,6 +510,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedPara
 /// <summary>The run parameter value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedParameterValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -498,6 +528,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedPara
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -512,6 +543,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderProtectedPara
 /// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderRunAsPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -530,6 +562,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderRunAsPassword
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -548,6 +581,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -565,6 +599,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -584,6 +619,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -600,6 +636,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -611,6 +648,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicy
 {
     /// <summary>
@@ -635,6 +673,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// <summary>Reference to a Blob in storage to populate scriptUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -654,6 +693,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -670,6 +710,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -681,6 +722,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicy
 {
     /// <summary>
@@ -705,6 +747,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// <summary>Selector for a Blob in storage to populate scriptUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptUriSelector
 {
     /// <summary>
@@ -725,6 +768,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSourceScriptU
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderSource
 {
     [JsonPropertyName("commandId")]
@@ -757,6 +801,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderSource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -773,6 +818,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -784,6 +830,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicy
 {
     /// <summary>
@@ -808,6 +855,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachin
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -827,6 +875,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -843,6 +892,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -854,6 +904,7 @@ public enum V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicy
 {
     /// <summary>
@@ -878,6 +929,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachin
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelector
 {
     /// <summary>
@@ -898,6 +950,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProviderVirtualMachin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecForProvider
 {
     /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
@@ -976,6 +1029,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecForProvider
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -994,6 +1048,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1011,6 +1066,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -1030,6 +1086,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1046,6 +1103,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1057,6 +1115,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 {
     /// <summary>
@@ -1081,6 +1140,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 /// <summary>Reference to a Blob in storage to populate errorBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1100,6 +1160,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1116,6 +1177,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1127,6 +1189,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicy
 {
     /// <summary>
@@ -1151,6 +1214,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 /// <summary>Selector for a Blob in storage to populate errorBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelector
 {
     /// <summary>
@@ -1172,6 +1236,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1190,6 +1255,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1207,6 +1273,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -1226,6 +1293,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1242,6 +1310,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1253,6 +1322,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicy
 {
     /// <summary>
@@ -1277,6 +1347,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 /// <summary>Reference to a Blob in storage to populate outputBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1296,6 +1367,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1312,6 +1384,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1323,6 +1396,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicy
 {
     /// <summary>
@@ -1347,6 +1421,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 /// <summary>Selector for a Blob in storage to populate outputBlobUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 {
     /// <summary>
@@ -1367,6 +1442,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -1381,6 +1457,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderParameter
 /// <summary>The run parameter name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterNameSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1399,6 +1476,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedPar
 /// <summary>The run parameter value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameterValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1416,6 +1494,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedPar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -1430,6 +1509,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderProtectedPar
 /// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderRunAsPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1448,6 +1528,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderRunAsPasswor
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1466,6 +1547,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1483,6 +1565,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -1502,6 +1585,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1518,6 +1602,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1529,6 +1614,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicy
 {
     /// <summary>
@@ -1553,6 +1639,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 /// <summary>Reference to a Blob in storage to populate scriptUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1572,6 +1659,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1588,6 +1676,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1599,6 +1688,7 @@ public enum V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicy
 {
     /// <summary>
@@ -1623,6 +1713,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 /// <summary>Selector for a Blob in storage to populate scriptUri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelector
 {
     /// <summary>
@@ -1643,6 +1734,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSourceScript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSource
 {
     [JsonPropertyName("commandId")]
@@ -1681,6 +1773,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProviderSource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecInitProvider
 {
     /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
@@ -1750,6 +1843,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1774,6 +1868,7 @@ public enum V1beta1VirtualMachineRunCommandSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1790,6 +1885,7 @@ public enum V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1801,6 +1897,7 @@ public enum V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1829,6 +1926,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1848,6 +1946,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1862,6 +1961,7 @@ public partial class V1beta1VirtualMachineRunCommandSpecWriteConnectionSecretToR
 /// <summary>VirtualMachineRunCommandSpec defines the desired state of VirtualMachineRunCommand</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandSpec
 {
     /// <summary>
@@ -1930,6 +2030,7 @@ public partial class V1beta1VirtualMachineRunCommandSpec
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1948,6 +2049,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobMan
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1965,6 +2067,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobMan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -1978,6 +2081,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderErrorBlobMan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderInstanceView
 {
     [JsonPropertyName("endTime")]
@@ -2005,6 +2109,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderInstanceView
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2023,6 +2128,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobMa
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2040,6 +2146,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -2053,6 +2160,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderOutputBlobMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -2067,6 +2175,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderParameter
 /// <summary>The run parameter name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedParameterNameSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2085,6 +2194,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedPar
 /// <summary>The run parameter value.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedParameterValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2102,6 +2212,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedPar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedParameter
 {
     /// <summary>The run parameter name.</summary>
@@ -2116,6 +2227,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderProtectedPar
 /// <summary>The client ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2134,6 +2246,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScript
 /// <summary>The object ID of the managed identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2151,6 +2264,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentity
 {
     /// <summary>The client ID of the managed identity.</summary>
@@ -2164,6 +2278,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSourceScript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSource
 {
     [JsonPropertyName("commandId")]
@@ -2182,6 +2297,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProviderSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusAtProvider
 {
     /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
@@ -2239,6 +2355,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatusConditions
 {
     /// <summary>
@@ -2282,6 +2399,7 @@ public partial class V1beta1VirtualMachineRunCommandStatusConditions
 /// <summary>VirtualMachineRunCommandStatus defines the observed state of VirtualMachineRunCommand.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualMachineRunCommandStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2300,9 +2418,13 @@ public partial class V1beta1VirtualMachineRunCommandStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.</summary>
+/// <summary>
+/// VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualMachineRunCommand : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualMachineRunCommandSpec>, IStatus<V1beta1VirtualMachineRunCommandStatus?>
 {

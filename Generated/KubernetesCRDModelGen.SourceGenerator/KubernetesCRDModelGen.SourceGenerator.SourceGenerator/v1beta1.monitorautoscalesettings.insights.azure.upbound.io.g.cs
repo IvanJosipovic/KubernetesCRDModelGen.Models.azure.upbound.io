@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
-/// <summary>MonitorAutoscaleSetting is the Schema for the MonitorAutoscaleSettings API. Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets, App Services and other scalable resources.</summary>
+/// <summary>
+/// MonitorAutoscaleSetting is the Schema for the MonitorAutoscaleSettings API. Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets, App Services and other scalable resources.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorAutoscaleSettingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorAutoscaleSetting>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MonitorAutoscaleSettingList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotificationEmail
 {
     /// <summary>Specifies a list of custom email addresses to which the email notifications will be sent.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotificationEm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotificationWebhook
 {
     /// <summary>A map of settings.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotificationWe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotification
 {
     /// <summary>A email block as defined below.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderPredictive
 {
     /// <summary>Specifies the amount of time by which instances are launched in advance. It must be between PT1M and PT1H in ISO 8601 format.</summary>
@@ -113,6 +122,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderPredictive
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileCapacity
 {
     /// <summary>The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default. Valid values are between 0 and 1000.</summary>
@@ -130,6 +140,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileCapacit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileFixedDate
 {
     /// <summary>Specifies the end date for the profile, formatted as an RFC3339 date string.</summary>
@@ -147,6 +158,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileFixedDa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRecurrence
 {
     /// <summary>A list of days that this profile takes effect on. Possible values include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -168,6 +180,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRecurre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerDimensions
 {
     /// <summary>Specifies the name of the profile.</summary>
@@ -191,6 +204,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -207,6 +221,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTrigge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -218,6 +233,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTrigge
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRefPolicy
 {
     /// <summary>
@@ -242,6 +258,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 /// <summary>Reference to a LinuxVirtualMachineScaleSet in compute to populate metricResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -261,6 +278,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -277,6 +295,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTrigge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -288,6 +307,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTrigge
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicy
 {
     /// <summary>
@@ -312,6 +332,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 /// <summary>Selector for a LinuxVirtualMachineScaleSet in compute to populate metricResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTriggerMetricResourceIdSelector
 {
     /// <summary>
@@ -332,6 +353,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMetricTrigger
 {
     /// <summary>One or more dimensions block as defined below.</summary>
@@ -389,6 +411,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleMet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleScaleAction
 {
     /// <summary>The amount of time to wait since the last scaling action before this action occurs. Must be between 1 minute and 1 week and formatted as a ISO 8601 string.</summary>
@@ -410,6 +433,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRuleSca
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRule
 {
     /// <summary>A metric_trigger block as defined below.</summary>
@@ -423,6 +447,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfileRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfile
 {
     /// <summary>A capacity block as defined below.</summary>
@@ -454,6 +479,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -470,6 +496,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -481,6 +508,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -505,6 +533,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupN
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -524,6 +553,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -540,6 +570,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -551,6 +582,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -575,6 +607,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupN
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -601,6 +634,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -617,6 +651,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -628,6 +663,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRefPolicy
 {
     /// <summary>
@@ -652,6 +688,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResource
 /// <summary>Reference to a LinuxVirtualMachineScaleSet in compute to populate targetResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -671,6 +708,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -687,6 +725,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -698,6 +737,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelectorPolicy
 {
     /// <summary>
@@ -722,6 +762,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResource
 /// <summary>Selector for a LinuxVirtualMachineScaleSet in compute to populate targetResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResourceIdSelector
 {
     /// <summary>
@@ -742,6 +783,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProviderTargetResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecForProvider
 {
     /// <summary>Specifies whether automatic scaling is enabled for the target resource. Defaults to true.</summary>
@@ -799,6 +841,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotificationEmail
 {
     /// <summary>Specifies a list of custom email addresses to which the email notifications will be sent.</summary>
@@ -816,6 +859,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotificationE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotificationWebhook
 {
     /// <summary>A map of settings.</summary>
@@ -829,6 +873,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotificationW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotification
 {
     /// <summary>A email block as defined below.</summary>
@@ -842,6 +887,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderPredictive
 {
     /// <summary>Specifies the amount of time by which instances are launched in advance. It must be between PT1M and PT1H in ISO 8601 format.</summary>
@@ -855,6 +901,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderPredictive
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileCapacity
 {
     /// <summary>The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default. Valid values are between 0 and 1000.</summary>
@@ -872,6 +919,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileCapaci
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileFixedDate
 {
     /// <summary>Specifies the end date for the profile, formatted as an RFC3339 date string.</summary>
@@ -889,6 +937,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileFixedD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRecurrence
 {
     /// <summary>A list of days that this profile takes effect on. Possible values include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -910,6 +959,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRecurr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerDimensions
 {
     /// <summary>Specifies the name of the profile.</summary>
@@ -933,6 +983,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -949,6 +1000,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTrigg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -960,6 +1012,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTrigg
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRefPolicy
 {
     /// <summary>
@@ -984,6 +1037,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 /// <summary>Reference to a LinuxVirtualMachineScaleSet in compute to populate metricResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1003,6 +1057,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1019,6 +1074,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTrigg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1030,6 +1086,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTrigg
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1054,6 +1111,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 /// <summary>Selector for a LinuxVirtualMachineScaleSet in compute to populate metricResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTriggerMetricResourceIdSelector
 {
     /// <summary>
@@ -1074,6 +1132,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMetricTrigger
 {
     /// <summary>One or more dimensions block as defined below.</summary>
@@ -1131,6 +1190,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleScaleAction
 {
     /// <summary>The amount of time to wait since the last scaling action before this action occurs. Must be between 1 minute and 1 week and formatted as a ISO 8601 string.</summary>
@@ -1152,6 +1212,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRuleSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRule
 {
     /// <summary>A metric_trigger block as defined below.</summary>
@@ -1165,6 +1226,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfileRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfile
 {
     /// <summary>A capacity block as defined below.</summary>
@@ -1196,6 +1258,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1212,6 +1275,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1223,6 +1287,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -1247,6 +1312,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroup
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1266,6 +1332,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1282,6 +1349,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1293,6 +1361,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -1317,6 +1386,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroup
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -1343,6 +1413,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1359,6 +1430,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1370,6 +1442,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRefPolicy
 {
     /// <summary>
@@ -1394,6 +1467,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourc
 /// <summary>Reference to a LinuxVirtualMachineScaleSet in compute to populate targetResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1413,6 +1487,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1429,6 +1504,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1440,6 +1516,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelectorPolicy
 {
     /// <summary>
@@ -1464,6 +1541,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourc
 /// <summary>Selector for a LinuxVirtualMachineScaleSet in compute to populate targetResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourceIdSelector
 {
     /// <summary>
@@ -1496,6 +1574,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProviderTargetResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecInitProvider
 {
     /// <summary>Specifies whether automatic scaling is enabled for the target resource. Defaults to true.</summary>
@@ -1557,6 +1636,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1581,6 +1661,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1597,6 +1678,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1608,6 +1690,7 @@ public enum V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1636,6 +1719,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1655,6 +1739,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1669,6 +1754,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpecWriteConnectionSecretToRe
 /// <summary>MonitorAutoscaleSettingSpec defines the desired state of MonitorAutoscaleSetting</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingSpec
 {
     /// <summary>
@@ -1736,6 +1822,7 @@ public partial class V1beta1MonitorAutoscaleSettingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotificationEmail
 {
     /// <summary>Specifies a list of custom email addresses to which the email notifications will be sent.</summary>
@@ -1753,6 +1840,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotificationE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotificationWebhook
 {
     /// <summary>A map of settings.</summary>
@@ -1766,6 +1854,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotificationW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotification
 {
     /// <summary>A email block as defined below.</summary>
@@ -1779,6 +1868,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderPredictive
 {
     /// <summary>Specifies the amount of time by which instances are launched in advance. It must be between PT1M and PT1H in ISO 8601 format.</summary>
@@ -1792,6 +1882,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderPredictive
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileCapacity
 {
     /// <summary>The number of instances that are available for scaling if metrics are not available for evaluation. The default is only used if the current instance count is lower than the default. Valid values are between 0 and 1000.</summary>
@@ -1809,6 +1900,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileCapaci
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileFixedDate
 {
     /// <summary>Specifies the end date for the profile, formatted as an RFC3339 date string.</summary>
@@ -1826,6 +1918,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileFixedD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRecurrence
 {
     /// <summary>A list of days that this profile takes effect on. Possible values include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -1847,6 +1940,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRecurr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleMetricTriggerDimensions
 {
     /// <summary>Specifies the name of the profile.</summary>
@@ -1864,6 +1958,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleMetricTrigger
 {
     /// <summary>One or more dimensions block as defined below.</summary>
@@ -1913,6 +2008,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleScaleAction
 {
     /// <summary>The amount of time to wait since the last scaling action before this action occurs. Must be between 1 minute and 1 week and formatted as a ISO 8601 string.</summary>
@@ -1934,6 +2030,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRuleSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRule
 {
     /// <summary>A metric_trigger block as defined below.</summary>
@@ -1947,6 +2044,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfileRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfile
 {
     /// <summary>A capacity block as defined below.</summary>
@@ -1972,6 +2070,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProviderProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusAtProvider
 {
     /// <summary>Specifies whether automatic scaling is enabled for the target resource. Defaults to true.</summary>
@@ -2018,6 +2117,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatusConditions
 {
     /// <summary>
@@ -2061,6 +2161,7 @@ public partial class V1beta1MonitorAutoscaleSettingStatusConditions
 /// <summary>MonitorAutoscaleSettingStatus defines the observed state of MonitorAutoscaleSetting.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorAutoscaleSettingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2079,9 +2180,13 @@ public partial class V1beta1MonitorAutoscaleSettingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MonitorAutoscaleSetting is the Schema for the MonitorAutoscaleSettings API. Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets, App Services and other scalable resources.</summary>
+/// <summary>
+/// MonitorAutoscaleSetting is the Schema for the MonitorAutoscaleSettings API. Manages an AutoScale Setting which can be applied to Virtual Machine Scale Sets, App Services and other scalable resources.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorAutoscaleSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorAutoscaleSettingSpec>, IStatus<V1beta1MonitorAutoscaleSettingStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.upbound.io;
-/// <summary>BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.</summary>
+/// <summary>
+/// BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupPolicyVMWorkloadList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackupPolicyVMWorkload>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1BackupPolicyVMWorkloadList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicyBackup
 {
     /// <summary>The backup frequency for the VM Workload Backup Policy. Possible values are Daily and Weekly.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionDaily
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionMonthly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -112,6 +120,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionWeekly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -125,6 +134,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicyRetentionYearly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicySimpleRetention
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -163,6 +174,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolicy
 {
     /// <summary>A backup block as defined below.</summary>
@@ -202,6 +214,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderProtectionPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -218,6 +231,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -229,6 +243,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRefPolicy
 {
     /// <summary>
@@ -253,6 +268,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -272,6 +288,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -288,6 +305,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -299,6 +317,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelectorPolicy
 {
     /// <summary>
@@ -323,6 +342,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNameSelector
 {
     /// <summary>
@@ -349,6 +369,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderRecoveryVaultNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -365,6 +386,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -376,6 +398,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -400,6 +423,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -419,6 +443,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -435,6 +460,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -446,6 +472,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -470,6 +497,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -490,6 +518,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderResourceGroupNa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderSettings
 {
     /// <summary>The compression setting for the VM Workload Backup Policy. Defaults to false.</summary>
@@ -503,6 +532,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecForProvider
 {
     /// <summary>One or more protection_policy blocks as defined below.</summary>
@@ -544,6 +574,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyBackup
 {
     /// <summary>The backup frequency for the VM Workload Backup Policy. Possible values are Daily and Weekly.</summary>
@@ -565,6 +596,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionDaily
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -574,6 +606,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionMonthly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -599,6 +632,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionWeekly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -612,6 +646,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicyRetentionYearly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -641,6 +676,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicySimpleRetention
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -650,6 +686,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPolicy
 {
     /// <summary>A backup block as defined below.</summary>
@@ -683,6 +720,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderSettings
 {
     /// <summary>The compression setting for the VM Workload Backup Policy. Defaults to false.</summary>
@@ -708,6 +746,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProviderSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecInitProvider
 {
     /// <summary>One or more protection_policy blocks as defined below.</summary>
@@ -729,6 +768,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -753,6 +793,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -769,6 +810,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -780,6 +822,7 @@ public enum V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -808,6 +851,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -827,6 +871,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -841,6 +886,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpecWriteConnectionSecretToRef
 /// <summary>BackupPolicyVMWorkloadSpec defines the desired state of BackupPolicyVMWorkload</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadSpec
 {
     /// <summary>
@@ -908,6 +954,7 @@ public partial class V1beta1BackupPolicyVMWorkloadSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyBackup
 {
     /// <summary>The backup frequency for the VM Workload Backup Policy. Possible values are Daily and Weekly.</summary>
@@ -929,6 +976,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionDaily
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -938,6 +986,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionMonthly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -963,6 +1012,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionWeekly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -976,6 +1026,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicyRetentionYearly
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -1005,6 +1056,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicySimpleRetention
 {
     /// <summary>The count that is used to count retention duration with duration type Days. Possible values are between 7 and 35.</summary>
@@ -1014,6 +1066,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPolicy
 {
     /// <summary>A backup block as defined below.</summary>
@@ -1047,6 +1100,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderProtectionPoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderSettings
 {
     /// <summary>The compression setting for the VM Workload Backup Policy. Defaults to false.</summary>
@@ -1060,6 +1114,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusAtProvider
 {
     /// <summary>The ID of the Azure VM Workload Backup Policy.</summary>
@@ -1090,6 +1145,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatusConditions
 {
     /// <summary>
@@ -1133,6 +1189,7 @@ public partial class V1beta1BackupPolicyVMWorkloadStatusConditions
 /// <summary>BackupPolicyVMWorkloadStatus defines the observed state of BackupPolicyVMWorkload.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BackupPolicyVMWorkloadStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1151,9 +1208,13 @@ public partial class V1beta1BackupPolicyVMWorkloadStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.</summary>
+/// <summary>
+/// BackupPolicyVMWorkload is the Schema for the BackupPolicyVMWorkloads API. Manages an Azure VM Workload Backup Policy.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupPolicyVMWorkload : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackupPolicyVMWorkloadSpec>, IStatus<V1beta1BackupPolicyVMWorkloadStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.authorization.azure.upbound.io;
-/// <summary>ResourceGroupPolicyAssignment is the Schema for the ResourceGroupPolicyAssignments API. Manages a Resource Group Policy Assignment.</summary>
+/// <summary>
+/// ResourceGroupPolicyAssignment is the Schema for the ResourceGroupPolicyAssignments API. Manages a Resource Group Policy Assignment.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceGroupPolicyAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResourceGroupPolicyAssignment>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderIdentity
 {
     /// <summary>A list of User Managed Identity IDs which should be assigned to the Policy Definition.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderNonComplianceMessage
 {
     /// <summary>The non-compliance message text. When assigning policy sets (initiatives), unless policy_definition_reference_id is specified then this message will be the default for all policies.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderNonCompl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderOverridesSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderOverride
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderOverrides
 {
     /// <summary>One or more override_selector block as defined below.</summary>
@@ -119,6 +128,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderOverride
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -135,6 +145,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -146,6 +157,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRefPolicy
 {
     /// <summary>
@@ -170,6 +182,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDe
 /// <summary>Reference to a PolicyDefinition in authorization to populate policyDefinitionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -189,6 +202,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -205,6 +219,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -216,6 +231,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelectorPolicy
 {
     /// <summary>
@@ -240,6 +256,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDe
 /// <summary>Selector for a PolicyDefinition in authorization to populate policyDefinitionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDefinitionIdSelector
 {
     /// <summary>
@@ -266,6 +283,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderPolicyDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -282,6 +300,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -293,6 +312,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRefPolicy
 {
     /// <summary>
@@ -317,6 +337,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -336,6 +357,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -352,6 +374,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -363,6 +386,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelectorPolicy
 {
     /// <summary>
@@ -387,6 +411,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceGroupIdSelector
 {
     /// <summary>
@@ -407,6 +432,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceSelectorsSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -424,6 +450,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResourceSelectors
 {
     /// <summary>Specifies a name for the resource selector.</summary>
@@ -437,6 +464,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProviderResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProvider
 {
     /// <summary>A description which should be used for this Policy Assignment.</summary>
@@ -510,6 +538,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderIdentity
 {
     /// <summary>A list of User Managed Identity IDs which should be assigned to the Policy Definition.</summary>
@@ -523,6 +552,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderIdentit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderNonComplianceMessage
 {
     /// <summary>The non-compliance message text. When assigning policy sets (initiatives), unless policy_definition_reference_id is specified then this message will be the default for all policies.</summary>
@@ -536,6 +566,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderNonComp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderOverridesSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -553,6 +584,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderOverrid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderOverrides
 {
     /// <summary>One or more override_selector block as defined below.</summary>
@@ -572,6 +604,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderOverrid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -588,6 +621,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -599,6 +633,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinition
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRefPolicy
 {
     /// <summary>
@@ -623,6 +658,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyD
 /// <summary>Reference to a PolicyDefinition in authorization to populate policyDefinitionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -642,6 +678,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyD
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -658,6 +695,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -669,6 +707,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinition
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelectorPolicy
 {
     /// <summary>
@@ -693,6 +732,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyD
 /// <summary>Selector for a PolicyDefinition in authorization to populate policyDefinitionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyDefinitionIdSelector
 {
     /// <summary>
@@ -719,6 +759,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderPolicyD
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -735,6 +776,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -746,6 +788,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRefPolicy
 {
     /// <summary>
@@ -770,6 +813,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -789,6 +833,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -805,6 +850,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -816,6 +862,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelectorPolicy
 {
     /// <summary>
@@ -840,6 +887,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceGroupIdSelector
 {
     /// <summary>
@@ -860,6 +908,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceSelectorsSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -877,6 +926,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourceSelectors
 {
     /// <summary>Specifies a name for the resource selector.</summary>
@@ -902,6 +952,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProviderResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProvider
 {
     /// <summary>A description which should be used for this Policy Assignment.</summary>
@@ -979,6 +1030,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1003,6 +1055,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1019,6 +1072,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1030,6 +1084,7 @@ public enum V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1058,6 +1113,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1077,6 +1133,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1091,6 +1148,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpecWriteConnectionSecr
 /// <summary>ResourceGroupPolicyAssignmentSpec defines the desired state of ResourceGroupPolicyAssignment</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentSpec
 {
     /// <summary>
@@ -1158,6 +1216,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderIdentity
 {
     /// <summary>A list of User Managed Identity IDs which should be assigned to the Policy Definition.</summary>
@@ -1179,6 +1238,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderIdentit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderNonComplianceMessage
 {
     /// <summary>The non-compliance message text. When assigning policy sets (initiatives), unless policy_definition_reference_id is specified then this message will be the default for all policies.</summary>
@@ -1192,6 +1252,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderNonComp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderOverridesSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -1209,6 +1270,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderOverrid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderOverrides
 {
     /// <summary>One or more override_selector block as defined below.</summary>
@@ -1222,6 +1284,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderOverrid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderResourceSelectorsSelectors
 {
     /// <summary>The list of allowed values for the specified kind. Cannot be used with not_in. Can contain up to 50 values.</summary>
@@ -1239,6 +1302,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderResourceSelectors
 {
     /// <summary>Specifies a name for the resource selector.</summary>
@@ -1252,6 +1316,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProviderResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProvider
 {
     /// <summary>A description which should be used for this Policy Assignment.</summary>
@@ -1314,6 +1379,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatusConditions
 {
     /// <summary>
@@ -1357,6 +1423,7 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatusConditions
 /// <summary>ResourceGroupPolicyAssignmentStatus defines the observed state of ResourceGroupPolicyAssignment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceGroupPolicyAssignmentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1375,9 +1442,13 @@ public partial class V1beta1ResourceGroupPolicyAssignmentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ResourceGroupPolicyAssignment is the Schema for the ResourceGroupPolicyAssignments API. Manages a Resource Group Policy Assignment.</summary>
+/// <summary>
+/// ResourceGroupPolicyAssignment is the Schema for the ResourceGroupPolicyAssignments API. Manages a Resource Group Policy Assignment.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceGroupPolicyAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResourceGroupPolicyAssignmentSpec>, IStatus<V1beta1ResourceGroupPolicyAssignmentStatus?>
 {

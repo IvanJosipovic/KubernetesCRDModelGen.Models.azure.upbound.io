@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cdn.azure.upbound.io;
-/// <summary>FrontdoorRule is the Schema for the FrontdoorRules API. Manages a Front Door (standard/premium) Rule.</summary>
+/// <summary>
+/// FrontdoorRule is the Schema for the FrontdoorRules API. Manages a Front Door (standard/premium) Rule.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FrontdoorRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FrontdoorRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FrontdoorRuleList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FrontdoorRuleSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRequestHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRequestHeaderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsResponseHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -97,6 +104,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsResponseHeaderAct
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -113,6 +121,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverride
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -124,6 +133,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverride
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicy
 {
     /// <summary>
@@ -148,6 +158,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfiguratio
 /// <summary>Reference to a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -167,6 +178,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -183,6 +195,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverride
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -194,6 +207,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverride
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicy
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfiguratio
 /// <summary>Selector for a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelector
 {
     /// <summary>
@@ -238,6 +253,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfigurationOverrideAction
 {
     /// <summary>HonorOrigin the Front Door will always honor origin response header directive. If the origin directive is missing, Front Door will cache contents anywhere from 1 to 3 days. OverrideAlways the TTL value returned from your Front Door Origin is overwritten with the value specified in the action. This behavior will only be applied if the response is cacheable. OverrideIfOriginMissing if no TTL value gets returned from your Front Door Origin, the rule sets the TTL to the value specified in the action. This behavior will only be applied if the response is cacheable. Disabled the Front Door will not cache the response contents, irrespective of Front Door Origin response directives. Possible values include HonorOrigin, OverrideAlways, OverrideIfOriginMissing or Disabled.</summary>
@@ -279,6 +295,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsRouteConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsUrlRedirectAction
 {
     /// <summary>The fragment to use in the redirect. The value must be a string between 0 and 1024 characters in length, leave blank to preserve the incoming fragment. Defaults to &quot; &quot;.</summary>
@@ -308,6 +325,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsUrlRedirectAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActionsUrlRewriteAction
 {
     /// <summary>The destination path to use in the rewrite. The destination path overwrites the source pattern.</summary>
@@ -325,6 +343,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActionsUrlRewriteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderActions
 {
     /// <summary>A request_header_action block as defined below.</summary>
@@ -356,6 +375,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderActions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -372,6 +392,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -383,6 +404,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRefPolicy
 {
     /// <summary>
@@ -407,6 +429,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRef
 /// <summary>Reference to a FrontdoorRuleSet in cdn to populate cdnFrontdoorRuleSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -426,6 +449,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -442,6 +466,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -453,6 +478,7 @@ public enum V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelectorPolicy
 {
     /// <summary>
@@ -477,6 +503,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSel
 /// <summary>Selector for a FrontdoorRuleSet in cdn to populate cdnFrontdoorRuleSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSelector
 {
     /// <summary>
@@ -497,6 +524,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderCdnFrontdoorRuleSetIdSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsClientPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -514,6 +542,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsClientPortCond
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsCookiesCondition
 {
     /// <summary>A string value representing the name of the cookie.</summary>
@@ -539,6 +568,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsCookiesConditi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsHostNameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -560,6 +590,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsHostNameCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsHttpVersionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -577,6 +608,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsHttpVersionCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsIsDeviceCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -594,6 +626,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsIsDeviceCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsPostArgsCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -619,6 +652,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsPostArgsCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsQueryStringCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -640,6 +674,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsQueryStringCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRemoteAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -657,6 +692,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRemoteAddressC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestBodyCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -678,6 +714,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestBodyCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestHeaderCondition
 {
     /// <summary>The name of the header to modify.</summary>
@@ -703,6 +740,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestHeaderC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestMethodCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -720,6 +758,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestMethodC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestSchemeCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -737,6 +776,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestSchemeC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestUriCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -758,6 +798,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsRequestUriCond
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsServerPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -775,6 +816,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsServerPortCond
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsSocketAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -792,6 +834,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsSocketAddressC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsSslProtocolCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -809,6 +852,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsSslProtocolCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlFileExtensionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -830,6 +874,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlFileExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlFilenameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -851,6 +896,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlFilenameCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlPathCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -872,6 +918,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditionsUrlPathConditi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProviderConditions
 {
     /// <summary>A client_port_condition block as defined below.</summary>
@@ -953,6 +1000,7 @@ public partial class V1beta1FrontdoorRuleSpecForProviderConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecForProvider
 {
     /// <summary>An actions block as defined below.</summary>
@@ -986,6 +1034,7 @@ public partial class V1beta1FrontdoorRuleSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRequestHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -1003,6 +1052,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRequestHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsResponseHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -1026,6 +1076,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsResponseHeaderAc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1042,6 +1093,7 @@ public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1053,6 +1105,7 @@ public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrid
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRefPolicy
 {
     /// <summary>
@@ -1077,6 +1130,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurati
 /// <summary>Reference to a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1096,6 +1150,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1112,6 +1167,7 @@ public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrid
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1123,6 +1179,7 @@ public enum V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrid
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelectorPolicy
 {
     /// <summary>
@@ -1147,6 +1204,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurati
 /// <summary>Selector for a FrontdoorOriginGroup in cdn to populate cdnFrontdoorOriginGroupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideActionCdnFrontdoorOriginGroupIdSelector
 {
     /// <summary>
@@ -1167,6 +1225,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurationOverrideAction
 {
     /// <summary>HonorOrigin the Front Door will always honor origin response header directive. If the origin directive is missing, Front Door will cache contents anywhere from 1 to 3 days. OverrideAlways the TTL value returned from your Front Door Origin is overwritten with the value specified in the action. This behavior will only be applied if the response is cacheable. OverrideIfOriginMissing if no TTL value gets returned from your Front Door Origin, the rule sets the TTL to the value specified in the action. This behavior will only be applied if the response is cacheable. Disabled the Front Door will not cache the response contents, irrespective of Front Door Origin response directives. Possible values include HonorOrigin, OverrideAlways, OverrideIfOriginMissing or Disabled.</summary>
@@ -1208,6 +1267,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsRouteConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsUrlRedirectAction
 {
     /// <summary>The fragment to use in the redirect. The value must be a string between 0 and 1024 characters in length, leave blank to preserve the incoming fragment. Defaults to &quot; &quot;.</summary>
@@ -1237,6 +1297,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsUrlRedirectActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActionsUrlRewriteAction
 {
     /// <summary>The destination path to use in the rewrite. The destination path overwrites the source pattern.</summary>
@@ -1254,6 +1315,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActionsUrlRewriteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderActions
 {
     /// <summary>A request_header_action block as defined below.</summary>
@@ -1279,6 +1341,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsClientPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1296,6 +1359,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsClientPortCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsCookiesCondition
 {
     /// <summary>A string value representing the name of the cookie.</summary>
@@ -1321,6 +1385,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsCookiesCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsHostNameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1342,6 +1407,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsHostNameCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsHttpVersionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1359,6 +1425,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsHttpVersionCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsIsDeviceCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1376,6 +1443,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsIsDeviceCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsPostArgsCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1401,6 +1469,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsPostArgsCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsQueryStringCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1422,6 +1491,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsQueryStringCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRemoteAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1439,6 +1509,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRemoteAddress
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestBodyCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1460,6 +1531,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestBodyCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestHeaderCondition
 {
     /// <summary>The name of the header to modify.</summary>
@@ -1485,6 +1557,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestMethodCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1502,6 +1575,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestMethod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestSchemeCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1519,6 +1593,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestScheme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestUriCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1540,6 +1615,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsRequestUriCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsServerPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1557,6 +1633,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsServerPortCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsSocketAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1574,6 +1651,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsSocketAddress
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsSslProtocolCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1591,6 +1669,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsSslProtocolCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlFileExtensionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1612,6 +1691,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlFileExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlFilenameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1633,6 +1713,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlFilenameCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlPathCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -1654,6 +1735,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditionsUrlPathCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProviderConditions
 {
     /// <summary>A client_port_condition block as defined below.</summary>
@@ -1747,6 +1829,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProviderConditions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecInitProvider
 {
     /// <summary>An actions block as defined below.</summary>
@@ -1772,6 +1855,7 @@ public partial class V1beta1FrontdoorRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1796,6 +1880,7 @@ public enum V1beta1FrontdoorRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1812,6 +1897,7 @@ public enum V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1823,6 +1909,7 @@ public enum V1beta1FrontdoorRuleSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1851,6 +1938,7 @@ public partial class V1beta1FrontdoorRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1870,6 +1958,7 @@ public partial class V1beta1FrontdoorRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1884,6 +1973,7 @@ public partial class V1beta1FrontdoorRuleSpecWriteConnectionSecretToRef
 /// <summary>FrontdoorRuleSpec defines the desired state of FrontdoorRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleSpec
 {
     /// <summary>
@@ -1951,6 +2041,7 @@ public partial class V1beta1FrontdoorRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActionsRequestHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -1968,6 +2059,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActionsRequestHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActionsResponseHeaderAction
 {
     /// <summary>The action to be taken on the specified header_name. Possible values include Append, Overwrite or Delete.</summary>
@@ -1985,6 +2077,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActionsResponseHeaderAc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActionsRouteConfigurationOverrideAction
 {
     /// <summary>HonorOrigin the Front Door will always honor origin response header directive. If the origin directive is missing, Front Door will cache contents anywhere from 1 to 3 days. OverrideAlways the TTL value returned from your Front Door Origin is overwritten with the value specified in the action. This behavior will only be applied if the response is cacheable. OverrideIfOriginMissing if no TTL value gets returned from your Front Door Origin, the rule sets the TTL to the value specified in the action. This behavior will only be applied if the response is cacheable. Disabled the Front Door will not cache the response contents, irrespective of Front Door Origin response directives. Possible values include HonorOrigin, OverrideAlways, OverrideIfOriginMissing or Disabled.</summary>
@@ -2018,6 +2111,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActionsRouteConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActionsUrlRedirectAction
 {
     /// <summary>The fragment to use in the redirect. The value must be a string between 0 and 1024 characters in length, leave blank to preserve the incoming fragment. Defaults to &quot; &quot;.</summary>
@@ -2047,6 +2141,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActionsUrlRedirectActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActionsUrlRewriteAction
 {
     /// <summary>The destination path to use in the rewrite. The destination path overwrites the source pattern.</summary>
@@ -2064,6 +2159,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActionsUrlRewriteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderActions
 {
     /// <summary>A request_header_action block as defined below.</summary>
@@ -2089,6 +2185,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsClientPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2106,6 +2203,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsClientPortCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsCookiesCondition
 {
     /// <summary>A string value representing the name of the cookie.</summary>
@@ -2131,6 +2229,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsCookiesCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsHostNameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2152,6 +2251,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsHostNameCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsHttpVersionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2169,6 +2269,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsHttpVersionCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsIsDeviceCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2186,6 +2287,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsIsDeviceCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsPostArgsCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2211,6 +2313,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsPostArgsCondi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsQueryStringCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2232,6 +2335,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsQueryStringCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRemoteAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2249,6 +2353,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRemoteAddress
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestBodyCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2270,6 +2375,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestBodyCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestHeaderCondition
 {
     /// <summary>The name of the header to modify.</summary>
@@ -2295,6 +2401,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestMethodCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2312,6 +2419,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestMethod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestSchemeCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2329,6 +2437,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestScheme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestUriCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2350,6 +2459,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsRequestUriCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsServerPortCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2367,6 +2477,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsServerPortCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsSocketAddressCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2384,6 +2495,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsSocketAddress
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsSslProtocolCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2401,6 +2513,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsSslProtocolCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlFileExtensionCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2422,6 +2535,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlFileExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlFilenameCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2443,6 +2557,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlFilenameCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlPathCondition
 {
     /// <summary>One or more string or integer values(e.g. &quot;1&quot;) representing the value of the request path to match. Don&apos;t include the leading slash (/). If multiple values are specified, they&apos;re evaluated using OR logic.</summary>
@@ -2464,6 +2579,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditionsUrlPathCondit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProviderConditions
 {
     /// <summary>A client_port_condition block as defined below.</summary>
@@ -2545,6 +2661,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProviderConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusAtProvider
 {
     /// <summary>An actions block as defined below.</summary>
@@ -2579,6 +2696,7 @@ public partial class V1beta1FrontdoorRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatusConditions
 {
     /// <summary>
@@ -2622,6 +2740,7 @@ public partial class V1beta1FrontdoorRuleStatusConditions
 /// <summary>FrontdoorRuleStatus defines the observed state of FrontdoorRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrontdoorRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2640,9 +2759,13 @@ public partial class V1beta1FrontdoorRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>FrontdoorRule is the Schema for the FrontdoorRules API. Manages a Front Door (standard/premium) Rule.</summary>
+/// <summary>
+/// FrontdoorRule is the Schema for the FrontdoorRules API. Manages a Front Door (standard/premium) Rule.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FrontdoorRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FrontdoorRuleSpec>, IStatus<V1beta1FrontdoorRuleStatus?>
 {

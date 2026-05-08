@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
-/// <summary>SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.</summary>
+/// <summary>
+/// SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudBuildPackBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudBuildPackBinding>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SpringCloudBuildPackBindingList : IKubernetesObject<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderLaunch
 {
     /// <summary>Specifies a map of non-sensitive properties for launchProperties.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderLaunch
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -92,6 +99,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -103,6 +111,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRefPolicy
 {
     /// <summary>
@@ -127,6 +136,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 /// <summary>Reference to a SpringCloudBuilder in appplatform to populate springCloudBuilderId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -162,6 +173,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -173,6 +185,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelectorPolicy
 {
     /// <summary>
@@ -197,6 +210,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 /// <summary>Selector for a SpringCloudBuilder in appplatform to populate springCloudBuilderId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringCloudBuilderIdSelector
 {
     /// <summary>
@@ -217,6 +231,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProviderSpringClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecForProvider
 {
     /// <summary>Specifies the Build Pack Binding Type. Allowed values are ApacheSkyWalking, AppDynamics, ApplicationInsights, Dynatrace, ElasticAPM and NewRelic.</summary>
@@ -242,6 +257,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecInitProviderLaunch
 {
     /// <summary>Specifies a map of non-sensitive properties for launchProperties.</summary>
@@ -267,6 +283,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecInitProviderLaunch
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecInitProvider
 {
     /// <summary>Specifies the Build Pack Binding Type. Allowed values are ApacheSkyWalking, AppDynamics, ApplicationInsights, Dynatrace, ElasticAPM and NewRelic.</summary>
@@ -284,6 +301,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -308,6 +326,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -324,6 +343,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -335,6 +355,7 @@ public enum V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -363,6 +384,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -382,6 +404,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -396,6 +419,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpecWriteConnectionSecret
 /// <summary>SpringCloudBuildPackBindingSpec defines the desired state of SpringCloudBuildPackBinding</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingSpec
 {
     /// <summary>
@@ -463,6 +487,7 @@ public partial class V1beta1SpringCloudBuildPackBindingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingStatusAtProviderLaunch
 {
     /// <summary>Specifies a map of non-sensitive properties for launchProperties.</summary>
@@ -476,6 +501,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusAtProviderLaunch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingStatusAtProvider
 {
     /// <summary>Specifies the Build Pack Binding Type. Allowed values are ApacheSkyWalking, AppDynamics, ApplicationInsights, Dynatrace, ElasticAPM and NewRelic.</summary>
@@ -498,6 +524,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingStatusConditions
 {
     /// <summary>
@@ -541,6 +568,7 @@ public partial class V1beta1SpringCloudBuildPackBindingStatusConditions
 /// <summary>SpringCloudBuildPackBindingStatus defines the observed state of SpringCloudBuildPackBinding.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudBuildPackBindingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -559,9 +587,13 @@ public partial class V1beta1SpringCloudBuildPackBindingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.</summary>
+/// <summary>
+/// SpringCloudBuildPackBinding is the Schema for the SpringCloudBuildPackBindings API. Manages a Spring Cloud Build Pack Binding.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudBuildPackBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudBuildPackBindingSpec>, IStatus<V1beta1SpringCloudBuildPackBindingStatus?>
 {

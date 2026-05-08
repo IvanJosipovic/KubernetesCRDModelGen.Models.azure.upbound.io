@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.guestconfiguration.azure.upbound.io;
-/// <summary>PolicyVirtualMachineConfigurationAssignment is the Schema for the PolicyVirtualMachineConfigurationAssignments API. Applies a Guest Configuration Policy to a Virtual Machine.</summary>
+/// <summary>
+/// PolicyVirtualMachineConfigurationAssignment is the Schema for the PolicyVirtualMachineConfigurationAssignments API. Applies a Guest Configuration Policy to a Virtual Machine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PolicyVirtualMachineConfigurationAssignment>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentList : IK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecDeletionPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderConfigurationParameter
 {
     /// <summary>The name of the configuration parameter to check.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderConfiguration
 {
     /// <summary>The assignment type for the Guest Configuration Assignment. Possible values are Audit, ApplyAndAutoCorrect, ApplyAndMonitor and DeployAndAutoCorrect.</summary>
@@ -101,6 +108,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -117,6 +125,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -128,6 +137,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVir
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRefPolicy
 {
     /// <summary>
@@ -152,6 +162,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 /// <summary>Reference to a WindowsVirtualMachine in compute to populate virtualMachineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -171,6 +182,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -187,6 +199,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -198,6 +211,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVir
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelectorPolicy
 {
     /// <summary>
@@ -222,6 +236,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 /// <summary>Selector for a WindowsVirtualMachine in compute to populate virtualMachineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProviderVirtualMachineIdSelector
 {
     /// <summary>
@@ -242,6 +257,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForProvider
 {
     /// <summary>A configuration block as defined below.</summary>
@@ -267,6 +283,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecForPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitProviderConfigurationParameter
 {
     /// <summary>The name of the configuration parameter to check.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitProviderConfiguration
 {
     /// <summary>The assignment type for the Guest Configuration Assignment. Possible values are Audit, ApplyAndAutoCorrect, ApplyAndMonitor and DeployAndAutoCorrect.</summary>
@@ -317,6 +335,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitProvider
 {
     /// <summary>A configuration block as defined below.</summary>
@@ -334,6 +353,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecInitP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -358,6 +378,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecManagementPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -374,6 +395,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -385,6 +407,7 @@ public enum V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfig
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -413,6 +436,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProvi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -432,6 +456,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecProvi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -446,6 +471,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpecWrite
 /// <summary>PolicyVirtualMachineConfigurationAssignmentSpec defines the desired state of PolicyVirtualMachineConfigurationAssignment</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpec
 {
     /// <summary>
@@ -513,6 +539,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtProviderConfigurationParameter
 {
     /// <summary>The name of the configuration parameter to check.</summary>
@@ -526,6 +553,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtProviderConfiguration
 {
     /// <summary>The assignment type for the Guest Configuration Assignment. Possible values are Audit, ApplyAndAutoCorrect, ApplyAndMonitor and DeployAndAutoCorrect.</summary>
@@ -551,6 +579,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtProvider
 {
     /// <summary>A configuration block as defined below.</summary>
@@ -573,6 +602,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusAtP
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusConditions
 {
     /// <summary>
@@ -616,6 +646,7 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatusCon
 /// <summary>PolicyVirtualMachineConfigurationAssignmentStatus defines the observed state of PolicyVirtualMachineConfigurationAssignment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -634,9 +665,13 @@ public partial class V1beta1PolicyVirtualMachineConfigurationAssignmentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PolicyVirtualMachineConfigurationAssignment is the Schema for the PolicyVirtualMachineConfigurationAssignments API. Applies a Guest Configuration Policy to a Virtual Machine.</summary>
+/// <summary>
+/// PolicyVirtualMachineConfigurationAssignment is the Schema for the PolicyVirtualMachineConfigurationAssignments API. Applies a Guest Configuration Policy to a Virtual Machine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PolicyVirtualMachineConfigurationAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PolicyVirtualMachineConfigurationAssignmentSpec>, IStatus<V1beta1PolicyVirtualMachineConfigurationAssignmentStatus?>
 {

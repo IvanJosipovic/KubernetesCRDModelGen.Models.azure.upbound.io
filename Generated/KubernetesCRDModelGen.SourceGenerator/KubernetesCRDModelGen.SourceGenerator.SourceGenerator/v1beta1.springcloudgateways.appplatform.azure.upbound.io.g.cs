@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
-/// <summary>SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.</summary>
+/// <summary>
+/// SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpringCloudGateway>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SpringCloudGatewayList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SpringCloudGatewaySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderApiMetadata
 {
     /// <summary>Detailed description of the APIs available on the Gateway instance.</summary>
@@ -82,6 +88,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderApiMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderClientAuthorization
 {
     /// <summary>Specifies the Spring Cloud Certificate IDs of the Spring Cloud Gateway.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderClientAuthorization
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderCors
 {
     /// <summary>Allowed headers in cross-site requests. The special value * allows actual requests to send any header.</summary>
@@ -128,6 +136,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderLocalResponseCachePerInstance
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -141,6 +150,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderLocalResponseCacheP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderLocalResponseCachePerRoute
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderLocalResponseCacheP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderQuota
 {
     /// <summary>Specifies the required cpu of the Spring Cloud Deployment. Possible Values are 500m, 1, 2, 3 and 4. Defaults to 1 if not specified.</summary>
@@ -168,6 +179,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderQuota
 /// <summary>Specifies the sensitive environment variables of the Spring Cloud Gateway as a map of key-value pairs. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSensitiveEnvironmentVariablesSecretRef
 {
     /// <summary>Name of the secret.</summary>
@@ -187,6 +199,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSensitiveEnvironmen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -203,6 +216,7 @@ public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -214,6 +228,7 @@ public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRefPolicy
 {
     /// <summary>
@@ -238,6 +253,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceI
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -257,6 +273,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -273,6 +290,7 @@ public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -284,6 +302,7 @@ public enum V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelectorPolicy
 {
     /// <summary>
@@ -308,6 +327,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceI
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceIdSelector
 {
     /// <summary>
@@ -328,6 +348,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSpringCloudServiceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProviderSso
 {
     /// <summary>The public identifier for the application.</summary>
@@ -349,6 +370,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProviderSso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecForProvider
 {
     /// <summary>A api_metadata block as defined below.</summary>
@@ -422,6 +444,7 @@ public partial class V1beta1SpringCloudGatewaySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderApiMetadata
 {
     /// <summary>Detailed description of the APIs available on the Gateway instance.</summary>
@@ -447,6 +470,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderApiMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderClientAuthorization
 {
     /// <summary>Specifies the Spring Cloud Certificate IDs of the Spring Cloud Gateway.</summary>
@@ -460,6 +484,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderClientAuthorizatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderCors
 {
     /// <summary>Allowed headers in cross-site requests. The special value * allows actual requests to send any header.</summary>
@@ -493,6 +518,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderLocalResponseCachePerInstance
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -506,6 +532,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderLocalResponseCache
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderLocalResponseCachePerRoute
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -519,6 +546,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderLocalResponseCache
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderQuota
 {
     /// <summary>Specifies the required cpu of the Spring Cloud Deployment. Possible Values are 500m, 1, 2, 3 and 4. Defaults to 1 if not specified.</summary>
@@ -532,6 +560,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderQuota
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProviderSso
 {
     /// <summary>The public identifier for the application.</summary>
@@ -565,6 +594,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProviderSso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecInitProvider
 {
     /// <summary>A api_metadata block as defined below.</summary>
@@ -629,6 +659,7 @@ public partial class V1beta1SpringCloudGatewaySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -653,6 +684,7 @@ public enum V1beta1SpringCloudGatewaySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -669,6 +701,7 @@ public enum V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -680,6 +713,7 @@ public enum V1beta1SpringCloudGatewaySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -708,6 +742,7 @@ public partial class V1beta1SpringCloudGatewaySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -727,6 +762,7 @@ public partial class V1beta1SpringCloudGatewaySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -741,6 +777,7 @@ public partial class V1beta1SpringCloudGatewaySpecWriteConnectionSecretToRef
 /// <summary>SpringCloudGatewaySpec defines the desired state of SpringCloudGateway</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewaySpec
 {
     /// <summary>
@@ -808,6 +845,7 @@ public partial class V1beta1SpringCloudGatewaySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderApiMetadata
 {
     /// <summary>Detailed description of the APIs available on the Gateway instance.</summary>
@@ -833,6 +871,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderApiMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderClientAuthorization
 {
     /// <summary>Specifies the Spring Cloud Certificate IDs of the Spring Cloud Gateway.</summary>
@@ -846,6 +885,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderClientAuthorizatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderCors
 {
     /// <summary>Allowed headers in cross-site requests. The special value * allows actual requests to send any header.</summary>
@@ -879,6 +919,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderLocalResponseCachePerInstance
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -892,6 +933,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderLocalResponseCache
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderLocalResponseCachePerRoute
 {
     /// <summary>Specifies the maximum size of cache (10MB, 900KB, 1GB...) to determine if the cache needs to evict some entries.</summary>
@@ -905,6 +947,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderLocalResponseCache
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderQuota
 {
     /// <summary>Specifies the required cpu of the Spring Cloud Deployment. Possible Values are 500m, 1, 2, 3 and 4. Defaults to 1 if not specified.</summary>
@@ -918,6 +961,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderQuota
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProviderSso
 {
     /// <summary>The public identifier for the application.</summary>
@@ -939,6 +983,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProviderSso
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusAtProvider
 {
     /// <summary>A api_metadata block as defined below.</summary>
@@ -1009,6 +1054,7 @@ public partial class V1beta1SpringCloudGatewayStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatusConditions
 {
     /// <summary>
@@ -1052,6 +1098,7 @@ public partial class V1beta1SpringCloudGatewayStatusConditions
 /// <summary>SpringCloudGatewayStatus defines the observed state of SpringCloudGateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpringCloudGatewayStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1070,9 +1117,13 @@ public partial class V1beta1SpringCloudGatewayStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.</summary>
+/// <summary>
+/// SpringCloudGateway is the Schema for the SpringCloudGateways API. Manages a Spring Cloud Gateway.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpringCloudGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpringCloudGatewaySpec>, IStatus<V1beta1SpringCloudGatewayStatus?>
 {

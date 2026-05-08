@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.signalrservice.azure.upbound.io;
-/// <summary>WebPubsubNetworkACL is the Schema for the WebPubsubNetworkACLs API. Manages the Network ACL for a Web Pubsub service.</summary>
+/// <summary>
+/// WebPubsubNetworkACL is the Schema for the WebPubsubNetworkACLs API. Manages the Network ACL for a Web Pubsub service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebPubsubNetworkACLList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebPubsubNetworkACL>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WebPubsubNetworkACLList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1WebPubsubNetworkACLSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdR
 /// <summary>Reference to a PrivateEndpoint in network to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdS
 /// <summary>Selector for a PrivateEndpoint in network to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpointIdS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpoint
 {
     /// <summary>The allowed request types for the Private Endpoint Connection. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -229,6 +243,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPrivateEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderPublicNetwork
 {
     /// <summary>The allowed request types for the public network. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -248,6 +263,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderPublicNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -264,6 +280,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -275,6 +292,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPolicy
 {
     /// <summary>
@@ -299,6 +317,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRefPoli
 /// <summary>Reference to a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -318,6 +337,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -334,6 +354,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -345,6 +366,7 @@ public enum V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelectorPolicy
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelecto
 /// <summary>Selector for a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelector
 {
     /// <summary>
@@ -389,6 +412,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProviderWebPubsubIdSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecForProvider
 {
     /// <summary>The default action to control the network access when no other rule matches. Possible values are Allow and Deny. Defaults to Deny.</summary>
@@ -424,6 +448,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -440,6 +465,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -451,6 +477,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRefPolicy
 {
     /// <summary>
@@ -475,6 +502,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointId
 /// <summary>Reference to a PrivateEndpoint in network to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -494,6 +522,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -510,6 +539,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -521,6 +551,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelectorPolicy
 {
     /// <summary>
@@ -545,6 +576,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointId
 /// <summary>Selector for a PrivateEndpoint in network to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointIdSelector
 {
     /// <summary>
@@ -565,6 +597,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpointId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpoint
 {
     /// <summary>The allowed request types for the Private Endpoint Connection. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -590,6 +623,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPrivateEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPublicNetwork
 {
     /// <summary>The allowed request types for the public network. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -609,6 +643,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderPublicNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -625,6 +660,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -636,6 +672,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPolicy
 {
     /// <summary>
@@ -660,6 +697,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRefPol
 /// <summary>Reference to a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -679,6 +717,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -695,6 +734,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -706,6 +746,7 @@ public enum V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelectorPolicy
 {
     /// <summary>
@@ -730,6 +771,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelect
 /// <summary>Selector for a WebPubsub in signalrservice to populate webPubsubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelector
 {
     /// <summary>
@@ -762,6 +804,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProviderWebPubsubIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecInitProvider
 {
     /// <summary>The default action to control the network access when no other rule matches. Possible values are Allow and Deny. Defaults to Deny.</summary>
@@ -795,6 +838,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -819,6 +863,7 @@ public enum V1beta1WebPubsubNetworkACLSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -835,6 +880,7 @@ public enum V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -846,6 +892,7 @@ public enum V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -874,6 +921,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -893,6 +941,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -907,6 +956,7 @@ public partial class V1beta1WebPubsubNetworkACLSpecWriteConnectionSecretToRef
 /// <summary>WebPubsubNetworkACLSpec defines the desired state of WebPubsubNetworkACL</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLSpec
 {
     /// <summary>
@@ -974,6 +1024,7 @@ public partial class V1beta1WebPubsubNetworkACLSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLStatusAtProviderPrivateEndpoint
 {
     /// <summary>The allowed request types for the Private Endpoint Connection. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -991,6 +1042,7 @@ public partial class V1beta1WebPubsubNetworkACLStatusAtProviderPrivateEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLStatusAtProviderPublicNetwork
 {
     /// <summary>The allowed request types for the public network. Possible values are ClientConnection, ServerConnection, RESTAPI and Trace.</summary>
@@ -1004,6 +1056,7 @@ public partial class V1beta1WebPubsubNetworkACLStatusAtProviderPublicNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLStatusAtProvider
 {
     /// <summary>The default action to control the network access when no other rule matches. Possible values are Allow and Deny. Defaults to Deny.</summary>
@@ -1030,6 +1083,7 @@ public partial class V1beta1WebPubsubNetworkACLStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLStatusConditions
 {
     /// <summary>
@@ -1073,6 +1127,7 @@ public partial class V1beta1WebPubsubNetworkACLStatusConditions
 /// <summary>WebPubsubNetworkACLStatus defines the observed state of WebPubsubNetworkACL.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebPubsubNetworkACLStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1091,9 +1146,13 @@ public partial class V1beta1WebPubsubNetworkACLStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WebPubsubNetworkACL is the Schema for the WebPubsubNetworkACLs API. Manages the Network ACL for a Web Pubsub service.</summary>
+/// <summary>
+/// WebPubsubNetworkACL is the Schema for the WebPubsubNetworkACLs API. Manages the Network ACL for a Web Pubsub service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebPubsubNetworkACL : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebPubsubNetworkACLSpec>, IStatus<V1beta1WebPubsubNetworkACLStatus?>
 {

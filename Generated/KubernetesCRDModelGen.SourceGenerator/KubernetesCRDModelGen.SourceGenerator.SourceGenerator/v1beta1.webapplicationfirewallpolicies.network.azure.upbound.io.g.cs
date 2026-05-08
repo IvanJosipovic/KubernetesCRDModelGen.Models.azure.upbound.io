@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
-/// <summary>WebApplicationFirewallPolicy is the Schema for the WebApplicationFirewallPolicys API. Manages a Azure Web Application Firewall Policy instance.</summary>
+/// <summary>
+/// WebApplicationFirewallPolicy is the Schema for the WebApplicationFirewallPolicys API. Manages a Azure Web Application Firewall Policy instance.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebApplicationFirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebApplicationFirewallPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WebApplicationFirewallPolicyList : IKubernetesObject
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRulesMatchConditionsMatchVariables
 {
     /// <summary>Specifies which elements in the collection this rule applies to.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRulesMatchConditions
 {
     /// <summary>A list of match values. This is Required when the operator is not Any.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRules
 {
     /// <summary>Type of action. Possible values are Allow, Block, JSChallenge and Log.</summary>
@@ -136,6 +144,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderCustomRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesExclusionExcludedRuleSetRuleGroup
 {
     /// <summary>One or more Rule IDs for exclusion.</summary>
@@ -149,6 +158,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesExclusionExcludedRuleSet
 {
     /// <summary>One or more rule_group block defined below.</summary>
@@ -166,6 +176,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesExclusion
 {
     /// <summary>One or more excluded_rule_set block defined below.</summary>
@@ -187,6 +198,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesManagedRuleSetRuleGroupOverrideRule
 {
     /// <summary>Describes the override action to be applied when rule matches. Possible values are Allow, AnomalyScoring, Block, JSChallenge and Log. JSChallenge is only valid for rulesets of type Microsoft_BotManagerRuleSet.</summary>
@@ -204,6 +216,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesManagedRuleSetRuleGroupOverride
 {
     /// <summary>One or more rule block defined below.</summary>
@@ -217,6 +230,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRulesManagedRuleSet
 {
     /// <summary>One or more rule_group_override block defined below.</summary>
@@ -234,6 +248,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRules
 {
     /// <summary>One or more exclusion block defined below.</summary>
@@ -247,6 +262,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderManagedRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySettingsLogScrubbingRule
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -271,6 +287,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySettingsLogScrubbing
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -284,6 +301,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySettings
 {
     /// <summary>Describes if the policy is in enabled state or disabled state. Defaults to true.</summary>
@@ -335,6 +353,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderPolicySet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -351,6 +370,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -362,6 +382,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -386,6 +407,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceG
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -405,6 +427,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -421,6 +444,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -432,6 +456,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -456,6 +481,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceG
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -476,6 +502,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProviderResourceG
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecForProvider
 {
     /// <summary>One or more custom_rules blocks as defined below.</summary>
@@ -513,6 +540,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRulesMatchConditionsMatchVariables
 {
     /// <summary>Specifies which elements in the collection this rule applies to.</summary>
@@ -526,6 +554,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRulesMatchConditions
 {
     /// <summary>A list of match values. This is Required when the operator is not Any.</summary>
@@ -551,6 +580,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRules
 {
     /// <summary>Type of action. Possible values are Allow, Block, JSChallenge and Log.</summary>
@@ -592,6 +622,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesExclusionExcludedRuleSetRuleGroup
 {
     /// <summary>One or more Rule IDs for exclusion.</summary>
@@ -605,6 +636,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesExclusionExcludedRuleSet
 {
     /// <summary>One or more rule_group block defined below.</summary>
@@ -622,6 +654,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesExclusion
 {
     /// <summary>One or more excluded_rule_set block defined below.</summary>
@@ -643,6 +676,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesManagedRuleSetRuleGroupOverrideRule
 {
     /// <summary>Describes the override action to be applied when rule matches. Possible values are Allow, AnomalyScoring, Block, JSChallenge and Log. JSChallenge is only valid for rulesets of type Microsoft_BotManagerRuleSet.</summary>
@@ -660,6 +694,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesManagedRuleSetRuleGroupOverride
 {
     /// <summary>One or more rule block defined below.</summary>
@@ -673,6 +708,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRulesManagedRuleSet
 {
     /// <summary>One or more rule_group_override block defined below.</summary>
@@ -690,6 +726,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedRules
 {
     /// <summary>One or more exclusion block defined below.</summary>
@@ -703,6 +740,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySettingsLogScrubbingRule
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -727,6 +765,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySettingsLogScrubbing
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -740,6 +779,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySettings
 {
     /// <summary>Describes if the policy is in enabled state or disabled state. Defaults to true.</summary>
@@ -797,6 +837,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProviderPolicySe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecInitProvider
 {
     /// <summary>One or more custom_rules blocks as defined below.</summary>
@@ -826,6 +867,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -850,6 +892,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -866,6 +909,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -877,6 +921,7 @@ public enum V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -905,6 +950,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecProviderConfigRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -924,6 +970,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -938,6 +985,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpecWriteConnectionSecre
 /// <summary>WebApplicationFirewallPolicySpec defines the desired state of WebApplicationFirewallPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicySpec
 {
     /// <summary>
@@ -1005,6 +1053,7 @@ public partial class V1beta1WebApplicationFirewallPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRulesMatchConditionsMatchVariables
 {
     /// <summary>Specifies which elements in the collection this rule applies to.</summary>
@@ -1018,6 +1067,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRulesMatchConditions
 {
     /// <summary>A list of match values. This is Required when the operator is not Any.</summary>
@@ -1043,6 +1093,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRules
 {
     /// <summary>Type of action. Possible values are Allow, Block, JSChallenge and Log.</summary>
@@ -1084,6 +1135,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderCustomRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesExclusionExcludedRuleSetRuleGroup
 {
     /// <summary>One or more Rule IDs for exclusion.</summary>
@@ -1097,6 +1149,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesExclusionExcludedRuleSet
 {
     /// <summary>One or more rule_group block defined below.</summary>
@@ -1114,6 +1167,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesExclusion
 {
     /// <summary>One or more excluded_rule_set block defined below.</summary>
@@ -1135,6 +1189,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesManagedRuleSetRuleGroupOverrideRule
 {
     /// <summary>Describes the override action to be applied when rule matches. Possible values are Allow, AnomalyScoring, Block, JSChallenge and Log. JSChallenge is only valid for rulesets of type Microsoft_BotManagerRuleSet.</summary>
@@ -1152,6 +1207,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesManagedRuleSetRuleGroupOverride
 {
     /// <summary>One or more rule block defined below.</summary>
@@ -1165,6 +1221,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRulesManagedRuleSet
 {
     /// <summary>One or more rule_group_override block defined below.</summary>
@@ -1182,6 +1239,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedRules
 {
     /// <summary>One or more exclusion block defined below.</summary>
@@ -1195,6 +1253,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderManagedR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySettingsLogScrubbingRule
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -1219,6 +1278,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySettingsLogScrubbing
 {
     /// <summary>Whether this rule is enabled. Defaults to true.</summary>
@@ -1232,6 +1292,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySettings
 {
     /// <summary>Describes if the policy is in enabled state or disabled state. Defaults to true.</summary>
@@ -1277,6 +1338,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProviderPolicySe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusAtProvider
 {
     /// <summary>One or more custom_rules blocks as defined below.</summary>
@@ -1319,6 +1381,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatusConditions
 {
     /// <summary>
@@ -1362,6 +1425,7 @@ public partial class V1beta1WebApplicationFirewallPolicyStatusConditions
 /// <summary>WebApplicationFirewallPolicyStatus defines the observed state of WebApplicationFirewallPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebApplicationFirewallPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1380,9 +1444,13 @@ public partial class V1beta1WebApplicationFirewallPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WebApplicationFirewallPolicy is the Schema for the WebApplicationFirewallPolicys API. Manages a Azure Web Application Firewall Policy instance.</summary>
+/// <summary>
+/// WebApplicationFirewallPolicy is the Schema for the WebApplicationFirewallPolicys API. Manages a Azure Web Application Firewall Policy instance.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebApplicationFirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebApplicationFirewallPolicySpec>, IStatus<V1beta1WebApplicationFirewallPolicyStatus?>
 {

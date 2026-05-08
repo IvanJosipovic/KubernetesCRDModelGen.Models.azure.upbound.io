@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.hdinsight.azure.upbound.io;
-/// <summary>InteractiveQueryCluster is the Schema for the InteractiveQueryClusters API. Manages a HDInsight Interactive Query Cluster.</summary>
+/// <summary>
+/// InteractiveQueryCluster is the Schema for the InteractiveQueryClusters API. Manages a HDInsight Interactive Query Cluster.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InteractiveQueryClusterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1InteractiveQueryCluster>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1InteractiveQueryClusterList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1InteractiveQueryClusterSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderComponentVersion
 {
     /// <summary>The version of Interactive Query which should be used for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderComponentVersi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderComputeIsolation
 {
     /// <summary>This field indicates whether enable compute isolation or not. Possible values are true or false.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderComputeIsolati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderDiskEncryption
 {
     /// <summary>This is an algorithm identifier for encryption. Possible values are RSA1_5, RSA-OAEP, RSA-OAEP-256.</summary>
@@ -101,6 +109,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderDiskEncryption
 /// <summary>The workspace key of the log analytics extension.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderExtensionPrimaryKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -118,6 +127,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderExtensionPrima
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderExtension
 {
     /// <summary>The workspace ID of the log analytics extension.</summary>
@@ -132,6 +142,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderExtension
 /// <summary>The password used for the Ambari Portal.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderGatewayPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -149,6 +160,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderGatewayPasswor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderGateway
 {
     /// <summary>The password used for the Ambari Portal.</summary>
@@ -163,6 +175,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderGateway
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresAmbariPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -180,6 +193,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresAmba
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresAmbari
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -202,6 +216,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresAmba
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresHivePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -219,6 +234,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresHive
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresHive
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -241,6 +257,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresHive
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresOoziePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -258,6 +275,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresOozi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresOozie
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -279,6 +297,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastoresOozi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastores
 {
     /// <summary>An ambari block as defined below.</summary>
@@ -297,6 +316,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMetastores
 /// <summary>The Operations Management Suite (OMS) workspace key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMonitorPrimaryKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -314,6 +334,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMonitorPrimary
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderMonitor
 {
     /// <summary>The Operations Management Suite (OMS) workspace ID.</summary>
@@ -327,6 +348,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderNetwork
 {
     /// <summary>The direction of the resource provider connection. Possible values include Inbound or Outbound. Defaults to Inbound. Changing this forces a new resource to be created.</summary>
@@ -346,6 +368,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -362,6 +385,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -373,6 +397,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfiguratio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -397,6 +422,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -416,6 +442,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -432,6 +459,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -443,6 +471,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfiguratio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -467,6 +496,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -487,6 +517,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfigurationIpConfiguration
 {
     /// <summary>The name of the script action.</summary>
@@ -520,6 +551,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkConfiguration
 {
     /// <summary>The ID of the private link service group.</summary>
@@ -542,6 +574,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderPrivateLinkCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -558,6 +591,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -569,6 +603,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -593,6 +628,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupN
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -612,6 +648,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -628,6 +665,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -639,6 +677,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -663,6 +702,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupN
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -684,6 +724,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderResourceGroupN
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -701,6 +742,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -724,6 +766,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -740,6 +783,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -751,6 +795,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -775,6 +820,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeS
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -794,6 +840,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -810,6 +857,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -821,6 +869,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -845,6 +894,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeS
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeSubnetIdSelector
 {
     /// <summary>
@@ -865,6 +915,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNodeS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNode
 {
     /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
@@ -906,6 +957,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
     /// <summary>The days of the week to perform autoscale. Possible values are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -923,6 +975,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeAutoscaleRecurrence
 {
     /// <summary>A list of schedule blocks as defined below.</summary>
@@ -936,6 +989,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeAutoscale
 {
     /// <summary>A recurrence block as defined below.</summary>
@@ -946,6 +1000,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -963,6 +1018,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -986,6 +1042,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1002,6 +1059,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1013,6 +1071,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetId
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -1037,6 +1096,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1056,6 +1116,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1072,6 +1133,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1083,6 +1145,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetId
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1107,6 +1170,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNodeSubnetIdSelector
 {
     /// <summary>
@@ -1127,6 +1191,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNode
 {
     /// <summary>A autoscale block as defined below.</summary>
@@ -1177,6 +1242,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesWorkerNod
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1194,6 +1260,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -1217,6 +1284,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1233,6 +1301,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1244,6 +1313,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubne
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -1268,6 +1338,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1287,6 +1358,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1303,6 +1375,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1314,6 +1387,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubne
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1338,6 +1412,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNodeSubnetIdSelector
 {
     /// <summary>
@@ -1358,6 +1433,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeperNode
 {
     /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
@@ -1399,6 +1475,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRolesZookeeper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderRoles
 {
     /// <summary>A head_node block as defined above.</summary>
@@ -1417,6 +1494,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderRoles
 /// <summary>The user password of the Azure Active Directory Domain. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderSecurityProfileDomainUserPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1434,6 +1512,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderSecurityProfil
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderSecurityProfile
 {
     /// <summary>The resource ID of the Azure Active Directory Domain Service. Changing this forces a new resource to be created.</summary>
@@ -1468,6 +1547,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderSecurityProfil
 /// <summary>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageAccountKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1491,6 +1571,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1507,6 +1588,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1518,6 +1600,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRefPolicy
 {
     /// <summary>
@@ -1542,6 +1625,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1561,6 +1645,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1577,6 +1662,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1588,6 +1674,7 @@ public enum V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelectorPolicy
 {
     /// <summary>
@@ -1612,6 +1699,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountStorageContainerIdSelector
 {
     /// <summary>
@@ -1632,6 +1720,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 {
     /// <summary>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.</summary>
@@ -1661,6 +1750,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccountGen2
 {
     /// <summary>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.</summary>
@@ -1682,6 +1772,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProviderStorageAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecForProvider
 {
     /// <summary>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.</summary>
@@ -1775,6 +1866,7 @@ public partial class V1beta1InteractiveQueryClusterSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderComponentVersion
 {
     /// <summary>The version of Interactive Query which should be used for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.</summary>
@@ -1784,6 +1876,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderComponentVers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderComputeIsolation
 {
     /// <summary>This field indicates whether enable compute isolation or not. Possible values are true or false.</summary>
@@ -1797,6 +1890,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderComputeIsolat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderDiskEncryption
 {
     /// <summary>This is an algorithm identifier for encryption. Possible values are RSA1_5, RSA-OAEP, RSA-OAEP-256.</summary>
@@ -1819,6 +1913,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderDiskEncryptio
 /// <summary>The workspace key of the log analytics extension.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderExtensionPrimaryKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1836,6 +1931,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderExtensionPrim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderExtension
 {
     /// <summary>The workspace ID of the log analytics extension.</summary>
@@ -1850,6 +1946,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderExtension
 /// <summary>The password used for the Ambari Portal.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderGatewayPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1867,6 +1964,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderGatewayPasswo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderGateway
 {
     /// <summary>The password used for the Ambari Portal.</summary>
@@ -1881,6 +1979,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderGateway
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresAmbariPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1898,6 +1997,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresAmb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresAmbari
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -1920,6 +2020,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresAmb
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresHivePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1937,6 +2038,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresHiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresHive
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -1959,6 +2061,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresHiv
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresOoziePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1976,6 +2079,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresOoz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresOozie
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -1997,6 +2101,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastoresOoz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastores
 {
     /// <summary>An ambari block as defined below.</summary>
@@ -2015,6 +2120,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMetastores
 /// <summary>The Operations Management Suite (OMS) workspace key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMonitorPrimaryKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2032,6 +2138,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMonitorPrimar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderMonitor
 {
     /// <summary>The Operations Management Suite (OMS) workspace ID.</summary>
@@ -2045,6 +2152,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderNetwork
 {
     /// <summary>The direction of the resource provider connection. Possible values include Inbound or Outbound. Defaults to Inbound. Changing this forces a new resource to be created.</summary>
@@ -2064,6 +2172,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2080,6 +2189,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2091,6 +2201,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRefPolicy
 {
     /// <summary>
@@ -2115,6 +2226,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2134,6 +2246,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2150,6 +2263,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2161,6 +2275,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2185,6 +2300,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfigurationSubnetIdSelector
 {
     /// <summary>
@@ -2205,6 +2321,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfigurationIpConfiguration
 {
     /// <summary>The name of the script action.</summary>
@@ -2238,6 +2355,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkConfiguration
 {
     /// <summary>The ID of the private link service group.</summary>
@@ -2255,6 +2373,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderPrivateLinkCo
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2272,6 +2391,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -2295,6 +2415,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2311,6 +2432,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2322,6 +2444,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -2346,6 +2469,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2365,6 +2489,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2381,6 +2506,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2392,6 +2518,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2416,6 +2543,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNodeSubnetIdSelector
 {
     /// <summary>
@@ -2436,6 +2564,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 {
     /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
@@ -2477,6 +2606,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
     /// <summary>The days of the week to perform autoscale. Possible values are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -2494,6 +2624,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeAutoscaleRecurrence
 {
     /// <summary>A list of schedule blocks as defined below.</summary>
@@ -2507,6 +2638,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeAutoscale
 {
     /// <summary>A recurrence block as defined below.</summary>
@@ -2517,6 +2649,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2534,6 +2667,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -2557,6 +2691,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2573,6 +2708,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2584,6 +2720,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -2608,6 +2745,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2627,6 +2765,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2643,6 +2782,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2654,6 +2794,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2678,6 +2819,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNodeSubnetIdSelector
 {
     /// <summary>
@@ -2698,6 +2840,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNode
 {
     /// <summary>A autoscale block as defined below.</summary>
@@ -2748,6 +2891,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesWorkerNo
 /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2765,6 +2909,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -2788,6 +2933,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2804,6 +2950,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2815,6 +2962,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRefPolicy
 {
     /// <summary>
@@ -2839,6 +2987,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2858,6 +3007,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2874,6 +3024,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2885,6 +3036,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -2909,6 +3061,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNodeSubnetIdSelector
 {
     /// <summary>
@@ -2929,6 +3082,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeeperNode
 {
     /// <summary>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.</summary>
@@ -2970,6 +3124,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRolesZookeepe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderRoles
 {
     /// <summary>A head_node block as defined above.</summary>
@@ -2988,6 +3143,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderRoles
 /// <summary>The user password of the Azure Active Directory Domain. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderSecurityProfileDomainUserPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3005,6 +3161,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderSecurityProfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderSecurityProfile
 {
     /// <summary>The resource ID of the Azure Active Directory Domain Service. Changing this forces a new resource to be created.</summary>
@@ -3039,6 +3196,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderSecurityProfi
 /// <summary>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageAccountKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -3062,6 +3220,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3078,6 +3237,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3089,6 +3249,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageC
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRefPolicy
 {
     /// <summary>
@@ -3113,6 +3274,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 /// <summary>Reference to a Container in storage to populate storageContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3132,6 +3294,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3148,6 +3311,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3159,6 +3323,7 @@ public enum V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageC
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelectorPolicy
 {
     /// <summary>
@@ -3183,6 +3348,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 /// <summary>Selector for a Container in storage to populate storageContainerId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountStorageContainerIdSelector
 {
     /// <summary>
@@ -3203,6 +3369,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccount
 {
     /// <summary>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.</summary>
@@ -3232,6 +3399,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccountGen2
 {
     /// <summary>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.</summary>
@@ -3265,6 +3433,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProviderStorageAccoun
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecInitProvider
 {
     /// <summary>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.</summary>
@@ -3350,6 +3519,7 @@ public partial class V1beta1InteractiveQueryClusterSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3374,6 +3544,7 @@ public enum V1beta1InteractiveQueryClusterSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3390,6 +3561,7 @@ public enum V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3401,6 +3573,7 @@ public enum V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3429,6 +3602,7 @@ public partial class V1beta1InteractiveQueryClusterSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3448,6 +3622,7 @@ public partial class V1beta1InteractiveQueryClusterSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3462,6 +3637,7 @@ public partial class V1beta1InteractiveQueryClusterSpecWriteConnectionSecretToRe
 /// <summary>InteractiveQueryClusterSpec defines the desired state of InteractiveQueryCluster</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterSpec
 {
     /// <summary>
@@ -3529,6 +3705,7 @@ public partial class V1beta1InteractiveQueryClusterSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderComponentVersion
 {
     /// <summary>The version of Interactive Query which should be used for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.</summary>
@@ -3538,6 +3715,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderComponentVers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderComputeIsolation
 {
     /// <summary>This field indicates whether enable compute isolation or not. Possible values are true or false.</summary>
@@ -3551,6 +3729,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderComputeIsolat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderDiskEncryption
 {
     /// <summary>This is an algorithm identifier for encryption. Possible values are RSA1_5, RSA-OAEP, RSA-OAEP-256.</summary>
@@ -3572,6 +3751,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderDiskEncryptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderExtension
 {
     /// <summary>The workspace ID of the log analytics extension.</summary>
@@ -3581,6 +3761,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderExtension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderGateway
 {
     /// <summary>The username used for the Ambari Portal. Changing this forces a new resource to be created.</summary>
@@ -3590,6 +3771,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresAmbari
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -3607,6 +3789,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresAmb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresHive
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -3624,6 +3807,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresHiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresOozie
 {
     /// <summary>The external Oozie metastore&apos;s existing SQL database. Changing this forces a new resource to be created.</summary>
@@ -3641,6 +3825,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastoresOoz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastores
 {
     /// <summary>An ambari block as defined below.</summary>
@@ -3658,6 +3843,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderMetastores
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderMonitor
 {
     /// <summary>The Operations Management Suite (OMS) workspace ID.</summary>
@@ -3667,6 +3853,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderNetwork
 {
     /// <summary>The direction of the resource provider connection. Possible values include Inbound or Outbound. Defaults to Inbound. Changing this forces a new resource to be created.</summary>
@@ -3680,6 +3867,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderPrivateLinkConfigurationIpConfiguration
 {
     /// <summary>The name of the script action.</summary>
@@ -3705,6 +3893,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderPrivateLinkCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderPrivateLinkConfiguration
 {
     /// <summary>The ID of the private link service group.</summary>
@@ -3721,6 +3910,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderPrivateLinkCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesHeadNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -3738,6 +3928,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesHeadNode
 {
     /// <summary>The script action which will run on the cluster. One or more script_actions blocks as defined above. Changing this forces a new resource to be created.</summary>
@@ -3767,6 +3958,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesHeadNode
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNodeAutoscaleRecurrenceSchedule
 {
     /// <summary>The days of the week to perform autoscale. Possible values are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday.</summary>
@@ -3784,6 +3976,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNodeAutoscaleRecurrence
 {
     /// <summary>A list of schedule blocks as defined below.</summary>
@@ -3797,6 +3990,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNodeAutoscale
 {
     /// <summary>A recurrence block as defined below.</summary>
@@ -3806,6 +4000,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -3823,6 +4018,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNode
 {
     /// <summary>A autoscale block as defined below.</summary>
@@ -3860,6 +4056,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesWorkerNo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesZookeeperNodeScriptActions
 {
     /// <summary>The name of the script action.</summary>
@@ -3877,6 +4074,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesZookeepe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesZookeeperNode
 {
     /// <summary>The script action which will run on the cluster. One or more script_actions blocks as defined above. Changing this forces a new resource to be created.</summary>
@@ -3906,6 +4104,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRolesZookeepe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderRoles
 {
     /// <summary>A head_node block as defined above.</summary>
@@ -3923,6 +4122,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderRoles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderSecurityProfile
 {
     /// <summary>The resource ID of the Azure Active Directory Domain Service. Changing this forces a new resource to be created.</summary>
@@ -3952,6 +4152,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderSecurityProfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderStorageAccount
 {
     /// <summary>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.</summary>
@@ -3969,6 +4170,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderStorageAccoun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProviderStorageAccountGen2
 {
     /// <summary>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.</summary>
@@ -3990,6 +4192,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProviderStorageAccoun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusAtProvider
 {
     /// <summary>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.</summary>
@@ -4088,6 +4291,7 @@ public partial class V1beta1InteractiveQueryClusterStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatusConditions
 {
     /// <summary>
@@ -4131,6 +4335,7 @@ public partial class V1beta1InteractiveQueryClusterStatusConditions
 /// <summary>InteractiveQueryClusterStatus defines the observed state of InteractiveQueryCluster.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InteractiveQueryClusterStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4149,9 +4354,13 @@ public partial class V1beta1InteractiveQueryClusterStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InteractiveQueryCluster is the Schema for the InteractiveQueryClusters API. Manages a HDInsight Interactive Query Cluster.</summary>
+/// <summary>
+/// InteractiveQueryCluster is the Schema for the InteractiveQueryClusters API. Manages a HDInsight Interactive Query Cluster.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InteractiveQueryCluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InteractiveQueryClusterSpec>, IStatus<V1beta1InteractiveQueryClusterStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
-/// <summary>MonitorDataCollectionRule is the Schema for the MonitorDataCollectionRules API. Manages a Data Collection Rule.</summary>
+/// <summary>
+/// MonitorDataCollectionRule is the Schema for the MonitorDataCollectionRules API. Manages a Data Collection Rule.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorDataCollectionRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitorDataCollectionRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MonitorDataCollectionRuleList : IKubernetesObject<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpoin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpoin
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollecti
 /// <summary>Reference to a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpoin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpoin
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollecti
 /// <summary>Selector for a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollectionEndpointIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataCollecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataFlow
 {
     /// <summary>The built-in transform to transform stream data.</summary>
@@ -229,6 +243,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataFlow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesDataImportEventHubDataSource
 {
     /// <summary>The Event Hub consumer group name.</summary>
@@ -246,6 +261,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesDataImport
 {
     /// <summary>An event_hub_data_source block as defined below.</summary>
@@ -255,6 +271,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesExtension
 {
     /// <summary>A JSON String which specifies the extension setting.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesIisLog
 {
     /// <summary>Specifies a list of absolute paths where the log files are located.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesLogFileSettingsText
 {
     /// <summary>The timestamp format of the text log files. Possible values are ISO 8601, YYYY-MM-DD HH:MM:SS, M/D/YYYY HH:MM:SS AM/PM, Mon DD, YYYY HH:MM:SS, yyMMdd HH:mm:ss, ddMMyy HH:mm:ss, MMM d hh:mm:ss, dd/MMM/yyyy:HH:mm:ss zzz,and yyyy-MM-ddTHH:mm:ssK.</summary>
@@ -306,6 +325,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesLogFileSettings
 {
     /// <summary>A text block as defined below.</summary>
@@ -315,6 +335,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesLogFile
 {
     /// <summary>Specifies a list of file patterns where the log files are located. For example, C:\\JavaLogs\\*.log.</summary>
@@ -340,6 +361,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesPerformanceCounter
 {
     /// <summary>Specifies a list of specifier names of the performance counters you want to collect. To get a list of performance counters on Windows, run the command typeperf. Please see this document for more information.</summary>
@@ -361,6 +383,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesPlatformTelemetry
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -374,6 +397,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesPrometheusForwarderLabelIncludeFilter
 {
     /// <summary>The label of the filter. This label should be unique across all label_include_fileter block. Possible value is microsoft_metrics_include_label.</summary>
@@ -387,6 +411,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesPrometheusForwarder
 {
     /// <summary>One or more label_include_filter blocks as defined above.</summary>
@@ -404,6 +429,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesSyslog
 {
     /// <summary>Specifies a list of facility names. Use a wildcard * to collect logs for all facility names. Possible values are alert, *, audit, auth, authpriv, clock, cron, daemon, ftp, kern, local5, local4, local1, local7, local6, local3, local2, local0, lpr, mail, mark, news, nopri, ntp, syslog, user and uucp.</summary>
@@ -425,6 +451,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesWindowsEventLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -442,6 +469,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesWindowsFirewallLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -455,6 +483,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSourcesW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSources
 {
     /// <summary>A data_import block as defined above.</summary>
@@ -500,6 +529,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsAzureMonitorMetrics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -515,6 +545,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -531,6 +562,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -542,6 +574,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRefPolicy
 {
     /// <summary>
@@ -566,6 +599,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Reference to a EventHub in eventhub to populate eventHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -585,6 +619,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -601,6 +636,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -612,6 +648,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelectorPolicy
 {
     /// <summary>
@@ -636,6 +673,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Selector for a EventHub in eventhub to populate eventHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubEventHubIdSelector
 {
     /// <summary>
@@ -656,6 +694,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHub
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -677,6 +716,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsEventHubDirect
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -696,6 +736,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -712,6 +753,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -723,6 +765,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyt
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicy
 {
     /// <summary>
@@ -747,6 +790,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -766,6 +810,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -782,6 +827,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -793,6 +839,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyt
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicy
 {
     /// <summary>
@@ -817,6 +864,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalyticsWorkspaceResourceIdSelector
 {
     /// <summary>
@@ -837,6 +885,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsLogAnalytics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -858,6 +907,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsMonitorAccount
 {
     /// <summary>The resource ID of the Monitor Account.</summary>
@@ -877,6 +927,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -893,6 +944,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -904,6 +956,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRefPolicy
 {
     /// <summary>
@@ -928,6 +981,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Reference to a Container in storage to populate containerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -947,6 +1001,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -963,6 +1018,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -974,6 +1030,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelectorPolicy
 {
     /// <summary>
@@ -998,6 +1055,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Selector for a Container in storage to populate containerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobContainerNameSelector
 {
     /// <summary>
@@ -1024,6 +1082,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1040,6 +1099,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1051,6 +1111,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -1075,6 +1136,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1094,6 +1156,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1110,6 +1173,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1121,6 +1185,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBl
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -1145,6 +1210,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobStorageAccountIdSelector
 {
     /// <summary>
@@ -1165,6 +1231,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlob
 {
     /// <summary>The Storage Container name.</summary>
@@ -1198,6 +1265,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageBlobDirect
 {
     /// <summary>The Storage Container name.</summary>
@@ -1215,6 +1283,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinationsStorageTableDirect
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -1232,6 +1301,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 {
     /// <summary>A azure_monitor_metrics block as defined above.</summary>
@@ -1275,6 +1345,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderDestinations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1291,6 +1362,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1302,6 +1374,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -1326,6 +1399,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIden
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1345,6 +1419,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIden
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1361,6 +1436,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1372,6 +1448,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -1396,6 +1473,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIden
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -1416,6 +1494,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentityIden
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Data Collection Rule. Currently, up to 1 identity is supported.</summary>
@@ -1443,6 +1522,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderIdentity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1459,6 +1539,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1470,6 +1551,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRefPolicy
 {
     /// <summary>
@@ -1494,6 +1576,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGrou
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1513,6 +1596,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGrou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1529,6 +1613,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1540,6 +1625,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelectorPolicy
 {
     /// <summary>
@@ -1564,6 +1650,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGrou
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGroupNameSelector
 {
     /// <summary>
@@ -1584,6 +1671,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderResourceGrou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderStreamDeclarationColumn
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -1597,6 +1685,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderStreamDeclar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProviderStreamDeclaration
 {
     /// <summary>One or more column blocks as defined above.</summary>
@@ -1610,6 +1699,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProviderStreamDeclar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecForProvider
 {
     /// <summary>The resource ID of the Data Collection Endpoint that this rule can be used with.</summary>
@@ -1681,6 +1771,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1697,6 +1788,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpoi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1708,6 +1800,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpoi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRefPolicy
 {
     /// <summary>
@@ -1732,6 +1825,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollect
 /// <summary>Reference to a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1751,6 +1845,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1767,6 +1862,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpoi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1778,6 +1874,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpoi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelectorPolicy
 {
     /// <summary>
@@ -1802,6 +1899,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollect
 /// <summary>Selector for a MonitorDataCollectionEndpoint in insights to populate dataCollectionEndpointId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollectionEndpointIdSelector
 {
     /// <summary>
@@ -1822,6 +1920,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataCollect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataFlow
 {
     /// <summary>The built-in transform to transform stream data.</summary>
@@ -1847,6 +1946,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataFlow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesDataImportEventHubDataSource
 {
     /// <summary>The Event Hub consumer group name.</summary>
@@ -1864,6 +1964,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesDataImport
 {
     /// <summary>An event_hub_data_source block as defined below.</summary>
@@ -1873,6 +1974,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesExtension
 {
     /// <summary>A JSON String which specifies the extension setting.</summary>
@@ -1898,6 +2000,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesIisLog
 {
     /// <summary>Specifies a list of absolute paths where the log files are located.</summary>
@@ -1915,6 +2018,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesLogFileSettingsText
 {
     /// <summary>The timestamp format of the text log files. Possible values are ISO 8601, YYYY-MM-DD HH:MM:SS, M/D/YYYY HH:MM:SS AM/PM, Mon DD, YYYY HH:MM:SS, yyMMdd HH:mm:ss, ddMMyy HH:mm:ss, MMM d hh:mm:ss, dd/MMM/yyyy:HH:mm:ss zzz,and yyyy-MM-ddTHH:mm:ssK.</summary>
@@ -1924,6 +2028,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesLogFileSettings
 {
     /// <summary>A text block as defined below.</summary>
@@ -1933,6 +2038,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesLogFile
 {
     /// <summary>Specifies a list of file patterns where the log files are located. For example, C:\\JavaLogs\\*.log.</summary>
@@ -1958,6 +2064,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesPerformanceCounter
 {
     /// <summary>Specifies a list of specifier names of the performance counters you want to collect. To get a list of performance counters on Windows, run the command typeperf. Please see this document for more information.</summary>
@@ -1979,6 +2086,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesPlatformTelemetry
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -1992,6 +2100,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesPrometheusForwarderLabelIncludeFilter
 {
     /// <summary>The label of the filter. This label should be unique across all label_include_fileter block. Possible value is microsoft_metrics_include_label.</summary>
@@ -2005,6 +2114,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesPrometheusForwarder
 {
     /// <summary>One or more label_include_filter blocks as defined above.</summary>
@@ -2022,6 +2132,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesSyslog
 {
     /// <summary>Specifies a list of facility names. Use a wildcard * to collect logs for all facility names. Possible values are alert, *, audit, auth, authpriv, clock, cron, daemon, ftp, kern, local5, local4, local1, local7, local6, local3, local2, local0, lpr, mail, mark, news, nopri, ntp, syslog, user and uucp.</summary>
@@ -2043,6 +2154,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesWindowsEventLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -2060,6 +2172,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSourcesWindowsFirewallLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -2073,6 +2186,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 {
     /// <summary>A data_import block as defined above.</summary>
@@ -2118,6 +2232,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsAzureMonitorMetrics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -2133,6 +2248,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2149,6 +2265,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2160,6 +2277,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHub
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRefPolicy
 {
     /// <summary>
@@ -2184,6 +2302,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Reference to a EventHub in eventhub to populate eventHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2203,6 +2322,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2219,6 +2339,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHub
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2230,6 +2351,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHub
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelectorPolicy
 {
     /// <summary>
@@ -2254,6 +2376,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Selector for a EventHub in eventhub to populate eventHubId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubEventHubIdSelector
 {
     /// <summary>
@@ -2274,6 +2397,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHub
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -2295,6 +2419,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsEventHubDirect
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -2314,6 +2439,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2330,6 +2456,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnaly
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2341,6 +2468,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnaly
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRefPolicy
 {
     /// <summary>
@@ -2365,6 +2493,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Reference to a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2384,6 +2513,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2400,6 +2530,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnaly
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2411,6 +2542,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnaly
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelectorPolicy
 {
     /// <summary>
@@ -2435,6 +2567,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Selector for a Workspace in operationalinsights to populate workspaceResourceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalyticsWorkspaceResourceIdSelector
 {
     /// <summary>
@@ -2455,6 +2588,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsLogAnalytics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -2476,6 +2610,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsMonitorAccount
 {
     /// <summary>The resource ID of the Monitor Account.</summary>
@@ -2495,6 +2630,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2511,6 +2647,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2522,6 +2659,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRefPolicy
 {
     /// <summary>
@@ -2546,6 +2684,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Reference to a Container in storage to populate containerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2565,6 +2704,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2581,6 +2721,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2592,6 +2733,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelectorPolicy
 {
     /// <summary>
@@ -2616,6 +2758,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Selector for a Container in storage to populate containerName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobContainerNameSelector
 {
     /// <summary>
@@ -2642,6 +2785,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2658,6 +2802,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2669,6 +2814,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRefPolicy
 {
     /// <summary>
@@ -2693,6 +2839,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2712,6 +2859,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2728,6 +2876,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2739,6 +2888,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageB
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelectorPolicy
 {
     /// <summary>
@@ -2763,6 +2913,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobStorageAccountIdSelector
 {
     /// <summary>
@@ -2783,6 +2934,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlob
 {
     /// <summary>The Storage Container name.</summary>
@@ -2816,6 +2968,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageBlobDirect
 {
     /// <summary>The Storage Container name.</summary>
@@ -2833,6 +2986,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinationsStorageTableDirect
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -2850,6 +3004,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestinations
 {
     /// <summary>A azure_monitor_metrics block as defined above.</summary>
@@ -2893,6 +3048,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2909,6 +3065,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2920,6 +3077,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefsPolicy
 {
     /// <summary>
@@ -2944,6 +3102,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIde
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2963,6 +3122,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIde
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2979,6 +3139,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2990,6 +3151,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
     /// <summary>
@@ -3014,6 +3176,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIde
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIdentityIdsSelector
 {
     /// <summary>
@@ -3034,6 +3197,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentityIde
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Data Collection Rule. Currently, up to 1 identity is supported.</summary>
@@ -3055,6 +3219,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderStreamDeclarationColumn
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3068,6 +3233,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderStreamDecla
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderStreamDeclaration
 {
     /// <summary>One or more column blocks as defined above.</summary>
@@ -3093,6 +3259,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProviderStreamDecla
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecInitProvider
 {
     /// <summary>The resource ID of the Data Collection Endpoint that this rule can be used with.</summary>
@@ -3150,6 +3317,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3174,6 +3342,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3190,6 +3359,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3201,6 +3371,7 @@ public enum V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3229,6 +3400,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3248,6 +3420,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3262,6 +3435,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpecWriteConnectionSecretTo
 /// <summary>MonitorDataCollectionRuleSpec defines the desired state of MonitorDataCollectionRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleSpec
 {
     /// <summary>
@@ -3329,6 +3503,7 @@ public partial class V1beta1MonitorDataCollectionRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataFlow
 {
     /// <summary>The built-in transform to transform stream data.</summary>
@@ -3354,6 +3529,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataFlow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesDataImportEventHubDataSource
 {
     /// <summary>The Event Hub consumer group name.</summary>
@@ -3371,6 +3547,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesDataImport
 {
     /// <summary>An event_hub_data_source block as defined below.</summary>
@@ -3380,6 +3557,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesExtension
 {
     /// <summary>A JSON String which specifies the extension setting.</summary>
@@ -3405,6 +3583,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesIisLog
 {
     /// <summary>Specifies a list of absolute paths where the log files are located.</summary>
@@ -3422,6 +3601,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesLogFileSettingsText
 {
     /// <summary>The timestamp format of the text log files. Possible values are ISO 8601, YYYY-MM-DD HH:MM:SS, M/D/YYYY HH:MM:SS AM/PM, Mon DD, YYYY HH:MM:SS, yyMMdd HH:mm:ss, ddMMyy HH:mm:ss, MMM d hh:mm:ss, dd/MMM/yyyy:HH:mm:ss zzz,and yyyy-MM-ddTHH:mm:ssK.</summary>
@@ -3431,6 +3611,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesLogFileSettings
 {
     /// <summary>A text block as defined below.</summary>
@@ -3440,6 +3621,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesLogFile
 {
     /// <summary>Specifies a list of file patterns where the log files are located. For example, C:\\JavaLogs\\*.log.</summary>
@@ -3465,6 +3647,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesPerformanceCounter
 {
     /// <summary>Specifies a list of specifier names of the performance counters you want to collect. To get a list of performance counters on Windows, run the command typeperf. Please see this document for more information.</summary>
@@ -3486,6 +3669,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesPlatformTelemetry
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3499,6 +3683,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesPrometheusForwarderLabelIncludeFilter
 {
     /// <summary>The label of the filter. This label should be unique across all label_include_fileter block. Possible value is microsoft_metrics_include_label.</summary>
@@ -3512,6 +3697,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesPrometheusForwarder
 {
     /// <summary>One or more label_include_filter blocks as defined above.</summary>
@@ -3529,6 +3715,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesSyslog
 {
     /// <summary>Specifies a list of facility names. Use a wildcard * to collect logs for all facility names. Possible values are alert, *, audit, auth, authpriv, clock, cron, daemon, ftp, kern, local5, local4, local1, local7, local6, local3, local2, local0, lpr, mail, mark, news, nopri, ntp, syslog, user and uucp.</summary>
@@ -3550,6 +3737,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesWindowsEventLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3567,6 +3755,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSourcesWindowsFirewallLog
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3580,6 +3769,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 {
     /// <summary>A data_import block as defined above.</summary>
@@ -3625,6 +3815,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDataSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsAzureMonitorMetrics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3634,6 +3825,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsEventHub
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -3647,6 +3839,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsEventHubDirect
 {
     /// <summary>The resource ID of the Event Hub.</summary>
@@ -3660,6 +3853,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsLogAnalytics
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3673,6 +3867,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsMonitorAccount
 {
     /// <summary>The resource ID of the Monitor Account.</summary>
@@ -3686,6 +3881,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsStorageBlob
 {
     /// <summary>The Storage Container name.</summary>
@@ -3703,6 +3899,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsStorageBlobDirect
 {
     /// <summary>The Storage Container name.</summary>
@@ -3720,6 +3917,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinationsStorageTableDirect
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3737,6 +3935,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestinations
 {
     /// <summary>A azure_monitor_metrics block as defined above.</summary>
@@ -3774,6 +3973,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderIdentity
 {
     /// <summary>A list of User Assigned Managed Identity IDs to be assigned to this Data Collection Rule. Currently, up to 1 identity is supported.</summary>
@@ -3795,6 +3995,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderIdentity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderStreamDeclarationColumn
 {
     /// <summary>The name which should be used for this data source. This name should be unique across all data sources regardless of type within the Data Collection Rule.</summary>
@@ -3808,6 +4009,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderStreamDecla
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderStreamDeclaration
 {
     /// <summary>One or more column blocks as defined above.</summary>
@@ -3821,6 +4023,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProviderStreamDecla
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusAtProvider
 {
     /// <summary>The resource ID of the Data Collection Endpoint that this rule can be used with.</summary>
@@ -3879,6 +4082,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatusConditions
 {
     /// <summary>
@@ -3922,6 +4126,7 @@ public partial class V1beta1MonitorDataCollectionRuleStatusConditions
 /// <summary>MonitorDataCollectionRuleStatus defines the observed state of MonitorDataCollectionRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MonitorDataCollectionRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3940,9 +4145,13 @@ public partial class V1beta1MonitorDataCollectionRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MonitorDataCollectionRule is the Schema for the MonitorDataCollectionRules API. Manages a Data Collection Rule.</summary>
+/// <summary>
+/// MonitorDataCollectionRule is the Schema for the MonitorDataCollectionRules API. Manages a Data Collection Rule.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitorDataCollectionRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitorDataCollectionRuleSpec>, IStatus<V1beta1MonitorDataCollectionRuleStatus?>
 {
